@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai RERA Rent Calculator: Legal Rent Increase Caps & Decree 43/2013 | GulfCalc</title>
+  <meta name="description" content="Calculate statutory Dubai rent increase caps under Decree No. 43 of 2013 based on RERA Rental Index benchmarks and mandatory 90-day notice rules.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html#app",
+        "name": "Dubai RERA Rent Increase Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "AED"
+        },
+        "description": "Calculates legally permissible residential and commercial rent increases in Dubai under Decree No. 43 of 2013 and RERA Rental Index benchmarks."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dubai RERA Rent Calculator",
+            "item": "https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the maximum legal rent increase in Dubai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The statutory maximum rent increase in Dubai is 20% under Decree No. 43 of 2013. A 20% hike is only legally permissible if the property's current rent is more than 40% below the average market rental benchmark established by the official RERA Rental Index."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a Dubai landlord raise rent without 90 days notice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, under Article 14 of Dubai Law No. 26 of 2007 (as amended by Law No. 33 of 2008), any proposed amendment to the tenancy contract, including rental increases, requires at least 90 days written notice prior to contract expiry. Failure to provide timely notice invalidates the increase entirely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the RERA rent cap tier system work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Decree 43/2013 caps rent increases based on market disparity: 0% if up to 10% below average; 5% if 11% to 20% below; 10% if 21% to 30% below; 15% if 31% to 40% below; and a maximum 20% if more than 40% below the RERA benchmark."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can a tenant do if a landlord demands an illegal rent increase?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a landlord insists on an increase exceeding RERA caps or fails to give 90 days notice, the tenant can tender rent cheques via the Rental Dispute Settlement Centre (RDSC) through an 'Offer and Deposit' petition, forcing statutory renewal at existing contract terms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the RERA calculator apply to commercial properties in Dubai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Decree No. 43 of 2013 applies to all residential, commercial, and industrial leases in the Emirate of Dubai, excluding specific specialized free zone regimes that maintain independent real estate jurisdictions (such as DIFC)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">Dubai RERA Rent Calculator</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
+    <div class="tool-header">
+      <span class="badge badge-emerald">Emirate of Dubai</span>
+      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">Dubai RERA Rent Increase & Decree 43/2013 Calculator</h1>
+      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
+        Under Dubai Decree No. 43 of 2013, residential and commercial rent increases are strictly capped between 0% and 20% based on the gap between current contract rent and official RERA area benchmarks. This tool evaluates legal hike ceilings and mandatory 90-day notice compliance.
+      </p>
+    </div>
+
+    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
+      <div class="card" style="padding:2rem;">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Tenancy Contract & Market Benchmarks
+        </h2>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+            <label for="currentRent" class="form-label" style="font-weight:600;">Current Contractual Annual Rent (AED)</label>
+            <span id="currentRentDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--emerald-600);">80,000 AED</span>
+          </div>
+          <input type="range" id="currentRentSlider" min="20000" max="400000" step="5000" value="80000" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="number" id="currentRent" value="80000" min="5000" max="2000000" step="1000" class="form-control" style="font-family:var(--font-mono);">
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+            <label for="benchmarkRent" class="form-label" style="font-weight:600;">Official RERA Index Average Market Rent (AED)</label>
+            <span id="benchmarkRentDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--indigo-600);">110,000 AED</span>
+          </div>
+          <input type="range" id="benchmarkRentSlider" min="20000" max="400000" step="5000" value="110000" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="number" id="benchmarkRent" value="110000" min="5000" max="2000000" step="1000" class="form-control" style="font-family:var(--font-mono);">
+          <small class="form-text" style="color:var(--text-muted); font-size:0.825rem;">Consult the Dubai Land Department (DLD) Smart Rental Index for your specific community and unit type.</small>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Statutory 90-Day Renewal Notice Compliance</label>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <input type="checkbox" id="noticeCompliant" checked style="width:18px; height:18px; accent-color:var(--emerald-600);">
+            <label for="noticeCompliant" style="font-size:0.925rem; color:var(--text-main); cursor:pointer;">
+              Landlord served written notice of increase at least 90 days before contract expiry
+            </label>
+          </div>
+          <small class="form-text" style="color:var(--text-muted); font-size:0.825rem; display:block; margin-top:0.25rem;">Under Law No. 33 of 2008, failure to give 90 days notice voids any rent hike, regardless of RERA index gaps.</small>
+        </div>
+      </div>
+
+      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
+          Statutory RERA Permissible Rent Determination
+        </h2>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Market Rent Disparity</span>
+            <div id="outDisparityGap" style="font-size:1.75rem; font-weight:800; color:var(--text-main); font-family:var(--font-mono); margin-top:0.25rem;">
+              27.3% Below
+            </div>
+            <span id="subGapTier" style="font-size:0.8rem; color:var(--indigo-600); font-weight:600;">Tier 3 (21% to 30% gap)</span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Permissible Rent Hike</span>
+            <div id="outHikePercent" style="font-size:1.75rem; font-weight:800; color:#059669; font-family:var(--font-mono); margin-top:0.25rem;">
+              10.0% Max
+            </div>
+            <span id="subHikeAmount" style="font-size:0.8rem; color:var(--text-muted); font-weight:600;">+8,000 AED increase</span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Notice Validity Status</span>
+            <div id="outNoticeStatus" style="font-size:1.75rem; font-weight:800; color:#059669; font-family:var(--font-mono); margin-top:0.25rem;">
+              Valid
+            </div>
+            <span id="subNoticeNote" style="font-size:0.8rem; color:var(--emerald-600); font-weight:600;">90-day rule observed</span>
+          </div>
+        </div>
+
+        <div style="background:var(--slate-900); color:#ffffff; padding:1.5rem; border-radius:var(--radius-lg); margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <span style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--slate-400); font-weight:600;">Maximum Legal Renewal Contract Rent</span>
+              <div id="outNewLegalRent" style="font-size:2.25rem; font-weight:800; font-family:var(--font-mono); color:#34d399; margin-top:0.25rem;">
+                88,000 AED
+              </div>
+            </div>
+            <div style="display:flex; gap:0.5rem;">
+              <button type="button" id="copyBreakdownBtn" class="btn btn-secondary" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700);">
+                Copy Summary
+              </button>
+              <button type="button" onclick="window.print()" class="btn btn-secondary" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700);">
+                Print PDF
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:var(--radius-md); padding:1rem; font-size:0.875rem; color:#1e40af;">
+          <strong>Legal Dispute Resolution:</strong> If your landlord demands an increase exceeding the calculated RERA percentage or failed to serve written notice at least 90 days before lease expiration, you are entitled to renew at your existing rental rate. You may file an 'Offer and Deposit' with the Rental Dispute Settlement Centre (RDSC) to deposit your rent cheques legally.
+        </div>
+      </div>
+    </div>
+
+    <article class="article-content" style="margin-top:3.5rem;">
+      <h2 class="article-h2">1. Statutory Framework of Dubai Decree No. 43 of 2013</h2>
+      <p class="article-p">
+        In December 2013, His Highness Sheikh Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, issued Decree No. 43 of 2013 Determining the Increase in Real Property Rent in the Emirate of Dubai. Designed to safeguard market equilibrium and curb unchecked inflationary spikes across the emirate's tenancy market, the decree established a rigid, mathematical tier system governing rental increases upon lease renewal.
+      </p>
+      <p class="article-p">
+        Under this statutory framework, private landlords possess no unilateral right to increase rent arbitrarily. Any permissible increase is legally tethered to the disparity between the tenant's current contractual rent and the official <strong>Average Market Rent</strong> published in the Dubai Land Department (DLD) Real Estate Regulatory Agency (RERA) Rental Index.
+      </p>
+
+      <h2 class="article-h2">2. The 5-Tier Statutory Increase Schedule</h2>
+      <p class="article-p">
+        Decree No. 43 of 2013 establishes five distinct legal thresholds based on how far the current rent falls below the average market benchmark for comparable properties:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li><strong>0% Rent Increase:</strong> If the current rent is up to <strong>10% below</strong> the average market rental benchmark, the landlord is legally barred from imposing any rent increase.</li>
+        <li><strong>5% Maximum Increase:</strong> If the current rent is between <strong>11% and 20% below</strong> the average market rental benchmark.</li>
+        <li><strong>10% Maximum Increase:</strong> If the current rent is between <strong>21% and 30% below</strong> the average market rental benchmark.</li>
+        <li><strong>15% Maximum Increase:</strong> If the current rent is between <strong>31% and 40% below</strong> the average market rental benchmark.</li>
+        <li><strong>20% Absolute Statutory Cap:</strong> If the current rent is <strong>more than 40% below</strong> the average market rental benchmark. Twenty percent represents the absolute legal ceiling in Dubai; no increase can legally exceed 20% in a single annual renewal cycle regardless of market growth.</li>
+      </ul>
+
+      <h2 class="article-h2">3. The Mandatory 90-Day Written Notice Requirement</h2>
+      <p class="article-p">
+        A common point of dispute between landlords and tenants concerns procedural notice compliance. Under Article 14 of Dubai Law No. 26 of 2007 (as amended by Law No. 33 of 2008 Regulating the Relationship Between Landlords and Tenants in Dubai), if either party wishes to amend any conditions of the lease agreement, including adjusting the rent, they must serve formal written notice to the other party at least <strong>ninety (90) calendar days prior to contract expiration</strong>.
+      </p>
+      <p class="article-p">
+        Judicial rulings from the Rental Dispute Settlement Centre consistently hold that the 90-day notice rule is mandatory. Even if the RERA index permits a 10% or 20% increase, if the landlord communicates the proposed revision 89 days or fewer before lease expiry, the increase is null and void. The tenancy automatically renews under identical financial terms.
+      </p>
+
+      <h2 class="article-h2">4. Official RERA Rental Index Updates and Valuation Certificates</h2>
+      <p class="article-p">
+        The official benchmark rent is determined by consulting the DLD RERA Rental Calculator portal. In recent years, RERA modernized the index algorithm to factor in building ratings (such as star ratings under the Building Classification System), specific architectural amenities, and micro-community transaction histories recorded in the Ejari registry.
+      </p>
+      <p class="article-p">
+        In cases where a landlord believes their property possesses unique luxury finishes or renovations that surpass standard community benchmarks, they may apply to the Dubai Land Department for an official <em>Tenancy Valuation Certificate</em>. The RDSC recognizes DLD valuation certificates as binding evidence of market rent during litigation.
+      </p>
+
+      <h2 class="article-h2">5. Resolving Disputes via the Rental Dispute Settlement Centre (RDSC)</h2>
+      <p class="article-p">
+        When an amicable agreement cannot be reached regarding renewal terms, either party may access the specialized judicial tribunal at the Rental Dispute Settlement Centre headquartered at the Dubai Land Department. Tenants facing unlawful demands can initiate an <strong>Offer and Deposit</strong> procedure:
+      </p>
+      <ol style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li>Draft renewal cheques matching the legally permitted RERA amount (or existing rent if 90 days notice was breached).</li>
+        <li>File an Offer and Deposit petition with the RDSC alongside the Ejari contract and title deed copies.</li>
+        <li>Deposit the cheques into the custody of the court judge, legally validating continued lawful tenancy while preventing landlord eviction actions.</li>
+      </ol>
+
+      <section class="faq-accordion" style="margin-top:3.5rem;">
+        <h3 class="article-h3">Frequently Asked Questions: Dubai RERA Rent Caps & Rules</h3>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What is the maximum legal rent increase in Dubai?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            The statutory maximum rent increase in Dubai is 20% under Decree No. 43 of 2013. A 20% hike is only legally permissible if the property's current rent is more than 40% below the average market rental benchmark established by the official RERA Rental Index.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can a Dubai landlord raise rent without 90 days notice?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No, under Article 14 of Dubai Law No. 26 of 2007 (as amended by Law No. 33 of 2008), any proposed amendment to the tenancy contract, including rental increases, requires at least 90 days written notice prior to contract expiry. Failure to provide timely notice invalidates the increase entirely.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>How does the RERA rent cap tier system work?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Decree 43/2013 caps rent increases based on market disparity: 0% if up to 10% below average; 5% if 11% to 20% below; 10% if 21% to 30% below; 15% if 31% to 40% below; and a maximum 20% if more than 40% below the RERA benchmark.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What can a tenant do if a landlord demands an illegal rent increase?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            If a landlord insists on an increase exceeding RERA caps or fails to give 90 days notice, the tenant can tender rent cheques via the Rental Dispute Settlement Centre (RDSC) through an 'Offer and Deposit' petition, forcing statutory renewal at existing contract terms.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Does the RERA calculator apply to commercial properties in Dubai?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Yes, Decree No. 43 of 2013 applies to all residential, commercial, and industrial leases in the Emirate of Dubai, excluding specific specialized free zone regimes that maintain independent real estate jurisdictions (such as DIFC).
+          </div>
+        </details>
+      </section>
+
+      <section style="margin-top:4rem; padding-top:2.5rem; border-top:1px solid var(--border-subtle);">
+        <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-main); margin-bottom:1.5rem;">Related GCC Financial Utilities</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+          <a href="uae-golden-visa-property-calculator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">UAE</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">UAE Golden Visa Property Calculator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Evaluate the AED 2,000,000 property investment threshold, 4% DLD fees, and net rental yields.</p>
+          </a>
+
+          <a href="gcc-cost-of-living-comparator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge" style="background:#e0e7ff; color:#3730a3;">Regional</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">GCC Cost of Living Comparator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Compare rental indexes, schooling, and purchasing power between Dubai, Abu Dhabi, Riyadh, and Doha.</p>
+          </a>
+
+          <a href="../blog/dubai-golden-visa-real-estate-salary-thresholds.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge" style="background:#e0e7ff; color:#3730a3;">Legal Guide</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">Dubai Real Estate & Visa Guidelines</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Deconstruct residency acquisition through real estate acquisitions under Cabinet Resolution No. 65/2022.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#0f172a"/>
+            <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="9" r="2" fill="#10b981"/>
+          </svg>
+          <span style="color:#ffffff;">Gulf<span style="color:#10b981;">Calc</span></span>
+        </a>
+        <p class="footer-tagline">
+          Precision statutory, financial, and employment calculation engines for professionals and enterprises across the Gulf Cooperation Council.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span class="footer-col-title">National Tools</span>
+          <a href="uae-gratuity-calculator.html" class="footer-link">UAE Gratuity</a>
+          <a href="saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a>
+          <a href="kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity</a>
+          <a href="qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a>
+          <a href="oman-gratuity-calculator.html" class="footer-link">Oman Gratuity</a>
+          <a href="bahrain-eosi-calculator.html" class="footer-link">Bahrain Indemnity</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Enterprise & Tax</span>
+          <a href="uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax</a>
+          <a href="gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fees</a>
+          <a href="saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Engine</a>
+          <a href="gcc-cost-of-living-comparator.html" class="footer-link">Cost of Living</a>
+          <a href="kuwait-pifss-net-salary-calculator.html" class="footer-link">Kuwait PIFSS Pay</a>
+          <a href="uae-golden-visa-property-calculator.html" class="footer-link">UAE Golden Visa</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Directories & Trust</span>
+          <a href="../labour-laws/index.html" class="footer-link">Labour Laws Hub</a>
+          <a href="../blog/index.html" class="footer-link">Insights & Blog</a>
+          <a href="../about-us.html" class="footer-link">About Us</a>
+          <a href="../contact-us.html" class="footer-link">Contact</a>
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+          <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <p class="copyright">
+          &copy; 2026 GulfCalc. All statutory calculation engines operate purely client-side. Zero server-side personal data transmission.
+        </p>
+        <p style="font-size:0.8125rem; color:var(--slate-400); margin:0;">
+          Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; text-decoration:underline;">sheharyarsiraj.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const currentRentSlider = document.getElementById('currentRentSlider');
+      const currentRent = document.getElementById('currentRent');
+      const currentRentDisplay = document.getElementById('currentRentDisplay');
+      const benchmarkRentSlider = document.getElementById('benchmarkRentSlider');
+      const benchmarkRent = document.getElementById('benchmarkRent');
+      const benchmarkRentDisplay = document.getElementById('benchmarkRentDisplay');
+      const noticeCompliant = document.getElementById('noticeCompliant');
+
+      const outDisparityGap = document.getElementById('outDisparityGap');
+      const subGapTier = document.getElementById('subGapTier');
+      const outHikePercent = document.getElementById('outHikePercent');
+      const subHikeAmount = document.getElementById('subHikeAmount');
+      const outNoticeStatus = document.getElementById('outNoticeStatus');
+      const subNoticeNote = document.getElementById('subNoticeNote');
+      const outNewLegalRent = document.getElementById('outNewLegalRent');
+      const copyBreakdownBtn = document.getElementById('copyBreakdownBtn');
+
+      function calculate() {
+        const cur = parseFloat(currentRent.value) || 0;
+        const bmk = parseFloat(benchmarkRent.value) || 0;
+        const isNoticeOk = noticeCompliant.checked;
+
+        if (cur <= 0 || bmk <= 0) return;
+
+        // Disparity calculation: (bmk - cur) / bmk
+        const diff = bmk - cur;
+        const gapPct = (diff / bmk) * 100;
+
+        let hikePct = 0;
+        let tierDesc = '';
+
+        if (gapPct <= 10) {
+          hikePct = 0;
+          tierDesc = 'Tier 1 (Up to 10% below average)';
+        } else if (gapPct <= 20) {
+          hikePct = 5;
+          tierDesc = 'Tier 2 (11% to 20% below average)';
+        } else if (gapPct <= 30) {
+          hikePct = 10;
+          tierDesc = 'Tier 3 (21% to 30% below average)';
+        } else if (gapPct <= 40) {
+          hikePct = 15;
+          tierDesc = 'Tier 4 (31% to 40% below average)';
+        } else {
+          hikePct = 20;
+          tierDesc = 'Tier 5 (More than 40% below average)';
+        }
+
+        const effectiveHikePct = isNoticeOk ? hikePct : 0;
+        const hikeAmount = cur * (effectiveHikePct / 100);
+        const newRent = cur + hikeAmount;
+
+        outDisparityGap.textContent = gapPct > 0 ? gapPct.toFixed(1) + '% Below' : 'At/Above Market';
+        subGapTier.textContent = tierDesc;
+
+        outHikePercent.textContent = effectiveHikePct.toFixed(1) + '% Max';
+        if (effectiveHikePct === 0) {
+          outHikePercent.style.color = '#059669';
+        } else {
+          outHikePercent.style.color = '#d97706';
+        }
+        subHikeAmount.textContent = effectiveHikePct > 0 ? `+${Math.round(hikeAmount).toLocaleString('en-US')} AED increase` : '0 AED permissible increase';
+
+        if (isNoticeOk) {
+          outNoticeStatus.textContent = 'Valid';
+          outNoticeStatus.style.color = '#059669';
+          subNoticeNote.textContent = '90-day notice rule observed';
+        } else {
+          outNoticeStatus.textContent = 'Breached';
+          outNoticeStatus.style.color = '#dc2626';
+          subNoticeNote.textContent = 'Late/absent notice voids hike';
+        }
+
+        outNewLegalRent.textContent = Math.round(newRent).toLocaleString('en-US') + ' AED';
+      }
+
+      currentRentSlider.addEventListener('input', function() {
+        currentRent.value = this.value;
+        currentRentDisplay.textContent = parseInt(this.value).toLocaleString('en-US') + ' AED';
+        calculate();
+      });
+
+      currentRent.addEventListener('input', function() {
+        let val = parseFloat(this.value) || 0;
+        currentRentSlider.value = Math.min(val, 400000);
+        currentRentDisplay.textContent = Math.round(val).toLocaleString('en-US') + ' AED';
+        calculate();
+      });
+
+      benchmarkRentSlider.addEventListener('input', function() {
+        benchmarkRent.value = this.value;
+        benchmarkRentDisplay.textContent = parseInt(this.value).toLocaleString('en-US') + ' AED';
+        calculate();
+      });
+
+      benchmarkRent.addEventListener('input', function() {
+        let val = parseFloat(this.value) || 0;
+        benchmarkRentSlider.value = Math.min(val, 400000);
+        benchmarkRentDisplay.textContent = Math.round(val).toLocaleString('en-US') + ' AED';
+        calculate();
+      });
+
+      noticeCompliant.addEventListener('change', calculate);
+
+      copyBreakdownBtn.addEventListener('click', function() {
+        const text = `Dubai RERA Rent Assessment (GulfCalc.tech):\n` +
+          `- Current Rent: ${currentRent.value} AED\n` +
+          `- RERA Benchmark: ${benchmarkRent.value} AED\n` +
+          `- Market Disparity: ${outDisparityGap.textContent} (${subGapTier.textContent})\n` +
+          `- Permissible Hike: ${outHikePercent.textContent}\n` +
+          `- 90-Day Notice Status: ${outNoticeStatus.textContent}\n` +
+          `- Maximum Legal Renewal Rent: ${outNewLegalRent.textContent}\n` +
+          `Statutory source: Dubai Decree No. 43 of 2013 & Law No. 33 of 2008.`;
+
+        navigator.clipboard.writeText(text).then(() => {
+          const orig = copyBreakdownBtn.textContent;
+          copyBreakdownBtn.textContent = 'Copied!';
+          setTimeout(() => { copyBreakdownBtn.textContent = orig; }, 2000);
+        });
+      });
+
+      calculate();
+    })();
+  </script>
+</body>
+</html>

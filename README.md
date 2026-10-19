@@ -16,7 +16,7 @@
 Experience the production deployment at **[https://gulfcalc.tech](https://gulfcalc.tech)**.
 
 ### Quick Navigation
-* 🧮 **[12 Statutory Calculators](#-complete-tool-inventory-matrix)**: Explore all national end-of-service, tax, GOSI, PIFSS, and remittance engines.
+* 🧮 **[19 Statutory & AI Calculators](#-complete-tool-inventory-matrix)**: Explore all national end-of-service, tax, GOSI, PIFSS, RERA, and AI legal engines.
 * ⚖️ **[GCC Labour Laws Directory](https://gulfcalc.tech/labour-laws/index.html)**: Comprehensive statutory comparative analysis across all 6 member states.
 * 📚 **[Financial & Legal Blog Hub](https://gulfcalc.tech/blog/index.html)**: 10 peer-reviewed technical guides on GCC tax, corporate structure, and labor decrees.
 * 🏗️ **[System Architecture](#-architectural-principles--performance-highlights)**: Client-side determination, security headers, and edge delivery.
@@ -60,6 +60,13 @@ GulfCalc provides an institutional-grade, zero-runtime-dependency calculation pl
 | 🌐 **Pan-GCC** | **Cost of Living Comparator** | Purchasing Power & Parity Metrics | [`/tools/gcc-cost-of-living-comparator.html`](https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html) | Multi-city parity engine across Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, Muscat, Manama. |
 | 🇰🇼 **Kuwait** | **Kuwait PIFSS Net Pay Engine** | Amiri Decree No. 61 of 1976 | [`/tools/kuwait-pifss-net-salary-calculator.html`](https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html) | Kuwaiti citizen 10.5% social security deduction (capped at 3,000 KWD) vs expatriate flat 0% statutory deduction. |
 | 🇦🇪 **UAE** | **Golden Visa Property Engine** | Cabinet Resolution No. 65 of 2022 | [`/tools/uae-golden-visa-property-calculator.html`](https://gulfcalc.tech/tools/uae-golden-visa-property-calculator.html) | AED 2,000,000 property equity threshold, 4% DLD fee, 20% mortgage down payment, and net rental yield projection. |
+| 🇸🇦 **Saudi Arabia** | **Saudi Dependent Fee & Iqama** | Council of Ministers No. 518/1438H | [`/tools/saudi-dependent-fee-calculator.html`](https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html) | 400 SAR/mo dependent fee, Jawazat renewal fees, and Maktab Amal commercial levies across quarterly cycles. |
+| 🇦🇪 **UAE** | **UAE Overstay Fine Calculator** | ICP & GDRFA Unified Regulations | [`/tools/uae-overstay-fine-calculator.html`](https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html) | Flat 50 AED/day unified tariff, 30-180 day grace period modeling, and mandatory 260 AED airport Out-Pass fees. |
+| 🇦🇪 **UAE** | **UAE Emiratisation Penalty** | Cabinet Resolution No. 19/M of 2022 | [`/tools/uae-emiratisation-penalty-calculator.html`](https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html) | MoHRE financial contributions (8,000-9,000 AED/mo) across 20-49 and 50+ staff firms evaluated semi-annually. |
+| 🇦🇪 **Dubai** | **Dubai RERA Rent Calculator** | Dubai Decree No. 43 of 2013 | [`/tools/dubai-rera-rent-calculator.html`](https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html) | 0% to 20% rent hike caps based on RERA Rental Index gap and mandatory 90-day written notice compliance. |
+| 🇰🇼 **Kuwait** | **Kuwait Family Visa Eligibility** | Ministerial Decision No. 56 of 2024 | [`/tools/kuwait-family-visa-calculator.html`](https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html) | 800 KWD minimum salary rule, degree verification, Dhaman health fees, and PACI Civil ID charges. |
+| 🌐 **Pan-GCC** | **AI Contract Clause Checker** | GCC Non-Derogation Doctrines | [`/tools/ai-contract-clause-checker.html`](https://gulfcalc.tech/tools/ai-contract-clause-checker.html) | Interactive client-side review of void terms (visa clawbacks, passport retention, non-compete overreach). |
+| 🌐 **Pan-GCC** | **AI Resignation Letter Engine** | Statutory Labor Notice Decrees | [`/tools/ai-resignation-letter-generator.html`](https://gulfcalc.tech/tools/ai-resignation-letter-generator.html) | Drafts formal resignation notices citing exact GCC statutory articles to protect terminal gratuity rights. |
 
 ---
 
@@ -134,7 +141,7 @@ gulfcalc-web/
 ├── terms-of-service.html                     # Terms of Service & Non-Reliance Declarations
 ├── disclaimer.html                           # Statutory Financial & Legal Disclaimers
 ├── robots.txt                                # Search Engine & AI Crawler Directives
-├── sitemap.xml                               # XML Sitemap (All 30 Production Endpoints)
+├── sitemap.xml                               # XML Sitemap (All 37 Production Endpoints)
 ├── llms.txt                                  # Standardized LLM Knowledge Manifest
 ├── llms-full.txt                             # Deep Context & Formula Manifest for AI Agents
 ├── README.md                                 # Master Architectural Specification & Open Source Docs
@@ -158,7 +165,14 @@ gulfcalc-web/
 │   ├── saudi-gosi-calculator.html            # Saudi GOSI & SANED Contribution Engine
 │   ├── gcc-cost-of-living-comparator.html    # 8-City GCC Purchasing Power & Parity Comparator
 │   ├── kuwait-pifss-net-salary-calculator.html # Kuwait PIFSS Social Security & Net Pay Engine
-│   └── uae-golden-visa-property-calculator.html # UAE Real Estate Golden Visa Equity Engine
+│   ├── uae-golden-visa-property-calculator.html # UAE Real Estate Golden Visa Equity Engine
+│   ├── saudi-dependent-fee-calculator.html   # Saudi SAR 400/mo Dependent Fee & Maktab Amal Engine
+│   ├── uae-overstay-fine-calculator.html     # UAE Flat 50 AED/day Visa Overstay Fine Engine
+│   ├── uae-emiratisation-penalty-calculator.html # MoHRE NAFIS Emiratisation Penalty Calculator
+│   ├── dubai-rera-rent-calculator.html       # Dubai Decree 43/2013 RERA Rent Hike Cap Calculator
+│   ├── kuwait-family-visa-calculator.html    # Kuwait 800 KWD Salary Rule & Dhaman Fee Calculator
+│   ├── ai-contract-clause-checker.html       # AI Client-Side GCC Contract Clause Review Engine
+│   └── ai-resignation-letter-generator.html  # AI GCC Statutory Resignation Letter Generator
 └── blog/
     ├── index.html                            # GCC Legal & Financial Intelligence Blog Hub
     ├── uae-gratuity-calculation-limited-contract-2026.html

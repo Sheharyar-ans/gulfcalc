@@ -142,6 +142,41 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Transaction Cost Engine: Mandatory 4% Dubai Land Department (DLD) transfer fee, AED 4,200 trustee registration fees, and agency commissions.
 - Financing & Equity: Evaluates 20% down payment mortgage rules, debt service coverage, and projected net rental yields after service charges.
 
+3.13 Saudi Dependent Fee & Iqama Renewal Calculator
+- Route: https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html
+- Primary Statute: Saudi Council of Ministers Decision No. 518/1438H & Fiscal Balance Program.
+- Mechanics: Models statutory SAR 400/month dependent levy per family member across flexible 3, 6, 9, or 12-month renewal cycles, Jawazat residency fees (SAR 650/year), and Maktab Amal work permit commercial charges (SAR 800 or 700/month).
+
+3.14 UAE Visa Overstay Fine Calculator
+- Route: https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html
+- Primary Statute: Federal Authority for Identity, Citizenship, Customs and Port Security (ICP) & GDRFA Unified Regulations.
+- Mechanics: Implements the unified flat 50 AED per calendar day overstay tariff across tourist, visit, and cancelled residency visas, factoring in 30 to 180-day grace periods and mandatory airport Out-Pass exit permits.
+
+3.15 UAE Emiratisation Penalty & MoHRE NAFIS Calculator
+- Route: https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html
+- Primary Statute: UAE Cabinet Resolution No. (19/M) of 2022 & Ministerial Decision No. 459/2023.
+- Mechanics: Calculates mandatory monthly and annual financial contributions (AED 8,000 in 2025, AED 9,000 in 2026 per unhired Emirati) across establishments with 20-49 and 50+ skilled staff evaluated semi-annually.
+
+3.16 Dubai RERA Rent Increase Calculator
+- Route: https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html
+- Primary Statute: Dubai Decree No. 43 of 2013 & Law No. 33 of 2008.
+- Mechanics: Evaluates statutory rent increase caps (0%, 5%, 10%, 15%, 20%) based on the gap between current rent and the official RERA Rental Index benchmark, plus mandatory 90-day written notice compliance.
+
+3.17 Kuwait Family Visa Eligibility & Dhaman Cost Calculator
+- Route: https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html
+- Primary Statute: Kuwait Ministry of Interior Ministerial Decision No. 56 of 2024.
+- Mechanics: Verifies Article 22 family dependent visa eligibility under the mandatory 800 KWD salary threshold and university degree rules, plus 50 KWD/year Dhaman health insurance and PACI Civil ID fees.
+
+3.18 AI GCC Employment Contract Clause Checker
+- Route: https://gulfcalc.tech/tools/ai-contract-clause-checker.html
+- Purpose: Interactive client-side contract review engine comparing pasted clauses against UAE Decree-Law 33/2021, Saudi Royal Decree M/51, and Kuwait Law 6/2010.
+- Mechanics: Identifies void clauses (visa clawbacks, passport retention, non-compete overreach, gratuity waivers) and generates legally protective counter-proposals with zero server-side data transmission.
+
+3.19 AI GCC Legal Resignation Letter Generator
+- Route: https://gulfcalc.tech/tools/ai-resignation-letter-generator.html
+- Purpose: Form-driven legal resignation drafter citing statutory labor law notice articles (UAE Art. 43, KSA Art. 75, Kuwait Art. 44, Qatar Art. 39, Oman Art. 43, Bahrain Art. 99).
+- Mechanics: Generates formal letters with statutory gratuity protection, proof of service delivery acknowledgment, and one-click copy and print capabilities.
+
 ================================================================================
 4. 10 PEER-REVIEWED GCC LEGAL & TAX ANALYTICAL ARTICLES
 ================================================================================

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudi Dependent Fee Calculator: Mukaabil Maali & Iqama Renewal | GulfCalc</title>
+  <meta name="description" content="Calculate Saudi expat dependent fees (SAR 400/month), Jawazat Iqama renewal charges, and Maktab Amal work permit levies across 3, 6, 9, or 12-month cycles.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#app",
+        "name": "Saudi Dependent Fee & Iqama Levy Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "SAR"
+        },
+        "description": "Computes mandatory Saudi expatriate dependent fees (SAR 400 per month), Jawazat passport renewal fees, and Maktab Amal financial levies."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Saudi Dependent Fee Calculator",
+            "item": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much is the Saudi dependent fee per month in 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Saudi dependent fee is fixed at 400 SAR per month per sponsored dependent, equating to 4,800 SAR annually per dependent. As mandated by Council of Ministers resolutions under the Fiscal Balance Program, this statutory levy must be paid in full prior to Iqama renewal or exit-reentry visa issuance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Saudi dependent fees be paid in quarterly installments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, under the Ministry of Human Resources and Jawazat flexible renewal framework, employers and expatriates can renew Iqamas and pay dependent fees in 3-month, 6-month, 9-month, or 12-month increments. This flexibility eliminates the requirement to disburse the entire annual sum upfront."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is legally exempt from the Saudi dependent fee?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Exempt categories include foreign wives of Saudi citizens, foreign mothers of Saudi citizens, children of Saudi mothers married to non-Saudis, domestic workers (up to four workers), and citizens of GCC member nations residing in Saudi Arabia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Saudi dependent fees refundable if a family exits on a final exit visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, Saudi dependent fees (Mukaabil Maali) paid through the government Sadad billing system are strictly non-refundable once processed. The General Directorate of Passports (Jawazat) does not issue refunds for unspent months if dependents leave on Khurooj Nihai."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Maktab Amal levy and dependent fees?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Maktab Amal levy (SAR 800 to 9,600 annually) is a commercial work permit charge levied on the employer for employing expatriate personnel. Dependent fees are individual residency charges (SAR 400 monthly) paid by the expatriate sponsor for family members living in the kingdom."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">Saudi Dependent Fee Calculator</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
+    <div class="tool-header">
+      <span class="badge badge-emerald">Kingdom of Saudi Arabia</span>
+      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">Saudi Dependent Fee & Iqama Renewal Calculator</h1>
+      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
+        Saudi dependent fees are legally fixed at 400 SAR per month per sponsored family member under Council of Ministers resolutions. This calculation engine models total Mukaabil Maali dues, Jawazat issuance charges, and commercial Maktab Amal levies across 3, 6, 9, and 12-month residency cycles.
+      </p>
+    </div>
+
+    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
+      <div class="card" style="padding:2rem;">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Iqama & Dependent Parameters
+        </h2>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+            <label for="numDependents" class="form-label" style="font-weight:600;">Number of Sponsored Dependents</label>
+            <span id="dependentsVal" style="font-family:var(--font-mono); font-weight:700; color:var(--emerald-600);">2 Dependents</span>
+          </div>
+          <input type="range" id="numDependentsSlider" min="0" max="10" step="1" value="2" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="number" id="numDependents" value="2" min="0" max="20" class="form-control" style="font-family:var(--font-mono);">
+          <small class="form-text" style="color:var(--text-muted); font-size:0.825rem;">Includes spouse, children, and dependent parents under personal sponsorship.</small>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="renewalDuration" class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Iqama Renewal Period</label>
+          <select id="renewalDuration" class="form-control" style="font-weight:600;">
+            <option value="3">3 Months (Quarterly Renewal)</option>
+            <option value="6">6 Months (Semi-Annual Renewal)</option>
+            <option value="9">9 Months (Three-Quarter Renewal)</option>
+            <option value="12" selected>12 Months (Full Annual Renewal)</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Include Maktab Amal (Work Permit) Levy?</label>
+          <select id="includeMaktabAmal" class="form-control">
+            <option value="none">No: Calculate Family Dependents & Jawazat Only</option>
+            <option value="excess" selected>Yes: Expat Ratio Greater Than Saudis (SAR 800/month)</option>
+            <option value="equal">Yes: Expat Ratio Equal/Less Than Saudis (SAR 700/month)</option>
+          </select>
+          <small class="form-text" style="color:var(--text-muted); font-size:0.825rem;">Maktab Amal levy is legally mandated on the corporate sponsor for employee work permits.</small>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Primary Expatriate Jawazat Fee</label>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <input type="checkbox" id="includeWorkerIqama" checked style="width:18px; height:18px; accent-color:var(--emerald-600);">
+            <label for="includeWorkerIqama" style="font-size:0.925rem; color:var(--text-main); cursor:pointer;">
+              Include primary worker Jawazat renewal fee (SAR 650/year base rate pro-rated)
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
+          Financial Dues Breakdown (SAR)
+        </h2>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Dependent Fees</span>
+            <div id="outDependentFee" style="font-size:1.75rem; font-weight:800; color:var(--text-main); font-family:var(--font-mono); margin-top:0.25rem;">
+              9,600 SAR
+            </div>
+            <span id="subDependentRate" style="font-size:0.8rem; color:var(--emerald-600); font-weight:600;">400 SAR/mo × 2 deps × 12 mos</span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Jawazat Passport Fee</span>
+            <div id="outJawazatFee" style="font-size:1.75rem; font-weight:800; color:var(--text-main); font-family:var(--font-mono); margin-top:0.25rem;">
+              650 SAR
+            </div>
+            <span style="font-size:0.8rem; color:var(--text-muted); font-weight:600;">Government residency card</span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Maktab Amal Levy</span>
+            <div id="outMaktabAmalFee" style="font-size:1.75rem; font-weight:800; color:var(--text-main); font-family:var(--font-mono); margin-top:0.25rem;">
+              9,600 SAR
+            </div>
+            <span id="subMaktabRate" style="font-size:0.8rem; color:var(--indigo-600); font-weight:600;">800 SAR/month commercial levy</span>
+          </div>
+        </div>
+
+        <div style="background:var(--slate-900); color:#ffffff; padding:1.5rem; border-radius:var(--radius-lg); margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <span style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--slate-400); font-weight:600;">Total Government Dues for Renewal</span>
+              <div id="outGrandTotal" style="font-size:2.25rem; font-weight:800; font-family:var(--font-mono); color:#34d399; margin-top:0.25rem;">
+                19,850 SAR
+              </div>
+            </div>
+            <div style="display:flex; gap:0.5rem;">
+              <button type="button" id="copyBreakdownBtn" class="btn btn-secondary" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700);">
+                Copy Summary
+              </button>
+              <button type="button" onclick="window.print()" class="btn btn-secondary" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700);">
+                Print PDF
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#ecfdf5; border:1px solid #a7f3d0; border-radius:var(--radius-md); padding:1rem; font-size:0.875rem; color:#065f46;">
+          <strong>Sadad Payment Protocol:</strong> Pay Dependent Fees via MOI payment code <code>023</code> (Associate Expatriate Fees) and Jawazat renewal fees via code <code>013</code> (Alien Control). Payment must settle in full prior to Iqama issuance in the Absher or Muqeem portal.
+        </div>
+      </div>
+    </div>
+
+    <article class="article-content" style="margin-top:3.5rem;">
+      <h2 class="article-h2">1. Statutory Framework of the Saudi Expatriate Dependent Levy</h2>
+      <p class="article-p">
+        The expatriate dependent fee (statutorily designated as <em>Al-Mukaabil Al-Maali li-l-Muraafiqeen</em>) was instituted pursuant to Council of Ministers resolutions within the comprehensive Saudi Fiscal Balance Program (Tawaazun Al-Maali). First phased into the regulatory ecosystem in July 2017 at an initial tariff of 100 SAR per month per dependent, the statutory rate escalated progressively each Gregorian fiscal cycle by 100 SAR per month until reaching its statutory ceiling of <strong>400 SAR per month (4,800 SAR per calendar year) per dependent</strong> in July 2020.
+      </p>
+      <p class="article-p">
+        Administered jointly by the Ministry of Interior through the General Directorate of Passports (Jawazat) and the Ministry of Human Resources and Social Development (MHRSD), the dependent fee applies to every non-Saudi expatriate residing in the Kingdom under employment sponsorship who sponsors first-degree relatives under an Iqama residence permit. Eligible dependents encompass lawful spouses, biological and adopted dependent children, parents, and parents-in-law where formal dependency approval has been granted.
+      </p>
+
+      <h2 class="article-h2">2. Flexible Quarterly Iqama Renewal Mechanics</h2>
+      <p class="article-p">
+        In accordance with the regulatory reforms enacted by the Saudi Council of Ministers regarding the issuance and renewal of residency permits linked to work licenses, the historical requirement to renew residency permits on a mandatory twelve-month cycle was superseded by a flexible, staggered installment framework. Employers and individual expatriates are statutorily empowered to process Iqama renewals across four distinct operational durations:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li><strong>Three Months (Quarterly Renewal):</strong> 1,200 SAR per dependent plus 162.50 SAR pro-rated Jawazat card fee.</li>
+        <li><strong>Six Months (Semi-Annual Renewal):</strong> 2,400 SAR per dependent plus 325.00 SAR pro-rated Jawazat card fee.</li>
+        <li><strong>Nine Months (Three-Quarter Renewal):</strong> 3,600 SAR per dependent plus 487.50 SAR pro-rated Jawazat card fee.</li>
+        <li><strong>Twelve Months (Full Annual Renewal):</strong> 4,800 SAR per dependent plus 650.00 SAR full annual Jawazat card fee.</li>
+      </ul>
+      <p class="article-p">
+        This flexible payment mechanism prevents severe liquidity crunches for expatriate families by allowing sponsors to distribute substantial financial outlays across quarterly payroll disbursements rather than executing massive annual cash transfers.
+      </p>
+
+      <h2 class="article-h2">3. Maktab Amal Work Permit Financial Levies (Iqama Levy)</h2>
+      <p class="article-p">
+        It is essential to distinguish between the personal dependent fee paid by the expatriate head of household and the corporate commercial levy (<em>Al-Mukaabil Al-Maali li-Ruqas Al-Amal</em>) administered by Maktab Amal. Under Article 40 of the Saudi Labour Law, employers bear the statutory responsibility for hiring charges, residency permit issuance, and work license renewals for their commercial personnel.
+      </p>
+      <p class="article-p">
+        The commercial levy tariff is benchmarked against the establishment's Saudization quotient (Nitaqat tier) under two distinct legal schedules:
+      </p>
+      <ol style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li><strong>Expatriate Workforce Exceeds Saudi Nationals:</strong> The statutory tariff is fixed at <strong>800 SAR per month (9,600 SAR annually)</strong> per excess expatriate employee.</li>
+        <li><strong>Expatriate Workforce Equal to or Less Than Saudi Nationals:</strong> The statutory tariff is fixed at <strong>700 SAR per month (8,400 SAR annually)</strong> per expatriate employee within the compliant ratio.</li>
+      </ol>
+
+      <h2 class="article-h2">4. Legal Exemptions and Statutory Exceptions</h2>
+      <p class="article-p">
+        While the dependent levy applies universally across the private sector workforce, statutory royal decrees and ministerial directives establish specific protected categories that are legally exempt from paying the Mukaabil Maali:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li>Foreign non-Saudi wives of Saudi citizens (holding formal marriage certificates registered with the Ministry of Justice).</li>
+        <li>Foreign non-Saudi mothers of Saudi citizens who are widowed or divorced from a Saudi spouse.</li>
+        <li>Children born to a Saudi mother and a non-Saudi father.</li>
+        <li>Domestic service personnel under individual sponsorship (such as domestic drivers, private housemaids, and home cooks) up to a statutory threshold of four workers per household.</li>
+        <li>Citizens of fellow member states of the Gulf Cooperation Council (UAE, Kuwait, Qatar, Oman, and Bahrain) who enjoy reciprocal free movement and establishment rights under the GCC Economic Agreement.</li>
+      </ul>
+
+      <h2 class="article-h2">5. Newborn Registration Protocols and Grace Periods</h2>
+      <p class="article-p">
+        When an expatriate family welcomes a newborn infant within the territorial borders of the Kingdom of Saudi Arabia, the sponsor must register the birth through the Ministry of Health and the Civil Status authority (Ahwal Madaniyya) within a statutory window of thirty days. Jawazat provides a ninety-day grace period from the date of birth to formally add the newborn infant to the mother's or father's Iqama without incurring administrative fines.
+      </p>
+      <p class="article-p">
+        The dependent fee for a newborn infant is calculated prospectively from the date of birth through the unexpired duration of the sponsoring parent's active Iqama. Failure to complete registration within the ninety-day statutory window triggers an administrative delay penalty of 1,000 SAR under Article 55 of the Passports Law.
+      </p>
+
+      <div style="background:var(--slate-50); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:2rem; margin-top:2.5rem;">
+        <h3 style="font-size:1.15rem; font-weight:700; color:var(--text-main); margin-bottom:0.75rem;">Summary of Statutory Sadad Payment Codes</h3>
+        <p class="article-p" style="margin-bottom:0.5rem;">
+          To successfully disburse dependent fees, expatriates must utilize Saudi online banking platforms or electronic ATM portals through the official Government Payments tab:
+        </p>
+        <ul style="margin-left:1.5rem; font-size:0.95rem; line-height:1.75;">
+          <li><strong>Biller Code 023 (Alien Control / Associate Fees):</strong> Used for paying dependent fees before executing visa renewals or exit-reentry transactions.</li>
+          <li><strong>Biller Code 013 (Ministry of Interior / Passports):</strong> Used for standard Iqama issuance, renewal, and replacement card charges.</li>
+          <li><strong>Biller Code 050 (Ministry of Human Resources):</strong> Used for corporate commercial work license fees (Maktab Amal Sadad numbers generated through Qiwa).</li>
+        </ul>
+      </div>
+
+      <section class="faq-accordion" style="margin-top:3.5rem;">
+        <h3 class="article-h3">Frequently Asked Questions: Saudi Dependent Fees & Iqama Levies</h3>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>How much is the Saudi dependent fee per month in 2026?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            The Saudi dependent fee is fixed at 400 SAR per month per sponsored dependent, equating to 4,800 SAR annually per dependent. As mandated by Council of Ministers resolutions under the Fiscal Balance Program, this statutory levy must be paid in full prior to Iqama renewal or exit-reentry visa issuance.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can Saudi dependent fees be paid in quarterly installments?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Yes, under the Ministry of Human Resources and Jawazat flexible renewal framework, employers and expatriates can renew Iqamas and pay dependent fees in 3-month, 6-month, 9-month, or 12-month increments. This flexibility eliminates the requirement to disburse the entire annual sum upfront.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Who is legally exempt from the Saudi dependent fee?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Exempt categories include foreign wives of Saudi citizens, foreign mothers of Saudi citizens, children of Saudi mothers married to non-Saudis, domestic workers (up to four workers), and citizens of GCC member nations residing in Saudi Arabia.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are Saudi dependent fees refundable if a family exits on a final exit visa?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No, Saudi dependent fees (Mukaabil Maali) paid through the government Sadad billing system are strictly non-refundable once processed. The General Directorate of Passports (Jawazat) does not issue refunds for unspent months if dependents leave on Khurooj Nihai.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What is the difference between Maktab Amal levy and dependent fees?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            The Maktab Amal levy (SAR 800 to 9,600 annually) is a commercial work permit charge levied on the employer for employing expatriate personnel. Dependent fees are individual residency charges (SAR 400 monthly) paid by the expatriate sponsor for family members living in the kingdom.
+          </div>
+        </details>
+      </section>
+
+      <section style="margin-top:4rem; padding-top:2.5rem; border-top:1px solid var(--border-subtle);">
+        <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-main); margin-bottom:1.5rem;">Related GCC Financial Utilities</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+          <a href="saudi-gosi-calculator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">Saudi Arabia</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">Saudi GOSI & SANED Calculator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Compute 10.5% Saudi citizen social security deductions and 2% expat occupational hazard contributions.</p>
+          </a>
+
+          <a href="saudi-end-of-service-calculator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">Saudi Arabia</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">Saudi End of Service Calculator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Calculate severance awards under Royal Decree M/51 Articles 84 and 85 using actual wage foundations.</p>
+          </a>
+
+          <a href="../blog/saudi-labor-law-article-84-85-resignation-rules.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge" style="background:#e0e7ff; color:#3730a3;">Legal Guide</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">Saudi Labour Law Resignation Rules</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Deconstruct the statutory deductions applied to worker resignation between 2, 5, and 10 years tenure.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#0f172a"/>
+            <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="9" r="2" fill="#10b981"/>
+          </svg>
+          <span style="color:#ffffff;">Gulf<span style="color:#10b981;">Calc</span></span>
+        </a>
+        <p class="footer-tagline">
+          Precision statutory, financial, and employment calculation engines for professionals and enterprises across the Gulf Cooperation Council.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span class="footer-col-title">National Tools</span>
+          <a href="uae-gratuity-calculator.html" class="footer-link">UAE Gratuity</a>
+          <a href="saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a>
+          <a href="kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity</a>
+          <a href="qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a>
+          <a href="oman-gratuity-calculator.html" class="footer-link">Oman Gratuity</a>
+          <a href="bahrain-eosi-calculator.html" class="footer-link">Bahrain Indemnity</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Enterprise & Tax</span>
+          <a href="uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax</a>
+          <a href="gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fees</a>
+          <a href="saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Engine</a>
+          <a href="gcc-cost-of-living-comparator.html" class="footer-link">Cost of Living</a>
+          <a href="kuwait-pifss-net-salary-calculator.html" class="footer-link">Kuwait PIFSS Pay</a>
+          <a href="uae-golden-visa-property-calculator.html" class="footer-link">UAE Golden Visa</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Directories & Trust</span>
+          <a href="../labour-laws/index.html" class="footer-link">Labour Laws Hub</a>
+          <a href="../blog/index.html" class="footer-link">Insights & Blog</a>
+          <a href="../about-us.html" class="footer-link">About Us</a>
+          <a href="../contact-us.html" class="footer-link">Contact</a>
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+          <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <p class="copyright">
+          &copy; 2026 GulfCalc. All statutory calculation engines operate purely client-side. Zero server-side personal data transmission.
+        </p>
+        <p style="font-size:0.8125rem; color:var(--slate-400); margin:0;">
+          Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; text-decoration:underline;">sheharyarsiraj.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const numDependentsSlider = document.getElementById('numDependentsSlider');
+      const numDependents = document.getElementById('numDependents');
+      const dependentsVal = document.getElementById('dependentsVal');
+      const renewalDuration = document.getElementById('renewalDuration');
+      const includeMaktabAmal = document.getElementById('includeMaktabAmal');
+      const includeWorkerIqama = document.getElementById('includeWorkerIqama');
+
+      const outDependentFee = document.getElementById('outDependentFee');
+      const subDependentRate = document.getElementById('subDependentRate');
+      const outJawazatFee = document.getElementById('outJawazatFee');
+      const outMaktabAmalFee = document.getElementById('outMaktabAmalFee');
+      const subMaktabRate = document.getElementById('subMaktabRate');
+      const outGrandTotal = document.getElementById('outGrandTotal');
+      const copyBreakdownBtn = document.getElementById('copyBreakdownBtn');
+
+      function calculate() {
+        const deps = parseInt(numDependents.value) || 0;
+        const months = parseInt(renewalDuration.value) || 12;
+        const maktabMode = includeMaktabAmal.value;
+        const hasWorkerIqama = includeWorkerIqama.checked;
+
+        // Dependent fees: 400 SAR per month per dependent
+        const totalDepFee = deps * 400 * months;
+
+        // Jawazat card: 650 SAR annual pro-rated
+        const jawazatBase = 650;
+        const totalJawazat = hasWorkerIqama ? Math.round((jawazatBase / 12) * months) : 0;
+
+        // Maktab Amal: 800 or 700 per month
+        let maktabMonthlyRate = 0;
+        if (maktabMode === 'excess') {
+          maktabMonthlyRate = 800;
+        } else if (maktabMode === 'equal') {
+          maktabMonthlyRate = 700;
+        }
+        const totalMaktabAmal = maktabMonthlyRate * months;
+
+        const grandTotal = totalDepFee + totalJawazat + totalMaktabAmal;
+
+        outDependentFee.textContent = totalDepFee.toLocaleString('en-US') + ' SAR';
+        subDependentRate.textContent = `400 SAR/mo × ${deps} dep(s) × ${months} mo(s)`;
+
+        outJawazatFee.textContent = totalJawazat.toLocaleString('en-US') + ' SAR';
+
+        outMaktabAmalFee.textContent = totalMaktabAmal.toLocaleString('en-US') + ' SAR';
+        subMaktabRate.textContent = maktabMode === 'none' ? 'Levy excluded' : `${maktabMonthlyRate} SAR/month commercial levy`;
+
+        outGrandTotal.textContent = grandTotal.toLocaleString('en-US') + ' SAR';
+      }
+
+      numDependentsSlider.addEventListener('input', function() {
+        numDependents.value = this.value;
+        dependentsVal.textContent = this.value + (this.value == 1 ? ' Dependent' : ' Dependents');
+        calculate();
+      });
+
+      numDependents.addEventListener('input', function() {
+        let val = parseInt(this.value) || 0;
+        if (val < 0) val = 0;
+        if (val > 20) val = 20;
+        numDependentsSlider.value = Math.min(val, 10);
+        dependentsVal.textContent = val + (val == 1 ? ' Dependent' : ' Dependents');
+        calculate();
+      });
+
+      renewalDuration.addEventListener('change', calculate);
+      includeMaktabAmal.addEventListener('change', calculate);
+      includeWorkerIqama.addEventListener('change', calculate);
+
+      copyBreakdownBtn.addEventListener('click', function() {
+        const text = `Saudi Dependent Fee & Iqama Summary (GulfCalc.tech):\n` +
+          `- Dependents: ${numDependents.value}\n` +
+          `- Renewal Duration: ${renewalDuration.value} Months\n` +
+          `- Dependent Fees: ${outDependentFee.textContent}\n` +
+          `- Jawazat Card Fee: ${outJawazatFee.textContent}\n` +
+          `- Maktab Amal Levy: ${outMaktabAmalFee.textContent}\n` +
+          `- Grand Total: ${outGrandTotal.textContent}\n` +
+          `Statutory source: Saudi Council of Ministers & Jawazat Regulations.`;
+
+        navigator.clipboard.writeText(text).then(() => {
+          const orig = copyBreakdownBtn.textContent;
+          copyBreakdownBtn.textContent = 'Copied!';
+          setTimeout(() => { copyBreakdownBtn.textContent = orig; }, 2000);
+        });
+      });
+
+      calculate();
+    })();
+  </script>
+</body>
+</html>

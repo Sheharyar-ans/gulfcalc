@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAE Emiratisation Penalty Calculator: MoHRE NAFIS Compliance | GulfCalc</title>
+  <meta name="description" content="Calculate MoHRE Emiratisation non-compliance financial penalties for private companies with 20-49 and 50+ staff under Cabinet Resolution No. 19/M.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html#app",
+        "name": "UAE Emiratisation Penalty & MoHRE Quota Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "AED"
+        },
+        "description": "Computes statutory MoHRE financial penalties for private sector establishments failing to achieve semi-annual 1% and annual 2% Emiratisation targets."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "UAE Emiratisation Penalty Calculator",
+            "item": "https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the penalty for failing to meet UAE Emiratisation quotas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For establishments with 50 or more skilled staff, the MoHRE non-compliance penalty is 8,000 AED per month (96,000 AED annually) per unhired UAE national in 2025, rising to 9,000 AED per month (108,000 AED annually) in 2026 under Cabinet Resolution No. 19/M of 2022."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do small companies with 20 to 49 employees have Emiratisation targets?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, private establishments employing between 20 and 49 skilled workers within 14 designated economic sectors must hire at least one UAE citizen in 2024 and an additional citizen in 2025. Non-compliant firms face annual penalties of 96,000 AED in 2024 and 108,000 AED in 2025."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is considered a skilled worker for MoHRE Emiratisation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MoHRE defines skilled labor as personnel classified under professional levels 1 through 5: legislators, managers, business executives, professionals in technical and scientific fields, technicians, and specialized service personnel earning at least 4,000 AED monthly with accredited diplomas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the legal consequences of fake Emiratisation (Tawteen Souri)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Cabinet Resolution No. 44 of 2023, fraudulent Emiratisation incurs administrative fines ranging from 20,000 to 100,000 AED per fraudulent employee, immediate recovery of all NAFIS government financial subsidies, enterprise tier downgrading, and criminal prosecution for commercial fraud."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When are UAE Emiratisation penalties assessed and payable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MoHRE assesses compliance semi-annually on June 30 (1% target) and December 31 (2% cumulative annual target). Invoices for financial contributions are generated electronically through the MoHRE digital portal in July and January, payable within thirty days."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">UAE Emiratisation Penalty Calculator</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
+    <div class="tool-header">
+      <span class="badge badge-emerald">United Arab Emirates</span>
+      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">UAE Emiratisation Penalty & MoHRE NAFIS Calculator</h1>
+      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
+        Under UAE Cabinet Resolution No. (19/M) of 2022, private sector companies face statutory financial contributions of 8,000 to 9,000 AED per month for each unfulfilled Emirati hiring quota. This calculator models compliance deficits across 20-49 and 50+ employee establishments.
+      </p>
+    </div>
+
+    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
+      <div class="card" style="padding:2rem;">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Establishment Workforce & Quota Parameters
+        </h2>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="companySizeTier" class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Establishment Scale & MoHRE Category</label>
+          <select id="companySizeTier" class="form-control" style="font-weight:600;">
+            <option value="large" selected>50+ Skilled Employees (Standard 2% Annual / 1% Semi-Annual Target)</option>
+            <option value="sme">20 to 49 Skilled Employees (14 Designated Target Sectors)</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="targetYear" class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Compliance Assessment Year</label>
+          <select id="targetYear" class="form-control" style="font-weight:600;">
+            <option value="2024">2024 (Monthly Penalty: 7,000 AED / 84,000 AED yr)</option>
+            <option value="2025">2025 (Monthly Penalty: 8,000 AED / 96,000 AED yr)</option>
+            <option value="2026" selected>2026 (Monthly Penalty: 9,000 AED / 108,000 AED yr)</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+            <label for="totalSkilledStaff" class="form-label" style="font-weight:600;">Total Skilled Workforce (MoHRE Skill Levels 1 to 5)</label>
+            <span id="skilledStaffDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--emerald-600);">75 Employees</span>
+          </div>
+          <input type="range" id="skilledStaffSlider" min="20" max="500" step="5" value="75" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="number" id="totalSkilledStaff" value="75" min="20" max="10000" class="form-control" style="font-family:var(--font-mono);">
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+            <label for="emiratiStaff" class="form-label" style="font-weight:600;">Current Active Emirati Employees (Registered on NAFIS / GPSSA)</label>
+            <span id="emiratiDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--indigo-600);">1 Emirati</span>
+          </div>
+          <input type="range" id="emiratiSlider" min="0" max="50" step="1" value="1" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="number" id="emiratiStaff" value="1" min="0" max="1000" class="form-control" style="font-family:var(--font-mono);">
+        </div>
+      </div>
+
+      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
+          MoHRE Compliance & Penalty Assessment
+        </h2>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Statutory Required Emiratis</span>
+            <div id="outRequiredEmiratis" style="font-size:1.75rem; font-weight:800; color:var(--text-main); font-family:var(--font-mono); margin-top:0.25rem;">
+              5 Nationals
+            </div>
+            <span id="subQuotaRate" style="font-size:0.8rem; color:var(--emerald-600); font-weight:600;">Cumulative target rate</span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Unfilled Hiring Deficit</span>
+            <div id="outDeficit" style="font-size:1.75rem; font-weight:800; color:#dc2626; font-family:var(--font-mono); margin-top:0.25rem;">
+              4 Vacancies
+            </div>
+            <span style="font-size:0.8rem; color:var(--text-muted); font-weight:600;">Unfilled statutory positions</span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); padding:1.25rem; border-radius:var(--radius-md);">
+            <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em;">Monthly MoHRE Penalty</span>
+            <div id="outMonthlyPenalty" style="font-size:1.75rem; font-weight:800; color:var(--text-main); font-family:var(--font-mono); margin-top:0.25rem;">
+              36,000 AED
+            </div>
+            <span id="subMonthlyRate" style="font-size:0.8rem; color:var(--indigo-600); font-weight:600;">9,000 AED/mo per deficit</span>
+          </div>
+        </div>
+
+        <div style="background:var(--slate-900); color:#ffffff; padding:1.5rem; border-radius:var(--radius-lg); margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <span style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--slate-400); font-weight:600;">Total Annual Financial Contribution Due</span>
+              <div id="outAnnualPenalty" style="font-size:2.25rem; font-weight:800; font-family:var(--font-mono); color:#f87171; margin-top:0.25rem;">
+                432,000 AED
+              </div>
+            </div>
+            <div style="display:flex; gap:0.5rem;">
+              <button type="button" id="copyBreakdownBtn" class="btn btn-secondary" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700);">
+                Copy Summary
+              </button>
+              <button type="button" onclick="window.print()" class="btn btn-secondary" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700);">
+                Print PDF
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:var(--radius-md); padding:1rem; font-size:0.875rem; color:#991b1b;">
+          <strong>Statutory Compliance Warning:</strong> Emiratisation contributions are mandatory statutory debts under UAE federal law. Penalties are non-tax-deductible under UAE Corporate Tax law and failure to settle invoices blocks the issuance of new work permits for expatriates in the MoHRE Tasheel system.
+        </div>
+      </div>
+    </div>
+
+    <article class="article-content" style="margin-top:3.5rem;">
+      <h2 class="article-h2">1. Legislative Authority and the NAFIS Emiratisation Mandate</h2>
+      <p class="article-p">
+        In May 2022, the UAE Cabinet issued Resolution No. (19/M) of 2022, introducing a mandatory, progressive Emiratisation quota framework across private sector enterprises operating in mainland UAE jurisdictions. Supervised by the Ministry of Human Resources and Emiratisation (MoHRE) alongside the Emirati Human Resources Competitiveness Council (NAFIS), this initiative aims to accelerate the sustainable integration of UAE national talent into high-value private sector professions.
+      </p>
+      <p class="article-p">
+        The overarching legislative objective requires commercial establishments to achieve an aggregate <strong>10% Emiratisation quota in skilled positions by the close of 2026</strong>. To ensure steady, orderly absorption without disrupting corporate operations, MoHRE instituted a bi-annual evaluation mechanism requiring enterprises to expand their Emirati workforce by <strong>1% semi-annually (2% per calendar year)</strong>.
+      </p>
+
+      <h2 class="article-h2">2. Quota Schedules Across Enterprise Scales</h2>
+      <p class="article-p">
+        The application of statutory Emiratisation targets is stratified according to the establishment's total skilled labor force:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li><strong>Establishments with 50+ Skilled Employees:</strong> These enterprises must demonstrate a cumulative 2% net expansion in skilled UAE national employment every calendar year (1% evaluated on June 30 and 1% evaluated on December 31). Targets are calculated strictly against the establishment's registered skilled workforce (occupational levels 1 to 5).</li>
+        <li><strong>Small and Medium Enterprises (20 to 49 Employees):</strong> Pursuant to Cabinet Decision No. 459/2023, targeted SMEs operating within fourteen high-growth economic activities (including information technology, real estate, financial services, healthcare, and engineering consultancies) are mandated to recruit at least one UAE citizen in 2024 and a second UAE citizen in 2025.</li>
+      </ul>
+
+      <h2 class="article-h2">3. Escalating Financial Contribution (Penalty) Scale</h2>
+      <p class="article-p">
+        Establishments that fail to achieve their prescribed semi-annual or annual hiring quotas do not face discretionary administrative fines; instead, they are subject to statutory financial contributions collected directly by MoHRE into the Human Resources Development Fund. The penalty structure escalates automatically by 1,000 AED per month each calendar year:
+      </p>
+      <table class="data-table" style="width:100%; border-collapse:collapse; margin-top:1rem; margin-bottom:1.5rem;">
+        <thead>
+          <tr style="background:var(--slate-100); text-align:left;">
+            <th style="padding:0.75rem; border:1px solid var(--border-subtle);">Assessment Year</th>
+            <th style="padding:0.75rem; border:1px solid var(--border-subtle);">Monthly Penalty per Deficit</th>
+            <th style="padding:0.75rem; border:1px solid var(--border-subtle);">Annual Penalty per Unfilled Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle);">2023 Fiscal Cycle</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">6,000 AED</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">72,000 AED</td>
+          </tr>
+          <tr>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle);">2024 Fiscal Cycle</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">7,000 AED</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">84,000 AED</td>
+          </tr>
+          <tr>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle);">2025 Fiscal Cycle</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">8,000 AED</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">96,000 AED</td>
+          </tr>
+          <tr>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle);">2026 Fiscal Cycle</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">9,000 AED</td>
+            <td style="padding:0.75rem; border:1px solid var(--border-subtle); font-family:var(--font-mono);">108,000 AED</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="article-h2">4. Definition of Skilled Positions under MoHRE Regulations</h2>
+      <p class="article-p">
+        Emiratisation ratios are not evaluated against total headcount; they apply exclusively to workers categorized within <strong>Skill Levels 1 through 5</strong> under the official International Standard Classification of Occupations (ISCO-08) adopted by MoHRE:
+      </p>
+      <ol style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li><strong>Level 1:</strong> Legislators, senior corporate officials, managing directors, and chief executives.</li>
+        <li><strong>Level 2:</strong> Scientific, technical, legal, engineering, and medical professionals.</li>
+        <li><strong>Level 3:</strong> Technicians and associate professionals across commercial, banking, and creative disciplines.</li>
+        <li><strong>Level 4:</strong> Specialized customer service, administrative, clerical, and secretarial occupations.</li>
+        <li><strong>Level 5:</strong> Specialized service and sales personnel.</li>
+      </ol>
+      <p class="article-p">
+        To count toward the establishment's statutory quota, the UAE citizen must be registered on the electronic NAFIS portal, possess an active work permit issued by MoHRE, receive a monthly salary of at least 4,000 AED, and be formally enrolled with the General Pension and Social Security Authority (GPSSA) or the Abu Dhabi Pension Fund.
+      </p>
+
+      <h2 class="article-h2">5. Severe Penalties for Bogus Emiratisation (Tawteen Souri)</h2>
+      <p class="article-p">
+        Cabinet Resolution No. 44 of 2023 established severe administrative and criminal sanctions to eradicate nominal or fraudulent Emiratisation (commonly known as <em>Tawteen Souri</em>). Fake Emiratisation occurs when an establishment registers a UAE citizen as an active employee without assigning real tasks, or to artificially manipulate compliance metrics.
+      </p>
+      <p class="article-p">
+        Establishments caught engaging in bogus hiring face administrative fines ranging from <strong>20,000 to 100,000 AED per fraudulent employee</strong>, mandatory restitution of all NAFIS wage subsidies, reclassification into MoHRE Tier 3 (the lowest compliance category, multiplying work permit fees), and referral of corporate executives to the Public Prosecution for financial fraud.
+      </p>
+
+      <section class="faq-accordion" style="margin-top:3.5rem;">
+        <h3 class="article-h3">Frequently Asked Questions: UAE Emiratisation Penalties & MoHRE Rules</h3>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What is the penalty for failing to meet UAE Emiratisation quotas?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            For establishments with 50 or more skilled staff, the MoHRE non-compliance penalty is 8,000 AED per month (96,000 AED annually) per unhired UAE national in 2025, rising to 9,000 AED per month (108,000 AED annually) in 2026 under Cabinet Resolution No. 19/M of 2022.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Do small companies with 20 to 49 employees have Emiratisation targets?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Yes, private establishments employing between 20 and 49 skilled workers within 14 designated economic sectors must hire at least one UAE citizen in 2024 and an additional citizen in 2025. Non-compliant firms face annual penalties of 96,000 AED in 2024 and 108,000 AED in 2025.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What is considered a skilled worker for MoHRE Emiratisation?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            MoHRE defines skilled labor as personnel classified under professional levels 1 through 5: legislators, managers, business executives, professionals in technical and scientific fields, technicians, and specialized service personnel earning at least 4,000 AED monthly with accredited diplomas.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What are the legal consequences of fake Emiratisation (Tawteen Souri)?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Under Cabinet Resolution No. 44 of 2023, fraudulent Emiratisation incurs administrative fines ranging from 20,000 to 100,000 AED per fraudulent employee, immediate recovery of all NAFIS government financial subsidies, enterprise tier downgrading, and criminal prosecution for commercial fraud.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>When are UAE Emiratisation penalties assessed and payable?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            MoHRE assesses compliance semi-annually on June 30 (1% target) and December 31 (2% cumulative annual target). Invoices for financial contributions are generated electronically through the MoHRE digital portal in July and January, payable within thirty days.
+          </div>
+        </details>
+      </section>
+
+      <section style="margin-top:4rem; padding-top:2.5rem; border-top:1px solid var(--border-subtle);">
+        <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-main); margin-bottom:1.5rem;">Related GCC Financial Utilities</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+          <a href="uae-corporate-tax-calculator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">UAE</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">UAE Corporate Tax Calculator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Compute 9% corporate tax liabilities and evaluate Small Business Relief eligibility up to AED 3M revenue.</p>
+          </a>
+
+          <a href="uae-gratuity-calculator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">UAE</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">UAE Gratuity Calculator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Calculate statutory terminal indemnity entitlements under Federal Decree-Law No. 33/2021.</p>
+          </a>
+
+          <a href="../blog/uae-corporate-tax-small-business-relief-guide.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge" style="background:#e0e7ff; color:#3730a3;">Legal Guide</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">UAE Corporate Tax Small Business Relief</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Comprehensive compliance roadmap for resident enterprises electing Small Business Relief.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#0f172a"/>
+            <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="9" r="2" fill="#10b981"/>
+          </svg>
+          <span style="color:#ffffff;">Gulf<span style="color:#10b981;">Calc</span></span>
+        </a>
+        <p class="footer-tagline">
+          Precision statutory, financial, and employment calculation engines for professionals and enterprises across the Gulf Cooperation Council.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span class="footer-col-title">National Tools</span>
+          <a href="uae-gratuity-calculator.html" class="footer-link">UAE Gratuity</a>
+          <a href="saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a>
+          <a href="kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity</a>
+          <a href="qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a>
+          <a href="oman-gratuity-calculator.html" class="footer-link">Oman Gratuity</a>
+          <a href="bahrain-eosi-calculator.html" class="footer-link">Bahrain Indemnity</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Enterprise & Tax</span>
+          <a href="uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax</a>
+          <a href="gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fees</a>
+          <a href="saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Engine</a>
+          <a href="gcc-cost-of-living-comparator.html" class="footer-link">Cost of Living</a>
+          <a href="kuwait-pifss-net-salary-calculator.html" class="footer-link">Kuwait PIFSS Pay</a>
+          <a href="uae-golden-visa-property-calculator.html" class="footer-link">UAE Golden Visa</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Directories & Trust</span>
+          <a href="../labour-laws/index.html" class="footer-link">Labour Laws Hub</a>
+          <a href="../blog/index.html" class="footer-link">Insights & Blog</a>
+          <a href="../about-us.html" class="footer-link">About Us</a>
+          <a href="../contact-us.html" class="footer-link">Contact</a>
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+          <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <p class="copyright">
+          &copy; 2026 GulfCalc. All statutory calculation engines operate purely client-side. Zero server-side personal data transmission.
+        </p>
+        <p style="font-size:0.8125rem; color:var(--slate-400); margin:0;">
+          Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; text-decoration:underline;">sheharyarsiraj.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const companySizeTier = document.getElementById('companySizeTier');
+      const targetYear = document.getElementById('targetYear');
+      const skilledStaffSlider = document.getElementById('skilledStaffSlider');
+      const totalSkilledStaff = document.getElementById('totalSkilledStaff');
+      const skilledStaffDisplay = document.getElementById('skilledStaffDisplay');
+      const emiratiSlider = document.getElementById('emiratiSlider');
+      const emiratiStaff = document.getElementById('emiratiStaff');
+      const emiratiDisplay = document.getElementById('emiratiDisplay');
+
+      const outRequiredEmiratis = document.getElementById('outRequiredEmiratis');
+      const subQuotaRate = document.getElementById('subQuotaRate');
+      const outDeficit = document.getElementById('outDeficit');
+      const outMonthlyPenalty = document.getElementById('outMonthlyPenalty');
+      const subMonthlyRate = document.getElementById('subMonthlyRate');
+      const outAnnualPenalty = document.getElementById('outAnnualPenalty');
+      const copyBreakdownBtn = document.getElementById('copyBreakdownBtn');
+
+      function calculate() {
+        const tier = companySizeTier.value;
+        const year = parseInt(targetYear.value) || 2026;
+        const skilledCount = parseInt(totalSkilledStaff.value) || 50;
+        const currentEmiratis = parseInt(emiratiStaff.value) || 0;
+
+        let monthlyRatePerDeficit = 9000;
+        if (year === 2024) monthlyRatePerDeficit = 7000;
+        else if (year === 2025) monthlyRatePerDeficit = 8000;
+        else if (year === 2026) monthlyRatePerDeficit = 9000;
+
+        let requiredCount = 0;
+        let rateNote = '';
+
+        if (tier === 'large') {
+          // Cumulative target: 2023 was 2%, 2024 was 4%, 2025 was 6%, 2026 is 8% (or full 10%)
+          let cumulativeRate = 0.08;
+          if (year === 2024) cumulativeRate = 0.04;
+          else if (year === 2025) cumulativeRate = 0.06;
+          else if (year === 2026) cumulativeRate = 0.08;
+
+          requiredCount = Math.ceil(skilledCount * cumulativeRate);
+          rateNote = `${Math.round(cumulativeRate * 100)}% cumulative skilled quota`;
+        } else {
+          // SME: 1 in 2024, 2 in 2025/2026
+          requiredCount = (year === 2024) ? 1 : 2;
+          rateNote = `Fixed ${requiredCount} Emirati quota (SME 20-49 rule)`;
+        }
+
+        const deficit = Math.max(0, requiredCount - currentEmiratis);
+        const monthlyTotal = deficit * monthlyRatePerDeficit;
+        const annualTotal = monthlyTotal * 12;
+
+        outRequiredEmiratis.textContent = requiredCount + (requiredCount === 1 ? ' National' : ' Nationals');
+        subQuotaRate.textContent = rateNote;
+
+        outDeficit.textContent = deficit + (deficit === 1 ? ' Vacancy' : ' Vacancies');
+        if (deficit === 0) {
+          outDeficit.style.color = '#059669';
+          outDeficit.textContent = 'Compliant (0 Deficit)';
+        } else {
+          outDeficit.style.color = '#dc2626';
+        }
+
+        outMonthlyPenalty.textContent = monthlyTotal.toLocaleString('en-US') + ' AED';
+        subMonthlyRate.textContent = `${monthlyRatePerDeficit.toLocaleString('en-US')} AED/mo per deficit`;
+
+        outAnnualPenalty.textContent = annualTotal.toLocaleString('en-US') + ' AED';
+        if (annualTotal === 0) {
+          outAnnualPenalty.style.color = '#34d399';
+        } else {
+          outAnnualPenalty.style.color = '#f87171';
+        }
+      }
+
+      skilledStaffSlider.addEventListener('input', function() {
+        totalSkilledStaff.value = this.value;
+        skilledStaffDisplay.textContent = this.value + ' Employees';
+        calculate();
+      });
+
+      totalSkilledStaff.addEventListener('input', function() {
+        let val = parseInt(this.value) || 20;
+        if (val < 20) val = 20;
+        skilledStaffSlider.value = Math.min(val, 500);
+        skilledStaffDisplay.textContent = val + ' Employees';
+        calculate();
+      });
+
+      emiratiSlider.addEventListener('input', function() {
+        emiratiStaff.value = this.value;
+        emiratiDisplay.textContent = this.value + (this.value == 1 ? ' Emirati' : ' Emiratis');
+        calculate();
+      });
+
+      emiratiStaff.addEventListener('input', function() {
+        let val = parseInt(this.value) || 0;
+        if (val < 0) val = 0;
+        emiratiSlider.value = Math.min(val, 50);
+        emiratiDisplay.textContent = val + (val == 1 ? ' Emirati' : ' Emiratis');
+        calculate();
+      });
+
+      companySizeTier.addEventListener('change', calculate);
+      targetYear.addEventListener('change', calculate);
+
+      copyBreakdownBtn.addEventListener('click', function() {
+        const text = `UAE Emiratisation Assessment (GulfCalc.tech):\n` +
+          `- Establishment Tier: ${companySizeTier.options[companySizeTier.selectedIndex].text}\n` +
+          `- Skilled Workforce: ${totalSkilledStaff.value}\n` +
+          `- Registered Emiratis: ${emiratiStaff.value}\n` +
+          `- Statutory Quota: ${outRequiredEmiratis.textContent}\n` +
+          `- Unfilled Deficit: ${outDeficit.textContent}\n` +
+          `- Monthly MoHRE Penalty: ${outMonthlyPenalty.textContent}\n` +
+          `- Annual Financial Contribution: ${outAnnualPenalty.textContent}\n` +
+          `Statutory source: UAE Cabinet Resolution No. 19/M of 2022 & MoHRE.`;
+
+        navigator.clipboard.writeText(text).then(() => {
+          const orig = copyBreakdownBtn.textContent;
+          copyBreakdownBtn.textContent = 'Copied!';
+          setTimeout(() => { copyBreakdownBtn.textContent = orig; }, 2000);
+        });
+      });
+
+      calculate();
+    })();
+  </script>
+</body>
+</html>

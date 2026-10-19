@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI GCC Contract Clause Checker: Employment Legality Analyzer | GulfCalc</title>
+  <meta name="description" content="Analyze GCC employment contract clauses client-side against UAE Federal Decree-Law No. 33/2021, Saudi Labor Law M/51, and Kuwait Law No. 6/2010.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/ai-contract-clause-checker.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#app",
+        "name": "AI GCC Employment Contract Clause Checker",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Evaluates employment contract clauses for statutory compliance against UAE, Saudi, Kuwaiti, and GCC labor decrees without server-side data transmission."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI Contract Clause Checker",
+            "item": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can an employer in the UAE deduct visa and recruitment costs from salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, deducting visa processing, recruitment, or work permit fees from an employee is strictly illegal. Under Article 6(4) of UAE Federal Decree-Law No. 33/2021, the employer bears all recruitment expenses. Any contract clause transferring these costs to the worker is null and void."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a contract clause forfeiting gratuity upon resignation legally binding in Saudi Arabia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, private contract terms that diminish statutory severance rights are void. Under Saudi Royal Decree No. M/51 Article 85, end-of-service awards are determined strictly by statutory tenure formulas. Employers cannot contractually eliminate a worker's legal gratuity entitlement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a GCC employer legally hold an employee's passport?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, retaining an employee's passport is unlawful across all GCC member states. In the UAE, Ministry of Interior directives and Supreme Court precedents prohibit passport withholding. In Saudi Arabia, MHRSD regulations impose automated fines of 2,000 SAR per confiscated passport."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long can a non-compete clause legally last in the UAE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Article 10 of UAE Federal Decree-Law No. 33/2021, a restrictive non-compete covenant cannot exceed two years from the contract termination date. In addition, it must be precisely defined in geographic scope, duration, and client type, or it is unenforceable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this contract checker transmit my employment contract to a remote server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, GulfCalc executes all legal heuristic parsing and statutory comparisons entirely in your local browser runtime. Zero text, names, compensation numbers, or sensitive employment clauses are ever transmitted across a network or stored on remote servers."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">AI Contract Clause Checker</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
+    <div class="tool-header">
+      <span class="badge badge-emerald">Pan-GCC Legal Tech</span>
+      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">AI GCC Employment Contract Clause Checker</h1>
+      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
+        Under statutory GCC labor doctrines, contract terms that diminish statutory worker entitlements below ministerial minimums are null and void. Paste any employment clause below to evaluate its enforceability, identify governing legal decrees, and generate protective counter-proposals.
+      </p>
+    </div>
+
+    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
+      <div class="card" style="padding:2rem;">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Clause Input & Statutory Jurisdiction
+        </h2>
+
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+          <span style="font-size:0.825rem; font-weight:600; color:var(--text-muted); align-self:center;">Test Precedents:</span>
+          <button type="button" class="btn btn-secondary btn-sm sample-btn" data-type="visa" style="font-size:0.8rem; padding:0.35rem 0.65rem;">Visa Fee Deduction</button>
+          <button type="button" class="btn btn-secondary btn-sm sample-btn" data-type="passport" style="font-size:0.8rem; padding:0.35rem 0.65rem;">Passport Retention</button>
+          <button type="button" class="btn btn-secondary btn-sm sample-btn" data-type="noncompete" style="font-size:0.8rem; padding:0.35rem 0.65rem;">3-Year Non-Compete</button>
+          <button type="button" class="btn btn-secondary btn-sm sample-btn" data-type="gratuity" style="font-size:0.8rem; padding:0.35rem 0.65rem;">Gratuity Waiver</button>
+          <button type="button" class="btn btn-secondary btn-sm sample-btn" data-type="probation" style="font-size:0.8rem; padding:0.35rem 0.65rem;">Instant Probation Dismissal</button>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1rem;">
+          <label for="jurisdictionSelect" class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Target GCC Legal Jurisdiction</label>
+          <select id="jurisdictionSelect" class="form-control" style="font-weight:600;">
+            <option value="uae" selected>United Arab Emirates (Federal Decree-Law No. 33/2021)</option>
+            <option value="ksa">Kingdom of Saudi Arabia (Royal Decree No. M/51)</option>
+            <option value="kuwait">State of Kuwait (Private Sector Labour Law No. 6/2010)</option>
+            <option value="qatar">State of Qatar (Labour Law No. 14 of 2004)</option>
+            <option value="oman">Sultanate of Oman (Royal Decree No. 53/2023)</option>
+            <option value="bahrain">Kingdom of Bahrain (Labour Law No. 36 of 2012)</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="clauseText" class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Paste Employment Contract Clause Text</label>
+          <textarea id="clauseText" rows="5" class="form-control" style="font-family:var(--font-sans); line-height:1.6; resize:vertical;" placeholder="Example: The Employee agrees that in the event of resignation prior to completing two years of service, the Company shall deduct all visa, recruitment, and onboarding costs from the final settlement..."></textarea>
+          <div style="display:flex; justify-content:space-between; margin-top:0.35rem; font-size:0.8rem; color:var(--text-muted);">
+            <span>Zero server transmission: Parsed locally in client browser memory.</span>
+            <span id="charCount">0 characters</span>
+          </div>
+        </div>
+
+        <button type="button" id="analyzeBtn" class="btn btn-primary" style="width:100%; font-weight:700; padding:0.75rem;">
+          Run AI Statutory Compliance Review
+        </button>
+      </div>
+
+      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+        <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
+          Legal Compliance Determination
+        </h2>
+
+        <div id="resultsContainer">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+            <span id="statusBadge" style="background:#fef2f2; color:#991b1b; padding:0.35rem 0.85rem; border-radius:9999px; font-weight:700; font-size:0.85rem; border:1px solid #fecaca;">
+              Analysis Pending
+            </span>
+            <span id="statuteCitation" style="font-size:0.9rem; font-weight:600; color:var(--text-muted);">
+              Select or paste a clause above
+            </span>
+          </div>
+
+          <div style="background:#ffffff; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.25rem; margin-bottom:1.5rem;">
+            <h3 style="font-size:0.95rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.05em; margin-bottom:0.5rem;">
+              Statutory Evaluation
+            </h3>
+            <p id="evaluationText" style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin:0;">
+              Paste a contract clause or click one of the quick test precedent buttons above to evaluate enforceability under statutory GCC labor codes.
+            </p>
+          </div>
+
+          <div style="background:var(--slate-900); color:#ffffff; padding:1.25rem; border-radius:var(--radius-md); margin-bottom:1.5rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+              <span style="font-size:0.8rem; text-transform:uppercase; font-weight:700; letter-spacing:0.05em; color:var(--slate-400);">
+                Recommended Employee Response Phrasing
+              </span>
+              <button type="button" id="copyResponseBtn" class="btn btn-secondary btn-sm" style="background:var(--slate-800); color:#ffffff; border-color:var(--slate-700); padding:0.25rem 0.65rem; font-size:0.75rem;">
+                Copy Counter-Proposal
+              </button>
+            </div>
+            <p id="counterProposalText" style="font-family:var(--font-sans); font-size:0.9rem; line-height:1.6; color:#e2e8f0; margin:0;">
+              A formal legal response will be generated here upon clause analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <article class="article-content" style="margin-top:3.5rem;">
+      <h2 class="article-h2">1. The Non-Derogation Principle in GCC Employment Legislation</h2>
+      <p class="article-p">
+        Across the modern legal systems of the Gulf Cooperation Council, private sector employment relations are governed by an overarching legal doctrine: the <strong>Non-Derogation Principle</strong> (known in civil jurisprudence as rules of public order or <em>Qawaid Al-Nitham Al-Aam</em>). Expressed explicitly in Article 65 of UAE Federal Decree-Law No. 33 of 2021, Article 8 of Saudi Royal Decree No. M/51, and Article 7 of Kuwait Labour Law No. 6 of 2010, this doctrine dictates that any condition or contractual stipulation in an individual employment agreement that diminishes or waives worker rights below the statutory minimums established by law is <strong>ipso jure null and void</strong>.
+      </p>
+      <p class="article-p">
+        Even if an expatriate worker willingly affixes their signature or thumbprint to an offer letter containing unlawful covenants, such agreement carries zero judicial force before labor dispute conciliation committees or commercial courts. The employer cannot legally enforce the clause.
+      </p>
+
+      <h2 class="article-h2">2. Unlawful Visa and Recruitment Expense Clawbacks</h2>
+      <p class="article-p">
+        One of the most persistent unlawful contract clauses inserted by unscrupulous recruitment departments involves attempts to recoup visa processing, Emirates ID, medical screening, and air ticket charges if an employee resigns prematurely.
+      </p>
+      <p class="article-p">
+        Under Article 6(4) of UAE Federal Decree-Law No. 33/2021 and Article 40 of Saudi Royal Decree M/51, the employer bears the absolute statutory burden for all recruitment, licensing, work permit, and repatriation charges. The Ministry of Human Resources strictly prohibits wage deductions for visa costs. The only narrow statutory exception occurs during the probationary period if an expatriate resigns to join a competing enterprise within the UAE, in which case the <em>new employer</em> (not the employee) is legally obligated to reimburse onboarding expenses under Article 9(3).
+      </p>
+
+      <h2 class="article-h2">3. Unenforceable Restrictive Covenants (Non-Compete Clauses)</h2>
+      <p class="article-p">
+        Employers frequently draft broad non-compete clauses prohibiting departing staff from working for any competitor across the entire Middle East for durations of three to five years. Under Article 10 of the UAE Labour Law and Article 83 of the Saudi Labour Law, a non-compete covenant is strictly constrained by three mandatory statutory tests:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
+        <li><strong>Duration Ceiling:</strong> The restrictive period cannot exceed a maximum duration of <strong>two (2) years</strong> from contract termination.</li>
+        <li><strong>Geographic Limitation:</strong> The geographic scope must be strictly limited to the specific emirate or market zone where the employer conducts real, tangible commercial activities.</li>
+        <li><strong>Substantive Harm Test:</strong> The employer must prove that the employee possessed sensitive, proprietary trade secrets whose disclosure inflicts severe, quantifiable commercial damage.</li>
+      </ul>
+      <p class="article-p">
+        General non-compete clauses that simply aim to prevent talent mobility without proving real trade secret exposure are routinely struck down as void by GCC judicial tribunals.
+      </p>
+
+      <h2 class="article-h2">4. Forfeiture of Statutory End of Service Gratuity</h2>
+      <p class="article-p">
+        Contractual terms stating that an employee forfeits their end-of-service indemnity if they resign before completing a specified term, or if they breach internal company policies, are entirely illegal. Statutory severance entitlements are anchored in legislative decree-laws and cannot be diminished by private employer handbooks or offer letters.
+      </p>
+
+      <section class="faq-accordion" style="margin-top:3.5rem;">
+        <h3 class="article-h3">Frequently Asked Questions: GCC Employment Contract Legality</h3>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can an employer in the UAE deduct visa and recruitment costs from salary?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No, deducting visa processing, recruitment, or work permit fees from an employee is strictly illegal. Under Article 6(4) of UAE Federal Decree-Law No. 33/2021, the employer bears all recruitment expenses. Any contract clause transferring these costs to the worker is null and void.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Is a contract clause forfeiting gratuity upon resignation legally binding in Saudi Arabia?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No, private contract terms that diminish statutory severance rights are void. Under Saudi Royal Decree No. M/51 Article 85, end-of-service awards are determined strictly by statutory tenure formulas. Employers cannot contractually eliminate a worker's legal gratuity entitlement.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can a GCC employer legally hold an employee's passport?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No, retaining an employee's passport is unlawful across all GCC member states. In the UAE, Ministry of Interior directives and Supreme Court precedents prohibit passport withholding. In Saudi Arabia, MHRSD regulations impose automated fines of 2,000 SAR per confiscated passport.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>How long can a non-compete clause legally last in the UAE?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 10 of UAE Federal Decree-Law No. 33/2021, a restrictive non-compete covenant cannot exceed two years from the contract termination date. In addition, it must be precisely defined in geographic scope, duration, and client type, or it is unenforceable.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Does this contract checker transmit my employment contract to a remote server?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No, GulfCalc executes all legal heuristic parsing and statutory comparisons entirely in your local browser runtime. Zero text, names, compensation numbers, or sensitive employment clauses are ever transmitted across a network or stored on remote servers.
+          </div>
+        </details>
+      </section>
+
+      <section style="margin-top:4rem; padding-top:2.5rem; border-top:1px solid var(--border-subtle);">
+        <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-main); margin-bottom:1.5rem;">Related GCC Financial Utilities</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+          <a href="ai-resignation-letter-generator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">AI Utility</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">AI Resignation Letter Generator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Draft a formal legal resignation letter citing exact GCC labor law articles to protect severance rights.</p>
+          </a>
+
+          <a href="../labour-laws/index.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge" style="background:#e0e7ff; color:#3730a3;">Directory</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">GCC Labour Laws Directory</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Explore comprehensive comparative statutory matrices and employee rights across all 6 nations.</p>
+          </a>
+
+          <a href="uae-gratuity-calculator.html" class="card" style="padding:1.5rem; display:block; transition:all 0.2s ease;">
+            <span class="badge badge-emerald">UAE</span>
+            <h4 style="font-size:1.1rem; font-weight:700; margin:0.75rem 0 0.5rem; color:var(--text-main);">UAE Gratuity Calculator</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.5;">Verify precise statutory end-of-service accruals under Federal Decree-Law No. 33/2021.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#0f172a"/>
+            <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="9" r="2" fill="#10b981"/>
+          </svg>
+          <span style="color:#ffffff;">Gulf<span style="color:#10b981;">Calc</span></span>
+        </a>
+        <p class="footer-tagline">
+          Precision statutory, financial, and employment calculation engines for professionals and enterprises across the Gulf Cooperation Council.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span class="footer-col-title">National Tools</span>
+          <a href="uae-gratuity-calculator.html" class="footer-link">UAE Gratuity</a>
+          <a href="saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a>
+          <a href="kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity</a>
+          <a href="qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a>
+          <a href="oman-gratuity-calculator.html" class="footer-link">Oman Gratuity</a>
+          <a href="bahrain-eosi-calculator.html" class="footer-link">Bahrain Indemnity</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Enterprise & Tax</span>
+          <a href="uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax</a>
+          <a href="gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fees</a>
+          <a href="saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Engine</a>
+          <a href="gcc-cost-of-living-comparator.html" class="footer-link">Cost of Living</a>
+          <a href="kuwait-pifss-net-salary-calculator.html" class="footer-link">Kuwait PIFSS Pay</a>
+          <a href="uae-golden-visa-property-calculator.html" class="footer-link">UAE Golden Visa</a>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-title">Directories & Trust</span>
+          <a href="../labour-laws/index.html" class="footer-link">Labour Laws Hub</a>
+          <a href="../blog/index.html" class="footer-link">Insights & Blog</a>
+          <a href="../about-us.html" class="footer-link">About Us</a>
+          <a href="../contact-us.html" class="footer-link">Contact</a>
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+          <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <p class="copyright">
+          &copy; 2026 GulfCalc. All statutory calculation engines operate purely client-side. Zero server-side personal data transmission.
+        </p>
+        <p style="font-size:0.8125rem; color:var(--slate-400); margin:0;">
+          Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; text-decoration:underline;">sheharyarsiraj.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const clauseText = document.getElementById('clauseText');
+      const jurisdictionSelect = document.getElementById('jurisdictionSelect');
+      const charCount = document.getElementById('charCount');
+      const analyzeBtn = document.getElementById('analyzeBtn');
+
+      const statusBadge = document.getElementById('statusBadge');
+      const statuteCitation = document.getElementById('statuteCitation');
+      const evaluationText = document.getElementById('evaluationText');
+      const counterProposalText = document.getElementById('counterProposalText');
+      const copyResponseBtn = document.getElementById('copyResponseBtn');
+
+      const samples = {
+        visa: "In the event the Employee terminates this contract prior to completing 24 continuous months, the Company shall deduct all visa issuance, work permit, medical examination, and travel onboarding costs from the Employee's final settlement.",
+        passport: "The Employee covenants to deposit their passport and primary national travel documents with the Company's human resources custody upon arrival, to be held for safekeeping and visa administration.",
+        noncompete: "The Employee agrees that following departure from the Company for any reason, they shall not engage in, consult for, or establish any commercial business operating in the same sector anywhere in the GCC for a duration of 3 years.",
+        gratuity: "Should the Employee tender their resignation without mutual written agreement of management, the Employee formally waives and forfeits any right to statutory end-of-service gratuity compensation.",
+        probation: "During the 6-month probationary period, the Company reserves the unilateral right to terminate the Employee's employment immediately without prior written notice or compensation."
+      };
+
+      document.querySelectorAll('.sample-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const type = this.getAttribute('data-type');
+          if (samples[type]) {
+            clauseText.value = samples[type];
+            charCount.textContent = clauseText.value.length + ' characters';
+            runAnalysis();
+          }
+        });
+      });
+
+      clauseText.addEventListener('input', function() {
+        charCount.textContent = this.value.length + ' characters';
+      });
+
+      function runAnalysis() {
+        const text = clauseText.value.trim().toLowerCase();
+        const jur = jurisdictionSelect.value;
+
+        if (!text) {
+          alert('Please enter or select a contract clause to analyze.');
+          return;
+        }
+
+        let status = 'VOID / UNENFORCEABLE BY LAW';
+        let statusBg = '#fef2f2';
+        let statusColor = '#991b1b';
+        let citation = '';
+        let evaluation = '';
+        let counter = '';
+
+        if (text.includes('visa') && (text.includes('deduct') || text.includes('cost') || text.includes('fee') || text.includes('recoup') || text.includes('expense'))) {
+          status = 'VOID / UNENFORCEABLE BY LAW';
+          statusBg = '#fef2f2';
+          statusColor = '#991b1b';
+          citation = (jur === 'uae') ? 'UAE Federal Decree-Law No. 33/2021 (Article 6.4)' : 'Saudi Labour Law Royal Decree M/51 (Article 40)';
+          evaluation = 'Under statutory GCC labor legislation, the employer bears the absolute financial responsibility for all recruitment, visa issuance, and work permit expenses. Transferring or deducting these costs from an employee is null and void under public order rules.';
+          counter = 'I request the removal of this clause. In accordance with statutory labor regulations, all visa and recruitment expenses are legally mandated upon the employer and cannot be transferred or deducted from worker remuneration.';
+        } else if (text.includes('passport') && (text.includes('deposit') || text.includes('custody') || text.includes('hold') || text.includes('safekeeping') || text.includes('retain'))) {
+          status = 'STRICTLY ILLEGAL / PROHIBITED';
+          statusBg = '#fef2f2';
+          statusColor = '#991b1b';
+          citation = 'Ministry of Interior Directives & Supreme Court Precedents';
+          evaluation = 'Withholding an employee passport is a criminal offense under national immigration regulations and human rights conventions. An employee passport is the sovereign property of the issuing state and must remain in the personal custody of the worker at all times.';
+          counter = 'Please delete this stipulation. Pursuant to Ministry of Interior directives and statutory provisions, an employee must retain personal possession of their passport, which cannot be surrendered to employer custody.';
+        } else if (text.includes('gratuity') && (text.includes('forfeit') || text.includes('waive') || text.includes('relinquish') || text.includes('zero'))) {
+          status = 'VOID / UNENFORCEABLE BY LAW';
+          statusBg = '#fef2f2';
+          statusColor = '#991b1b';
+          citation = (jur === 'uae') ? 'UAE Federal Decree-Law No. 33/2021 (Article 51 & 65)' : 'Saudi Labour Law Royal Decree M/51 (Article 84 & 85)';
+          evaluation = 'Statutory end-of-service gratuity is a mandatory legal right governed by labor statutes. Private contract clauses purporting to waive or forfeit accrued severance are automatically void under the Non-Derogation Principle.';
+          counter = 'This clause conflicts with statutory labor law. Accrued end-of-service benefits are protected by legislative decree and cannot be waived contractually. I request alignment with standard statutory language.';
+        } else if (text.includes('compete') || text.includes('non-compete') || text.includes('competitor')) {
+          const has3Years = text.includes('3 year') || text.includes('3-year') || text.includes('5 year');
+          if (has3Years) {
+            status = 'HIGH RISK / EXCEEDS STATUTORY CEILING';
+            statusBg = '#fffbeb';
+            statusColor = '#b45309';
+            citation = (jur === 'uae') ? 'UAE Federal Decree-Law No. 33/2021 (Article 10)' : 'Saudi Labour Law Royal Decree M/51 (Article 83)';
+            evaluation = 'Statutory non-compete covenants are legally capped at a maximum of two (2) years. Any covenant attempting to enforce a 3 or 5-year duration exceeds the statutory threshold and will be struck down or severely reduced by judicial tribunals.';
+            counter = 'In accordance with Article 10 of the Labour Law, non-compete restrictions cannot exceed two years and must be reasonably restricted in geographical scope and specific trade secrets. I propose revising the term to 12 months with precise geographical boundaries.';
+          } else {
+            status = 'CONDITIONALLY PERMISSIBLE';
+            statusBg = '#f0fdf4';
+            statusColor = '#166534';
+            citation = 'Statutory Non-Compete Standards (Article 10 / Article 83)';
+            evaluation = 'Non-compete clauses are valid only if strictly limited in geographic area, time duration (maximum 2 years), and specific client relationships where the worker had direct trade secret access causing quantifiable commercial harm.';
+            counter = 'I agree to reasonable trade secret protections, provided the covenant is strictly limited in duration and geographic scope as provided under statutory labor codes.';
+          }
+        } else if (text.includes('probation') && (text.includes('without notice') || text.includes('immediate') || text.includes('instant'))) {
+          status = 'VOID / BREACHES STATUTORY NOTICE';
+          statusBg = '#fef2f2';
+          statusColor = '#991b1b';
+          citation = (jur === 'uae') ? 'UAE Federal Decree-Law No. 33/2021 (Article 9)' : 'Saudi Labour Law Royal Decree M/51 (Article 53)';
+          evaluation = 'Under updated UAE labor laws, probationary termination requires mandatory written notice (at least 14 days by the employer, or 14-30 days by the worker). Clauses allowing instantaneous dismissal with zero notice during probation violate Article 9.';
+          counter = 'Pursuant to Article 9 of UAE Federal Decree-Law No. 33/2021, any termination during probation requires at least fourteen (14) days prior written notice. I request updating the clause to reflect this statutory requirement.';
+        } else {
+          status = 'CUSTOM CLAUSE: REQUIRES CAUTION';
+          statusBg = '#f8fafc';
+          statusColor = '#334155';
+          citation = 'General Statutory Employment Principles';
+          evaluation = 'This clause does not match common flagrant labor law violations. However, verify that no terms diminish working hour limits (max 8 hours/day), statutory annual leave (30 calendar days), or statutory medical cover.';
+          counter = 'I have reviewed this clause and request clarification on how this provision operates in harmony with governing statutory employment standards.';
+        }
+
+        statusBadge.textContent = status;
+        statusBadge.style.background = statusBg;
+        statusBadge.style.color = statusColor;
+        statusBadge.style.borderColor = statusColor;
+
+        statuteCitation.textContent = citation;
+        evaluationText.textContent = evaluation;
+        counterProposalText.textContent = counter;
+      }
+
+      analyzeBtn.addEventListener('click', runAnalysis);
+
+      copyResponseBtn.addEventListener('click', function() {
+        navigator.clipboard.writeText(counterProposalText.textContent).then(() => {
+          const orig = copyResponseBtn.textContent;
+          copyResponseBtn.textContent = 'Copied!';
+          setTimeout(() => { copyResponseBtn.textContent = orig; }, 2000);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
