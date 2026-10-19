@@ -1,5 +1,6 @@
 # Local documentation files (retained locally, excluded from Git repository)
 *.md
+!README.md
 
 # System files
 .DS_Store
