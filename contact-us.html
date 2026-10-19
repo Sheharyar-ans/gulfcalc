@@ -7,6 +7,34 @@
   <meta name="description" content="Contact the GulfCalc engineering and legal compliance team for inquiries, statutory formula corrections, API integration partnerships, or institutional feedback.">
   <link rel="canonical" href="https://gulfcalc.tech/contact-us.html">
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* In-place Toast Notification */
+    .toast-notification {
+      display: none;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-md);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      margin-top: 1.25rem;
+      animation: fadeIn 0.3s ease-out;
+    }
+    .toast-success {
+      background-color: var(--emerald-50);
+      border: 1px solid var(--emerald-100);
+      color: var(--emerald-700);
+    }
+    .toast-error {
+      background-color: #fef2f2;
+      border: 1px solid #fee2e2;
+      color: #b91c1c;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
@@ -25,6 +53,8 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Portal Home</a>
         <a href="index.html#calculators" class="nav-link">Calculators</a>
+        <a href="labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="blog/index.html" class="nav-link">Insights & Blog</a>
         <a href="about-us.html" class="nav-link">About Us</a>
         <a href="contact-us.html" class="nav-link active">Contact</a>
       </nav>
@@ -80,60 +110,66 @@
             <div style="background: #ffffff; border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-lg);">
               <div style="font-size: 0.75rem; font-weight: 700; color: var(--slate-400); text-transform: uppercase; margin-bottom: 0.25rem;">Engineering Repository</div>
               <div style="font-size: 0.9375rem; font-weight: 600; color: var(--indigo-600);">
-                <a href="https://github.com/Sheharyar-ans/gulfcalc" target="_blank" rel="noopener">github.com/Sheharyar-ans/gulfcalc</a>
+                <a href="https://github.com/Sheharyar-ans/gulfcalc" target="_blank" rel="noopener noreferrer">github.com/Sheharyar-ans/gulfcalc</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Feedback Form -->
+        <!-- Web3Forms Zero-Backend Form -->
         <div class="calc-card">
           <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
             Transmit an Inquiry
           </h3>
           <p style="font-size: 0.8125rem; color: var(--slate-500); margin-bottom: 1.5rem;">
-            Fill out the inquiry form below. Our response time is typically within 1 business day.
+            Fill out the inquiry form below. Automated submissions are encrypted and processed client-side.
           </p>
 
-          <form id="contactForm" onsubmit="event.preventDefault(); document.getElementById('contactSuccess').style.display='block'; this.reset();">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            
+            <!-- Anti-Spam Honeypot -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <!-- Optional customization -->
+            <input type="hidden" name="from_name" value="GulfCalc Web Inquiry">
+            <input type="hidden" name="subject" value="New Inquiry via GulfCalc.tech">
+
             <div class="form-group">
               <label for="contactName" class="form-label">Full Name</label>
-              <input type="text" id="contactName" class="form-input no-prefix" required placeholder="e.g. Tariq Al-Hashimi">
+              <input type="text" id="contactName" name="name" class="form-input no-prefix" required placeholder="e.g. Tariq Al-Hashimi">
             </div>
 
             <div class="form-group">
               <label for="contactEmail" class="form-label">Corporate or Personal Email</label>
-              <input type="email" id="contactEmail" class="form-input no-prefix" required placeholder="name@domain.com">
+              <input type="email" id="contactEmail" name="email" class="form-input no-prefix" required placeholder="name@domain.com">
             </div>
 
             <div class="form-group">
-              <label for="inquiryType" class="form-label">Jurisdiction / Inquiry Topic</label>
-              <select id="inquiryType" class="form-input no-prefix" style="height:48px;">
-                <option value="kuwait">Kuwait Labour Law (Article 55)</option>
-                <option value="saudi">Saudi Arabia EOSA (Articles 84/85)</option>
-                <option value="uae">UAE Labour Law (Decree-Law 33/2021)</option>
-                <option value="qatar">Qatar Labour Law (Law 14/2004)</option>
-                <option value="oman">Oman Labour Law (RD 53/2023)</option>
-                <option value="bahrain">Bahrain EOSI & VAT</option>
-                <option value="tax">UAE Corporate Tax (9%)</option>
-                <option value="remittance">GCC Cross-Border Remittances</option>
-                <option value="general">General Feedback / Bug Report</option>
+              <label for="inquiryType" class="form-label">Inquiry Category</label>
+              <select id="inquiryType" name="category" class="form-input no-prefix" style="height:48px;" required>
+                <option value="Legal Correction">Statutory Legal Correction</option>
+                <option value="Formula Audit">Mathematical Formula Audit</option>
+                <option value="Enterprise Integration">Enterprise / API Integration</option>
+                <option value="Partnership">Commercial Partnership</option>
+                <option value="Bug Report">Technical Bug Report</option>
+                <option value="General">General Inquiry</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="contactMessage" class="form-label">Message / Citation Details</label>
-              <textarea id="contactMessage" class="form-input no-prefix" rows="4" style="height:auto; padding:0.75rem;" required placeholder="Describe your question or feedback..."></textarea>
+              <label for="contactMessage" class="form-label">Message Details</label>
+              <textarea id="contactMessage" name="message" class="form-input no-prefix" rows="4" style="height:auto; padding:0.75rem;" required placeholder="Please describe your question or statutory observation in detail..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width:100%;">
-              Submit Inquiry
+            <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%;">
+              <span>Submit Inquiry</span>
             </button>
           </form>
 
-          <div id="contactSuccess" style="display:none; margin-top:1.25rem; padding:1rem; background:var(--emerald-50); border:1px solid var(--emerald-100); border-radius:var(--radius-md); font-size:0.875rem; color:var(--emerald-700);">
-            <strong>Thank you!</strong> Your message has been received. Our compliance team will review your inquiry shortly.
-          </div>
+          <!-- Toast Notification Container -->
+          <div id="toastNotification" class="toast-notification"></div>
         </div>
 
       </div>
@@ -145,11 +181,65 @@
     <div class="container">
       <div class="footer-bottom">
         <div>&copy; 2026 GulfCalc (gulfcalc.tech). Contact & Corporate Relations.</div>
-        <div>All rights reserved.</div>
+        <div>All rights reserved. Zero external tracking.</div>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const toast = document.getElementById('toastNotification');
+
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById('contactEmail').value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          showToast('Please enter a valid business email address.', false);
+          return;
+        }
+
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Transmitting...</span>';
+
+        const formData = new FormData(contactForm);
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(async (response) => {
+          const result = await response.json();
+          if (response.status === 200) {
+            showToast('Message delivered successfully. Our compliance team will review your inquiry shortly.', true);
+            contactForm.reset();
+          } else {
+            showToast(result.message || 'Transmission failed. Please email us directly at contact@gulfcalc.tech.', false);
+          }
+        })
+        .catch((error) => {
+          showToast('Transmission error. Please email us directly at contact@gulfcalc.tech.', false);
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        });
+      });
+
+      function showToast(message, isSuccess) {
+        toast.className = 'toast-notification ' + (isSuccess ? 'toast-success' : 'toast-error');
+        toast.innerHTML = (isSuccess ? 
+          '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>' : 
+          '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>') +
+          '<span>' + message + '</span>';
+        toast.style.display = 'flex';
+      }
+    });
+  </script>
 </body>
 </html>

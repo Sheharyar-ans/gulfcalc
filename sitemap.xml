@@ -3,91 +3,167 @@
   <!-- Portal Homepage -->
   <url>
     <loc>https://gulfcalc.tech/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- GCC Regional Calculators -->
+  <!-- Central Statutory Labour Laws Directory -->
+  <url>
+    <loc>https://gulfcalc.tech/labour-laws/index.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Insights & Blog Hub -->
+  <url>
+    <loc>https://gulfcalc.tech/blog/index.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- GCC Regional Calculation Engines -->
   <url>
     <loc>https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/tools/uae-gratuity-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/tools/qatar-gratuity-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/tools/oman-gratuity-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/tools/bahrain-eosi-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Financial & Tax Engines -->
   <url>
     <loc>https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 10 High-Intent Legal & Financial Intelligence Articles -->
+  <url>
+    <loc>https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/saudi-labor-law-article-84-85-resignation-rules.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/kuwait-labor-law-article-55-26-days-calculation.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/oman-new-labor-law-royal-decree-53-2023-gratuity.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/uae-corporate-tax-small-business-relief-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/qatar-end-of-service-benefits-overtime-wages.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/bahrain-sio-expat-end-of-service-reform.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/gcc-vat-reverse-charge-mechanism-cross-border-services.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/dubai-golden-visa-real-estate-salary-thresholds.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/dews-vs-traditional-cash-gratuity-uae-workplace-savings.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <!-- Institutional Trust & Legal Pages -->
   <url>
     <loc>https://gulfcalc.tech/about-us.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/contact-us.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/privacy-policy.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/terms-of-service.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gulfcalc.tech/disclaimer.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

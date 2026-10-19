@@ -1,5 +1,5 @@
 /* ==========================================================================
-   GulfCalc (gulfcalc.tech) — Master Fintech Design System & Utilities
+   GulfCalc (gulfcalc.tech): Master Fintech Design System & Utilities
    Aesthetic: Ultra-Clean European Fintech (Slate Neutrals, Emerald/Indigo Accents)
    ========================================================================== */
 
@@ -905,7 +905,7 @@ button, input, select, textarea {
     padding: 0 0 1rem 0 !important;
   }
   .page-header::before {
-    content: "GulfCalc (gulfcalc.tech) — Official Legal Calculation Record";
+    content: "GulfCalc (gulfcalc.tech): Official Legal Calculation Record";
     display: block;
     font-size: 14pt;
     font-weight: bold;

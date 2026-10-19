@@ -1,5 +1,5 @@
 /**
- * GulfCalc (gulfcalc.tech) — Navigation & Interactive Utilities
+ * GulfCalc (gulfcalc.tech): Navigation & Interactive Utilities
  */
 
 document.addEventListener('DOMContentLoaded', () => {

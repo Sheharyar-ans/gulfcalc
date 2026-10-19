@@ -1,141 +1,89 @@
-# GulfCalc (gulfcalc.tech) — Master Task Queue & Implementation Backlog
+# GulfCalc (gulfcalc.tech): Master Task Queue & Implementation Backlog
 
 This document maintains strict persistent state across execution turns. Tasks must be executed sequentially and checked off (`[x]`) upon rigorous validation.
 
 ---
 
-## Phase 0: Persistent Memory, Planning & Repository Initialization
-- [x] Analyze active Antigravity skills, capabilities, and execution environment.
-- [x] Initialize `PLAN.md` with full GCC legal formulas, schema taxonomy, and directory design.
-- [x] Initialize `ARCHITECTURE.md` with system design tokens, layout specifications, and data flow.
-- [x] Initialize `TASK_QUEUE.md` with complete granular checkable tasks.
-- [x] Commit and push Phase 0 markdown files (`PLAN.md`, `ARCHITECTURE.md`, `TASK_QUEUE.md`) to GitHub repository `Sheharyar-ans/gulfcalc` on `main`.
+## Phase 0: Skill Discovery & Memory State Re-Initialization
+- [x] Analyze active Antigravity skills and tools (semantic analysis, code generation, file tree discovery, git/GitHub integration).
+- [x] Log navigation discrepancies: broken `#statutory` link on homepage, absent `/labour-laws/` central directory, missing `/blog/` hub and articles, mock contact form submission.
+- [x] Re-initialize `PLAN.md`, `ARCHITECTURE.md`, and `TASK_QUEUE.md` with full specifications for the 10-article blog directory, cybersecurity headers, and interactive homepage overhaul.
 
 ---
 
-## Phase 1: Shared Design System & Core Calculation Engine
-- [x] Create `/assets/css/main.css`:
-  - [x] Implement complete Fintech design token variables (Slate neutrals, Emerald/Indigo accents, elevation shadows).
-  - [x] Implement responsive utility grid system and mobile-first reset.
-  - [x] Implement dual-input slider styling (`input[type="range"]` + numeric input synchronization).
-  - [x] Implement calculation result cards, metric callouts, and badge styling.
-  - [x] Implement accessible accordion styles for FAQ sections.
-  - [x] Implement `@media print` executive summary formatting.
-- [x] Create `/assets/js/core-calculator.js`:
-  - [x] Number formatting helpers (KWD 3 decimals, BHD 3 decimals, OMR 3 decimals, AED/SAR/QAR 2 decimals).
-  - [x] Dual slider-input two-way sync helper with debounced reactivity.
-  - [x] Clipboard copy utility with visual feedback state.
-  - [x] Clean printable PDF trigger handler.
-- [x] Create `/assets/js/navigation.js`:
-  - [x] Mobile responsive navigation drawer toggle.
-  - [x] FAQ accordion toggle with accessible ARIA state management.
+## Phase 1: Routing Repair & GCC Labour Laws Comparative Directory
+- [x] Create `/labour-laws/index.html` (>1,500 words of authoritative legal commentary):
+  - [x] UAE: Federal Decree-Law No. 33/2021
+  - [x] Saudi Arabia: Royal Decree No. M/51 (Articles 84, 85, 87)
+  - [x] Kuwait: Law No. 6/2010 (Article 55 - 26 working days)
+  - [x] Qatar: Law No. 14/2004 (Article 54)
+  - [x] Oman: Royal Decree No. 53/2023 (Article 61 - 30 days flat)
+  - [x] Bahrain: Law No. 36/2012 (Article 116 & 2024 SIO Fund Accruals)
+  - [x] Comparative analysis matrix, worker rights overview, statutory notice period benchmarks.
+  - [x] Contextual deep links to all 6 national calculators.
+- [x] Update navigation headers and footers across all HTML pages to permanently link to `/labour-laws/index.html` and `/blog/index.html`.
 
 ---
 
-## Phase 2: Implementation of 8 GCC Regional Calculation Utilities
-
-### 1. Kuwait Indemnity Calculator (`/tools/kuwait-indemnity-calculator.html`)
-- [x] Legal anchor: Kuwait Labour Law No. 6/2010, Articles 51 & 55.
-- [x] Daily wage calculation strictly using `Monthly Remuneration / 26`.
-- [x] Accruals: 15 days/yr for first 5 years; 30 days/yr thereafter (capped at 1.5 years' salary).
-- [x] Resignation tiers: 0% (<3 yrs), 50% (3-5 yrs), 66.67% (5-10 yrs), 100% (10+ yrs).
-- [x] Dual input controls (salary slider + input, years slider + input, termination reason toggle).
-- [x] 800–1,200 words of statutory guidance, formula diagram SVG, benchmark table, 2 practical scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 2. Oman Gratuity Calculator (`/tools/oman-gratuity-calculator.html`)
-- [x] Legal anchor: Oman Royal Decree 53/2023 (new Labour Law) and transitional RD 35/2003 rules.
-- [x] Standard rule: Flat 30 days (1 full month's basic salary) per year of service.
-- [x] Dual-mode engine toggle: Post-July 2023 tenure vs Pre-July 2023 legacy transition.
-- [x] Dual input controls, instant reactive calculation, copy & print actions.
-- [x] 800–1,200 words of statutory content, formula diagram SVG, benchmark table, 2 real-world scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 3. Qatar Gratuity Calculator (`/tools/qatar-gratuity-calculator.html`)
-- [x] Legal anchor: Qatar Labour Law No. 14/2004 & Ministry of Labour Guidelines.
-- [x] Formula: Minimum 21 calendar days per year based on last drawn basic wage (Daily = Basic / 30).
-- [x] Exact pro-rata calculation for partial months and days.
-- [x] Dual input controls, live breakdown card, copy/print actions.
-- [x] 800–1,200 words of legal content, formula diagram SVG, benchmark table, 2 scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 4. Bahrain EOSI & VAT Calculator (`/tools/bahrain-eosi-calculator.html`)
-- [x] Legal anchor: Bahrain Law No. 36/2012 & 2024 SIO expat accrual rules.
-- [x] Formula: 15 days/yr for years 1-3; 30 days/yr for year 4 onwards.
-- [x] Dual utility toggle: Bahrain 10% VAT calculation module.
-- [x] Dual input controls, live breakdown card, copy/print actions.
-- [x] 800–1,200 words of statutory content, formula diagram SVG, benchmark table, 2 scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 5. Saudi End of Service Calculator (`/tools/saudi-end-of-service-calculator.html`)
-- [x] Legal anchor: Saudi Labour Law Articles 84, 85, 87.
-- [x] Wage basis: Actual Wage (Basic + Fixed Housing Allowance + Fixed Transportation Allowance).
-- [x] Accrual: Half month/yr for first 5 years; full month/yr thereafter.
-- [x] Resignation tiers: 0% (<2 yrs), 1/3 (2-5 yrs), 2/3 (5-10 yrs), 100% (10+ yrs) with Article 87 statutory exceptions.
-- [x] Dual input controls, allowance breakdown, live card, copy/print actions.
-- [x] 800–1,200 words of statutory analysis, formula diagram SVG, benchmark table, 2 scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 6. UAE Gratuity Calculator (`/tools/uae-gratuity-calculator.html`)
-- [x] Legal anchor: UAE Federal Decree-Law No. 33/2021.
-- [x] Formula: 21 calendar days/yr for years 1-5; 30 days/yr for each subsequent year (capped at 2 years' salary).
-- [x] Unified treatment: Identical entitlement for resignation and termination.
-- [x] Dual input controls, live breakdown card, copy/print actions.
-- [x] 800–1,200 words of statutory content, formula diagram SVG, benchmark table, 2 scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 7. UAE Corporate Tax Calculator (`/tools/uae-corporate-tax-calculator.html`)
-- [x] Legal anchor: UAE Federal Decree-Law No. 47/2022 & Ministerial Decision No. 73/2023.
-- [x] Formula: 0% on net taxable profit up to AED 375,000; 9% on excess over AED 375,000.
-- [x] Small Business Relief (SBR) toggle for businesses with gross revenue <= AED 3M.
-- [x] Dual input controls, effective tax rate computation, copy/print actions.
-- [x] 800–1,200 words of corporate tax analysis, formula diagram SVG, benchmark table, 2 scenarios, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
-
-### 8. GCC Remittance True Cost Calculator (`/tools/gcc-remittance-fee-calculator.html`)
-- [x] Multi-corridor support: AED, SAR, QAR, KWD, OMR, BHD to INR, PKR, PHP, BDT, EGP.
-- [x] Formula: Mid-market interbank rate vs exchange house spreads + upfront transfer fees = True Remittance Drag (%).
-- [x] Interactive corridor switcher, live hidden fee revealer, copy/print actions.
-- [x] 800–1,200 words of expat remittance analysis, diagram SVG, corridor benchmark table, and FAQ accordion.
-- [x] Complete JSON-LD schema (`WebApplication`, `FAQPage`, `BreadcrumbList`).
+## Phase 2: Working Contact Form Integration (Zero-Backend)
+- [x] Refactor `/contact-us.html`:
+  - [x] Point form action to `https://api.web3forms.com/submit` via POST.
+  - [x] Instate `<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">`.
+  - [x] Add hidden anti-spam honeypot `<input type="checkbox" name="botcheck" class="hidden" style="display: none;">`.
+  - [x] Implement client-side JavaScript validation (business email regex, category selector, message length).
+  - [x] Implement asynchronous fetch submission with modern in-place toast notification ("Message delivered successfully").
 
 ---
 
-## Phase 3: Unified Homepage & Discovery Engine
-- [x] Create `/index.html`:
-  - [x] Hero section with direct country selector & quick search.
-  - [x] 6 Interactive Country Cards with inline bespoke SVG flags and quick calculation preview.
-  - [x] Unified GCC Comparative Gratuity Matrix (Comparing UAE, KSA, Kuwait, Qatar, Oman, Bahrain laws side-by-side).
-  - [x] Institutional credibility proof points (Zero tracking, 100% client-side privacy, legal citations).
-  - [x] Complete `Organization` and `WebSite` JSON-LD schema.
+## Phase 3: Cybersecurity Hardening & Headers Configuration
+- [x] Create `_headers` configuration file at repository root with strict Cloudflare Pages directives:
+  - [x] `X-Frame-Options: DENY`
+  - [x] `X-Content-Type-Options: nosniff`
+  - [x] `Referrer-Policy: strict-origin-when-cross-origin`
+  - [x] `Permissions-Policy` restrictions
+  - [x] `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`
+  - [x] `Content-Security-Policy` with authorized scripts, fonts, and connect endpoints
+- [x] Update `robots.txt` with clear crawl permissions for Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot, and disallow malicious scrapers.
+- [x] Verify all external links have `rel="noopener noreferrer"`.
 
 ---
 
-## Phase 4: Institutional Trust & Legal Compliance Suite
-- [x] Create `/about-us.html`: Detailed statement of computational accuracy, methodology, GCC legal review processes, and site mission (500+ words).
-- [x] Create `/contact-us.html`: Responsive inquiry form with real contact email disclosure.
-- [x] Create `/privacy-policy.html`: GDPR, CCPA, and GCC data privacy laws compliance; cookie and ad policies.
-- [x] Create `/terms-of-service.html`: Terms of use, non-reliance, scraping prohibitions, and IP terms.
-- [x] Create `/disclaimer.html`: Formal financial and legal disclaimer.
+## Phase 4: Homepage Makeover & Interactive Portal Design
+- [x] Refactor `/index.html`:
+  - [x] Modernized Hero Section with pan-GCC statutory precision positioning.
+  - [x] Interactive Nation Selector Tabs (UAE, KSA, Kuwait, Qatar, Oman, Bahrain) with dynamic client-side filtering.
+  - [x] Quick-Calc Spotlight: compact multi-currency preview calculator embedded directly in the hero.
+  - [x] Featured Insights Section: dynamic grid showcasing latest GCC legal blog posts with reading time, author, category tags.
+  - [x] GCC Metric Comparison Ticker: table comparing Corporate Tax, VAT, standard work weeks, and maximum gratuity caps across all 6 member states.
+  - [x] Valid `Organization`, `WebSite`, and `SiteNavigationElement` JSON-LD schemas.
 
 ---
 
-## Phase 5: Machine-Readable SEO & Generative AI Optimization
-- [x] Generate `/llms.txt`: Comprehensive markdown manifest covering full directory hierarchy, legal formulas, and canonical routes.
-- [x] Generate `/sitemap.xml`: Complete valid XML sitemap with all 14 routes and `<lastmod>` timestamps.
-- [x] Generate `/robots.txt`: Production crawl directives with sitemap pointer.
+## Phase 5: 10 High-Intent GCC Legal & Financial Blog Articles
+- [x] Create `/blog/index.html` hub with search filtering, category tags, and clean card UI.
+- [x] Author and deploy 10 comprehensive, humanized blog post files (1,200 to 1,500+ words each, NO em-dashes, full JSON-LD schemas):
+  - [x] `/blog/uae-gratuity-calculation-limited-contract-2026.html`
+  - [x] `/blog/saudi-labor-law-article-84-85-resignation-rules.html`
+  - [x] `/blog/kuwait-labor-law-article-55-26-days-calculation.html`
+  - [x] `/blog/oman-new-labor-law-royal-decree-53-2023-gratuity.html`
+  - [x] `/blog/uae-corporate-tax-small-business-relief-guide.html`
+  - [x] `/blog/qatar-end-of-service-benefits-overtime-wages.html`
+  - [x] `/blog/bahrain-sio-expat-end-of-service-reform.html`
+  - [x] `/blog/gcc-vat-reverse-charge-mechanism-cross-border-services.html`
+  - [x] `/blog/dubai-golden-visa-real-estate-salary-thresholds.html`
+  - [x] `/blog/dews-vs-traditional-cash-gratuity-uae-workplace-savings.html`
 
 ---
 
-## Phase 6: Code Validation, Performance & Quality Gate
-- [x] Validate HTML syntax and ensure zero broken links across all routes.
-- [x] Validate responsive design at 320px, 768px, 1024px, 1440px.
-- [x] Confirm zero runtime console errors and zero external asset dependencies.
-- [x] Verify print styles (`@media print`) on calculation tools.
+## Phase 6: Editorial Quality & Humanization Audit
+- [x] Enforce complete ban on em-dashes across all newly written articles and pages.
+- [x] Enforce complete ban on formulaic AI filler phrases.
+- [x] Verify standard LaTeX mathematical formulas and precise legal citations.
+- [x] Verify click-worthy Meta Titles (<60 chars) and Meta Descriptions (140-155 chars).
 
 ---
 
-## Phase 7: Git Commit, Push & Deployment Verification
-- [x] Commit all code systematically with clean, semantic commit messages.
-- [x] Push all commits to `origin/main` on GitHub (`Sheharyar-ans/gulfcalc`).
-- [x] Verify repository tree, Cloudflare Pages build readiness, and provide comprehensive final delivery report.
+## Phase 7: Sitemap, LLMs.txt & Git Deployment
+- [x] Regenerate `sitemap.xml` to include all 26 production routes.
+- [x] Update `/llms.txt` with full index of all tools, legal directories, and blog posts.
+- [x] Commit and push all changes cleanly to GitHub `main` branch.

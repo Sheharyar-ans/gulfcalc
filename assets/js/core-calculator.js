@@ -1,5 +1,5 @@
 /**
- * GulfCalc (gulfcalc.tech) — Core Calculator Kernel & UI Helpers
+ * GulfCalc (gulfcalc.tech): Core Calculator Kernel & UI Helpers
  * Strict Vanilla ES6+, Zero External Dependencies, 100% Client-Side.
  */
 

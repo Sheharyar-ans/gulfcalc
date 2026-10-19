@@ -1,6 +1,47 @@
 # GulfCalc (gulfcalc.tech) Robots Policy
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# General Crawlers
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*?*
+
+# Block aggressive scrapers and data harvesters
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
 
 # Canonical XML Sitemap
 Sitemap: https://gulfcalc.tech/sitemap.xml

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GulfCalc — GCC Financial & Labour Law Utility Platform | gulfcalc.tech</title>
-  <meta name="description" content="Official unmetered client-side financial, tax, and labor law calculation utility for expatriates and corporations across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain.">
+  <title>GulfCalc: GCC Financial & Labour Law Utility Platform | gulfcalc.tech</title>
+  <meta name="description" content="Authoritative, unmetered client-side financial, tax, and labor law calculation utility for expatriates and corporations across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain.">
   <link rel="canonical" href="https://gulfcalc.tech/">
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="GulfCalc — GCC Financial & Labour Law Utility Platform">
-  <meta property="og:description" content="Accurate, unmetered client-side financial and labor law calculators for the 6 GCC member nations.">
+  <meta property="og:title" content="GulfCalc: GCC Financial & Labour Law Utility Platform">
+  <meta property="og:description" content="Accurate, unmetered client-side financial, tax, and labor law calculators for the 6 GCC member nations.">
   <meta property="og:url" content="https://gulfcalc.tech/">
 
   <!-- JSON-LD Structured Data Schema -->
@@ -45,10 +45,118 @@
           "email": "contact@gulfcalc.tech",
           "contactType": "customer service"
         }
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://gulfcalc.tech/#navigation",
+        "name": [
+          "Calculators",
+          "Labour Laws Directory",
+          "Insights & Blog",
+          "About Us",
+          "Contact"
+        ],
+        "url": [
+          "https://gulfcalc.tech/#calculators",
+          "https://gulfcalc.tech/labour-laws/index.html",
+          "https://gulfcalc.tech/blog/index.html",
+          "https://gulfcalc.tech/about-us.html",
+          "https://gulfcalc.tech/contact-us.html"
+        ]
       }
     ]
   }
   </script>
+
+  <style>
+    /* Filter Tabs Styling */
+    .filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+    .filter-tab {
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--slate-600);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+    .filter-tab:hover {
+      border-color: var(--slate-300);
+      color: var(--slate-900);
+    }
+    .filter-tab.active {
+      background: var(--slate-900);
+      color: #ffffff;
+      border-color: var(--slate-900);
+    }
+
+    /* Quick-Calc Spotlight Card */
+    .quick-calc-hero {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+      max-width: 580px;
+      margin: 2.5rem auto 0 auto;
+      text-align: left;
+    }
+    .quick-calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 540px) {
+      .quick-calc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .quick-result-box {
+      background: var(--slate-900);
+      color: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Insights Preview Card */
+    .insight-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .insight-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
+    }
+    .tag-badge {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.75rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -67,8 +175,9 @@
 
       <nav class="nav-links" aria-label="Main Navigation">
         <a href="#calculators" class="nav-link">Calculators</a>
+        <a href="labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="blog/index.html" class="nav-link">Insights & Blog</a>
         <a href="#comparison" class="nav-link">GCC Matrix</a>
-        <a href="#statutory" class="nav-link">Labour Laws</a>
         <a href="about-us.html" class="nav-link">About</a>
         <a href="contact-us.html" class="nav-link">Contact</a>
       </nav>
@@ -86,6 +195,9 @@
   <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
     <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="labour-laws/index.html">Labour Laws Directory</a></li>
+      <li class="mobile-nav-item"><a href="blog/index.html">Insights & Blog Directory</a></li>
       <li class="mobile-nav-item"><a href="tools/kuwait-indemnity-calculator.html">Kuwait Indemnity Calculator</a></li>
       <li class="mobile-nav-item"><a href="tools/saudi-end-of-service-calculator.html">Saudi End of Service Calculator</a></li>
       <li class="mobile-nav-item"><a href="tools/uae-gratuity-calculator.html">UAE Gratuity Calculator</a></li>
@@ -99,71 +211,104 @@
     </ul>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Spotlight Quick-Calc -->
   <section style="padding: 4.5rem 0 3.5rem 0; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-subtle);">
-    <div class="container" style="text-align: center; max-width: 880px;">
+    <div class="container" style="text-align: center; max-width: 920px;">
       
       <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--emerald-50); border: 1px solid var(--emerald-100); padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.8125rem; font-weight: 600; color: var(--emerald-700); margin-bottom: 1.5rem;">
         <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
-        <span>2026 GCC Statutory Labour & Tax Regulations Verified</span>
+        <span>2026 GCC Statutory Labour, Tax & Remittance Systems Active</span>
       </div>
 
       <h1 style="font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -0.03em; color: var(--slate-950); line-height: 1.15; margin-bottom: 1.25rem;">
         GCC Financial & Labour Law <br><span style="color: #059669;">Calculation Platform</span>
       </h1>
 
-      <p style="font-size: clamp(1rem, 2vw, 1.1875rem); color: var(--slate-600); line-height: 1.6; margin-bottom: 2.25rem;">
-        Engineered for expatriates, corporate legal counsel, and HR leaders across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain. Unmetered, mathematically exact, and 100% client-side private.
+      <p style="font-size: clamp(1rem, 2vw, 1.1875rem); color: var(--slate-600); line-height: 1.6; margin-bottom: 1.5rem;">
+        Precision financial and employment calculation engines serving expatriates, corporate counsel, and payroll leaders across the 6 GCC member states. Unmetered, mathematically verified, and 100% client-side private.
       </p>
 
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-        <a href="#calculators" class="btn btn-primary" style="height: 52px; padding: 0 1.75rem; font-size: 0.9375rem;">
-          Explore All 8 Calculators
-        </a>
-        <a href="#comparison" class="btn btn-secondary" style="height: 52px; padding: 0 1.75rem; font-size: 0.9375rem;">
-          View GCC Comparative Matrix
-        </a>
-      </div>
+      <!-- Quick-Calc Spotlight Component -->
+      <div class="quick-calc-hero">
+        <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--emerald-700); margin-bottom:0.75rem;">
+          Instant Pan-GCC Gratuity Estimator
+        </div>
+        
+        <div class="quick-calc-grid">
+          <div>
+            <label for="quickCountry" style="font-size:0.8125rem; font-weight:600; color:var(--slate-700); display:block; margin-bottom:0.35rem;">Jurisdiction</label>
+            <select id="quickCountry" class="form-input no-prefix" style="height:44px; font-size:0.875rem;">
+              <option value="UAE" selected>UAE (Decree-Law 33/2021)</option>
+              <option value="KSA">Saudi Arabia (Art. 84/85)</option>
+              <option value="KWT">Kuwait (Law 6/2010 Art. 55)</option>
+              <option value="QAT">Qatar (Law 14/2004)</option>
+              <option value="OMN">Oman (RD 53/2023 30d)</option>
+              <option value="BHR">Bahrain (Law 36/2012)</option>
+            </select>
+          </div>
 
-      <!-- Trust Badges -->
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 3.5rem; font-size: 0.8125rem; color: var(--slate-500); border-top: 1px solid var(--border-subtle); padding-top: 1.75rem;">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>100% Client-Side Privacy (Zero PII Logging)</span>
+          <div>
+            <label for="quickSalary" style="font-size:0.8125rem; font-weight:600; color:var(--slate-700); display:block; margin-bottom:0.35rem;">Monthly Wage</label>
+            <input type="number" id="quickSalary" class="form-input no-prefix" style="height:44px; font-size:0.875rem;" value="12000" min="100">
+          </div>
+
+          <div style="grid-column: 1 / -1;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.25rem;">
+              <label for="quickYears" style="font-size:0.8125rem; font-weight:600; color:var(--slate-700);">Completed Tenure</label>
+              <span id="quickYearsVal" style="font-size:0.8125rem; font-weight:600; color:var(--indigo-600); font-family:var(--font-mono);">5 Years</span>
+            </div>
+            <input type="range" id="quickYears" class="range-slider" min="1" max="25" step="1" value="5">
+          </div>
         </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Statutory Formulas Validated</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Ultra-Low Latency Static Delivery</span>
+
+        <div class="quick-result-box">
+          <div>
+            <div style="font-size:0.75rem; color:var(--slate-400);">Estimated Statutory Gratuity</div>
+            <div id="quickResultDisplay" style="font-size:1.5rem; font-weight:800; font-family:var(--font-mono); color:#ffffff; font-variant-numeric:tabular-nums;">
+              42,000.00 AED
+            </div>
+          </div>
+          <a id="quickDeepLink" href="tools/uae-gratuity-calculator.html" class="btn btn-secondary" style="height:38px; font-size:0.8125rem; padding:0 0.85rem;">
+            Full Breakdown &rarr;
+          </a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- GCC Country Calculators Grid -->
+  <!-- GCC Country Calculators Grid with Interactive Tabs -->
   <section id="calculators" style="padding: 4.5rem 0; background-color: #ffffff;">
     <div class="container">
       
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
         <h2 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--slate-900); margin-bottom: 0.75rem;">
-          Statutory Labour & Financial Calculators
+          Statutory Labour, Tax & Remittance Engines
         </h2>
         <p style="font-size: 0.9375rem; color: var(--slate-600);">
-          Select your jurisdiction to calculate end-of-service benefits, corporate tax liabilities, or cross-border remittance spreads.
+          Select a member state tab to filter calculators or view the full regional inventory.
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+      <!-- Interactive Nation Selector Tabs -->
+      <div class="filter-tabs" id="nationTabs">
+        <button type="button" class="filter-tab active" data-filter="all">All Tools (8)</button>
+        <button type="button" class="filter-tab" data-filter="uae">United Arab Emirates</button>
+        <button type="button" class="filter-tab" data-filter="ksa">Saudi Arabia</button>
+        <button type="button" class="filter-tab" data-filter="kuwait">Kuwait</button>
+        <button type="button" class="filter-tab" data-filter="qatar">Qatar</button>
+        <button type="button" class="filter-tab" data-filter="oman">Oman</button>
+        <button type="button" class="filter-tab" data-filter="bahrain">Bahrain</button>
+        <button type="button" class="filter-tab" data-filter="pan-gcc">Pan-GCC</button>
+      </div>
+
+      <!-- Calculators Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;" id="toolsGrid">
         
         <!-- Kuwait Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.15s, box-shadow 0.15s;">
+        <div class="calc-card tool-item" data-nation="kuwait" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <!-- Kuwait Flag -->
               <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
                 <rect width="24" height="5.33" fill="#007A3D"/>
                 <rect y="5.33" width="24" height="5.34" fill="#FFFFFF"/>
@@ -185,10 +330,9 @@
         </div>
 
         <!-- Saudi Arabia Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="ksa" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <!-- Saudi Flag -->
               <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
                 <rect width="24" height="16" fill="#006C35"/>
                 <path d="M5 8H19M7 9.5L17 9.5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
@@ -208,10 +352,9 @@
         </div>
 
         <!-- UAE Gratuity Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="uae" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <!-- UAE Flag -->
               <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
                 <rect width="6" height="16" fill="#CE1126"/>
                 <rect x="6" width="18" height="5.33" fill="#007A3D"/>
@@ -233,10 +376,9 @@
         </div>
 
         <!-- Qatar Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="qatar" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <!-- Qatar Flag -->
               <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
                 <rect width="7.5" height="16" fill="#FFFFFF"/>
                 <rect x="7.5" width="16.5" height="16" fill="#8A1538"/>
@@ -257,10 +399,9 @@
         </div>
 
         <!-- Oman Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="oman" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <!-- Oman Flag -->
               <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
                 <rect width="8" height="16" fill="#CE1126"/>
                 <rect x="8" width="16" height="5.33" fill="#FFFFFF"/>
@@ -282,10 +423,9 @@
         </div>
 
         <!-- Bahrain Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="bahrain" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <!-- Bahrain Flag -->
               <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
                 <rect width="6" height="16" fill="#FFFFFF"/>
                 <rect x="6" width="18" height="16" fill="#DA291C"/>
@@ -306,7 +446,7 @@
         </div>
 
         <!-- UAE Corporate Tax Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="uae" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2">
@@ -328,7 +468,7 @@
         </div>
 
         <!-- GCC Remittance Fee Card -->
-        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div class="calc-card tool-item" data-nation="pan-gcc" style="display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2">
@@ -353,16 +493,98 @@
     </div>
   </section>
 
-  <!-- GCC Comparative Gratuity Matrix -->
-  <section id="comparison" style="padding: 4.5rem 0; background-color: var(--slate-50); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+  <!-- Featured Insights Section (Latest Legal & Financial Articles) -->
+  <section style="padding: 4.5rem 0; background-color: var(--slate-50); border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2.5rem; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <h2 style="font-size: 1.875rem; font-weight: 800; letter-spacing: -0.02em; color: var(--slate-900); margin-bottom: 0.35rem;">
+            Featured GCC Legal & Financial Insights
+          </h2>
+          <p style="font-size: 0.9375rem; color: var(--slate-600);">
+            Statutory analysis, decree transitions, and tax guidance written by our compliance specialists.
+          </p>
+        </div>
+        <a href="blog/index.html" class="btn btn-secondary" style="font-size:0.875rem;">
+          View All 10 Articles &rarr;
+        </a>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        
+        <!-- Post 1 -->
+        <div class="insight-card">
+          <div>
+            <span class="tag-badge" style="background:var(--emerald-50); color:var(--emerald-700); border:1px solid var(--emerald-100);">UAE Labour Law</span>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--slate-900); line-height: 1.4; margin-bottom: 0.625rem;">
+              <a href="blog/uae-gratuity-calculation-limited-contract-2026.html" style="color:inherit;">
+                UAE Gratuity Calculation Under Limited Contracts in 2026
+              </a>
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1rem;">
+              How Federal Decree-Law No. 33 of 2021 unified contracts and eliminated the historical voluntary resignation penalty.
+            </p>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--slate-500); border-top:1px solid var(--slate-100); padding-top:0.75rem;">
+            <span>By Legal Research Team</span>
+            <span>6 min read</span>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="insight-card">
+          <div>
+            <span class="tag-badge" style="background:var(--indigo-50); color:var(--indigo-700); border:1px solid var(--indigo-100);">Saudi Arabia</span>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--slate-900); line-height: 1.4; margin-bottom: 0.625rem;">
+              <a href="blog/saudi-labor-law-article-84-85-resignation-rules.html" style="color:inherit;">
+                Saudi Labour Law Articles 84 & 85: Resignation Rules & Actual Wage
+              </a>
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1rem;">
+              A step-by-step breakdown of how voluntary resignation affects your award under the 2-5 and 5-10 year statutory deduction tiers.
+            </p>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--slate-500); border-top:1px solid var(--slate-100); padding-top:0.75rem;">
+            <span>By Compliance Specialist</span>
+            <span>7 min read</span>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="insight-card">
+          <div>
+            <span class="tag-badge" style="background:var(--amber-50); color:var(--amber-700); border:1px solid var(--amber-100);">Kuwait Law</span>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--slate-900); line-height: 1.4; margin-bottom: 0.625rem;">
+              <a href="blog/kuwait-labor-law-article-55-26-days-calculation.html" style="color:inherit;">
+                Kuwait Labour Law Article 55: The 26 Working Days Rule
+              </a>
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1rem;">
+              Why dividing monthly salary by 30 days is illegal in Kuwait, and how the statutory 26-day divisor safeguards worker severance.
+            </p>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--slate-500); border-top:1px solid var(--slate-100); padding-top:0.75rem;">
+            <span>By Senior Labour Counsel</span>
+            <span>6 min read</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GCC Metric Comparison Ticker & Statutory Table -->
+  <section id="comparison" style="padding: 4.5rem 0; background-color: #ffffff; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
     <div class="container">
       
       <div style="text-align: center; max-width: 750px; margin: 0 auto 3rem auto;">
         <h2 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--slate-900); margin-bottom: 0.75rem;">
-          GCC Statutory Gratuity Comparative Matrix
+          GCC Regional Statutory Benchmarks
         </h2>
         <p style="font-size: 0.9375rem; color: var(--slate-600);">
-          Side-by-side legal comparison across the six member nations of the Gulf Cooperation Council.
+          Cross-jurisdiction comparison of Corporate Tax rates, standard VAT, work week regulations, and maximum severance ceilings.
         </p>
       </div>
 
@@ -371,71 +593,70 @@
           <thead>
             <tr>
               <th>Country</th>
-              <th>Governing Statute</th>
-              <th>Daily Wage Divisor</th>
-              <th>Years 1–5 Accrual</th>
-              <th>Year 6+ Accrual</th>
-              <th>Resignation Penalty</th>
-              <th>Statutory Cap</th>
+              <th>Standard Corporate Tax</th>
+              <th>Standard VAT Rate</th>
+              <th>Statutory Daily Divisor</th>
+              <th>Standard Work Week</th>
+              <th>Maximum Gratuity Cap</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Kuwait</strong></td>
-              <td>Law No. 6/2010 Art. 55</td>
-              <td><strong>26 Working Days</strong></td>
-              <td>15 Days / Year</td>
-              <td>30 Days / Year</td>
-              <td>0% (&lt;3y), 50% (3-5y), 66% (5-10y), 100% (10y+)</td>
-              <td>1.5 Years' Salary</td>
+              <td><strong>United Arab Emirates</strong></td>
+              <td>0% &le; 375k AED, 9% above</td>
+              <td>5.0%</td>
+              <td>30 Calendar Days</td>
+              <td>48 Hours (8h/day)</td>
+              <td>2 Years' Basic Wage</td>
             </tr>
             <tr>
               <td><strong>Saudi Arabia</strong></td>
-              <td>Labour Law Art. 84/85</td>
-              <td>30 Days (Actual Wage)</td>
-              <td>15 Days / Year</td>
-              <td>30 Days / Year</td>
-              <td>0% (&lt;2y), 33% (2-5y), 66% (5-10y), 100% (10y+)</td>
-              <td>No statutory cap</td>
+              <td>20% (Foreign) / 2.5% Zakat</td>
+              <td>15.0%</td>
+              <td>30 Calendar Days (Actual Wage)</td>
+              <td>48 Hours (8h/day)</td>
+              <td>Uncapped</td>
             </tr>
             <tr>
-              <td><strong>UAE</strong></td>
-              <td>Federal Decree-Law 33/2021</td>
-              <td>30 Days (Basic Salary)</td>
-              <td>21 Days / Year</td>
-              <td>30 Days / Year</td>
-              <td><strong>None (100% identical)</strong></td>
-              <td>2 Years' Salary</td>
+              <td><strong>Kuwait</strong></td>
+              <td>15% (Foreign corporations)</td>
+              <td>0.0% (Pending)</td>
+              <td><strong>26 Working Days</strong></td>
+              <td>48 Hours (8h/day)</td>
+              <td>1.5 Years' Remuneration</td>
             </tr>
             <tr>
               <td><strong>Qatar</strong></td>
-              <td>Labour Law No. 14/2004</td>
-              <td>30 Days (Basic Salary)</td>
-              <td>21 Days / Year (Min)</td>
-              <td>21 Days / Year (Min)</td>
-              <td><strong>None (100% entitlement)</strong></td>
-              <td>No statutory cap</td>
+              <td>10% standard rate</td>
+              <td>0.0% (Pending)</td>
+              <td>30 Calendar Days</td>
+              <td>48 Hours (8h/day)</td>
+              <td>Uncapped</td>
             </tr>
             <tr>
               <td><strong>Oman</strong></td>
-              <td>Royal Decree 53/2023</td>
-              <td>30 Days (Basic Salary)</td>
-              <td><strong>30 Days / Year</strong></td>
-              <td>30 Days / Year</td>
-              <td><strong>None (100% entitlement)</strong></td>
-              <td>No statutory cap</td>
+              <td>15% standard rate</td>
+              <td>5.0%</td>
+              <td>30 Calendar Days</td>
+              <td>40 Hours (8h/day)</td>
+              <td>Uncapped</td>
             </tr>
             <tr>
               <td><strong>Bahrain</strong></td>
-              <td>Law No. 36/2012 Art. 116</td>
-              <td>30 Days (Monthly Wage)</td>
-              <td>15 Days / Year (Y1-3)</td>
-              <td>30 Days / Year (Y4+)</td>
-              <td>SIO Fund Protected</td>
-              <td>No statutory cap</td>
+              <td>0% (Standard) / Oil &amp; Gas</td>
+              <td>10.0%</td>
+              <td>30 Calendar Days</td>
+              <td>48 Hours (8h/day)</td>
+              <td>SIO Expat Fund Protected</td>
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div style="text-align:center; margin-top:1.5rem;">
+        <a href="labour-laws/index.html" class="btn btn-secondary">
+          Read Full Pan-GCC Labour Laws Comparative Analysis &rarr;
+        </a>
       </div>
 
     </div>
@@ -467,12 +688,14 @@
         </div>
 
         <div>
-          <div class="footer-col-title">Financial & Tax</div>
+          <div class="footer-col-title">Directories & Insights</div>
           <ul class="footer-list">
+            <li><a href="labour-laws/index.html" class="footer-link">GCC Labour Laws Directory</a></li>
+            <li><a href="blog/index.html" class="footer-link">Insights & Blog Hub</a></li>
             <li><a href="tools/uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax (9%)</a></li>
             <li><a href="tools/gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fee Engine</a></li>
             <li><a href="llms.txt" class="footer-link">LLM Manifest (/llms.txt)</a></li>
-            <li><a href="sitemap.xml" class="footer-link">Sitemap</a></li>
+            <li><a href="sitemap.xml" class="footer-link">XML Sitemap</a></li>
           </ul>
         </div>
 
@@ -495,6 +718,113 @@
     </div>
   </footer>
 
+  <script src="assets/js/core-calculator.js"></script>
   <script src="assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Nation Tab Filtering
+      const tabs = document.querySelectorAll('.filter-tab');
+      const toolItems = document.querySelectorAll('.tool-item');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const filter = tab.getAttribute('data-filter');
+
+          toolItems.forEach(item => {
+            const nation = item.getAttribute('data-nation');
+            if (filter === 'all' || nation === filter) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Quick-Calc Spotlight Engine
+      const quickCountry = document.getElementById('quickCountry');
+      const quickSalary = document.getElementById('quickSalary');
+      const quickYears = document.getElementById('quickYears');
+      const quickYearsVal = document.getElementById('quickYearsVal');
+      const quickResultDisplay = document.getElementById('quickResultDisplay');
+      const quickDeepLink = document.getElementById('quickDeepLink');
+
+      const countryConfigs = {
+        UAE: { cur: 'AED', link: 'tools/uae-gratuity-calculator.html' },
+        KSA: { cur: 'SAR', link: 'tools/saudi-end-of-service-calculator.html' },
+        KWT: { cur: 'KWD', link: 'tools/kuwait-indemnity-calculator.html' },
+        QAT: { cur: 'QAR', link: 'tools/qatar-gratuity-calculator.html' },
+        OMN: { cur: 'OMR', link: 'tools/oman-gratuity-calculator.html' },
+        BHR: { cur: 'BHD', link: 'tools/bahrain-eosi-calculator.html' }
+      };
+
+      function updateQuickCalc() {
+        const country = quickCountry.value;
+        const config = countryConfigs[country] || countryConfigs.UAE;
+        const salary = parseFloat(quickSalary.value) || 0;
+        const years = parseFloat(quickYears.value) || 1;
+
+        quickYearsVal.textContent = years + (years === 1 ? ' Year' : ' Years');
+        quickDeepLink.href = config.link;
+
+        let total = 0;
+
+        if (country === 'UAE') {
+          const daily = salary / 30;
+          if (years <= 5) {
+            total = years * 21 * daily;
+          } else {
+            total = (5 * 21 * daily) + ((years - 5) * 30 * daily);
+          }
+          total = Math.min(total, salary * 24);
+        } else if (country === 'KSA') {
+          if (years <= 5) {
+            total = years * (salary / 2);
+          } else {
+            total = (5 * (salary / 2)) + ((years - 5) * salary);
+          }
+        } else if (country === 'KWT') {
+          const daily = salary / 26;
+          if (years <= 5) {
+            total = years * 15 * daily;
+          } else {
+            total = (5 * 15 * daily) + ((years - 5) * 30 * daily);
+          }
+          total = Math.min(total, salary * 18);
+        } else if (country === 'QAT') {
+          total = years * 21 * (salary / 30);
+        } else if (country === 'OMN') {
+          total = years * salary; // RD 53/2023 flat 30 days
+        } else if (country === 'BHR') {
+          const daily = salary / 30;
+          if (years <= 3) {
+            total = years * 15 * daily;
+          } else {
+            total = (3 * 15 * daily) + ((years - 3) * 30 * daily);
+          }
+        }
+
+        quickResultDisplay.textContent = formatCurrency(total, config.cur) + ' ' + config.cur;
+      }
+
+      quickCountry.addEventListener('change', () => {
+        // adjust default salary placeholder depending on currency scale
+        if (quickCountry.value === 'KWT' || quickCountry.value === 'BHR' || quickCountry.value === 'OMN') {
+          if (parseFloat(quickSalary.value) > 3000) quickSalary.value = '1200';
+        } else {
+          if (parseFloat(quickSalary.value) < 3000) quickSalary.value = '12000';
+        }
+        updateQuickCalc();
+      });
+
+      quickSalary.addEventListener('input', updateQuickCalc);
+      quickYears.addEventListener('input', updateQuickCalc);
+
+      updateQuickCalc();
+    });
+  </script>
 </body>
 </html>

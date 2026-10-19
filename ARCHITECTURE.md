@@ -1,4 +1,4 @@
-# GulfCalc (gulfcalc.tech) — Technical Architecture Specification
+# GulfCalc (gulfcalc.tech): Technical Architecture Specification
 
 **System Classification:** Ultra-Minimalist, High-Performance Static Web Application  
 **Primary Target:** Web Standards (HTML5 / Modern Vanilla CSS / Vanilla ES6+ JavaScript)  
