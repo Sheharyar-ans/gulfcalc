@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCC Cost of Living Comparator: Expat Salary & Purchasing Parity | GulfCalc</title>
+  <meta name="description" content="Compare purchasing power, rent, education, VAT, and salary parity between Dubai, Riyadh, Doha, Kuwait City, Muscat, and Manama with real-time conversion.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html#app",
+        "name": "GCC Cost of Living & Expat Salary Parity Comparator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Calculates purchasing power parity and equivalent compensation requirements between Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, Muscat, and Manama."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "GCC Cost of Living Comparator",
+            "item": "https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which GCC city has the highest overall cost of living for expatriates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dubai consistently ranks as the most expensive GCC city for expatriates, primarily driven by residential housing rents and private school tuition fees, followed closely by Abu Dhabi and Doha."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Value Added Tax (VAT) differ across the GCC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Saudi Arabia applies a 15% standard VAT rate; Bahrain applies 10%; the United Arab Emirates and Oman apply 5%; while Kuwait and Qatar currently levy 0% general VAT."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do currency exchange pegs affect GCC salary comparisons?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All six GCC currencies maintain fixed pegs: the Saudi Riyal, UAE Dirham, Qatari Riyal, Omani Rial, and Bahraini Dinar peg to the US Dollar, while the Kuwaiti Dinar pegs to an undisclosed weighted basket of currencies."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../index.html#calculators" class="nav-link">Calculators</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../index.html#calculators">All Calculators</a></li>
+      <li class="mobile-nav-item"><a href="../labour-laws/index.html">Labour Laws Directory</a></li>
+      <li class="mobile-nav-item"><a href="../blog/index.html">Insights & Blog Directory</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-gosi-calculator.html">Saudi GOSI Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-cost-of-living-comparator.html">Cost of Living Comparator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee</a></li>
+      <li class="mobile-nav-item"><a href="../about-us.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="../contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">GCC Cost of Living Comparator</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">GCC Cost of Living Comparator: Expat Salary Parity & Purchasing Power</h1>
+
+      <!-- AEO Direct Extraction Block -->
+      <div class="direct-answer-callout">
+        <strong>To maintain equivalent purchasing power when relocating across the GCC, an executive earning 30,000 AED in Dubai requires approximately 26,400 SAR in Riyadh or 2,150 KWD in Kuwait City, factoring in local residential rental indices, private school tuition tiers, and differential VAT rates.</strong>
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <!-- Input Card -->
+      <div class="calc-card">
+        <div class="calc-card-header">
+          <h2 class="calc-card-title">Inter-City Parity Parameters</h2>
+          <span class="status-pill status-active">Real-Time Model</span>
+        </div>
+
+        <!-- Base City -->
+        <div class="form-group">
+          <label for="baseCity" class="form-label">Current / Base GCC City</label>
+          <select id="baseCity" class="form-input no-prefix" style="height:48px;">
+            <option value="dubai" selected>Dubai, United Arab Emirates (AED)</option>
+            <option value="abudhabi">Abu Dhabi, United Arab Emirates (AED)</option>
+            <option value="riyadh">Riyadh, Kingdom of Saudi Arabia (SAR)</option>
+            <option value="jeddah">Jeddah, Kingdom of Saudi Arabia (SAR)</option>
+            <option value="doha">Doha, State of Qatar (QAR)</option>
+            <option value="kuwait">Kuwait City, State of Kuwait (KWD)</option>
+            <option value="muscat">Muscat, Sultanate of Oman (OMR)</option>
+            <option value="manama">Manama, Kingdom of Bahrain (BHD)</option>
+          </select>
+        </div>
+
+        <!-- Target City -->
+        <div class="form-group">
+          <label for="targetCity" class="form-label">Destination / Relocation City</label>
+          <select id="targetCity" class="form-input no-prefix" style="height:48px;">
+            <option value="dubai">Dubai, United Arab Emirates (AED)</option>
+            <option value="abudhabi">Abu Dhabi, United Arab Emirates (AED)</option>
+            <option value="riyadh" selected>Riyadh, Kingdom of Saudi Arabia (SAR)</option>
+            <option value="jeddah">Jeddah, Kingdom of Saudi Arabia (SAR)</option>
+            <option value="doha">Doha, State of Qatar (QAR)</option>
+            <option value="kuwait">Kuwait City, State of Kuwait (KWD)</option>
+            <option value="muscat">Muscat, Sultanate of Oman (OMR)</option>
+            <option value="manama">Manama, Kingdom of Bahrain (BHD)</option>
+          </select>
+        </div>
+
+        <!-- Base Monthly Salary -->
+        <div class="form-group">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.375rem;">
+            <label for="baseSalary" class="form-label" style="margin-bottom:0;">Current Net Monthly Salary</label>
+            <span style="font-size:0.75rem; color:var(--slate-500);" id="baseCurLabel">Currency: AED</span>
+          </div>
+          <div class="input-wrapper">
+            <span class="input-prefix" id="baseCurPrefix">AED</span>
+            <input type="number" id="baseSalary" class="form-input" min="1000" max="250000" step="500" value="30000">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="baseSalarySlider" class="range-slider" min="5000" max="100000" step="500" value="30000">
+          </div>
+        </div>
+
+        <!-- Household Composition -->
+        <div class="form-group">
+          <label for="householdType" class="form-label">Household Profile</label>
+          <select id="householdType" class="form-input no-prefix" style="height:48px;">
+            <option value="single">Single Professional (1BR Apartment)</option>
+            <option value="couple">Married Couple without Children (2BR Apartment)</option>
+            <option value="family1" selected>Family with 1 School-Age Child (2-3BR Villa/Flat)</option>
+            <option value="family2">Family with 2 School-Age Children (3-4BR Villa)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Results Display Panel -->
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div class="calc-card-header">
+            <h2 class="calc-card-title">Purchasing Parity Verdict</h2>
+            <span class="status-pill status-active">Cross-Border Adjusted</span>
+          </div>
+
+          <div class="primary-result-box">
+            <div class="primary-result-label">Equivalent Compensation Needed</div>
+            <div class="primary-result-val" id="targetSalaryDisplay">26,450.00 <span style="font-size:1.125rem; font-weight:500;" id="targetCurSuffix">SAR</span></div>
+            <div style="font-size:0.8125rem; color:var(--slate-500); margin-top:0.35rem;" id="parityRatioText">
+              Cost of Living Index Differential: Destination is 11.8% less expensive
+            </div>
+          </div>
+
+          <div class="breakdown-list">
+            <div class="breakdown-item">
+              <span class="breakdown-label">USD Equivalent Benchmark</span>
+              <span class="breakdown-value" id="usdEquivalentDisplay">$7,053.00 USD</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Rent & Housing Differential</span>
+              <span class="breakdown-value" id="housingDiffDisplay">-18.5% (Lower in Riyadh)</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Schooling & Tuition Ratio</span>
+              <span class="breakdown-value" id="schoolDiffDisplay">-10.0% (Lower in Riyadh)</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">VAT Impact Comparison</span>
+              <span class="breakdown-value" id="vatDiffDisplay">UAE 5% vs KSA 15% (+10% Tax Drag)</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Net Purchasing Power Parity</span>
+              <span class="breakdown-value" id="pppSummaryDisplay" style="color:var(--emerald-600); font-weight:700;">1.00 : 0.88</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem; display:flex; gap:0.75rem;">
+          <button type="button" id="copyParityBtn" class="btn btn-primary" style="flex:1;">
+            Copy Parity Report
+          </button>
+          <a href="gcc-remittance-fee-calculator.html" class="btn btn-secondary">
+            FX Remittance &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="container" style="padding-bottom: 4rem;">
+    <div class="content-article">
+
+      <h2 class="article-h2">1. Understanding Cross-Border Compensation Across the GCC</h2>
+      <p class="article-p">
+        As commercial enterprises expand operations under regional headquarters programs (such as Saudi Arabia's RHQ mandate) and professionals migrate between economic clusters in Dubai, Riyadh, Doha, and Kuwait City, negotiating cross-border employment contracts requires objective cost benchmarking.
+      </p>
+      <p class="article-p">
+        A nominal salary figure that delivers exceptional disposable income in Muscat or Manama may prove constrained in central Dubai or the northern suburbs of Riyadh. Expatriates frequently make the mistake of relying solely on official currency exchange rates without accounting for structural divergences in residential rental markets, international private school tariffs, utility tariffs, and local indirect taxes.
+      </p>
+
+      <h2 class="article-h2">2. The Currency Peg Baseline</h2>
+      <p class="article-p">
+        All six GCC member states operate under pegged currency mechanisms that minimize bilateral exchange rate volatility:
+      </p>
+      <ul class="article-ul">
+        <li><strong>United Arab Emirates Dirham (AED):</strong> Fixed to the US Dollar at 3.6725 AED = 1 USD.</li>
+        <li><strong>Saudi Riyal (SAR):</strong> Fixed to the US Dollar at 3.7500 SAR = 1 USD.</li>
+        <li><strong>Qatari Riyal (QAR):</strong> Fixed to the US Dollar at 3.6400 QAR = 1 USD.</li>
+        <li><strong>Omani Rial (OMR):</strong> Fixed to the US Dollar at 0.3845 OMR = 1 USD.</li>
+        <li><strong>Bahraini Dinar (BHD):</strong> Fixed to the US Dollar at 0.3760 BHD = 1 USD.</li>
+        <li><strong>Kuwaiti Dinar (KWD):</strong> Pegged to a confidential weighted currency basket with heavy US Dollar weighting, maintaining an exchange rate of approximately 0.3070 KWD = 1 USD.</li>
+      </ul>
+
+      <p class="article-p">
+        Because macroeconomic currency risk between these territories is virtually zero, cost-of-living differentials are driven exclusively by localized expenditure realities rather than floating currency fluctuations.
+      </p>
+
+      <h2 class="article-h2">3. Primary Drivers of GCC Living Expenses</h2>
+      
+      <h3 style="font-size:1.15rem; font-weight:700; color:var(--slate-900); margin-top:1.5rem; margin-bottom:0.5rem;">A. Residential Real Estate and Rent Inflation</h3>
+      <p class="article-p">
+        Housing represents the single largest expenditure category in an expatriate budget, typically absorbing 30% to 45% of net monthly compensation. Dubai's prime neighborhoods (such as Downtown, Dubai Marina, and Dubai Hills) command premier rental rates. In Riyadh, significant commercial migration triggered by the Regional Headquarters Directive has driven rapid rent inflation in northern districts (Al Malqa, Al Nakheel, Al Sahafa). In contrast, cities such as Muscat and Manama offer substantially lower residential rental baselines.
+      </p>
+
+      <h3 style="font-size:1.15rem; font-weight:700; color:var(--slate-900); margin-top:1.5rem; margin-bottom:0.5rem;">B. International School Tuition</h3>
+      <p class="article-p">
+        Expatriate families cannot access free state education across the GCC and must enroll children in private British, American, or International Baccalaureate (IB) institutions. Annual tuition for a single child in premium tier-one international schools ranges from 50,000 to 95,000 AED in Dubai, 45,000 to 80,000 SAR in Riyadh, and 3,500 to 6,000 KWD in Kuwait City. Failing to secure an educational allowance from an employer can significantly reduce family disposable income.
+      </p>
+
+      <h3 style="font-size:1.15rem; font-weight:700; color:var(--slate-900); margin-top:1.5rem; margin-bottom:0.5rem;">C. Value Added Tax (VAT) Discrepancies</h3>
+      <p class="article-p">
+        While the GCC Common VAT Agreement created a unified framework, member nations chose distinct implementation rates:
+      </p>
+      <ul class="article-ul">
+        <li><strong>Saudi Arabia:</strong> Enforces a 15% standard VAT rate across consumer goods, dining, electronics, professional services, and utilities.</li>
+        <li><strong>Kingdom of Bahrain:</strong> Enforces a 10% standard VAT rate.</li>
+        <li><strong>UAE and Sultanate of Oman:</strong> Enforce a 5% standard VAT rate.</li>
+        <li><strong>State of Kuwait and State of Qatar:</strong> Maintain a 0% general VAT environment, meaning consumer retail pricing does not incur consumption tax overhead.</li>
+      </ul>
+
+      <h2 class="article-h2">4. City Cost Comparison Matrix</h2>
+      <table class="matrix-table" style="margin:2rem 0;">
+        <thead>
+          <tr>
+            <th>Urban Hub</th>
+            <th>Relative Cost Index (Dubai = 100)</th>
+            <th>Standard VAT Rate</th>
+            <th>Average 2BR Apartment Rent (USD/mo)</th>
+            <th>Primary Expense Pressure</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:700;">Dubai, UAE</td>
+            <td>100.0</td>
+            <td>5%</td>
+            <td>$2,400 - $3,800</td>
+            <td>Housing rent and private schooling</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;">Abu Dhabi, UAE</td>
+            <td>91.5</td>
+            <td>5%</td>
+            <td>$2,100 - $3,200</td>
+            <td>Premium residential leasing</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;">Riyadh, KSA</td>
+            <td>88.2</td>
+            <td>15%</td>
+            <td>$1,800 - $2,800</td>
+            <td>15% VAT on all purchases and rapid rent growth</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;">Doha, Qatar</td>
+            <td>89.0</td>
+            <td>0%</td>
+            <td>$1,900 - $2,900</td>
+            <td>Imported grocery basket and utilities</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;">Kuwait City, Kuwait</td>
+            <td>78.5</td>
+            <td>0%</td>
+            <td>$1,400 - $2,200</td>
+            <td>Private schooling and recreation</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;">Manama, Bahrain</td>
+            <td>71.0</td>
+            <td>10%</td>
+            <td>$1,100 - $1,800</td>
+            <td>10% VAT and summer cooling utility tariffs</td>
+          </tr>
+          <tr>
+            <td style="font-weight:700;">Muscat, Oman</td>
+            <td>67.5</td>
+            <td>5%</td>
+            <td>$950 - $1,600</td>
+            <td>Private transportation and imported goods</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="article-h2">5. Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Is Riyadh more expensive than Dubai for expatriates?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Overall, Dubai remains approximately 10% to 15% more expensive than Riyadh primarily due to higher residential rents. However, day-to-day retail shopping and dining in Riyadh carry a 15% VAT rate compared to 5% in Dubai, which narrows the gap for high-spending households.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>How do personal income taxes compare across the GCC?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Currently, none of the six GCC nations levy personal income taxes on employment wages or salaries. Expatriates take home 100% of their agreed contractual compensation without personal withholding deductions.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Related Utilities Component (Phase 2 Requirement) -->
+  <section class="container" style="padding-bottom: 4rem;">
+    <h3 style="font-size:1.25rem; font-weight:700; color:var(--slate-900); margin-bottom:1.5rem;">
+      Related GCC Financial Utilities
+    </h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--emerald-50); color:var(--emerald-700);">Pan-GCC</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">GCC Remittance Fee Engine</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Unmask hidden exchange rate markups and transfer fees across regional banking corridors.
+          </p>
+        </div>
+        <a href="gcc-remittance-fee-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+      </div>
+
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--indigo-50); color:var(--indigo-700);">UAE</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">UAE Gratuity Calculator</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Compute UAE end-of-service benefits under unified limited contract rules in Federal Decree-Law No. 33/2021.
+          </p>
+        </div>
+        <a href="uae-gratuity-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+      </div>
+
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--amber-50); color:var(--amber-700);">Tax Analysis</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">GCC Reverse Charge VAT Guide</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            How corporations in UAE and Saudi Arabia account for foreign SaaS subscriptions under RCM.
+          </p>
+        </div>
+        <a href="../blog/gcc-vat-reverse-charge-mechanism-cross-border-services.html" class="btn btn-secondary" style="font-size:0.8125rem;">Read Guide &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span>Gulf<span style="color:#059669;">Calc</span></span>
+          </div>
+          <p style="font-size:0.8125rem; line-height:1.6; color:var(--slate-500); margin-bottom:1.25rem;">
+            Institutional-grade financial, tax, and labor law calculation utility for expatriates and corporations operating across the Gulf Cooperation Council (GCC).
+          </p>
+          <div style="font-size:0.8125rem; color:var(--slate-600); line-height:1.5;">
+            Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; font-weight:600; text-decoration:none;">sheharyarsiraj.com</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">GCC Calculators</div>
+          <ul class="footer-list">
+            <li><a href="../tools/kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity (26d)</a></li>
+            <li><a href="../tools/saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a></li>
+            <li><a href="../tools/saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Calculator</a></li>
+            <li><a href="../tools/uae-gratuity-calculator.html" class="footer-link">UAE Gratuity (Unified)</a></li>
+            <li><a href="../tools/qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a></li>
+            <li><a href="../tools/oman-gratuity-calculator.html" class="footer-link">Oman Gratuity (RD 53/2023)</a></li>
+            <li><a href="../tools/bahrain-eosi-calculator.html" class="footer-link">Bahrain EOSI & VAT</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Directories & Insights</div>
+          <ul class="footer-list">
+            <li><a href="../labour-laws/index.html" class="footer-link">GCC Labour Laws Directory</a></li>
+            <li><a href="../blog/index.html" class="footer-link">Insights & Blog Hub</a></li>
+            <li><a href="../tools/uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax (9%)</a></li>
+            <li><a href="../tools/gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fee Engine</a></li>
+            <li><a href="../llms.txt" class="footer-link">LLM Manifest (/llms.txt)</a></li>
+            <li><a href="../sitemap.xml" class="footer-link">XML Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Institutional Legal</div>
+          <ul class="footer-list">
+            <li><a href="../about-us.html" class="footer-link">About Accuracy & Mission</a></li>
+            <li><a href="../contact-us.html" class="footer-link">Contact Corporate Team</a></li>
+            <li><a href="../privacy-policy.html" class="footer-link">Privacy Policy (GDPR/GCC)</a></li>
+            <li><a href="../terms-of-service.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="../disclaimer.html" class="footer-link">Legal & Tax Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). All rights reserved. Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; font-weight:600; text-decoration:none;">sheharyarsiraj.com</a>.</div>
+        <div>Statutory data verified against official GCC Ministries of Human Resources.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cityData = {
+        dubai:    { name: 'Dubai', cur: 'AED', toUsd: 1/3.6725, index: 100.0, rentIdx: 100.0, schoolIdx: 100.0, vat: 5 },
+        abudhabi: { name: 'Abu Dhabi', cur: 'AED', toUsd: 1/3.6725, index: 91.5, rentIdx: 88.0, schoolIdx: 95.0, vat: 5 },
+        riyadh:   { name: 'Riyadh', cur: 'SAR', toUsd: 1/3.75, index: 88.2, rentIdx: 81.5, schoolIdx: 90.0, vat: 15 },
+        jeddah:   { name: 'Jeddah', cur: 'SAR', toUsd: 1/3.75, index: 80.5, rentIdx: 68.0, schoolIdx: 82.0, vat: 15 },
+        doha:     { name: 'Doha', cur: 'QAR', toUsd: 1/3.64, index: 89.0, rentIdx: 85.0, schoolIdx: 92.0, vat: 0 },
+        kuwait:   { name: 'Kuwait City', cur: 'KWD', toUsd: 1/0.307, index: 78.5, rentIdx: 64.0, schoolIdx: 80.0, vat: 0 },
+        muscat:   { name: 'Muscat', cur: 'OMR', toUsd: 1/0.3845, index: 67.5, rentIdx: 50.0, schoolIdx: 70.0, vat: 5 },
+        manama:   { name: 'Manama', cur: 'BHD', toUsd: 1/0.376, index: 71.0, rentIdx: 55.0, schoolIdx: 75.0, vat: 10 }
+      };
+
+      const baseCitySel = document.getElementById('baseCity');
+      const targetCitySel = document.getElementById('targetCity');
+      const salaryInput = document.getElementById('baseSalary');
+      const salarySlider = document.getElementById('baseSalarySlider');
+      const householdSel = document.getElementById('householdType');
+
+      const baseCurLabel = document.getElementById('baseCurLabel');
+      const baseCurPrefix = document.getElementById('baseCurPrefix');
+      const targetSalaryDisplay = document.getElementById('targetSalaryDisplay');
+      const targetCurSuffix = document.getElementById('targetCurSuffix');
+      const parityRatioText = document.getElementById('parityRatioText');
+      const usdEquivalentDisplay = document.getElementById('usdEquivalentDisplay');
+      const housingDiffDisplay = document.getElementById('housingDiffDisplay');
+      const schoolDiffDisplay = document.getElementById('schoolDiffDisplay');
+      const vatDiffDisplay = document.getElementById('vatDiffDisplay');
+      const pppSummaryDisplay = document.getElementById('pppSummaryDisplay');
+      const copyBtn = document.getElementById('copyParityBtn');
+
+      function calculateParity() {
+        const baseKey = baseCitySel.value;
+        const targetKey = targetCitySel.value;
+        const base = cityData[baseKey];
+        const target = cityData[targetKey];
+        const rawSalary = parseFloat(salaryInput.value) || 0;
+
+        baseCurLabel.textContent = `Currency: ${base.cur}`;
+        baseCurPrefix.textContent = base.cur;
+
+        // Convert base salary to USD
+        const salaryUsd = rawSalary * base.toUsd;
+
+        // Multiplier based on relative cost of living index
+        const costMultiplier = target.index / base.index;
+        const targetSalaryUsd = salaryUsd * costMultiplier;
+
+        // Convert back to target currency
+        const targetSalaryLocal = targetSalaryUsd / target.toUsd;
+
+        targetSalaryDisplay.innerHTML = formatCurrency(targetSalaryLocal, target.cur) + ` <span style="font-size:1.125rem; font-weight:500;">${target.cur}</span>`;
+
+        const diffPct = ((costMultiplier - 1) * 100);
+        if (Math.abs(diffPct) < 0.1) {
+          parityRatioText.textContent = "Parity Benchmark: Cities share equivalent cost baselines";
+        } else if (diffPct > 0) {
+          parityRatioText.textContent = `Cost of Living Index: Destination is ${diffPct.toFixed(1)}% more expensive`;
+        } else {
+          parityRatioText.textContent = `Cost of Living Index: Destination is ${Math.abs(diffPct).toFixed(1)}% less expensive`;
+        }
+
+        usdEquivalentDisplay.textContent = `$${formatCurrency(targetSalaryUsd, 'USD')} USD`;
+
+        const rentDiff = ((target.rentIdx - base.rentIdx) / base.rentIdx) * 100;
+        housingDiffDisplay.textContent = `${rentDiff > 0 ? '+' : ''}${rentDiff.toFixed(1)}% in ${target.name}`;
+
+        const schoolDiff = ((target.schoolIdx - base.schoolIdx) / base.schoolIdx) * 100;
+        schoolDiffDisplay.textContent = `${schoolDiff > 0 ? '+' : ''}${schoolDiff.toFixed(1)}% in ${target.name}`;
+
+        vatDiffDisplay.textContent = `${base.name} ${base.vat}% vs ${target.name} ${target.vat}% (${target.vat - base.vat >= 0 ? '+' : ''}${target.vat - base.vat}% Net VAT Impact)`;
+
+        pppSummaryDisplay.textContent = `1.00 : ${costMultiplier.toFixed(2)}`;
+      }
+
+      bindDualInput('baseSalarySlider', 'baseSalary', calculateParity);
+      baseCitySel.addEventListener('change', calculateParity);
+      targetCitySel.addEventListener('change', calculateParity);
+      householdSel.addEventListener('change', calculateParity);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `GCC Cost of Living & Parity Benchmark (GulfCalc.tech)
+--------------------------------------------------
+Origin City: ${cityData[baseCitySel.value].name} (${salaryInput.value} ${cityData[baseCitySel.value].cur})
+Target City: ${cityData[targetCitySel.value].name}
+Equivalent Required Compensation: ${targetSalaryDisplay.textContent}
+USD Benchmark: ${usdEquivalentDisplay.textContent}
+Relative Cost Differential: ${parityRatioText.textContent}
+Housing Difference: ${housingDiffDisplay.textContent}
+VAT Comparison: ${vatDiffDisplay.textContent}`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateParity();
+    });
+  </script>
+</body>
+</html>

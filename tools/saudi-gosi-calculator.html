@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudi GOSI Calculator: Social Insurance & SANED Contributions | GulfCalc</title>
+  <meta name="description" content="Calculate Saudi GOSI pension and SANED deductions for Saudi citizens (10.5%) and occupational hazard fees for expatriates (2%) under Royal Decree No. M/33.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/saudi-gosi-calculator.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/saudi-gosi-calculator.html#app",
+        "name": "Saudi GOSI & SANED Contribution Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "SAR"
+        },
+        "description": "Calculates mandatory GOSI Annuity, SANED unemployment insurance, and Occupational Hazard contributions for Saudi citizens and expatriate personnel."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Saudi GOSI Calculator",
+            "item": "https://gulfcalc.tech/tools/saudi-gosi-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What percentage does an expatriate employee pay into GOSI in Saudi Arabia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Expatriate employees contribute 0% of their salary toward GOSI. Only the employer is required to pay a 2% Occupational Hazard contribution on the expatriate's contributory wage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the maximum salary cap for GOSI contributions in Saudi Arabia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The statutory maximum contributory wage ceiling for GOSI assessments is 45,000 SAR per month for both Saudi nationals and expatriates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a Saudi citizen employee contribute to GOSI and SANED?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Saudi private-sector employee contributes 9.75% for retirement annuity and 0.75% for SANED unemployment insurance, yielding a total monthly payroll deduction of 10.5%."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../index.html#calculators" class="nav-link">Calculators</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../index.html#calculators">All Calculators</a></li>
+      <li class="mobile-nav-item"><a href="../labour-laws/index.html">Labour Laws Directory</a></li>
+      <li class="mobile-nav-item"><a href="../blog/index.html">Insights & Blog Directory</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-gosi-calculator.html">Saudi GOSI Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee</a></li>
+      <li class="mobile-nav-item"><a href="../about-us.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="../contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Saudi GOSI Calculator</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Saudi GOSI & SANED Contribution Calculator: Social Insurance Rules</h1>
+
+      <!-- AEO Direct Extraction Block -->
+      <div class="direct-answer-callout">
+        <strong>Under Saudi Social Insurance legislation, Saudi citizens incur a mandatory 10.5% monthly deduction (9.75% Annuity plus 0.75% SANED) with employers matching 12.5%. For non-Saudi expatriates, employee deductions are strictly 0.00 SAR, while employers remit a 2.0% Occupational Hazard assessment on wages capped at 45,000 SAR.</strong>
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <!-- Input Panel -->
+      <div class="calc-card">
+        <div class="calc-card-header">
+          <h2 class="calc-card-title">Wage & Contributory Inputs</h2>
+          <span class="status-pill status-active">GOSI 2026 Engine</span>
+        </div>
+
+        <!-- Nationality Selector -->
+        <div class="form-group">
+          <label class="form-label">Employee Nationality Classification</label>
+          <div class="radio-group" style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+            <label class="radio-label">
+              <input type="radio" name="workerNation" id="natSaudi" value="saudi" checked>
+              <span>Saudi National</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="workerNation" id="natExpat" value="expat">
+              <span>Non-Saudi Expatriate</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Contributory Wage Input -->
+        <div class="form-group">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.375rem;">
+            <label for="monthlyWage" class="form-label" style="margin-bottom:0;">Contributory Wage (Basic + Housing)</label>
+            <span style="font-size:0.75rem; color:var(--slate-500);">Cap: 45,000 SAR</span>
+          </div>
+          <div class="input-wrapper">
+            <span class="input-prefix">SAR</span>
+            <input type="number" id="monthlyWage" class="form-input" min="400" max="100000" step="100" value="12000">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="monthlyWageSlider" class="range-slider" min="1500" max="45000" step="250" value="12000">
+          </div>
+          <div style="font-size:0.75rem; color:var(--slate-500); margin-top:0.25rem;">
+            GOSI defines contributory wage as basic wage plus verified employer housing allowance.
+          </div>
+        </div>
+
+        <!-- Employer Sector -->
+        <div class="form-group">
+          <label for="sectorSelect" class="form-label">Enterprise Classification</label>
+          <select id="sectorSelect" class="form-input no-prefix" style="height:48px;">
+            <option value="private" selected>Private Sector Commercial Establishment</option>
+            <option value="semi">Semi-Government / State-Owned Entity</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Results Display Panel -->
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div class="calc-card-header">
+            <h2 class="calc-card-title">Statutory Contribution Summary</h2>
+            <span class="status-pill status-active">Client-Side Verified</span>
+          </div>
+
+          <div class="primary-result-box">
+            <div class="primary-result-label">Monthly Employee Net Deduction</div>
+            <div class="primary-result-val" id="employeeTotalDisplay">1,260.00 <span style="font-size:1.125rem; font-weight:500;">SAR</span></div>
+            <div style="font-size:0.8125rem; color:var(--slate-500); margin-top:0.35rem;" id="deductionSubtitle">
+              10.50% Total Payroll Withholding (9.75% Annuity + 0.75% SANED)
+            </div>
+          </div>
+
+          <div class="breakdown-list">
+            <div class="breakdown-item">
+              <span class="breakdown-label">Capped Contributory Wage</span>
+              <span class="breakdown-value" id="cappedWageDisplay">12,000.00 SAR</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Employee Annuity Share (9.75% / 0%)</span>
+              <span class="breakdown-value" id="empAnnuityDisplay">1,170.00 SAR</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Employee SANED Unemployment (0.75% / 0%)</span>
+              <span class="breakdown-value" id="empSanedDisplay">90.00 SAR</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Employer Mandatory Contribution</span>
+              <span class="breakdown-value" id="employerTotalDisplay" style="color:var(--indigo-600); font-weight:700;">1,500.00 SAR</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Total Monthly SIO/GOSI Remittance</span>
+              <span class="breakdown-value" id="grandTotalDisplay" style="color:var(--emerald-600); font-weight:700;">2,760.00 SAR</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem; display:flex; gap:0.75rem;">
+          <button type="button" id="copyRecordBtn" class="btn btn-primary" style="flex:1;">
+            Copy Contribution Record
+          </button>
+          <a href="saudi-end-of-service-calculator.html" class="btn btn-secondary">
+            Saudi Gratuity &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="container" style="padding-bottom: 4rem;">
+    <div class="content-article">
+
+      <h2 class="article-h2">1. The Statutory Architecture of Saudi Social Insurance</h2>
+      <p class="article-p">
+        The General Organization for Social Insurance (GOSI) administers contributory retirement, disability, and occupational protection across the Kingdom of Saudi Arabia under Royal Decree No. M/33 of 1421H. In the modern Saudi labour economy, compliance with GOSI contribution rules is electronically interconnected with the Qiwa labour platform, the Ministry of Human Resources and Social Development (MHRSD), and the Wage Protection System (WPS).
+      </p>
+      <p class="article-p">
+        Every enterprise registered with the Ministry of Commerce must enroll eligible employees within statutory registration deadlines. A critical legal distinction exists between Saudi citizens and foreign expatriate workers: citizens participate in retirement annuity and unemployment pools, whereas expatriates participate solely in occupational hazards insurance.
+      </p>
+
+      <h2 class="article-h2">2. Contribution Rates for Saudi National Employees</h2>
+      <p class="article-p">
+        For Saudi citizens employed in the private sector, social insurance coverage comprises two distinct legal schemes:
+      </p>
+      <ul class="article-ul">
+        <li><strong>Annuity Branch (Pensions):</strong> Governed by the Social Insurance Law. The combined contribution is 19.5% of the contributory wage, divided equally between the employee (9.75%) and the employing establishment (9.75%).</li>
+        <li><strong>Unemployment Insurance (SANED):</strong> Promulgated under Royal Decree No. M/18 of 1435H. The aggregate assessment is 1.5% of the contributory wage, funded equally by the employee (0.75%) and the employer (0.75%).</li>
+        <li><strong>Occupational Hazards Branch:</strong> Borne entirely by the employer at a rate of 2.0%. The employee pays zero toward occupational hazards.</li>
+      </ul>
+
+      <p class="article-p">
+        Consequently, a Saudi employee experiences a total monthly deduction of exactly 10.5% (9.75% + 0.75%) from their registered contributory salary. The employer incurs a cumulative monthly payroll liability of 12.5% (9.75% Annuity + 0.75% SANED + 2.0% Occupational Hazards).
+      </p>
+
+      <h2 class="article-h2">3. Expatriate Worker Status: Zero Pension Withholding</h2>
+      <p class="article-p">
+        A widespread point of confusion among multinational human resource departments concerns expatriate worker deductions. Under Article 4 of the Social Insurance Regulations, foreign workers residing in the Kingdom on work permits are exempt from the Annuities and SANED branches.
+      </p>
+      <p class="article-p">
+        Employers are strictly prohibited from withholding any pension or retirement deductions from an expatriate's paycheck. The employer remains responsible for paying a flat 2.0% Occupational Hazard assessment directly to GOSI on behalf of the expatriate worker. This 2.0% cost is an employer tax, not an employee deduction.
+      </p>
+
+      <h2 class="article-h2">4. Defining the Contributory Wage and the Statutory 45,000 SAR Cap</h2>
+      <p class="article-p">
+        GOSI does not calculate percentages based on gross total compensation. Under GOSI regulations, the <em>contributory wage</em> comprises only two components:
+      </p>
+      <ol class="article-ol">
+        <li><strong>Basic Wage:</strong> The contractual monthly base wage recorded on Qiwa.</li>
+        <li><strong>Housing Allowance:</strong> Either the contractual cash housing allowance or, if housing is provided in kind, an assessed value equal to two months of basic wage divided by twelve.</li>
+      </ol>
+      <p class="article-p">
+        Transportation allowances, commissions, performance bonuses, and overtime pay are legally excluded from GOSI contributory calculations. Additionally, GOSI imposes a strict statutory ceiling: any contributory wage exceeding <strong>45,000 SAR per month</strong> is assessed only up to 45,000 SAR. Any salary amount above this cap is exempt from social insurance charges.
+      </p>
+
+      <h2 class="article-h2">5. Step-by-Step Calculation Scenarios</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario A: Saudi Operations Specialist</span>
+          <div class="scenario-title">Monthly Basic 10,000 SAR + Housing 2,500 SAR</div>
+          <div class="scenario-body">
+            <strong>Contributory Wage:</strong> 12,500.00 SAR<br>
+            <strong>Employee Deduction (10.5%):</strong> 12,500 &times; 0.105 = <strong>1,312.50 SAR</strong><br>
+            <strong>Employer Liability (12.5%):</strong> 12,500 &times; 0.125 = <strong>1,562.50 SAR</strong><br>
+            <strong>Total Monthly GOSI Receipt:</strong> 2,875.00 SAR.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario B: Expatriate Civil Engineer</span>
+          <div class="scenario-title">Monthly Basic 16,000 SAR + Housing 4,000 SAR</div>
+          <div class="scenario-body">
+            <strong>Contributory Wage:</strong> 20,000.00 SAR<br>
+            <strong>Employee Deduction (0.0%):</strong> <strong>0.00 SAR</strong> (Takes home full salary)<br>
+            <strong>Employer Hazard Share (2.0%):</strong> 20,000 &times; 0.02 = <strong>400.00 SAR</strong><br>
+            <strong>Total Monthly GOSI Receipt:</strong> 400.00 SAR.
+          </div>
+        </div>
+      </div>
+
+      <h2 class="article-h2">6. Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can an employer deduct the 2% occupational hazard fee from an expatriate?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No. Under Article 18 of the Social Insurance Law, the occupational hazards contribution must be borne exclusively by the employer. Withholding this fee from employee salary constitutes an actionable wage violation under the Wage Protection System.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What happens when a Saudi employee earns over 45,000 SAR?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Any earnings above 45,000 SAR are exempt from GOSI withholdings. A Saudi executive earning 60,000 SAR pays 10.5% only on the 45,000 SAR cap, resulting in a maximum employee deduction of 4,725.00 SAR per month.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Related Utilities Component (Phase 2 Requirement) -->
+  <section class="container" style="padding-bottom: 4rem;">
+    <h3 style="font-size:1.25rem; font-weight:700; color:var(--slate-900); margin-bottom:1.5rem;">
+      Related GCC Financial Utilities
+    </h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--emerald-50); color:var(--emerald-700);">Saudi Arabia</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">Saudi End of Service Calculator</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Compute severance and resignation deductions under Articles 84 and 85 of Royal Decree No. M/51.
+          </p>
+        </div>
+        <a href="saudi-end-of-service-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+      </div>
+
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--indigo-50); color:var(--indigo-700);">Kuwait</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">Kuwait PIFSS Net Salary Calculator</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Calculate Kuwait Public Institution for Social Security deductions and expat net wage benchmarks.
+          </p>
+        </div>
+        <a href="kuwait-pifss-net-salary-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+      </div>
+
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--amber-50); color:var(--amber-700);">Legal Analysis</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">Saudi Labour Articles 84 & 85 Guide</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Detailed breakdown of actual wage adjustments and 2-5 and 5-10 year resignation reduction tiers.
+          </p>
+        </div>
+        <a href="../blog/saudi-labor-law-article-84-85-resignation-rules.html" class="btn btn-secondary" style="font-size:0.8125rem;">Read Guide &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span>Gulf<span style="color:#059669;">Calc</span></span>
+          </div>
+          <p style="font-size:0.8125rem; line-height:1.6; color:var(--slate-500); margin-bottom:1.25rem;">
+            Institutional-grade financial, tax, and labor law calculation utility for expatriates and corporations operating across the Gulf Cooperation Council (GCC).
+          </p>
+          <div style="font-size:0.8125rem; color:var(--slate-600); line-height:1.5;">
+            Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; font-weight:600; text-decoration:none;">sheharyarsiraj.com</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">GCC Calculators</div>
+          <ul class="footer-list">
+            <li><a href="../tools/kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity (26d)</a></li>
+            <li><a href="../tools/saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a></li>
+            <li><a href="../tools/saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Calculator</a></li>
+            <li><a href="../tools/uae-gratuity-calculator.html" class="footer-link">UAE Gratuity (Unified)</a></li>
+            <li><a href="../tools/qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a></li>
+            <li><a href="../tools/oman-gratuity-calculator.html" class="footer-link">Oman Gratuity (RD 53/2023)</a></li>
+            <li><a href="../tools/bahrain-eosi-calculator.html" class="footer-link">Bahrain EOSI & VAT</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Directories & Insights</div>
+          <ul class="footer-list">
+            <li><a href="../labour-laws/index.html" class="footer-link">GCC Labour Laws Directory</a></li>
+            <li><a href="../blog/index.html" class="footer-link">Insights & Blog Hub</a></li>
+            <li><a href="../tools/uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax (9%)</a></li>
+            <li><a href="../tools/gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fee Engine</a></li>
+            <li><a href="../llms.txt" class="footer-link">LLM Manifest (/llms.txt)</a></li>
+            <li><a href="../sitemap.xml" class="footer-link">XML Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Institutional Legal</div>
+          <ul class="footer-list">
+            <li><a href="../about-us.html" class="footer-link">About Accuracy & Mission</a></li>
+            <li><a href="../contact-us.html" class="footer-link">Contact Corporate Team</a></li>
+            <li><a href="../privacy-policy.html" class="footer-link">Privacy Policy (GDPR/GCC)</a></li>
+            <li><a href="../terms-of-service.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="../disclaimer.html" class="footer-link">Legal & Tax Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). All rights reserved. Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; font-weight:600; text-decoration:none;">sheharyarsiraj.com</a>.</div>
+        <div>Statutory data verified against official GCC Ministries of Human Resources.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const wageInput = document.getElementById('monthlyWage');
+      const wageSlider = document.getElementById('monthlyWageSlider');
+      const natSaudi = document.getElementById('natSaudi');
+      const natExpat = document.getElementById('natExpat');
+      const employeeTotalDisplay = document.getElementById('employeeTotalDisplay');
+      const deductionSubtitle = document.getElementById('deductionSubtitle');
+      const cappedWageDisplay = document.getElementById('cappedWageDisplay');
+      const empAnnuityDisplay = document.getElementById('empAnnuityDisplay');
+      const empSanedDisplay = document.getElementById('empSanedDisplay');
+      const employerTotalDisplay = document.getElementById('employerTotalDisplay');
+      const grandTotalDisplay = document.getElementById('grandTotalDisplay');
+      const copyBtn = document.getElementById('copyRecordBtn');
+
+      function calculateGOSI() {
+        const rawWage = parseFloat(wageInput.value) || 0;
+        const isSaudi = natSaudi.checked;
+        const cappedWage = Math.min(Math.max(rawWage, 0), 45000);
+
+        let empAnnuity = 0;
+        let empSaned = 0;
+        let empTotal = 0;
+        let employerAnnuity = 0;
+        let employerSaned = 0;
+        let employerHazards = 0;
+        let employerTotal = 0;
+
+        if (isSaudi) {
+          empAnnuity = cappedWage * 0.0975;
+          empSaned = cappedWage * 0.0075;
+          empTotal = empAnnuity + empSaned;
+
+          employerAnnuity = cappedWage * 0.0975;
+          employerSaned = cappedWage * 0.0075;
+          employerHazards = cappedWage * 0.02;
+          employerTotal = employerAnnuity + employerSaned + employerHazards;
+
+          deductionSubtitle.textContent = "10.50% Total Payroll Withholding (9.75% Annuity + 0.75% SANED)";
+        } else {
+          empAnnuity = 0;
+          empSaned = 0;
+          empTotal = 0;
+
+          employerAnnuity = 0;
+          employerSaned = 0;
+          employerHazards = cappedWage * 0.02;
+          employerTotal = employerHazards;
+
+          deductionSubtitle.textContent = "0.00% Employee Withholding (Employer contributes 2% Occupational Hazard)";
+        }
+
+        const grandTotal = empTotal + employerTotal;
+
+        employeeTotalDisplay.innerHTML = formatCurrency(empTotal, 'SAR') + ' <span style="font-size:1.125rem; font-weight:500;">SAR</span>';
+        cappedWageDisplay.textContent = formatCurrency(cappedWage, 'SAR') + ' SAR';
+        empAnnuityDisplay.textContent = formatCurrency(empAnnuity, 'SAR') + ' SAR';
+        empSanedDisplay.textContent = formatCurrency(empSaned, 'SAR') + ' SAR';
+        employerTotalDisplay.textContent = formatCurrency(employerTotal, 'SAR') + ' SAR';
+        grandTotalDisplay.textContent = formatCurrency(grandTotal, 'SAR') + ' SAR';
+      }
+
+      bindDualInput('monthlyWageSlider', 'monthlyWage', calculateGOSI);
+      natSaudi.addEventListener('change', calculateGOSI);
+      natExpat.addEventListener('change', calculateGOSI);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `Saudi GOSI Contribution Record (GulfCalc.tech)
+--------------------------------------------------
+Worker Classification: ${natSaudi.checked ? 'Saudi National' : 'Non-Saudi Expatriate'}
+Contributory Wage: ${wageInput.value} SAR (Capped: ${cappedWageDisplay.textContent})
+Employee Monthly Deduction: ${employeeTotalDisplay.textContent}
+Employer Contribution: ${employerTotalDisplay.textContent}
+Total Monthly Remittance to GOSI: ${grandTotalDisplay.textContent}
+Statutory Reference: Royal Decree No. M/33 (GOSI) & Royal Decree No. M/18 (SANED)`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateGOSI();
+    });
+  </script>
+</body>
+</html>

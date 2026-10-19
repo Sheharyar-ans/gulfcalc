@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuwait PIFSS Net Salary Calculator: Social Security Deductions | GulfCalc</title>
+  <meta name="description" content="Calculate Kuwait Public Institution for Social Security (PIFSS) 10.5% deductions for Kuwaiti citizens (3,000 KWD cap) and 0% expat net salary take-home pay.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="alternate icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html#app",
+        "name": "Kuwait PIFSS Social Security & Net Salary Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KWD"
+        },
+        "description": "Calculates mandatory PIFSS retirement withholdings for Kuwaiti citizens up to the 3,000 KWD ceiling and expat net take-home salary."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kuwait PIFSS Calculator",
+            "item": "https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a Kuwaiti citizen pay into PIFSS each month?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Kuwaiti employee in the private sector contributes a combined 10.5% of their insurable salary to PIFSS (7.5% Basic Scheme + 2.5% Supplementary Scheme + 0.5% Increase Fund), capped at 3,000 KWD per month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do expatriates in Kuwait have social security deductions withheld from their pay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Expatriate personnel do not contribute to PIFSS and experience 0% social security deductions, receiving 100% of their net contractual salary."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the maximum salary cap for PIFSS in Kuwait?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The statutory maximum insurable salary ceiling under Kuwaiti social security legislation is 3,000 KWD per month."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../index.html#calculators" class="nav-link">Calculators</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../index.html#calculators">All Calculators</a></li>
+      <li class="mobile-nav-item"><a href="../labour-laws/index.html">Labour Laws Directory</a></li>
+      <li class="mobile-nav-item"><a href="../blog/index.html">Insights & Blog Directory</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-pifss-net-salary-calculator.html">Kuwait PIFSS Net Salary</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-gosi-calculator.html">Saudi GOSI Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee</a></li>
+      <li class="mobile-nav-item"><a href="../about-us.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="../contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Kuwait PIFSS Calculator</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Kuwait PIFSS Net Salary & Social Security Deduction Calculator</h1>
+
+      <!-- AEO Direct Extraction Block -->
+      <div class="direct-answer-callout">
+        <strong>Under Amiri Decree No. 61 of 1976, Kuwaiti citizens incur a mandatory 10.5% monthly PIFSS social security deduction capped strictly at 3,000 KWD salary (maximum 315.000 KWD deduction). Non-Kuwaiti expatriates experience zero social security withholding (0.000 KWD), taking home 100% of their net contractual remuneration.</strong>
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <!-- Input Card -->
+      <div class="calc-card">
+        <div class="calc-card-header">
+          <h2 class="calc-card-title">Salary & Citizenship Profile</h2>
+          <span class="status-pill status-active">Amiri Decree 61/1976</span>
+        </div>
+
+        <!-- Nationality Selector -->
+        <div class="form-group">
+          <label class="form-label">Employee Nationality Classification</label>
+          <div class="radio-group" style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+            <label class="radio-label">
+              <input type="radio" name="kwtNation" id="kwtCitizen" value="citizen" checked>
+              <span>Kuwaiti Citizen</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="kwtNation" id="kwtExpat" value="expat">
+              <span>Non-Kuwaiti Expatriate</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Monthly Gross Salary -->
+        <div class="form-group">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.375rem;">
+            <label for="kwtSalary" class="form-label" style="margin-bottom:0;">Total Monthly Gross Salary</label>
+            <span style="font-size:0.75rem; color:var(--slate-500);">Cap: 3,000 KWD</span>
+          </div>
+          <div class="input-wrapper">
+            <span class="input-prefix">KWD</span>
+            <input type="number" id="kwtSalary" class="form-input" min="200" max="15000" step="50" value="1800">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="kwtSalarySlider" class="range-slider" min="300" max="5000" step="50" value="1800">
+          </div>
+          <div style="font-size:0.75rem; color:var(--slate-500); margin-top:0.25rem;">
+            Includes base remuneration plus fixed monthly living and child allowances.
+          </div>
+        </div>
+
+        <!-- Sector Select -->
+        <div class="form-group">
+          <label for="kwtSector" class="form-label">Sector of Employment</label>
+          <select id="kwtSector" class="form-input no-prefix" style="height:48px;">
+            <option value="private" selected>Private Sector (Labour Law No. 6/2010)</option>
+            <option value="oil">Oil & Petrochemical Sector</option>
+            <option value="government">Government Civil Service (Civil Service Commission)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Results Display Panel -->
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div class="calc-card-header">
+            <h2 class="calc-card-title">Net Pay & PIFSS Breakdown</h2>
+            <span class="status-pill status-active">Client-Side Verified</span>
+          </div>
+
+          <div class="primary-result-box">
+            <div class="primary-result-label">Net Monthly Take-Home Pay</div>
+            <div class="primary-result-val" id="kwtNetDisplay">1,611.000 <span style="font-size:1.125rem; font-weight:500;">KWD</span></div>
+            <div style="font-size:0.8125rem; color:var(--slate-500); margin-top:0.35rem;" id="kwtDeductionText">
+              Total Employee PIFSS Withholding: 189.000 KWD (10.50%)
+            </div>
+          </div>
+
+          <div class="breakdown-list">
+            <div class="breakdown-item">
+              <span class="breakdown-label">Insurable Contributory Wage</span>
+              <span class="breakdown-value" id="kwtCappedDisplay">1,800.000 KWD</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Basic Retirement Scheme (7.5% / 0%)</span>
+              <span class="breakdown-value" id="kwtBasicSchemeDisplay">135.000 KWD</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Supplementary Scheme (2.5% / 0%)</span>
+              <span class="breakdown-value" id="kwtSupplSchemeDisplay">45.000 KWD</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Financial Increase Fund (0.5% / 0%)</span>
+              <span class="breakdown-value" id="kwtIncreaseDisplay">9.000 KWD</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Employer Share to PIFSS (11.5% / 0%)</span>
+              <span class="breakdown-value" id="kwtEmployerDisplay" style="color:var(--indigo-600); font-weight:700;">207.000 KWD</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem; display:flex; gap:0.75rem;">
+          <button type="button" id="copyPifssBtn" class="btn btn-primary" style="flex:1;">
+            Copy Payroll Record
+          </button>
+          <a href="kuwait-indemnity-calculator.html" class="btn btn-secondary">
+            Kuwait Indemnity &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="container" style="padding-bottom: 4rem;">
+    <div class="content-article">
+
+      <h2 class="article-h2">1. Legislative Authority: The Kuwait Social Security Regime</h2>
+      <p class="article-p">
+        Social security protection across the State of Kuwait is administered centrally by the Public Institution for Social Security (PIFSS) pursuant to Amiri Decree No. 61 of 1976. Unlike several international pension frameworks that incorporate expatriate contributors, Kuwait's social insurance scheme operates as a closed defined-benefit retirement program exclusive to Kuwaiti citizens.
+      </p>
+      <p class="article-p">
+        Every private sector enterprise registered with the Public Authority for Manpower (PAM) and the Ministry of Commerce and Industry is mandated to register national personnel with PIFSS upon commencement of employment. Contributions are remitted electronically each month through designated banking settlement portals.
+      </p>
+
+      <h2 class="article-h2">2. Employee Contribution Branches (The 10.5% Structure)</h2>
+      <p class="article-p">
+        The mandatory employee deduction for a private sector Kuwaiti national comprises three legally established tiers:
+      </p>
+      <ul class="article-ul">
+        <li><strong>Basic Pension Scheme (7.5%):</strong> Codified under Article 11 of the Social Security Law, funding defined-benefit retirement annuities, survivor pensions, and permanent disability allocations.</li>
+        <li><strong>Supplementary Pension Scheme (2.5%):</strong> Established by Law No. 128 of 1992, capturing compensation increments beyond the basic wage tier.</li>
+        <li><strong>Financial Increase Support (0.5%):</strong> Introduced to finance periodic cost-of-living adjustments for national pensioners.</li>
+      </ul>
+
+      <p class="article-p">
+        Combined, these three mandatory deductions equal exactly 10.5% of the employee's contributory compensation. The private sector employer contributes an additional 11.5% on behalf of the national worker, while the State General Treasury provides statutory co-funding of 10.0%.
+      </p>
+
+      <h2 class="article-h2">3. The 3,000 KWD Contributory Salary Ceiling</h2>
+      <p class="article-p">
+        Under PIFSS regulations, social insurance deductions do not apply without limitation. Kuwaiti legislation establishes a strict maximum insurable wage threshold of <strong>3,000.000 KWD per month</strong>.
+      </p>
+      <p class="article-p">
+        If a national executive commands a monthly salary of 4,500 KWD, PIFSS contributions are computed solely against the first 3,000 KWD. The statutory maximum monthly deduction borne by any Kuwaiti employee is therefore:
+      </p>
+
+      <div style="background:var(--slate-900); color:#38bdf8; padding:1.25rem; border-radius:var(--radius-md); font-family:var(--font-mono); font-size:0.9375rem; margin:1.5rem 0; overflow-x:auto;">
+        \text{Maximum Employee Deduction} = 3,000.000 \text{ KWD} \times 0.105 = 315.000 \text{ KWD/month}
+      </div>
+
+      <p class="article-p">
+        Any salary exceeding 3,000 KWD is exempt from social security withholding, allowing high-earning nationals to take home 100% of their incremental compensation.
+      </p>
+
+      <h2 class="article-h2">4. Expatriate Payroll Treatment in Kuwait</h2>
+      <p class="article-p">
+        Foreign expatriate workers employed under Kuwait Private Sector Labour Law No. 6 of 2010 are legally ineligible for PIFSS coverage. Consequently, employers are strictly prohibited from deducting any social security or pension withholding from an expatriate employee's monthly pay slip.
+      </p>
+      <p class="article-p">
+        Expatriates take home their full agreed gross salary without deduction, except for lawful court-mandated attachments or documented disciplinary penalties permitted under Article 35 of Law No. 6/2010. In lieu of a state pension, expatriate employees accrue End of Service Indemnity pursuant to Article 51, computed using the mandatory 26 working days divisor established by Article 55.
+      </p>
+
+      <h2 class="article-h2">5. Comparative Payroll Calculation Scenarios</h2>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario A: Kuwaiti Commercial Banking Officer</span>
+          <div class="scenario-title">Monthly Gross Salary: 2,200.000 KWD</div>
+          <div class="scenario-body">
+            <strong>Insurable Wage:</strong> 2,200.000 KWD (Below 3,000 KWD Cap)<br>
+            <strong>Basic Scheme (7.5%):</strong> 165.000 KWD<br>
+            <strong>Supplementary (2.5%):</strong> 55.000 KWD<br>
+            <strong>Increase Fund (0.5%):</strong> 11.000 KWD<br>
+            <strong>Total Deduction:</strong> <strong>231.000 KWD</strong> (10.5%)<br>
+            <strong>Net Take-Home Pay:</strong> <strong>1,969.000 KWD</strong>.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario B: Expatriate IT Systems Architect</span>
+          <div class="scenario-title">Monthly Gross Salary: 2,200.000 KWD</div>
+          <div class="scenario-body">
+            <strong>Insurable Wage:</strong> 0.000 KWD (Expat Exempt)<br>
+            <strong>PIFSS Deduction:</strong> <strong>0.000 KWD</strong> (0%)<br>
+            <strong>Net Take-Home Pay:</strong> <strong>2,200.000 KWD</strong> (Full Wage)<br>
+            <strong>Terminal Severance:</strong> Accrues separately under Article 51 & 55 at (2,200 / 26) per statutory accrual schedule.
+          </div>
+        </div>
+      </div>
+
+      <h2 class="article-h2">6. Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Does PIFSS deduct from housing and transportation allowances?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            Yes. In the private sector, PIFSS insurable remuneration includes basic salary plus fixed monthly allowances (including housing and government workforce social allowances disbursed under Law No. 19 of 2000), subject to the aggregate 3,000 KWD statutory ceiling.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can a Kuwaiti citizen opt out of PIFSS contributions?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="faq-content">
+            No. Enrollment in PIFSS is a matter of statutory public order. Both the employee and the employer are legally compelled to maintain active enrollment. Failure to register national staff exposes the business to regulatory sanctions from PAM.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Related Utilities Component (Phase 2 Requirement) -->
+  <section class="container" style="padding-bottom: 4rem;">
+    <h3 style="font-size:1.25rem; font-weight:700; color:var(--slate-900); margin-bottom:1.5rem;">
+      Related GCC Financial Utilities
+    </h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--emerald-50); color:var(--emerald-700);">Kuwait</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">Kuwait Indemnity Calculator</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Statutory end-of-service computation utilizing the mandatory 26 working days divisor under Article 55.
+          </p>
+        </div>
+        <a href="kuwait-indemnity-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+      </div>
+
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--indigo-50); color:var(--indigo-700);">Saudi Arabia</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">Saudi GOSI Calculator</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Calculate Saudi social insurance and SANED unemployment withholdings under Royal Decree No. M/33.
+          </p>
+        </div>
+        <a href="saudi-gosi-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+      </div>
+
+      <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="tag-badge" style="background:var(--amber-50); color:var(--amber-700);">Legal Analysis</span>
+          <h4 style="font-size:1.0625rem; font-weight:700; margin-bottom:0.5rem; color:var(--slate-900);">Kuwait 26 Days Rule Breakdown</h4>
+          <p style="font-size:0.875rem; color:var(--slate-600); line-height:1.5; margin-bottom:1rem;">
+            Why dividing by 30 days is illegal in Kuwait and how PAM enforces terminal severance rights.
+          </p>
+        </div>
+        <a href="../blog/kuwait-labor-law-article-55-26-days-calculation.html" class="btn btn-secondary" style="font-size:0.8125rem;">Read Guide &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span>Gulf<span style="color:#059669;">Calc</span></span>
+          </div>
+          <p style="font-size:0.8125rem; line-height:1.6; color:var(--slate-500); margin-bottom:1.25rem;">
+            Institutional-grade financial, tax, and labor law calculation utility for expatriates and corporations operating across the Gulf Cooperation Council (GCC).
+          </p>
+          <div style="font-size:0.8125rem; color:var(--slate-600); line-height:1.5;">
+            Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; font-weight:600; text-decoration:none;">sheharyarsiraj.com</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">GCC Calculators</div>
+          <ul class="footer-list">
+            <li><a href="../tools/kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity (26d)</a></li>
+            <li><a href="../tools/kuwait-pifss-net-salary-calculator.html" class="footer-link">Kuwait PIFSS Net Salary</a></li>
+            <li><a href="../tools/saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a></li>
+            <li><a href="../tools/saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Calculator</a></li>
+            <li><a href="../tools/uae-gratuity-calculator.html" class="footer-link">UAE Gratuity (Unified)</a></li>
+            <li><a href="../tools/qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a></li>
+            <li><a href="../tools/oman-gratuity-calculator.html" class="footer-link">Oman Gratuity (RD 53/2023)</a></li>
+            <li><a href="../tools/bahrain-eosi-calculator.html" class="footer-link">Bahrain EOSI & VAT</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Directories & Insights</div>
+          <ul class="footer-list">
+            <li><a href="../labour-laws/index.html" class="footer-link">GCC Labour Laws Directory</a></li>
+            <li><a href="../blog/index.html" class="footer-link">Insights & Blog Hub</a></li>
+            <li><a href="../tools/uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax (9%)</a></li>
+            <li><a href="../tools/gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fee Engine</a></li>
+            <li><a href="../llms.txt" class="footer-link">LLM Manifest (/llms.txt)</a></li>
+            <li><a href="../sitemap.xml" class="footer-link">XML Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Institutional Legal</div>
+          <ul class="footer-list">
+            <li><a href="../about-us.html" class="footer-link">About Accuracy & Mission</a></li>
+            <li><a href="../contact-us.html" class="footer-link">Contact Corporate Team</a></li>
+            <li><a href="../privacy-policy.html" class="footer-link">Privacy Policy (GDPR/GCC)</a></li>
+            <li><a href="../terms-of-service.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="../disclaimer.html" class="footer-link">Legal & Tax Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). All rights reserved. Designed and Developed by <a href="https://sheharyarsiraj.com/" target="_blank" rel="noopener noreferrer" style="color:#10b981; font-weight:600; text-decoration:none;">sheharyarsiraj.com</a>.</div>
+        <div>Statutory data verified against official GCC Ministries of Human Resources.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const salaryInput = document.getElementById('kwtSalary');
+      const salarySlider = document.getElementById('kwtSalarySlider');
+      const citizenRadio = document.getElementById('kwtCitizen');
+      const expatRadio = document.getElementById('kwtExpat');
+
+      const netDisplay = document.getElementById('kwtNetDisplay');
+      const deductionText = document.getElementById('kwtDeductionText');
+      const cappedDisplay = document.getElementById('kwtCappedDisplay');
+      const basicSchemeDisplay = document.getElementById('kwtBasicSchemeDisplay');
+      const supplSchemeDisplay = document.getElementById('kwtSupplSchemeDisplay');
+      const increaseDisplay = document.getElementById('kwtIncreaseDisplay');
+      const employerDisplay = document.getElementById('kwtEmployerDisplay');
+      const copyBtn = document.getElementById('copyPifssBtn');
+
+      function calculatePIFSS() {
+        const rawSalary = parseFloat(salaryInput.value) || 0;
+        const isCitizen = citizenRadio.checked;
+
+        const cappedSalary = Math.min(Math.max(rawSalary, 0), 3000);
+
+        let basicDeduction = 0;
+        let supplDeduction = 0;
+        let increaseDeduction = 0;
+        let totalDeduction = 0;
+        let employerShare = 0;
+        let netPay = rawSalary;
+
+        if (isCitizen) {
+          basicDeduction = cappedSalary * 0.075;
+          supplDeduction = cappedSalary * 0.025;
+          increaseDeduction = cappedSalary * 0.005;
+          totalDeduction = basicDeduction + supplDeduction + increaseDeduction;
+          employerShare = cappedSalary * 0.115;
+          netPay = rawSalary - totalDeduction;
+
+          deductionText.textContent = `Total Employee PIFSS Withholding: ${formatCurrency(totalDeduction, 'KWD')} KWD (10.50%)`;
+        } else {
+          basicDeduction = 0;
+          supplDeduction = 0;
+          increaseDeduction = 0;
+          totalDeduction = 0;
+          employerShare = 0;
+          netPay = rawSalary;
+
+          deductionText.textContent = "0.000 KWD Employee Deduction (Expatriate receives 100% net wage)";
+        }
+
+        netDisplay.innerHTML = formatCurrency(netPay, 'KWD') + ' <span style="font-size:1.125rem; font-weight:500;">KWD</span>';
+        cappedDisplay.textContent = formatCurrency(cappedSalary, 'KWD') + ' KWD';
+        basicSchemeDisplay.textContent = formatCurrency(basicDeduction, 'KWD') + ' KWD';
+        supplSchemeDisplay.textContent = formatCurrency(supplDeduction, 'KWD') + ' KWD';
+        increaseDisplay.textContent = formatCurrency(increaseDeduction, 'KWD') + ' KWD';
+        employerDisplay.textContent = formatCurrency(employerShare, 'KWD') + ' KWD';
+      }
+
+      bindDualInput('kwtSalarySlider', 'kwtSalary', calculatePIFSS);
+      citizenRadio.addEventListener('change', calculatePIFSS);
+      expatRadio.addEventListener('change', calculatePIFSS);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `Kuwait PIFSS Net Salary Calculation Record (GulfCalc.tech)
+--------------------------------------------------
+Classification: ${citizenRadio.checked ? 'Kuwaiti Citizen' : 'Non-Kuwaiti Expatriate'}
+Gross Monthly Remuneration: ${salaryInput.value} KWD (Insurable: ${cappedDisplay.textContent})
+Total PIFSS Deduction: ${basicSchemeDisplay.textContent} (Basic) + ${supplSchemeDisplay.textContent} (Suppl) = ${deductionText.textContent}
+Employer Contribution: ${employerDisplay.textContent}
+Net Take-Home Monthly Salary: ${netDisplay.textContent}
+Statutory Authority: Amiri Decree No. 61 of 1976 (PIFSS)`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculatePIFSS();
+    });
+  </script>
+</body>
+</html>

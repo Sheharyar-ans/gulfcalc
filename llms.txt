@@ -67,6 +67,33 @@ Architecture: Static HTML5 / Vanilla JavaScript / Pure Client-Side Computation (
 - Formula: True Drag = Upfront Flat Fee + (Send Amount * FX Markup Spread %).
 - Corridors: Origin (AED, SAR, QAR, KWD, OMR, BHD) to Destination (INR, PKR, PHP, BDT, EGP).
 
+### Saudi GOSI & SANED Contribution Calculator
+- URL: https://gulfcalc.tech/tools/saudi-gosi-calculator.html
+- Primary Statute: Saudi Social Insurance Law (Royal Decree No. M/22) and SANED Unemployment Insurance (Royal Decree No. M/18).
+- Citizen Contributions: 9.75% Annuity Branch + 0.75% SANED (Employee: 10.5%; Employer: 10.5% total 21.0%).
+- Expatriate Non-Saudi Contributions: Flat 2.0% Occupational Hazards branch paid 100% by employer (0% deduction from expat salary).
+- Statutory Ceiling: 45,000 SAR monthly contributory wage cap.
+
+### GCC Inter-City Cost of Living & Expat Parity Comparator
+- URL: https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html
+- Purpose: Benchmarks purchasing power, compensation parity, rent, international schooling, and tax/VAT impacts across major GCC business hubs.
+- Cities Covered: Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, Muscat, Manama.
+- Mechanics: Indexes baseline price baskets, weighted rent ratios, school fee differentials, and consumption tax friction to compute equivalent gross compensation requirements.
+
+### Kuwait PIFSS Social Security & Expat Net Pay Calculator
+- URL: https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html
+- Primary Statute: Kuwait Social Security Law (Amiri Decree No. 61 of 1976) administered by PIFSS.
+- Citizen Employee Deduction: 10.5% monthly basic salary (7.5% Basic System + 2.5% Supplementary System + 0.5% Unemployment).
+- Expatriate Deduction: 0.0% (Expatriates are not covered by PIFSS; 100% of agreed contractual remuneration is received net).
+- Statutory Ceiling: 3,000 KWD monthly maximum contributory wage for Kuwaiti nationals.
+
+### UAE Investor Golden Visa Real Estate & Yield Calculator
+- URL: https://gulfcalc.tech/tools/uae-golden-visa-property-calculator.html
+- Primary Statute: UAE Cabinet Resolution No. 65 of 2022 regarding Golden Visa Executive Regulations.
+- Minimum Threshold: AED 2,000,000 property purchase value (single property or cumulative portfolio).
+- Transactional Cost Engine: Computes mandatory 4% Dubai Land Department (DLD) transfer fee, AED 4,200 trustee registration fees, and agency commissions.
+- Financing & Equity: Evaluates 20% down payment mortgage rules, debt service coverage, and projected net rental yields after service charges.
+
 ---
 
 ## 2. Central Comparative Legal Directories
