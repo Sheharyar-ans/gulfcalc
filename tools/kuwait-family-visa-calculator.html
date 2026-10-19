@@ -115,15 +115,43 @@
         <span class="brand-badge">GCC Portal</span>
       </a>
 
-      <nav class="nav-links" aria-label="Main Navigation">
-        <a href="../index.html" class="nav-link">Home</a>
+            <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../index.html#calculators" class="nav-link">Calculators</a>
         <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
         <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
         <a href="../about-us.html" class="nav-link">About Us</a>
         <a href="../contact-us.html" class="nav-link">Contact</a>
       </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../index.html#calculators">All Calculators</a></li>
+      <li class="mobile-nav-item"><a href="../labour-laws/index.html">Labour Laws Directory</a></li>
+      <li class="mobile-nav-item"><a href="../blog/index.html">Insights & Blog Directory</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee</a></li>
+      <li class="mobile-nav-item"><a href="../about-us.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="../contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
 
   <nav class="breadcrumb-container" aria-label="Breadcrumb">
     <div class="container">
@@ -556,5 +584,6 @@
       calculate();
     })();
   </script>
+  <script src="../assets/js/navigation.js"></script>
 </body>
 </html>
