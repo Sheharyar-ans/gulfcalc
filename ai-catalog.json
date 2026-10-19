@@ -1,0 +1,189 @@
+{
+  "$schema": "https://ard-spec.org/schemas/ai-catalog.schema.json",
+  "catalogVersion": "1.0",
+  "provider": {
+    "name": "GulfCalc",
+    "uri": "https://gulfcalc.tech"
+  },
+  "entries": [
+    {
+      "id": "kuwait-indemnity-calculator",
+      "type": "tool",
+      "name": "Kuwait Indemnity Calculator",
+      "description": "Calculates Kuwait end-of-service benefits under Article 55 of Law No. 6/2010 using 26 working days divisor.",
+      "endpoint": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html",
+      "representativeQueries": [
+        "Calculate Kuwait indemnity using 26 days formula",
+        "Kuwait labor law article 55 end of service indemnity",
+        "Kuwait indemnity resignation deduction scale"
+      ]
+    },
+    {
+      "id": "saudi-end-of-service-calculator",
+      "type": "tool",
+      "name": "Saudi End of Service Calculator",
+      "description": "Computes Saudi end-of-service benefits under Royal Decree M/51 Articles 84, 85, and 87 based on actual wage.",
+      "endpoint": "https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html",
+      "representativeQueries": [
+        "Calculate Saudi end of service benefits",
+        "Saudi labor law article 84 and 85 resignation calculation",
+        "How much gratuity do I get when resigning in Saudi Arabia"
+      ]
+    },
+    {
+      "id": "uae-gratuity-calculator",
+      "type": "tool",
+      "name": "UAE Gratuity Calculator",
+      "description": "Calculates statutory end-of-service gratuity under UAE Federal Decree-Law No. 33/2021 Article 51.",
+      "endpoint": "https://gulfcalc.tech/tools/uae-gratuity-calculator.html",
+      "representativeQueries": [
+        "Calculate UAE end of service gratuity for 3 years service",
+        "How is UAE gratuity calculated under Federal Decree-Law No. 33/2021",
+        "UAE gratuity resignation vs termination calculation"
+      ]
+    },
+    {
+      "id": "qatar-gratuity-calculator",
+      "type": "tool",
+      "name": "Qatar Gratuity Calculator",
+      "description": "Computes Qatar end-of-service gratuity under Law No. 14/2004 Article 54 (minimum 21 calendar days per year).",
+      "endpoint": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html",
+      "representativeQueries": [
+        "Calculate Qatar gratuity end of service",
+        "Qatar labour law article 54 severance pay"
+      ]
+    },
+    {
+      "id": "oman-gratuity-calculator",
+      "type": "tool",
+      "name": "Oman Gratuity Calculator",
+      "description": "Computes Oman end-of-service benefits under Royal Decree No. 53/2023 Article 61 (flat 30 days per year).",
+      "endpoint": "https://gulfcalc.tech/tools/oman-gratuity-calculator.html",
+      "representativeQueries": [
+        "Calculate Oman gratuity new labour law royal decree 53/2023",
+        "Oman 30 days per year gratuity formula"
+      ]
+    },
+    {
+      "id": "bahrain-eosi-calculator",
+      "type": "tool",
+      "name": "Bahrain EOSI & VAT Calculator",
+      "description": "Computes Bahrain end-of-service indemnity under Law No. 36/2012 Article 116 and 2024 SIO expat deposit reform.",
+      "endpoint": "https://gulfcalc.tech/tools/bahrain-eosi-calculator.html",
+      "representativeQueries": [
+        "Calculate Bahrain end of service indemnity SIO reform",
+        "Bahrain 10% VAT calculation and extraction"
+      ]
+    },
+    {
+      "id": "uae-corporate-tax-calculator",
+      "type": "tool",
+      "name": "UAE Corporate Tax Calculator",
+      "description": "Calculates UAE 9% corporate tax liability and Small Business Relief (SBR) under Federal Decree-Law No. 47/2022.",
+      "endpoint": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html",
+      "representativeQueries": [
+        "Calculate UAE corporate tax 9 percent liability",
+        "UAE Small Business Relief 3 million threshold calculation"
+      ]
+    },
+    {
+      "id": "saudi-dependent-fee-calculator",
+      "type": "tool",
+      "name": "Saudi Dependent Fee Calculator",
+      "description": "Computes statutory SAR 400/month dependent levies, Jawazat renewals, and Maktab Amal levies in Saudi Arabia.",
+      "endpoint": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html",
+      "representativeQueries": [
+        "Calculate Saudi dependent fee per month",
+        "Iqama renewal cost calculator Saudi Arabia"
+      ]
+    },
+    {
+      "id": "uae-overstay-fine-calculator",
+      "type": "tool",
+      "name": "UAE Overstay Fine Calculator",
+      "description": "Calculates unified ICP and GDRFA flat 50 AED/day overstay penalties and exit permit fees in the UAE.",
+      "endpoint": "https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html",
+      "representativeQueries": [
+        "Calculate UAE visit visa overstay fines",
+        "ICP GDRFA 50 AED per day overstay penalty"
+      ]
+    },
+    {
+      "id": "uae-emiratisation-penalty-calculator",
+      "type": "tool",
+      "name": "UAE Emiratisation Penalty Calculator",
+      "description": "Calculates MoHRE NAFIS monthly non-compliance contributions for private companies with 20-49 and 50+ staff.",
+      "endpoint": "https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html",
+      "representativeQueries": [
+        "Calculate UAE Emiratisation fines MoHRE NAFIS",
+        "Emiratisation penalty for companies with 20 to 49 staff"
+      ]
+    },
+    {
+      "id": "dubai-rera-rent-calculator",
+      "type": "tool",
+      "name": "Dubai RERA Rent Increase Calculator",
+      "description": "Evaluates statutory rent increase caps (0% to 20%) under Dubai Decree No. 43 of 2013.",
+      "endpoint": "https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html",
+      "representativeQueries": [
+        "Calculate legal rent increase Dubai RERA index",
+        "Can landlord increase rent Dubai Decree 43 2013"
+      ]
+    },
+    {
+      "id": "saudi-gosi-calculator",
+      "type": "tool",
+      "name": "Saudi GOSI Calculator",
+      "description": "Computes Saudi GOSI Annuity, SANED unemployment, and 2% expat occupational hazard contributions.",
+      "endpoint": "https://gulfcalc.tech/tools/saudi-gosi-calculator.html",
+      "representativeQueries": [
+        "Calculate Saudi GOSI deduction rate",
+        "Do expats pay GOSI in Saudi Arabia"
+      ]
+    },
+    {
+      "id": "kuwait-family-visa-calculator",
+      "type": "tool",
+      "name": "Kuwait Family Visa Calculator",
+      "description": "Checks 800 KWD salary eligibility and computes Dhaman insurance and Civil ID fees for dependent visas.",
+      "endpoint": "https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html",
+      "representativeQueries": [
+        "Kuwait family visa 800 KWD salary threshold",
+        "Cost to sponsor family in Kuwait Article 22"
+      ]
+    },
+    {
+      "id": "gcc-remittance-fee-calculator",
+      "type": "tool",
+      "name": "GCC Remittance Fee Calculator",
+      "description": "Compares interbank exchange rates vs retail exchange house spreads and upfront transfer fees.",
+      "endpoint": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html",
+      "representativeQueries": [
+        "Compare remittance fees and hidden FX spreads GCC",
+        "Cheapest way to send money from UAE to India"
+      ]
+    },
+    {
+      "id": "ai-contract-clause-checker",
+      "type": "tool",
+      "name": "AI GCC Contract Clause Compliance Checker",
+      "description": "Client-side AI contract evaluation identifying void or predatory clauses under GCC labor decrees.",
+      "endpoint": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html",
+      "representativeQueries": [
+        "Check if my employment contract clause is legal in UAE",
+        "Can employer deduct visa costs in Saudi Arabia"
+      ]
+    },
+    {
+      "id": "ai-resignation-letter-generator",
+      "type": "tool",
+      "name": "AI GCC Statutory Resignation Letter Generator",
+      "description": "Generates legally structured resignation letters citing labor law notice articles to safeguard gratuity rights.",
+      "endpoint": "https://gulfcalc.tech/tools/ai-resignation-letter-generator.html",
+      "representativeQueries": [
+        "Draft legal resignation letter UAE labor law",
+        "Saudi labor law article 75 resignation notice letter"
+      ]
+    }
+  ]
+}
