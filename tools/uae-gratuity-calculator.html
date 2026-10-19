@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAE Gratuity Calculator: Federal Decree-Law No. 33/2021 Unified Formula | GulfCalc</title>
+  <meta name="description" content="Calculate your UAE End of Service Gratuity accurately under Federal Decree-Law No. 33/2021. Unified calculation for resignation and termination, with 2-year cap check.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/uae-gratuity-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/uae-gratuity-calculator.html#app",
+        "name": "UAE Gratuity Calculator (Federal Decree-Law No. 33/2021)",
+        "url": "https://gulfcalc.tech/tools/uae-gratuity-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "AED"
+        },
+        "description": "Statutory client-side UAE End of Service Gratuity calculation engine under Federal Decree-Law No. 33/2021."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "UAE Gratuity Calculator",
+            "item": "https://gulfcalc.tech/tools/uae-gratuity-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does resignation reduce gratuity in the UAE under the new Labour Law?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Under UAE Federal Decree-Law No. 33 of 2021, the distinction between limited and unlimited contracts and historical resignation deduction tiers have been abolished. Resignation and employer termination receive identical statutory entitlement once one year of service is completed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the maximum legal cap for UAE gratuity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Article 51 Clause 3 stipulates that the total end of service gratuity for a worker shall not exceed two years' basic salary (24 months of basic wage)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">UAE Law 33/2021</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link active">UAE</a>
+        <a href="../tools/qatar-gratuity-calculator.html" class="nav-link">Qatar</a>
+        <a href="../tools/oman-gratuity-calculator.html" class="nav-link">Oman</a>
+        <a href="../tools/bahrain-eosi-calculator.html" class="nav-link">Bahrain</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">UAE Gratuity</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">UAE Gratuity Calculator: Federal Decree-Law No. 33/2021 Unified Formula</h1>
+
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under UAE Federal Decree-Law No. 33/2021 (Article 51), gratuity is calculated on <strong>last drawn basic salary</strong>: 21 calendar days per year for the first 5 years, and 30 days per year thereafter. Resignation and termination receive identical 100% treatment once 1 continuous year is completed, subject to a 2-year salary maximum cap.
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <div class="calc-card">
+        <div class="card-heading">
+          <!-- UAE Flag SVG -->
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+            <rect width="6" height="16" fill="#CE1126"/>
+            <rect x="6" width="18" height="5.33" fill="#007A3D"/>
+            <rect x="6" y="5.33" width="18" height="5.34" fill="#FFFFFF"/>
+            <rect x="6" y="10.67" width="18" height="5.33" fill="#000000"/>
+          </svg>
+          <span>UAE Employment Parameters</span>
+        </div>
+        <p class="card-subtext">Compliant with UAE Ministry of Human Resources and Emiratisation (MOHRE).</p>
+
+        <!-- Basic Salary -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="basicSalary" class="form-label">Monthly Basic Salary</label>
+            <span class="form-help">Excludes housing & transport</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">AED</span>
+            <input type="number" id="basicSalary" class="form-input" value="15000" min="500" max="250000" step="500">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="basicSalarySlider" class="range-slider" min="2000" max="50000" step="500" value="15000">
+            <div class="slider-scale-labels">
+              <span>2,000 AED</span>
+              <span>25,000 AED</span>
+              <span>50,000+ AED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Length of Service -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceYears" class="form-label">Completed Years of Service</label>
+            <span class="form-help">Years</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceYears" class="form-input no-prefix" value="7" min="0" max="40" step="1">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="7">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceMonths" class="form-label">Additional Months</label>
+            <span class="form-help">0 to 11 months</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceMonths" class="form-input no-prefix" value="2" min="0" max="11" step="1">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Result Card -->
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge">Statutory Gratuity</span>
+          <div class="result-amount-display">
+            <span class="result-currency">AED</span>
+            <span id="finalGratuity">0.00</span>
+          </div>
+          <p class="result-caption" id="capNotice">Federal Decree-Law No. 33/2021 Standard</p>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Daily Basic Wage (Salary / 30):</span>
+            <span class="breakdown-value" id="dailyWageDisplay">0.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Years 1–5 Accrual (21 days/yr):</span>
+            <span class="breakdown-value" id="tier1Display">0.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Year 6+ Accrual (30 days/yr):</span>
+            <span class="breakdown-value" id="tier2Display">0.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Gross Uncapped Entitlement:</span>
+            <span class="breakdown-value" id="grossDisplay">0.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Statutory Maximum Cap (2 Years):</span>
+            <span class="breakdown-value" id="capDisplay">0.00 AED</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="content-section">
+    <div class="container content-article">
+      <h2 class="article-h2">The New UAE Labour Law: Federal Decree-Law No. 33 of 2021</h2>
+      <p class="article-p">
+        Effective February 2, 2022, <strong>Federal Decree-Law No. 33 of 2021</strong> entirely replaced the previous 1980 Labour Law (Federal Law No. 8 of 1980). One of the most monumental reforms was the complete harmonization of end-of-service gratuity calculations across all contract types.
+      </p>
+
+      <h3 class="article-h3">Abolishment of the Historical Resignation Penalty</h3>
+      <p class="article-p">
+        Under the repealed 1980 law, employees who resigned under an unlimited contract suffered severe statutory deductions (receiving only 1/3 for 1–3 years or 2/3 for 3–5 years). 
+      </p>
+      <p class="article-p">
+        <strong>Under Article 51 of Decree-Law No. 33/2021, these penalty tiers have been totally eliminated.</strong> Whether an employee resigns or is terminated by the employer, their gratuity entitlement is 100% identical, provided they have completed at least one continuous year of service.
+      </p>
+
+      <div class="formula-box">
+        <div class="formula-title">UAE Statutory Gratuity Formula (Article 51)</div>
+        Daily Basic Wage = Monthly Basic Salary / 30<br>
+        Years 1 to 5: Accrual = Daily Wage × 21 × Service Years (Max 5)<br>
+        Years 6 Onwards: Accrual = Daily Wage × 30 × (Total Service Years - 5)<br>
+        Statutory Maximum Cap = 24 × Monthly Basic Salary
+      </div>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Service Duration</th>
+              <th>Statutory Days Accrued</th>
+              <th>Payable on 12,000 AED Basic Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Completed Year</td>
+              <td>21 Days</td>
+              <td>8,400 AED</td>
+            </tr>
+            <tr>
+              <td>3 Completed Years</td>
+              <td>63 Days</td>
+              <td>25,200 AED</td>
+            </tr>
+            <tr>
+              <td>5 Completed Years</td>
+              <td>105 Days</td>
+              <td>42,000 AED</td>
+            </tr>
+            <tr>
+              <td>7 Completed Years</td>
+              <td>165 Days (105 + 60)</td>
+              <td>66,000 AED</td>
+            </tr>
+            <tr>
+              <td>10 Completed Years</td>
+              <td>255 Days (105 + 150)</td>
+              <td>102,000 AED</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Two Practical UAE Scenarios</h3>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario 1: Resignation at 3 Years</span>
+          <div class="scenario-title">Marketing Manager Resigning After 3 Years</div>
+          <div class="scenario-body">
+            <strong>Basic Salary:</strong> 15,000 AED<br>
+            <strong>Daily Wage:</strong> 15,000 / 30 = 500 AED<br>
+            <strong>Accrual:</strong> 3 yrs × 21 days × 500 AED = <strong>31,500 AED</strong>.<br>
+            Under current UAE law, the full 31,500 AED is paid with zero reduction.
+          </div>
+        </div>
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario 2: Long Tenure & Cap Check</span>
+          <div class="scenario-title">Technical Director with 16 Years Service</div>
+          <div class="scenario-body">
+            <strong>Basic Salary:</strong> 24,000 AED | Daily: 800 AED<br>
+            <strong>Tier 1 (5 yrs):</strong> 5 × 21 × 800 = 84,000 AED<br>
+            <strong>Tier 2 (11 yrs):</strong> 11 × 30 × 800 = 264,000 AED<br>
+            <strong>Uncapped Gross:</strong> 348,000 AED<br>
+            <strong>2-Year Salary Cap:</strong> 24 × 24,000 AED = 576,000 AED.<br>
+            <strong>Net Payable:</strong> <strong>348,000 AED</strong>.
+          </div>
+        </div>
+      </div>
+
+      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>When must the employer disburse terminal dues in the UAE?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 53 of Federal Decree-Law No. 33/2021, the employer must settle all employee entitlements (including gratuity and untaken leave balance) within fourteen (14) days from the employment contract termination date.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). UAE Federal Decree-Law No. 33/2021 Certified.</div>
+        <div>Client-side execution with zero external data collection.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const basicInput = document.getElementById('basicSalary');
+      const basicSlider = document.getElementById('basicSalarySlider');
+      const yearsInput = document.getElementById('serviceYears');
+      const yearsSlider = document.getElementById('serviceYearsSlider');
+      const monthsInput = document.getElementById('serviceMonths');
+
+      const finalGratuityEl = document.getElementById('finalGratuity');
+      const dailyWageDisplayEl = document.getElementById('dailyWageDisplay');
+      const tier1DisplayEl = document.getElementById('tier1Display');
+      const tier2DisplayEl = document.getElementById('tier2Display');
+      const grossDisplayEl = document.getElementById('grossDisplay');
+      const capDisplayEl = document.getElementById('capDisplay');
+      const capNoticeEl = document.getElementById('capNotice');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateUAEGratuity() {
+        const basic = parseFloat(basicInput.value) || 0;
+        const years = parseFloat(yearsInput.value) || 0;
+        const months = parseFloat(monthsInput.value) || 0;
+        const totalTenure = years + (months / 12);
+
+        if (totalTenure < 1.0) {
+          finalGratuityEl.textContent = "0.00";
+          dailyWageDisplayEl.textContent = formatCurrency(basic / 30, 'AED') + ' AED';
+          tier1DisplayEl.textContent = '0.00 AED';
+          tier2DisplayEl.textContent = '0.00 AED';
+          grossDisplayEl.textContent = '0.00 AED';
+          capDisplayEl.textContent = formatCurrency(basic * 24, 'AED') + ' AED';
+          capNoticeEl.textContent = "Requires 1 year continuous service for eligibility";
+          return;
+        }
+
+        const dailyWage = basic / 30;
+        let tier1 = 0;
+        let tier2 = 0;
+
+        if (totalTenure <= 5) {
+          tier1 = totalTenure * 21 * dailyWage;
+        } else {
+          tier1 = 5 * 21 * dailyWage;
+          tier2 = (totalTenure - 5) * 30 * dailyWage;
+        }
+
+        const grossGratuity = tier1 + tier2;
+        const maxCap = basic * 24;
+        const netGratuity = Math.min(grossGratuity, maxCap);
+
+        finalGratuityEl.textContent = formatCurrency(netGratuity, 'AED');
+        dailyWageDisplayEl.textContent = formatCurrency(dailyWage, 'AED') + ' AED';
+        tier1DisplayEl.textContent = formatCurrency(tier1, 'AED') + ' AED';
+        tier2DisplayEl.textContent = formatCurrency(tier2, 'AED') + ' AED';
+        grossDisplayEl.textContent = formatCurrency(grossGratuity, 'AED') + ' AED';
+        capDisplayEl.textContent = formatCurrency(maxCap, 'AED') + ' AED';
+
+        if (grossGratuity > maxCap) {
+          capNoticeEl.textContent = "Statutory 2-year basic salary cap applied";
+          capNoticeEl.style.color = "var(--amber-600)";
+        } else {
+          capNoticeEl.textContent = "Federal Decree-Law No. 33/2021 Standard";
+          capNoticeEl.style.color = "";
+        }
+      }
+
+      bindDualInput('basicSalarySlider', 'basicSalary', calculateUAEGratuity);
+      bindDualInput('serviceYearsSlider', 'serviceYears', calculateUAEGratuity);
+      monthsInput.addEventListener('input', calculateUAEGratuity);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `UAE End of Service Gratuity Record (GulfCalc.tech)
+--------------------------------------------------
+Monthly Basic Wage: ${basicInput.value} AED
+Service Tenure: ${yearsInput.value} Years, ${monthsInput.value} Months
+Gross Accrual: ${grossDisplayEl.textContent}
+2-Year Salary Cap: ${capDisplayEl.textContent}
+Net Statutory Payable Gratuity: ${finalGratuityEl.textContent} AED
+Statutory Authority: UAE Federal Decree-Law No. 33/2021 Article 51`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateUAEGratuity();
+    });
+  </script>
+</body>
+</html>

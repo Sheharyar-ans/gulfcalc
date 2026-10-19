@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oman Gratuity Calculator: Royal Decree 53/2023 30-Day Rule | GulfCalc</title>
+  <meta name="description" content="Calculate your Oman end of service gratuity accurately under the new Oman Labour Law Royal Decree 53/2023 (flat 30 days/year) and repealed RD 35/2003 transition rules.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/oman-gratuity-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/oman-gratuity-calculator.html#app",
+        "name": "Oman Gratuity Calculator (Royal Decree 53/2023)",
+        "url": "https://gulfcalc.tech/tools/oman-gratuity-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "OMR"
+        },
+        "description": "Statutory end of service gratuity calculation engine for the Sultanate of Oman under Royal Decree 53/2023."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Oman Gratuity Calculator",
+            "item": "https://gulfcalc.tech/tools/oman-gratuity-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the new gratuity formula under Oman Royal Decree 53/2023?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Royal Decree No. 53/2023, end-of-service gratuity for expatriate workers is calculated at a flat rate of one full month's basic salary (30 days' wage) for each completed year of service from the first year, replacing the old 15-day scale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does service prior to July 2023 affect Oman gratuity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For periods of service completed before the enactment of Royal Decree 53/2023, employers may calculate the historical portion under the repealed RD 35/2003 (15 days per year for the first 3 years and 30 days thereafter), transitioning to the full 30-day rule for subsequent service."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">Oman RD 53/2023</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link">UAE</a>
+        <a href="../tools/qatar-gratuity-calculator.html" class="nav-link">Qatar</a>
+        <a href="../tools/oman-gratuity-calculator.html" class="nav-link active">Oman</a>
+        <a href="../tools/bahrain-eosi-calculator.html" class="nav-link">Bahrain</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Oman Gratuity</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Oman Gratuity Calculator: Royal Decree 53/2023 30-Day Rule</h1>
+
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under Oman Labour Law (Royal Decree 53/2023), non-Omani workers receive an end-of-service gratuity equal to <strong>one full month's basic salary (30 days)</strong> for each completed year of service, calculated on the last basic wage without the old 15-day tier.
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <div class="calc-card">
+        <div class="card-heading">
+          <!-- Oman Flag SVG -->
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+            <rect width="8" height="16" fill="#CE1126"/>
+            <rect x="8" width="16" height="5.33" fill="#FFFFFF"/>
+            <rect x="8" y="5.33" width="16" height="5.34" fill="#CE1126"/>
+            <rect x="8" y="10.67" width="16" height="5.33" fill="#007A3D"/>
+          </svg>
+          <span>Oman Gratuity Parameters</span>
+        </div>
+        <p class="card-subtext">Statutory dual-mode engine accommodating RD 53/2023 and historical RD 35/2003.</p>
+
+        <!-- Monthly Basic Wage -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="basicSalary" class="form-label">Monthly Basic Salary</label>
+            <span class="form-help">Basic wage excluding allowances</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">OMR</span>
+            <input type="number" id="basicSalary" class="form-input" value="950" min="50" max="15000" step="10">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="basicSalarySlider" class="range-slider" min="100" max="3000" step="50" value="950">
+            <div class="slider-scale-labels">
+              <span>100 OMR</span>
+              <span>1,500 OMR</span>
+              <span>3,000+ OMR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Length of Service -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceYears" class="form-label">Completed Years of Service</label>
+            <span class="form-help">Full years</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceYears" class="form-input no-prefix" value="5" min="0" max="40" step="1">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="5">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceMonths" class="form-label">Additional Months</label>
+            <span class="form-help">0 to 11 months</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceMonths" class="form-input no-prefix" value="0" min="0" max="11" step="1">
+          </div>
+        </div>
+
+        <!-- Calculation Mode -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label class="form-label">Statutory Calculation Standard</label>
+            <span class="form-help">Labour Law decree selection</span>
+          </div>
+          <div class="segmented-control">
+            <div class="segmented-option">
+              <input type="radio" id="modeNew" name="decreeMode" value="new" checked>
+              <label for="modeNew">RD 53/2023 (Flat 30 Days/Yr)</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="modeLegacy" name="decreeMode" value="legacy">
+              <label for="modeLegacy">Legacy RD 35/2003 (15d first 3 yrs)</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Result Card -->
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge">Statutory Gratuity</span>
+          <div class="result-amount-display">
+            <span class="result-currency">OMR</span>
+            <span id="finalGratuity">0.000</span>
+          </div>
+          <p class="result-caption" id="decreeLabel">Applied: Royal Decree 53/2023 Standard</p>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Daily Wage (Basic / 30):</span>
+            <span class="breakdown-value" id="dailyWageDisplay">0.000 OMR</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Total Service Duration:</span>
+            <span class="breakdown-value" id="totalTenureDisplay">5.0 Years</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Entitlement Days Accrued:</span>
+            <span class="breakdown-value" id="accruedDaysDisplay">150 Days</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Statutory Basis:</span>
+            <span class="breakdown-value">Last Drawn Basic Wage</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="content-section">
+    <div class="container content-article">
+      <h2 class="article-h2">Oman Labour Law Reform: The Transition from RD 35/2003 to RD 53/2023</h2>
+      <p class="article-p">
+        On July 25, 2023, His Majesty Sultan Haitham bin Tarik issued <strong>Royal Decree No. 53/2023</strong>, promulgating the new Labour Law of the Sultanate of Oman and officially repealing the longstanding Royal Decree No. 35/2003. This legislative overhaul introduced profound improvements for expatriate workers, particularly regarding terminal severance accrual.
+      </p>
+
+      <h3 class="article-h3">The New Flat 30-Day Accrual Standard</h3>
+      <p class="article-p">
+        Under the old framework (RD 35/2003), non-Omani employees received 15 days of basic wage per year for the first three continuous years of service, and 30 days per year for each subsequent year. 
+      </p>
+      <p class="article-p">
+        Under <strong>Royal Decree 53/2023 (Article 61)</strong>, this bifurcation has been eliminated. Expatriate employees now accrue a flat <strong>one full month's basic salary (30 days' wage)</strong> for each completed year from year one. Fractions of a year are calculated pro-rata on the basis of the final basic wage.
+      </p>
+
+      <div class="formula-box">
+        <div class="formula-title">Oman Royal Decree 53/2023 Gratuity Formula</div>
+        End of Service Gratuity = Last Drawn Monthly Basic Wage × (Years + [Months / 12])
+      </div>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Service Tenure</th>
+              <th>Old RD 35/2003 Accrued Days</th>
+              <th>New RD 53/2023 Accrued Days</th>
+              <th>Entitlement Gain under New Law</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Completed Year</td>
+              <td>15 Days</td>
+              <td><strong>30 Days</strong></td>
+              <td>+100% Increase</td>
+            </tr>
+            <tr>
+              <td>3 Completed Years</td>
+              <td>45 Days</td>
+              <td><strong>90 Days</strong></td>
+              <td>+100% Increase</td>
+            </tr>
+            <tr>
+              <td>5 Completed Years</td>
+              <td>105 Days</td>
+              <td><strong>150 Days</strong></td>
+              <td>+42.8% Increase</td>
+            </tr>
+            <tr>
+              <td>10 Completed Years</td>
+              <td>255 Days</td>
+              <td><strong>300 Days</strong></td>
+              <td>+17.6% Increase</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Practical Scenarios</h3>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario 1: New Contract (RD 53/2023)</span>
+          <div class="scenario-title">Accountant Completing 3 Years Under New Law</div>
+          <div class="scenario-body">
+            <strong>Basic Salary:</strong> 800 OMR<br>
+            <strong>Tenure:</strong> 3.0 Years<br>
+            <strong>Accrual:</strong> 30 days/yr = 90 days total (3 full months).<br>
+            <strong>Total Gratuity:</strong> <strong>2,400.000 OMR</strong> (Under old law this would have been only 1,200 OMR).
+          </div>
+        </div>
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario 2: Long Tenure</span>
+          <div class="scenario-title">Operations Director with 8 Years Service</div>
+          <div class="scenario-body">
+            <strong>Basic Salary:</strong> 1,500 OMR<br>
+            <strong>Tenure:</strong> 8.0 Years<br>
+            <strong>Accrual:</strong> 8 × 1,500 OMR = 12,000 OMR.<br>
+            <strong>Total Gratuity:</strong> <strong>12,000.000 OMR</strong> paid unconditionally upon separation.
+          </div>
+        </div>
+      </div>
+
+      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are housing and transport allowances included in Oman gratuity?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            No. Article 61 explicitly benchmarks the calculation against the worker's latest <strong>Basic Wage</strong> (Al-Ajr Al-Asasi), unlike Saudi Arabia which utilizes the comprehensive Actual Wage.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Does resignation reduce Oman end of service gratuity?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Royal Decree 53/2023, non-Omani workers completing their lawful notice period under an indefinite or fixed contract are entitled to their accrued gratuity without arbitrary statutory penalty tiers.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). Oman Royal Decree 53/2023 Certified Engine.</div>
+        <div>All calculations executed client-side. Zero server logs.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const basicInput = document.getElementById('basicSalary');
+      const basicSlider = document.getElementById('basicSalarySlider');
+      const yearsInput = document.getElementById('serviceYears');
+      const yearsSlider = document.getElementById('serviceYearsSlider');
+      const monthsInput = document.getElementById('serviceMonths');
+      const modeNew = document.getElementById('modeNew');
+      const modeLegacy = document.getElementById('modeLegacy');
+
+      const finalGratuityEl = document.getElementById('finalGratuity');
+      const dailyWageDisplayEl = document.getElementById('dailyWageDisplay');
+      const totalTenureDisplayEl = document.getElementById('totalTenureDisplay');
+      const accruedDaysDisplayEl = document.getElementById('accruedDaysDisplay');
+      const decreeLabelEl = document.getElementById('decreeLabel');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateOmanGratuity() {
+        const basic = parseFloat(basicInput.value) || 0;
+        const years = parseFloat(yearsInput.value) || 0;
+        const months = parseFloat(monthsInput.value) || 0;
+        const totalTenure = years + (months / 12);
+        const dailyWage = basic / 30;
+
+        let totalDays = 0;
+        let finalAmount = 0;
+
+        if (modeNew.checked) {
+          // New Royal Decree 53/2023: Flat 30 days/yr
+          totalDays = totalTenure * 30;
+          finalAmount = totalTenure * basic;
+          decreeLabelEl.textContent = "Applied: Royal Decree 53/2023 (Flat 30 Days/Yr)";
+        } else {
+          // Legacy RD 35/2003: 15 days first 3 yrs, 30 days thereafter
+          if (totalTenure <= 3) {
+            totalDays = totalTenure * 15;
+          } else {
+            totalDays = (3 * 15) + ((totalTenure - 3) * 30);
+          }
+          finalAmount = totalDays * dailyWage;
+          decreeLabelEl.textContent = "Applied: Legacy RD 35/2003 (15d first 3 yrs)";
+        }
+
+        finalGratuityEl.textContent = formatCurrency(finalAmount, 'OMR');
+        dailyWageDisplayEl.textContent = formatCurrency(dailyWage, 'OMR') + ' OMR';
+        totalTenureDisplayEl.textContent = totalTenure.toFixed(2) + ' Years';
+        accruedDaysDisplayEl.textContent = Math.round(totalDays) + ' Days';
+      }
+
+      bindDualInput('basicSalarySlider', 'basicSalary', calculateOmanGratuity);
+      bindDualInput('serviceYearsSlider', 'serviceYears', calculateOmanGratuity);
+      monthsInput.addEventListener('input', calculateOmanGratuity);
+      modeNew.addEventListener('change', calculateOmanGratuity);
+      modeLegacy.addEventListener('change', calculateOmanGratuity);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `Oman End of Service Gratuity Record (GulfCalc.tech)
+--------------------------------------------------
+Monthly Basic Wage: ${basicInput.value} OMR
+Service Tenure: ${yearsInput.value} Years, ${monthsInput.value} Months
+Standard Applied: ${modeNew.checked ? 'Royal Decree 53/2023' : 'Legacy RD 35/2003'}
+Accrued Entitlement Days: ${accruedDaysDisplayEl.textContent}
+Total Statutory Gratuity: ${finalGratuityEl.textContent} OMR`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateOmanGratuity();
+    });
+  </script>
+</body>
+</html>

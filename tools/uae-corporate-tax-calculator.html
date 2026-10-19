@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAE Corporate Tax Calculator: 9% Tax & Small Business Relief | GulfCalc</title>
+  <meta name="description" content="Calculate your UAE Corporate Tax liability under Federal Decree-Law No. 47/2022. Features 0% threshold up to AED 375k, 9% statutory rate, and Small Business Relief (SBR).">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html#app",
+        "name": "UAE Corporate Tax Calculator (9% & SBR)",
+        "url": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "AED"
+        },
+        "description": "Statutory client-side UAE Corporate Tax calculation utility based on Federal Decree-Law No. 47/2022."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "UAE Corporate Tax Calculator",
+            "item": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the corporate tax threshold in the UAE under Decree-Law No. 47/2022?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under UAE Federal Decree-Law No. 47 of 2022, taxable net profits up to AED 375,000 are subject to a 0% tax rate. Only the portion of taxable profit exceeding AED 375,000 is taxed at the standard 9% rate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Small Business Relief (SBR) in the UAE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Ministerial Decision No. 73 of 2023, resident taxable persons whose gross revenue in the relevant tax period does not exceed AED 3,000,000 can elect for Small Business Relief, treating their taxable income as zero for that period."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">UAE FTA 9%</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link">UAE</a>
+        <a href="../tools/uae-corporate-tax-calculator.html" class="nav-link active">UAE Corp Tax</a>
+        <a href="../tools/gcc-remittance-fee-calculator.html" class="nav-link">Remittance</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">UAE Corporate Tax</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">UAE Corporate Tax Calculator: 9% Statutory Rate & SBR Relief</h1>
+
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under UAE Federal Decree-Law No. 47/2022, taxable net business profit is taxed at <strong>0% up to AED 375,000</strong> and <strong>9% on any profit exceeding AED 375,000</strong>. Eligible businesses with gross annual revenue under AED 3,000,000 may elect for Small Business Relief (SBR) paying zero tax.
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <div class="calc-card">
+        <div class="card-heading">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <span>Taxable Profit & Revenue Model</span>
+        </div>
+        <p class="card-subtext">Federal Tax Authority (FTA) corporate taxation calculation parameters.</p>
+
+        <!-- Annual Gross Revenue -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="annualRevenue" class="form-label">Annual Gross Revenue (Turnover)</label>
+            <span class="form-help">SBR threshold check (AED 3M)</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">AED</span>
+            <input type="number" id="annualRevenue" class="form-input" value="2800000" min="0" max="100000000" step="10000">
+          </div>
+        </div>
+
+        <!-- Net Taxable Profit -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="netProfit" class="form-label">Net Taxable Profit</label>
+            <span class="form-help">Accounting profit after tax adjustments</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">AED</span>
+            <input type="number" id="netProfit" class="form-input" value="650000" min="0" max="50000000" step="5000">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="netProfitSlider" class="range-slider" min="100000" max="2500000" step="10000" value="650000">
+            <div class="slider-scale-labels">
+              <span>100k AED</span>
+              <span>1.3M AED</span>
+              <span>2.5M+ AED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small Business Relief Election Toggle -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label class="form-label">Small Business Relief (SBR) Election</label>
+            <span class="form-help">Ministerial Decision No. 73/2023</span>
+          </div>
+          <div class="segmented-control">
+            <div class="segmented-option">
+              <input type="radio" id="sbrAuto" name="sbrOption" value="auto" checked>
+              <label for="sbrAuto">Auto (Elect if Revenue &le; 3M)</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="sbrOptOut" name="sbrOption" value="optout">
+              <label for="sbrOptOut">Opt Out / Ineligible</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Result Card -->
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge" id="sbrBadge">Corporate Tax Payable</span>
+          <div class="result-amount-display">
+            <span class="result-currency">AED</span>
+            <span id="finalTaxAmount">0.00</span>
+          </div>
+          <p class="result-caption" id="taxStatusText">Statutory Federal Tax Liability</p>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Tax-Free Profit Tier (0%):</span>
+            <span class="breakdown-value" id="tier0Display">375,000.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Taxable Profit Tier (> 375k):</span>
+            <span class="breakdown-value" id="tierTaxableDisplay">0.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Standard Statutory Tax (9%):</span>
+            <span class="breakdown-value" id="standardTaxDisplay">0.00 AED</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Effective Corporate Tax Rate:</span>
+            <span class="breakdown-value" id="effectiveRateDisplay">0.00%</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Small Business Relief Status:</span>
+            <span class="breakdown-value" id="sbrStatusDisplay">Active (0 Tax)</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="content-section">
+    <div class="container content-article">
+      <h2 class="article-h2">UAE Corporate Tax Architecture: Federal Decree-Law No. 47 of 2022</h2>
+      <p class="article-p">
+        Effective for financial years commencing on or after June 1, 2023, the United Arab Emirates enacted a headline <strong>9% Corporate Tax</strong> regime codified under <strong>Federal Decree-Law No. 47 of 2022</strong>. Designed to maintain the nation's competitive standing while aligning with the OECD Base Erosion and Profit Shifting (BEPS Pillar Two) framework, the UAE corporate tax system introduces clear tiers.
+      </p>
+
+      <h3 class="article-h3">The Headline Two-Tier Rate Structure</h3>
+      <p class="article-p">
+        Article 3 of the Corporate Tax Law establishes a deliberate progressive relief threshold:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.25rem; font-size:0.9375rem; color:var(--slate-700); line-height:1.7;">
+        <li><strong>Taxable Net Profits up to AED 375,000:</strong> Taxed at <strong>0%</strong>. This generous threshold shields micro-enterprises and freelancers from any federal tax burden.</li>
+        <li><strong>Taxable Net Profits Exceeding AED 375,000:</strong> Taxed at <strong>9%</strong> exclusively on the amount exceeding the AED 375,000 threshold.</li>
+      </ul>
+
+      <div class="formula-box">
+        <div class="formula-title">UAE Corporate Tax Statutory Formula</div>
+        If Taxable Profit &le; AED 375,000 &rarr; Tax = AED 0<br>
+        If Taxable Profit > AED 375,000 &rarr; Tax = (Taxable Profit - AED 375,000) &times; 9%<br>
+        Effective Tax Rate = (Total Tax Payable / Total Taxable Profit) &times; 100
+      </div>
+
+      <h3 class="article-h3">Small Business Relief (SBR) Under Ministerial Decision No. 73 of 2023</h3>
+      <p class="article-p">
+        To support entrepreneurship, the Ministry of Finance issued Ministerial Decision No. 73 of 2023 introducing <strong>Small Business Relief (SBR)</strong>:
+      </p>
+      <p class="article-p">
+        Any resident taxable business whose <strong>gross turnover does not exceed AED 3,000,000</strong> in the relevant tax period may elect for SBR. Upon election, the business is treated as having <strong>no taxable income</strong> for that tax period, reducing corporate tax liability to AED 0 regardless of profit margin.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Net Taxable Profit</th>
+              <th>Tax at 0% Tier</th>
+              <th>Tax at 9% Tier</th>
+              <th>Total Tax Payable</th>
+              <th>Effective Tax Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AED 350,000</td>
+              <td>AED 0</td>
+              <td>AED 0</td>
+              <td><strong>AED 0</strong></td>
+              <td>0.00%</td>
+            </tr>
+            <tr>
+              <td>AED 500,000</td>
+              <td>AED 0</td>
+              <td>AED 11,250 (on 125k)</td>
+              <td><strong>AED 11,250</strong></td>
+              <td>2.25%</td>
+            </tr>
+            <tr>
+              <td>AED 1,000,000</td>
+              <td>AED 0</td>
+              <td>AED 56,250 (on 625k)</td>
+              <td><strong>AED 56,250</strong></td>
+              <td>5.63%</td>
+            </tr>
+            <tr>
+              <td>AED 3,000,000</td>
+              <td>AED 0</td>
+              <td>AED 236,250 (on 2.625M)</td>
+              <td><strong>AED 236,250</strong></td>
+              <td>7.88%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Practical Business Case Studies</h3>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Case 1: SBR Election (Turnover &le; 3M)</span>
+          <div class="scenario-title">Digital Consultancy Firm</div>
+          <div class="scenario-body">
+            <strong>Annual Revenue:</strong> AED 2,400,000<br>
+            <strong>Net Profit:</strong> AED 600,000<br>
+            <strong>Without SBR:</strong> Tax = (600k - 375k) × 9% = AED 20,250.<br>
+            <strong>With SBR:</strong> Revenue is under AED 3,000,000. Electing SBR results in <strong>AED 0 Corporate Tax</strong>.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <span class="scenario-badge">Case 2: Standard 9% Regime</span>
+          <div class="scenario-title">Logistics Operator Exceeding 3M Revenue</div>
+          <div class="scenario-body">
+            <strong>Annual Revenue:</strong> AED 8,500,000<br>
+            <strong>Net Profit:</strong> AED 1,200,000<br>
+            <strong>Tax Breakdown:</strong><br>
+            First AED 375,000 @ 0% = AED 0<br>
+            Remaining AED 825,000 @ 9% = AED 74,250<br>
+            <strong>Total Tax Payable:</strong> <strong>AED 74,250</strong> (Effective Rate: 6.19%).
+          </div>
+        </div>
+      </div>
+
+      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are Free Zone companies exempt from UAE Corporate Tax?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Free Zone companies can benefit from a 0% corporate tax rate on "Qualifying Income" provided they qualify as a Qualifying Free Zone Person (QFZP), meet adequate substance requirements, and do not elect to be subject to regular corporate tax.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). UAE Federal Decree-Law No. 47/2022 Compliant.</div>
+        <div>Private, client-side financial computation engine.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const revenueInput = document.getElementById('annualRevenue');
+      const profitInput = document.getElementById('netProfit');
+      const profitSlider = document.getElementById('netProfitSlider');
+      const sbrAuto = document.getElementById('sbrAuto');
+      const sbrOptOut = document.getElementById('sbrOptOut');
+
+      const finalTaxAmountEl = document.getElementById('finalTaxAmount');
+      const sbrBadgeEl = document.getElementById('sbrBadge');
+      const taxStatusTextEl = document.getElementById('taxStatusText');
+      const tierTaxableDisplayEl = document.getElementById('tierTaxableDisplay');
+      const standardTaxDisplayEl = document.getElementById('standardTaxDisplay');
+      const effectiveRateDisplayEl = document.getElementById('effectiveRateDisplay');
+      const sbrStatusDisplayEl = document.getElementById('sbrStatusDisplay');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateUAETax() {
+        const revenue = parseFloat(revenueInput.value) || 0;
+        const profit = parseFloat(profitInput.value) || 0;
+
+        const isSbrEligible = revenue <= 3000000;
+        const sbrActive = sbrAuto.checked && isSbrEligible;
+
+        const taxableBase = Math.max(0, profit - 375000);
+        const standardTax = taxableBase * 0.09;
+
+        let finalTax = standardTax;
+
+        if (sbrActive) {
+          finalTax = 0;
+          sbrBadgeEl.textContent = "SBR Relief Active (0% Tax)";
+          sbrBadgeEl.style.backgroundColor = "var(--emerald-50)";
+          sbrBadgeEl.style.color = "var(--emerald-700)";
+          taxStatusTextEl.textContent = "Eligible for Small Business Relief (Revenue ≤ 3M AED)";
+          sbrStatusDisplayEl.textContent = "Applied (Zero Tax Liability)";
+        } else {
+          sbrBadgeEl.textContent = "Corporate Tax Payable";
+          sbrBadgeEl.style.backgroundColor = "";
+          sbrBadgeEl.style.color = "";
+          taxStatusTextEl.textContent = profit > 375000 ? "Standard 9% Rate on Excess" : "Below AED 375,000 Threshold (0% Tax)";
+          sbrStatusDisplayEl.textContent = isSbrEligible ? "Opted Out" : "Ineligible (Revenue > 3M AED)";
+        }
+
+        const effectiveRate = profit > 0 ? (finalTax / profit) * 100 : 0;
+
+        finalTaxAmountEl.textContent = formatCurrency(finalTax, 'AED');
+        tierTaxableDisplayEl.textContent = formatCurrency(taxableBase, 'AED') + ' AED';
+        standardTaxDisplayEl.textContent = formatCurrency(standardTax, 'AED') + ' AED';
+        effectiveRateDisplayEl.textContent = effectiveRate.toFixed(2) + '%';
+      }
+
+      bindDualInput('netProfitSlider', 'netProfit', calculateUAETax);
+      revenueInput.addEventListener('input', calculateUAETax);
+      sbrAuto.addEventListener('change', calculateUAETax);
+      sbrOptOut.addEventListener('change', calculateUAETax);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `UAE Corporate Tax Assessment (GulfCalc.tech)
+--------------------------------------------------
+Annual Gross Revenue: ${revenueInput.value} AED
+Net Taxable Profit: ${profitInput.value} AED
+Taxable Base Over 375k: ${tierTaxableDisplayEl.textContent}
+Small Business Relief (SBR): ${sbrStatusDisplayEl.textContent}
+Net Corporate Tax Payable: ${finalTaxAmountEl.textContent} AED
+Effective Corporate Tax Rate: ${effectiveRateDisplayEl.textContent}
+Statutory Authority: UAE Federal Decree-Law No. 47/2022 & Decision No. 73/2023`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateUAETax();
+    });
+  </script>
+</body>
+</html>

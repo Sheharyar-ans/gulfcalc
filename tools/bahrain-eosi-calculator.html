@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahrain EOSI & 10% VAT Calculator: Law No. 36/2012 & 2024 SIO Rules | GulfCalc</title>
+  <meta name="description" content="Calculate Bahrain End of Service Indemnity (EOSI) under Law No. 36/2012 and 2024 SIO expat accrual rules, featuring an integrated 10% standard Bahrain VAT calculator.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/bahrain-eosi-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/bahrain-eosi-calculator.html#app",
+        "name": "Bahrain EOSI & VAT Calculator",
+        "url": "https://gulfcalc.tech/tools/bahrain-eosi-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "BHD"
+        },
+        "description": "Statutory client-side Bahrain End of Service Indemnity (EOSI) and 10% VAT assessment utility."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Bahrain EOSI Calculator",
+            "item": "https://gulfcalc.tech/tools/bahrain-eosi-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How is Bahrain End of Service Indemnity (EOSI) calculated under Article 116?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Article 116 of Bahrain Law No. 36 of 2012, indemnity is calculated at 15 days' wage per year for the first three years of service, and one full month's wage (30 days) for each subsequent year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the 2024 Bahrain SIO changes for expatriate indemnity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under the new Social Insurance Organisation (SIO) system, employers deposit monthly EOSI contributions directly into the SIO fund for expatriates, guaranteeing payout upon departure regardless of employer solvency."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">Bahrain SIO</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link">UAE</a>
+        <a href="../tools/qatar-gratuity-calculator.html" class="nav-link">Qatar</a>
+        <a href="../tools/oman-gratuity-calculator.html" class="nav-link">Oman</a>
+        <a href="../tools/bahrain-eosi-calculator.html" class="nav-link active">Bahrain</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI & VAT</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Bahrain EOSI & VAT</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Bahrain EOSI & 10% VAT Calculator: Law No. 36/2012 & SIO Accruals</h1>
+
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under Bahrain Labour Law No. 36/2012 (Article 116), End of Service Indemnity accrues at <strong>15 days' wage per year for the first 3 years</strong>, and <strong>30 days (1 full month) per year for year 4 onwards</strong>. Includes toggle for Bahrain 10% standard VAT invoice calculation.
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <div class="calc-card">
+        <div class="card-heading">
+          <!-- Bahrain Flag SVG -->
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+            <rect width="6" height="16" fill="#FFFFFF"/>
+            <rect x="6" width="18" height="16" fill="#DA291C"/>
+            <path d="M6 0L8.5 1.6L6 3.2L8.5 4.8L6 6.4L8.5 8L6 9.6L8.5 11.2L6 12.8L8.5 14.4L6 16V0Z" fill="#FFFFFF"/>
+          </svg>
+          <span>Bahrain Calculation Controls</span>
+        </div>
+        <p class="card-subtext">Statutory EOSI engine paired with 10% Bahrain standard VAT utility.</p>
+
+        <!-- Utility Mode Switcher -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label class="form-label">Active Bahrain Module</label>
+            <span class="form-help">Select tool mode</span>
+          </div>
+          <div class="segmented-control">
+            <div class="segmented-option">
+              <input type="radio" id="toolEOSI" name="bahrainToolMode" value="eosi" checked>
+              <label for="toolEOSI">Labour Law EOSI</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="toolVAT" name="bahrainToolMode" value="vat">
+              <label for="toolVAT">10% Standard VAT</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- EOSI Container -->
+        <div id="eosiInputGroup">
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="monthlyWage" class="form-label">Total Monthly Wage</label>
+              <span class="form-help">Basic + Fixed Allowances</span>
+            </div>
+            <div class="input-container">
+              <span class="input-prefix">BHD</span>
+              <input type="number" id="monthlyWage" class="form-input" value="1100" min="50" max="25000" step="10">
+            </div>
+            <div class="slider-container">
+              <input type="range" id="monthlyWageSlider" class="range-slider" min="100" max="4000" step="50" value="1100">
+              <div class="slider-scale-labels">
+                <span>100 BHD</span>
+                <span>2,000 BHD</span>
+                <span>4,000+ BHD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="serviceYears" class="form-label">Completed Years of Service</label>
+              <span class="form-help">Years</span>
+            </div>
+            <div class="input-container">
+              <input type="number" id="serviceYears" class="form-input no-prefix" value="6" min="0" max="40" step="1">
+            </div>
+            <div class="slider-container">
+              <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="6">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="serviceMonths" class="form-label">Additional Months</label>
+              <span class="form-help">0 to 11 months</span>
+            </div>
+            <div class="input-container">
+              <input type="number" id="serviceMonths" class="form-input no-prefix" value="3" min="0" max="11" step="1">
+            </div>
+          </div>
+        </div>
+
+        <!-- VAT Container (Hidden by default) -->
+        <div id="vatInputGroup" style="display:none;">
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="vatAmount" class="form-label">Base Invoice / Transaction Amount</label>
+              <span class="form-help">Pre-VAT or Total Amount</span>
+            </div>
+            <div class="input-container">
+              <span class="input-prefix">BHD</span>
+              <input type="number" id="vatAmount" class="form-input" value="500" min="1" max="1000000" step="10">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label-row">
+              <label class="form-label">VAT Calculation Type</label>
+            </div>
+            <div class="segmented-control">
+              <div class="segmented-option">
+                <input type="radio" id="vatAdd" name="vatType" value="add" checked>
+                <label for="vatAdd">Add 10% VAT (Exclusive)</label>
+              </div>
+              <div class="segmented-option">
+                <input type="radio" id="vatExtract" name="vatType" value="extract">
+                <label for="vatExtract">Extract 10% VAT (Inclusive)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Result Card -->
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge" id="resultTypeBadge">Bahrain EOSI Accrual</span>
+          <div class="result-amount-display">
+            <span class="result-currency">BHD</span>
+            <span id="finalDisplay">0.000</span>
+          </div>
+          <p class="result-caption" id="resultSubtext">Pursuant to Article 116 (Law No. 36/2012)</p>
+        </div>
+
+        <div class="breakdown-list" id="eosiBreakdown">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Daily Wage (Monthly / 30):</span>
+            <span class="breakdown-value" id="dailyWageDisplay">0.000 BHD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Years 1–3 Accrual (15 days/yr):</span>
+            <span class="breakdown-value" id="tier1Display">0.000 BHD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Year 4+ Accrual (30 days/yr):</span>
+            <span class="breakdown-value" id="tier2Display">0.000 BHD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Statutory Guarantee:</span>
+            <span class="breakdown-value">SIO Expat Fund Protected</span>
+          </div>
+        </div>
+
+        <div class="breakdown-list" id="vatBreakdown" style="display:none;">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Net Base Amount:</span>
+            <span class="breakdown-value" id="netVatBase">0.000 BHD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Bahrain 10% VAT Component:</span>
+            <span class="breakdown-value" id="vatComponent">0.000 BHD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Gross Payable Invoice:</span>
+            <span class="breakdown-value" id="grossInvoice">0.000 BHD</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="content-section">
+    <div class="container content-article">
+      <h2 class="article-h2">Bahrain Labour Law No. 36 of 2012: End of Service Indemnity (Article 116)</h2>
+      <p class="article-p">
+        In the Kingdom of Bahrain, terminal indemnities for non-Bahraini workers not covered by local statutory pension schemes are codified under <strong>Article 116 of Law No. 36 of 2012</strong>. Under this statute, the employee is entitled upon termination of employment to end-of-service indemnity computed on the basis of their final drawn monthly wage.
+      </p>
+
+      <h3 class="article-h3">The Statutory Accrual Tiers</h3>
+      <p class="article-p">
+        Bahrain indemnity follows a two-stage sliding scale based on the duration of uninterrupted service:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.25rem; font-size:0.9375rem; color:var(--slate-700); line-height:1.7;">
+        <li><strong>First Three (3) Years:</strong> 15 days of wage for each completed year.</li>
+        <li><strong>Fourth (4th) Year Onward:</strong> One full month's wage (30 days) for each completed year.</li>
+        <li><strong>Pro-Rata Fractions:</strong> The worker is entitled to an exact pro-rata proportion for any partial year or fractional months served.</li>
+      </ul>
+
+      <div class="formula-box">
+        <div class="formula-title">Bahrain EOSI Statutory Formula (Article 116)</div>
+        Tier 1 (Years 1–3) = (Monthly Wage / 30) × 15 × Years (Max 3)<br>
+        Tier 2 (Years 4+) = (Monthly Wage / 30) × 30 × (Total Years - 3)<br>
+        Total EOSI = Tier 1 + Tier 2
+      </div>
+
+      <h3 class="article-h3">The 2024 SIO Expatriate Fund Transformation</h3>
+      <p class="article-p">
+        Historically, employers in Bahrain accrued EOSI provisions internally on their balance sheets, leaving expatriate workers exposed to non-payment if a firm faced insolvency. Under recent <strong>Social Insurance Organisation (SIO)</strong> directives, private sector employers must now deposit mandatory monthly indemnity contributions directly into the central SIO account, insulating expatriates against corporate default.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Completed Service Duration</th>
+              <th>Statutory Days Accrued</th>
+              <th>Payable on 1,000 BHD Monthly Wage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Year</td>
+              <td>15 Days</td>
+              <td>500.000 BHD</td>
+            </tr>
+            <tr>
+              <td>3 Years</td>
+              <td>45 Days</td>
+              <td>1,500.000 BHD</td>
+            </tr>
+            <tr>
+              <td>5 Years</td>
+              <td>105 Days (45 + 60)</td>
+              <td>3,500.000 BHD</td>
+            </tr>
+            <tr>
+              <td>10 Years</td>
+              <td>255 Days (45 + 210)</td>
+              <td>8,500.000 BHD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Bahrain 10% Standard Value Added Tax (VAT)</h3>
+      <p class="article-p">
+        Effective January 1, 2022, Bahrain doubled its standard VAT rate from 5% to <strong>10%</strong> under Decree-Law No. 33 of 2021. For business transactions and consultancy invoices, our integrated engine computes both VAT addition (Exclusive base × 1.10) and VAT extraction (Inclusive gross / 1.10) with exact 3-decimal fils precision.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). Bahrain Law No. 36/2012 & SIO Accruals Engine.</div>
+        <div>All calculations strictly client-side. Zero remote data persistence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toolEOSI = document.getElementById('toolEOSI');
+      const toolVAT = document.getElementById('toolVAT');
+      const eosiInputGroup = document.getElementById('eosiInputGroup');
+      const vatInputGroup = document.getElementById('vatInputGroup');
+
+      const monthlyWageInput = document.getElementById('monthlyWage');
+      const monthlyWageSlider = document.getElementById('monthlyWageSlider');
+      const serviceYearsInput = document.getElementById('serviceYears');
+      const serviceYearsSlider = document.getElementById('serviceYearsSlider');
+      const serviceMonthsInput = document.getElementById('serviceMonths');
+
+      const vatAmountInput = document.getElementById('vatAmount');
+      const vatAdd = document.getElementById('vatAdd');
+      const vatExtract = document.getElementById('vatExtract');
+
+      const finalDisplayEl = document.getElementById('finalDisplay');
+      const resultTypeBadgeEl = document.getElementById('resultTypeBadge');
+      const resultSubtextEl = document.getElementById('resultSubtext');
+      const eosiBreakdown = document.getElementById('eosiBreakdown');
+      const vatBreakdown = document.getElementById('vatBreakdown');
+
+      const dailyWageDisplayEl = document.getElementById('dailyWageDisplay');
+      const tier1DisplayEl = document.getElementById('tier1Display');
+      const tier2DisplayEl = document.getElementById('tier2Display');
+      const netVatBaseEl = document.getElementById('netVatBase');
+      const vatComponentEl = document.getElementById('vatComponent');
+      const grossInvoiceEl = document.getElementById('grossInvoice');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateBahrain() {
+        if (toolEOSI.checked) {
+          eosiInputGroup.style.display = 'block';
+          vatInputGroup.style.display = 'none';
+          eosiBreakdown.style.display = 'flex';
+          vatBreakdown.style.display = 'none';
+          resultTypeBadgeEl.textContent = 'Bahrain EOSI Accrual';
+          resultSubtextEl.textContent = 'Pursuant to Article 116 (Law No. 36/2012)';
+
+          const monthly = parseFloat(monthlyWageInput.value) || 0;
+          const years = parseFloat(serviceYearsInput.value) || 0;
+          const months = parseFloat(serviceMonthsInput.value) || 0;
+          const totalTenure = years + (months / 12);
+          const dailyWage = monthly / 30;
+
+          let tier1 = 0;
+          let tier2 = 0;
+
+          if (totalTenure <= 3) {
+            tier1 = totalTenure * 15 * dailyWage;
+          } else {
+            tier1 = 3 * 15 * dailyWage;
+            tier2 = (totalTenure - 3) * 30 * dailyWage;
+          }
+
+          const totalEOSI = tier1 + tier2;
+
+          finalDisplayEl.textContent = formatCurrency(totalEOSI, 'BHD');
+          dailyWageDisplayEl.textContent = formatCurrency(dailyWage, 'BHD') + ' BHD';
+          tier1DisplayEl.textContent = formatCurrency(tier1, 'BHD') + ' BHD';
+          tier2DisplayEl.textContent = formatCurrency(tier2, 'BHD') + ' BHD';
+        } else {
+          eosiInputGroup.style.display = 'none';
+          vatInputGroup.style.display = 'block';
+          eosiBreakdown.style.display = 'none';
+          vatBreakdown.style.display = 'flex';
+          resultTypeBadgeEl.textContent = 'Bahrain 10% VAT Assessment';
+          resultSubtextEl.textContent = 'National Bureau for Revenue (NBR) Standard';
+
+          const val = parseFloat(vatAmountInput.value) || 0;
+          let net = 0;
+          let vat = 0;
+          let gross = 0;
+
+          if (vatAdd.checked) {
+            net = val;
+            vat = val * 0.10;
+            gross = net + vat;
+          } else {
+            gross = val;
+            net = val / 1.10;
+            vat = gross - net;
+          }
+
+          finalDisplayEl.textContent = formatCurrency(vat, 'BHD');
+          netVatBaseEl.textContent = formatCurrency(net, 'BHD') + ' BHD';
+          vatComponentEl.textContent = formatCurrency(vat, 'BHD') + ' BHD';
+          grossInvoiceEl.textContent = formatCurrency(gross, 'BHD') + ' BHD';
+        }
+      }
+
+      bindDualInput('monthlyWageSlider', 'monthlyWage', calculateBahrain);
+      bindDualInput('serviceYearsSlider', 'serviceYears', calculateBahrain);
+      serviceMonthsInput.addEventListener('input', calculateBahrain);
+      vatAmountInput.addEventListener('input', calculateBahrain);
+      vatAdd.addEventListener('change', calculateBahrain);
+      vatExtract.addEventListener('change', calculateBahrain);
+      toolEOSI.addEventListener('change', calculateBahrain);
+      toolVAT.addEventListener('change', calculateBahrain);
+
+      copyBtn.addEventListener('click', () => {
+        let text = '';
+        if (toolEOSI.checked) {
+          text = `Bahrain End of Service Indemnity Record (GulfCalc.tech)
+--------------------------------------------------
+Monthly Wage: ${monthlyWageInput.value} BHD
+Service Duration: ${serviceYearsInput.value} Yrs, ${serviceMonthsInput.value} Mo
+Daily Wage: ${dailyWageDisplayEl.textContent}
+Net Statutory EOSI: ${finalDisplayEl.textContent} BHD
+Statutory Authority: Bahrain Law No. 36/2012 Article 116`;
+        } else {
+          text = `Bahrain 10% VAT Breakdown (GulfCalc.tech)
+--------------------------------------------------
+Base Net Amount: ${netVatBaseEl.textContent}
+10% VAT Component: ${vatComponentEl.textContent}
+Gross Invoice Total: ${grossInvoiceEl.textContent}`;
+        }
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateBahrain();
+    });
+  </script>
+</body>
+</html>

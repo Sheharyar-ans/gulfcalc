@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuwait Indemnity Calculator: Official Labour Law Article 55 Formula | GulfCalc</title>
+  <meta name="description" content="Calculate your Kuwait end-of-service indemnity accurately using the statutory 26-working-day formula under Kuwait Private Sector Labour Law No. 6/2010 Article 55.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html#app",
+        "name": "Kuwait Indemnity Calculator (Labour Law Article 55)",
+        "url": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "KWD"
+        },
+        "description": "Statutory client-side Kuwait end-of-service benefits calculator using the 26 working days divisor pursuant to Article 55 of Law No. 6/2010."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Kuwait Indemnity Calculator",
+            "item": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does Kuwait use 26 days instead of 30 days to calculate daily wage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Article 55 of Kuwait Labour Law No. 6 of 2010, the daily wage for monthly paid workers is calculated by dividing monthly remuneration by 26 working days, accounting for statutory weekly rest days. Dividing by 30 days is legally non-compliant and unlawfully reduces worker entitlements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the maximum legal cap for Kuwait end of service indemnity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Article 51 specifies that the total end-of-service indemnity for private-sector employees shall not exceed one and a half years' remuneration (18 months of total monthly remuneration)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does resignation reduce Kuwait indemnity benefits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For indefinite contracts, resignation yields 0% benefit for service under 3 years; 50% for 3 to under 5 years; 66.67% (two-thirds) for 5 to under 10 years; and 100% full entitlement for 10 or more completed years."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">Kuwait Law</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link active">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link">UAE</a>
+        <a href="../tools/qatar-gratuity-calculator.html" class="nav-link">Qatar</a>
+        <a href="../tools/oman-gratuity-calculator.html" class="nav-link">Oman</a>
+        <a href="../tools/bahrain-eosi-calculator.html" class="nav-link">Bahrain</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-corporate-tax-calculator.html">UAE Corporate Tax Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee Calculator</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Kuwait Indemnity</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Kuwait Indemnity Calculator: Official Labour Law Article 55 Formula</h1>
+
+      <!-- 50-Word Direct Summary Answer for AI Engines & Featured Snippets -->
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Pursuant to Kuwait Private Sector Labour Law No. 6 of 2010 (Article 55), daily wage must be computed by dividing monthly remuneration by <strong>26 working days</strong>. Indemnity accrues at 15 days per year for the first 5 years and 30 days thereafter, capped at 1.5 years' salary.
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Workspace -->
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <!-- Left Column: Input Form -->
+      <div class="calc-card">
+        <div class="card-heading">
+          <!-- Kuwait Flag SVG -->
+          <svg width="24" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+            <rect width="24" height="5.33" fill="#007A3D"/>
+            <rect y="5.33" width="24" height="5.34" fill="#FFFFFF"/>
+            <rect y="10.67" width="24" height="5.33" fill="#CE1126"/>
+            <polygon points="0,0 7,5.33 7,10.67 0,16" fill="#000000"/>
+          </svg>
+          <span>Kuwait Indemnity Parameters</span>
+        </div>
+        <p class="card-subtext">Statutory calculations conform to Kuwait Private Sector Labour Law No. 6/2010.</p>
+
+        <!-- Monthly Remuneration Input -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="monthlySalary" class="form-label">Total Monthly Remuneration</label>
+            <span class="form-help">Basic + Fixed Cash Allowances</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">KWD</span>
+            <input type="number" id="monthlySalary" class="form-input" value="1200" min="50" max="25000" step="10">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="monthlySalarySlider" class="range-slider" min="100" max="5000" step="50" value="1200">
+            <div class="slider-scale-labels">
+              <span>100 KWD</span>
+              <span>2,500 KWD</span>
+              <span>5,000+ KWD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Length of Service (Years) -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceYears" class="form-label">Completed Years of Service</label>
+            <span class="form-help">Full years</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceYears" class="form-input no-prefix" value="6" min="0" max="45" step="1">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="6">
+            <div class="slider-scale-labels">
+              <span>0 Yrs</span>
+              <span>15 Yrs</span>
+              <span>30+ Yrs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Months -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceMonths" class="form-label">Additional Months of Service</label>
+            <span class="form-help">0 to 11 months (pro-rata)</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceMonths" class="form-input no-prefix" value="4" min="0" max="11" step="1">
+          </div>
+        </div>
+
+        <!-- Separation Reason -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label class="form-label">Reason for Separation</label>
+            <span class="form-help">Determines Article 53 resignation tier</span>
+          </div>
+          <div class="segmented-control">
+            <div class="segmented-option">
+              <input type="radio" id="sepTermination" name="separationReason" value="termination" checked>
+              <label for="sepTermination">Employer Termination / Contract Expiry</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="sepResignation" name="separationReason" value="resignation">
+              <label for="sepResignation">Employee Resignation</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Sticky Live Results -->
+      <div class="result-card" id="calculationReport">
+        <div class="result-header">
+          <span class="result-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Statutory Entitlement
+          </span>
+          <div class="result-amount-display">
+            <span class="result-currency">KWD</span>
+            <span id="finalIndemnity">0.000</span>
+          </div>
+          <p class="result-caption" id="capStatusText">Calculated via Law No. 6/2010 Art. 55</p>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Daily Wage (Salary / 26):</span>
+            <span class="breakdown-value" id="dailyWageDisplay">0.000 KWD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">First 5 Years Accrual (15 days/yr):</span>
+            <span class="breakdown-value" id="tier1Display">0.000 KWD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Subsequent Service (30 days/yr):</span>
+            <span class="breakdown-value" id="tier2Display">0.000 KWD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Gross Uncapped Benefit:</span>
+            <span class="breakdown-value" id="grossBenefitDisplay">0.000 KWD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Statutory Maximum Cap (18 Months):</span>
+            <span class="breakdown-value" id="maxCapDisplay">0.000 KWD</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Resignation Percentage Applied:</span>
+            <span class="breakdown-value" id="resignationPercentDisplay">100%</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- In-Depth Human Editorial Content (AdSense Quality Defense & Semantic Depth) -->
+  <section class="content-section">
+    <div class="container content-article">
+      
+      <h2 class="article-h2">Understanding Kuwait End of Service Indemnity Under Law No. 6 of 2010</h2>
+      <p class="article-p">
+        In the State of Kuwait, expatriate and private-sector terminal benefits are governed by <strong>Kuwait Private Sector Labour Law No. 6 of 2010</strong>. Commonly referred to as the <em>Indemnity</em> or <em>Mukafoat Nihayat Al-Khidma</em>, this statutory severance pay protects workers by establishing a mandatory financial accrual based on their length of uninterrupted service and final remuneration.
+      </p>
+
+      <h3 class="article-h3">The Critical 26 Working Days Statutory Divisor (Article 55)</h3>
+      <p class="article-p">
+        The single most frequent mistake committed by non-compliant payroll departments and generic financial calculators is dividing an employee's monthly remuneration by 30 calendar days. <strong>Article 55 of Law No. 6/2010 unambiguously mandates:</strong>
+      </p>
+
+      <div class="formula-box">
+        <div class="formula-title">Statutory Daily Wage Formula (Kuwait Law No. 6/2010, Art. 55)</div>
+        Daily Wage = Total Monthly Remuneration / 26 Working Days
+      </div>
+
+      <p class="article-p">
+        Because Kuwait law treats weekly rest days as non-working days for indemnity computation purposes, dividing by 26 results in a higher, legally correct daily rate. An employee earning <strong>1,300 KWD</strong> has a statutory daily rate of <strong>50.000 KWD</strong> (1,300 / 26), whereas an unlawful 30-day divisor yields only 43.333 KWD—robbing the worker of 13.3% of their lawful severance.
+      </p>
+
+      <!-- SVG Mathematical Flow Diagram -->
+      <div style="margin:2rem 0; text-align:center;">
+        <svg width="100%" height="160" viewBox="0 0 700 160" fill="none" style="max-width:700px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:10px;">
+          <rect x="20" y="30" width="140" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+          <text x="90" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="#0f172a">Monthly Salary</text>
+          <text x="90" y="88" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#4f46e5">÷ 26 Days</text>
+
+          <line x1="160" y1="75" x2="210" y2="75" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <rect x="210" y="30" width="140" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+          <text x="280" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#0f172a">Years 1 to 5</text>
+          <text x="280" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#059669">15 Days / Year</text>
+          <text x="280" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">(Daily × 15 × Yrs)</text>
+
+          <line x1="350" y1="75" x2="400" y2="75" stroke="#94a3b8" stroke-width="2"/>
+
+          <rect x="400" y="30" width="140" height="90" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+          <text x="470" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#0f172a">Years 6 & Beyond</text>
+          <text x="470" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#059669">30 Days / Year</text>
+          <text x="470" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">(Daily × 30 × Yrs)</text>
+
+          <line x1="540" y1="75" x2="580" y2="75" stroke="#94a3b8" stroke-width="2"/>
+
+          <rect x="580" y="30" width="105" height="90" rx="8" fill="#0f172a"/>
+          <text x="632" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="11" fill="#ffffff">Cap Check</text>
+          <text x="632" y="85" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#10b981">Max 1.5 Yrs</text>
+          <text x="632" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">(18 Mo Salary)</text>
+        </svg>
+      </div>
+
+      <h3 class="article-h3">Kuwait Indemnity Accrual Tiers and Statutory 1.5-Year Cap</h3>
+      <p class="article-p">
+        Under Article 51 of the Labour Law, indemnity accumulates in two statutory tiers:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.25rem; font-size:0.9375rem; color:var(--slate-700); line-height:1.7;">
+        <li><strong>First 5 Years of Continuous Service:</strong> 15 working days' remuneration for each completed year.</li>
+        <li><strong>Service Exceeding 5 Years:</strong> One full month (30 working days' remuneration) for each subsequent year.</li>
+        <li><strong>Maximum Ceiling Cap:</strong> The total aggregate benefit payable under all tiers combined cannot exceed <strong>one and a half years' remuneration (18 months' salary)</strong>.</li>
+      </ul>
+
+      <h3 class="article-h3">Statutory Resignation Deduction Scale (Article 53)</h3>
+      <p class="article-p">
+        When an employee working under an indefinite term contract voluntarily tenders their resignation, the full indemnity is reduced according to the statutory tenure tiers outlined in Article 53:
+      </p>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Continuous Service Period</th>
+              <th>Resignation Entitlement (%)</th>
+              <th>Applicable Legal Provision</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Under 3 Completed Years</td>
+              <td><strong>0% (No entitlement)</strong></td>
+              <td>Article 53, Kuwait Labour Law</td>
+            </tr>
+            <tr>
+              <td>3 Years to under 5 Years</td>
+              <td><strong>50% (Half entitlement)</strong></td>
+              <td>Article 53, Kuwait Labour Law</td>
+            </tr>
+            <tr>
+              <td>5 Years to under 10 Years</td>
+              <td><strong>66.67% (Two-thirds entitlement)</strong></td>
+              <td>Article 53, Kuwait Labour Law</td>
+            </tr>
+            <tr>
+              <td>10 or more Completed Years</td>
+              <td><strong>100% (Full entitlement)</strong></td>
+              <td>Article 53, Kuwait Labour Law</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Two Practical Case Studies</h3>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario A: Resignation at 4 Years</span>
+          <div class="scenario-title">Mid-Level Engineer Resigning After 4 Years</div>
+          <div class="scenario-body">
+            <strong>Monthly Salary:</strong> 1,300 KWD<br>
+            <strong>Daily Wage:</strong> 1,300 / 26 = 50.000 KWD<br>
+            <strong>Gross Accrual:</strong> 4 yrs × 15 days × 50 KWD = 3,000 KWD<br>
+            <strong>Resignation Deduction:</strong> Service is between 3–5 years, triggering a 50% reduction.<br>
+            <strong>Net Payable Indemnity:</strong> <strong>1,500.000 KWD</strong>.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario B: Termination After 12 Years</span>
+          <div class="scenario-title">Senior Manager Terminated After 12 Years</div>
+          <div class="scenario-body">
+            <strong>Monthly Salary:</strong> 2,080 KWD<br>
+            <strong>Daily Wage:</strong> 2,080 / 26 = 80.000 KWD<br>
+            <strong>Tier 1 (5 yrs):</strong> 5 × 15 × 80 = 6,000 KWD<br>
+            <strong>Tier 2 (7 yrs):</strong> 7 × 30 × 80 = 16,800 KWD<br>
+            <strong>Total Uncapped:</strong> 22,800 KWD<br>
+            <strong>Statutory Cap Check:</strong> 18 months × 2,080 KWD = 37,440 KWD.<br>
+            <strong>Net Payable:</strong> <strong>22,800.000 KWD</strong> (full 100% entitlement).
+          </div>
+        </div>
+      </div>
+
+      <h3 class="article-h3">Frequently Asked Questions (FAQ)</h3>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What components of compensation are included in the indemnity calculation?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 55, calculation is based on the worker's latest drawn remuneration, which encompasses basic salary plus all regular, guaranteed contractual allowances (such as fixed housing, transportation, and cost-of-living allowances). Discretionary bonuses and unquantified commissions are typically excluded.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Does an employee forfeit indemnity if dismissed?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Indemnity is only forfeited in rare situations of summary dismissal under Article 41 for gross misconduct (e.g., criminal conviction, severe financial damage to the employer, or physical assault). Standard dismissal or redundancy entitles the worker to 100% full indemnity.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are partial years calculated pro-rata?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Yes. Article 51 stipulates that workers are entitled to a proportionate fraction for fractions of the year served, calculated accurately down to completed months and days.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span>Gulf<span style="color:#059669;">Calc</span></span>
+          </div>
+          <p style="font-size:0.8125rem; line-height:1.6; color:var(--slate-500);">
+            Institutional-grade financial, tax, and labor law calculation utility for expatriates and corporations operating across the Gulf Cooperation Council (GCC).
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">GCC Calculators</div>
+          <ul class="footer-list">
+            <li><a href="../tools/kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity</a></li>
+            <li><a href="../tools/saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a></li>
+            <li><a href="../tools/uae-gratuity-calculator.html" class="footer-link">UAE Gratuity Law</a></li>
+            <li><a href="../tools/qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity Law</a></li>
+            <li><a href="../tools/oman-gratuity-calculator.html" class="footer-link">Oman Gratuity (RD 53/2023)</a></li>
+            <li><a href="../tools/bahrain-eosi-calculator.html" class="footer-link">Bahrain EOSI & VAT</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Financial & Tax</div>
+          <ul class="footer-list">
+            <li><a href="../tools/uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax (9%)</a></li>
+            <li><a href="../tools/gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fee Engine</a></li>
+            <li><a href="../llms.txt" class="footer-link">LLM Knowledge Manifest (/llms.txt)</a></li>
+            <li><a href="../sitemap.xml" class="footer-link">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Institutional Legal</div>
+          <ul class="footer-list">
+            <li><a href="../about-us.html" class="footer-link">About Accuracy & Mission</a></li>
+            <li><a href="../contact-us.html" class="footer-link">Contact Corporate Team</a></li>
+            <li><a href="../privacy-policy.html" class="footer-link">Privacy Policy (GDPR/GCC)</a></li>
+            <li><a href="../terms-of-service.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="../disclaimer.html" class="footer-link">Legal & Tax Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). All rights reserved. Zero external tracking.</div>
+        <div>Statutory data verified against official GCC Ministries of Human Resources.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Calculator Script -->
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const salaryInput = document.getElementById('monthlySalary');
+      const salarySlider = document.getElementById('monthlySalarySlider');
+      const yearsInput = document.getElementById('serviceYears');
+      const yearsSlider = document.getElementById('serviceYearsSlider');
+      const monthsInput = document.getElementById('serviceMonths');
+      const sepTermination = document.getElementById('sepTermination');
+      const sepResignation = document.getElementById('sepResignation');
+
+      const finalIndemnityEl = document.getElementById('finalIndemnity');
+      const dailyWageDisplayEl = document.getElementById('dailyWageDisplay');
+      const tier1DisplayEl = document.getElementById('tier1Display');
+      const tier2DisplayEl = document.getElementById('tier2Display');
+      const grossBenefitDisplayEl = document.getElementById('grossBenefitDisplay');
+      const maxCapDisplayEl = document.getElementById('maxCapDisplay');
+      const resignationPercentDisplayEl = document.getElementById('resignationPercentDisplay');
+      const capStatusTextEl = document.getElementById('capStatusText');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateKuwaitIndemnity() {
+        const monthly = parseFloat(salaryInput.value) || 0;
+        const years = parseFloat(yearsInput.value) || 0;
+        const months = parseFloat(monthsInput.value) || 0;
+        const isResignation = sepResignation.checked;
+
+        // Article 55: Daily Wage MUST be divided by 26 working days
+        const dailyWage = monthly / 26;
+        const totalTenureYears = years + (months / 12);
+
+        let tier1 = 0;
+        let tier2 = 0;
+
+        // 15 days/yr for first 5 years
+        if (totalTenureYears <= 5) {
+          tier1 = totalTenureYears * 15 * dailyWage;
+        } else {
+          tier1 = 5 * 15 * dailyWage;
+          tier2 = (totalTenureYears - 5) * 30 * dailyWage;
+        }
+
+        const grossBenefit = tier1 + tier2;
+        // Cap is 1.5 years' remuneration (18 months)
+        const statutoryCap = monthly * 18;
+        const cappedGross = Math.min(grossBenefit, statutoryCap);
+
+        // Resignation percentage under Article 53
+        let resignationMultiplier = 1.0;
+        let resignationLabel = "100% (No reduction)";
+
+        if (isResignation) {
+          if (totalTenureYears < 3) {
+            resignationMultiplier = 0.0;
+            resignationLabel = "0% (< 3 years service)";
+          } else if (totalTenureYears >= 3 && totalTenureYears < 5) {
+            resignationMultiplier = 0.5;
+            resignationLabel = "50% (3 to 5 years service)";
+          } else if (totalTenureYears >= 5 && totalTenureYears < 10) {
+            resignationMultiplier = 2 / 3;
+            resignationLabel = "66.67% (5 to 10 years service)";
+          } else {
+            resignationMultiplier = 1.0;
+            resignationLabel = "100% (10+ years service)";
+          }
+        }
+
+        const netPayable = cappedGross * resignationMultiplier;
+
+        // Update UI
+        finalIndemnityEl.textContent = formatCurrency(netPayable, 'KWD');
+        dailyWageDisplayEl.textContent = formatCurrency(dailyWage, 'KWD') + ' KWD';
+        tier1DisplayEl.textContent = formatCurrency(tier1, 'KWD') + ' KWD';
+        tier2DisplayEl.textContent = formatCurrency(tier2, 'KWD') + ' KWD';
+        grossBenefitDisplayEl.textContent = formatCurrency(grossBenefit, 'KWD') + ' KWD';
+        maxCapDisplayEl.textContent = formatCurrency(statutoryCap, 'KWD') + ' KWD';
+        resignationPercentDisplayEl.textContent = resignationLabel;
+
+        if (grossBenefit > statutoryCap) {
+          capStatusTextEl.textContent = "Statutory 18-month ceiling applied (Gross exceeded cap)";
+          capStatusTextEl.style.color = "var(--amber-600)";
+        } else {
+          capStatusTextEl.textContent = "Calculated via Law No. 6/2010 Art. 55";
+          capStatusTextEl.style.color = "";
+        }
+      }
+
+      // Bind dual inputs
+      bindDualInput('monthlySalarySlider', 'monthlySalary', calculateKuwaitIndemnity);
+      bindDualInput('serviceYearsSlider', 'serviceYears', calculateKuwaitIndemnity);
+      monthsInput.addEventListener('input', calculateKuwaitIndemnity);
+      sepTermination.addEventListener('change', calculateKuwaitIndemnity);
+      sepResignation.addEventListener('change', calculateKuwaitIndemnity);
+
+      // Copy action
+      copyBtn.addEventListener('click', () => {
+        const text = `Kuwait Indemnity Calculation Record (GulfCalc.tech)
+--------------------------------------------------
+Monthly Remuneration: ${salaryInput.value} KWD
+Length of Service: ${yearsInput.value} Years, ${monthsInput.value} Months
+Separation Reason: ${sepResignation.checked ? 'Resignation' : 'Termination/Contract Expiry'}
+Daily Wage Basis (Salary / 26): ${dailyWageDisplayEl.textContent}
+Gross Accrued: ${grossBenefitDisplayEl.textContent}
+Resignation Ratio: ${resignationPercentDisplayEl.textContent}
+Net Statutory Indemnity: ${finalIndemnityEl.textContent} KWD
+Statutory Authority: Kuwait Labour Law No. 6/2010 Article 55`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      // Initial run
+      calculateKuwaitIndemnity();
+    });
+  </script>
+</body>
+</html>

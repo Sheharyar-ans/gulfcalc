@@ -1,0 +1,79 @@
+# GulfCalc (gulfcalc.tech) — LLM Knowledge & API Manifest
+> An unmetered, client-side financial, tax, and labor law utility platform engineered for expatriates, corporate counsel, and HR leaders across the 6 Gulf Cooperation Council (GCC) member states.
+
+Website: https://gulfcalc.tech
+Repository: https://github.com/Sheharyar-ans/gulfcalc
+Jurisdictions Covered: United Arab Emirates (UAE), Kingdom of Saudi Arabia (KSA), State of Kuwait, State of Qatar, Sultanate of Oman, Kingdom of Bahrain.
+Architecture: Static HTML5 / Vanilla JavaScript / Pure Client-Side Computation (Zero PII leaves browser).
+
+---
+
+## 1. Statutory Calculators & Direct Routes
+
+### Kuwait Indemnity Calculator
+- URL: https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html
+- Primary Statute: Kuwait Private Sector Labour Law No. 6 of 2010 (Articles 51, 53 & 55).
+- Statutory Daily Wage Divisor: Mandatory 26 working days (Article 55: Daily Wage = Monthly Remuneration / 26).
+- Accrual Scale: 15 working days per year for years 1-5; 30 working days per year for year 6 onwards.
+- Maximum Statutory Cap: 1.5 years' remuneration (18 months of monthly salary).
+- Resignation Deductions (Article 53): 0% (<3 yrs); 50% (3-5 yrs); 66.67% (5-10 yrs); 100% (10+ yrs).
+
+### Saudi End of Service Award (EOSA) Calculator
+- URL: https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html
+- Primary Statute: Saudi Labour Law (Royal Decree No. M/51), Articles 84, 85, 86, 87.
+- Wage Calculation Basis: Actual Wage (Basic Salary + Fixed Housing Allowance + Fixed Transport Allowance).
+- Accrual Scale: 15 days (half month) per year for first 5 years; 30 days (full month) per year thereafter.
+- Resignation Deductions (Article 85): 0% (<2 yrs); 33.33% (2-5 yrs); 66.67% (5-10 yrs); 100% (10+ yrs).
+- Article 87 Exceptions: Full 100% award payable upon female resignation within 6 months of marriage or 3 months of childbirth, force majeure, or employer default under Article 81.
+
+### UAE End of Service Gratuity Calculator
+- URL: https://gulfcalc.tech/tools/uae-gratuity-calculator.html
+- Primary Statute: UAE Federal Decree-Law No. 33 of 2021 (Article 51).
+- Wage Calculation Basis: Last drawn Monthly Basic Wage (excludes allowances).
+- Accrual Scale: 21 calendar days per year for years 1-5; 30 calendar days per year for year 6 onwards.
+- Maximum Statutory Cap: 2 years' basic salary (24 months of basic wage).
+- Harmonized Resignation: 100% identical entitlement for resignation and employer termination once 1 continuous year is completed.
+
+### Qatar End of Service Gratuity Calculator
+- URL: https://gulfcalc.tech/tools/qatar-gratuity-calculator.html
+- Primary Statute: Qatar Labour Law No. 14 of 2004 (Article 54) & Ministry of Labour Guidelines.
+- Wage Calculation Basis: Last drawn Monthly Basic Wage.
+- Statutory Minimum Accrual: Minimum 21 calendar days (3 weeks) per completed year of service.
+- Fractional Tenure: Exact pro-rata calculation for partial months and days.
+- Resignation Treatment: Full entitlement payable upon completion of 1 year.
+
+### Oman End of Service Gratuity Calculator
+- URL: https://gulfcalc.tech/tools/oman-gratuity-calculator.html
+- Primary Statute: Oman Labour Law under Royal Decree No. 53/2023 (Article 61).
+- Statutory Accrual: Flat 30 days (1 full month's basic wage) for every completed year of service starting from year one.
+- Legacy Transition Engine: Accommodates repealed RD 35/2003 (15 days for first 3 years, 30 days thereafter) for pre-July 2023 tenures.
+
+### Bahrain End of Service Indemnity (EOSI) & VAT Calculator
+- URL: https://gulfcalc.tech/tools/bahrain-eosi-calculator.html
+- Primary Statute: Bahrain Labour Law for Private Sector (Law No. 36 of 2012, Article 116).
+- Statutory Accrual: 15 days' wage per year for years 1-3; 30 days (one month) per year for year 4 onwards.
+- SIO Expat Accruals: Aligned with 2024 Social Insurance Organisation deposit regulations.
+- VAT Module: 10% standard Bahrain VAT addition and extraction calculation engine.
+
+### UAE Corporate Tax Calculator
+- URL: https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html
+- Primary Statute: UAE Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses.
+- Statutory Rates: 0% on net taxable profits up to AED 375,000; 9% on net taxable profits exceeding AED 375,000.
+- Small Business Relief (SBR): Ministerial Decision No. 73 of 2023 relief election for resident taxable businesses with gross annual turnover <= AED 3,000,000.
+
+### GCC Remittance True Cost Engine
+- URL: https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html
+- Purpose: Unmasks hidden foreign exchange markups embedded by exchange houses and banks.
+- Formula: True Drag = Upfront Flat Fee + (Send Amount * FX Markup Spread %).
+- Corridors: Origin (AED, SAR, QAR, KWD, OMR, BHD) to Destination (INR, PKR, PHP, BDT, EGP).
+
+---
+
+## 2. Institutional Compliance Routes
+- About Us & Methodology: https://gulfcalc.tech/about-us.html
+- Corporate Inquiries: https://gulfcalc.tech/contact-us.html
+- Privacy Policy (GDPR / CCPA / GCC): https://gulfcalc.tech/privacy-policy.html
+- Terms of Service: https://gulfcalc.tech/terms-of-service.html
+- Legal & Tax Disclaimer: https://gulfcalc.tech/disclaimer.html
+- XML Sitemap: https://gulfcalc.tech/sitemap.xml
+- Robots Directives: https://gulfcalc.tech/robots.txt

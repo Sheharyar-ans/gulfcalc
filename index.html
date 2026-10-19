@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GulfCalc — GCC Financial & Labour Law Utility Platform | gulfcalc.tech</title>
+  <meta name="description" content="Official unmetered client-side financial, tax, and labor law calculation utility for expatriates and corporations across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain.">
+  <link rel="canonical" href="https://gulfcalc.tech/">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GulfCalc — GCC Financial & Labour Law Utility Platform">
+  <meta property="og:description" content="Accurate, unmetered client-side financial and labor law calculators for the 6 GCC member nations.">
+  <meta property="og:url" content="https://gulfcalc.tech/">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gulfcalc.tech/#website",
+        "url": "https://gulfcalc.tech/",
+        "name": "GulfCalc",
+        "description": "GCC Financial and Labour Law Calculation Platform",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://gulfcalc.tech/#calculators",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://gulfcalc.tech/#organization",
+        "name": "GulfCalc",
+        "url": "https://gulfcalc.tech/",
+        "logo": "https://gulfcalc.tech/assets/images/logo.png",
+        "sameAs": [
+          "https://github.com/Sheharyar-ans/gulfcalc"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@gulfcalc.tech",
+          "contactType": "customer service"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#calculators" class="nav-link">Calculators</a>
+        <a href="#comparison" class="nav-link">GCC Matrix</a>
+        <a href="#statutory" class="nav-link">Labour Laws</a>
+        <a href="about-us.html" class="nav-link">About</a>
+        <a href="contact-us.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="tools/kuwait-indemnity-calculator.html">Kuwait Indemnity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/saudi-end-of-service-calculator.html">Saudi End of Service Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/uae-gratuity-calculator.html">UAE Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/qatar-gratuity-calculator.html">Qatar Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/oman-gratuity-calculator.html">Oman Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/bahrain-eosi-calculator.html">Bahrain EOSI Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/uae-corporate-tax-calculator.html">UAE Corporate Tax Calculator</a></li>
+      <li class="mobile-nav-item"><a href="tools/gcc-remittance-fee-calculator.html">GCC Remittance Fee Calculator</a></li>
+      <li class="mobile-nav-item"><a href="about-us.html">Institutional Methodology</a></li>
+      <li class="mobile-nav-item"><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section style="padding: 4.5rem 0 3.5rem 0; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container" style="text-align: center; max-width: 880px;">
+      
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--emerald-50); border: 1px solid var(--emerald-100); padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.8125rem; font-weight: 600; color: var(--emerald-700); margin-bottom: 1.5rem;">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        <span>2026 GCC Statutory Labour & Tax Regulations Verified</span>
+      </div>
+
+      <h1 style="font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -0.03em; color: var(--slate-950); line-height: 1.15; margin-bottom: 1.25rem;">
+        GCC Financial & Labour Law <br><span style="color: #059669;">Calculation Platform</span>
+      </h1>
+
+      <p style="font-size: clamp(1rem, 2vw, 1.1875rem); color: var(--slate-600); line-height: 1.6; margin-bottom: 2.25rem;">
+        Engineered for expatriates, corporate legal counsel, and HR leaders across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain. Unmetered, mathematically exact, and 100% client-side private.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="#calculators" class="btn btn-primary" style="height: 52px; padding: 0 1.75rem; font-size: 0.9375rem;">
+          Explore All 8 Calculators
+        </a>
+        <a href="#comparison" class="btn btn-secondary" style="height: 52px; padding: 0 1.75rem; font-size: 0.9375rem;">
+          View GCC Comparative Matrix
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 3.5rem; font-size: 0.8125rem; color: var(--slate-500); border-top: 1px solid var(--border-subtle); padding-top: 1.75rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>100% Client-Side Privacy (Zero PII Logging)</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Statutory Formulas Validated</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Ultra-Low Latency Static Delivery</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GCC Country Calculators Grid -->
+  <section id="calculators" style="padding: 4.5rem 0; background-color: #ffffff;">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+        <h2 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--slate-900); margin-bottom: 0.75rem;">
+          Statutory Labour & Financial Calculators
+        </h2>
+        <p style="font-size: 0.9375rem; color: var(--slate-600);">
+          Select your jurisdiction to calculate end-of-service benefits, corporate tax liabilities, or cross-border remittance spreads.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+        
+        <!-- Kuwait Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.15s, box-shadow 0.15s;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <!-- Kuwait Flag -->
+              <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+                <rect width="24" height="5.33" fill="#007A3D"/>
+                <rect y="5.33" width="24" height="5.34" fill="#FFFFFF"/>
+                <rect y="10.67" width="24" height="5.33" fill="#CE1126"/>
+                <polygon points="0,0 7,5.33 7,10.67 0,16" fill="#000000"/>
+              </svg>
+              <span class="brand-badge">Law No. 6/2010</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              Kuwait Indemnity Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              Strictly implements the mandatory <strong>26 working days divisor</strong> under Article 55, 1.5-year salary cap, and Article 53 resignation sliding tiers.
+            </p>
+          </div>
+          <a href="tools/kuwait-indemnity-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Kuwait Engine &rarr;
+          </a>
+        </div>
+
+        <!-- Saudi Arabia Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <!-- Saudi Flag -->
+              <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+                <rect width="24" height="16" fill="#006C35"/>
+                <path d="M5 8H19M7 9.5L17 9.5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+              <span class="brand-badge">Royal Decree M/51</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              Saudi End of Service Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              Calculates on the statutory <strong>Actual Wage</strong> basis (Basic + Housing + Transport) under Articles 84, 85, and Article 87 statutory exemptions.
+            </p>
+          </div>
+          <a href="tools/saudi-end-of-service-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Saudi Engine &rarr;
+          </a>
+        </div>
+
+        <!-- UAE Gratuity Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <!-- UAE Flag -->
+              <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+                <rect width="6" height="16" fill="#CE1126"/>
+                <rect x="6" width="18" height="5.33" fill="#007A3D"/>
+                <rect x="6" y="5.33" width="18" height="5.34" fill="#FFFFFF"/>
+                <rect x="6" y="10.67" width="18" height="5.33" fill="#000000"/>
+              </svg>
+              <span class="brand-badge">Decree-Law 33/2021</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              UAE Gratuity Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              Features the unified resignation/termination accrual model (21 days first 5 yrs, 30 days thereafter) and 2-year statutory maximum cap.
+            </p>
+          </div>
+          <a href="tools/uae-gratuity-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch UAE Engine &rarr;
+          </a>
+        </div>
+
+        <!-- Qatar Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <!-- Qatar Flag -->
+              <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+                <rect width="7.5" height="16" fill="#FFFFFF"/>
+                <rect x="7.5" width="16.5" height="16" fill="#8A1538"/>
+                <path d="M7.5 0L10.5 1.77L7.5 3.55L10.5 5.33L7.5 7.11L10.5 8.88L7.5 10.66L10.5 12.44L7.5 14.22L10.5 16V0Z" fill="#FFFFFF"/>
+              </svg>
+              <span class="brand-badge">Law No. 14/2004</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              Qatar Gratuity Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              Article 54 statutory minimum 21 days basic salary per year, with pro-rata computation for fractional service months.
+            </p>
+          </div>
+          <a href="tools/qatar-gratuity-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Qatar Engine &rarr;
+          </a>
+        </div>
+
+        <!-- Oman Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <!-- Oman Flag -->
+              <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+                <rect width="8" height="16" fill="#CE1126"/>
+                <rect x="8" width="16" height="5.33" fill="#FFFFFF"/>
+                <rect x="8" y="5.33" width="16" height="5.34" fill="#CE1126"/>
+                <rect x="8" y="10.67" width="16" height="5.33" fill="#007A3D"/>
+              </svg>
+              <span class="brand-badge">RD 53/2023</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              Oman Gratuity Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              New flat 30 days per year rule under Royal Decree 53/2023, paired with legacy RD 35/2003 dual-mode transition support.
+            </p>
+          </div>
+          <a href="tools/oman-gratuity-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Oman Engine &rarr;
+          </a>
+        </div>
+
+        <!-- Bahrain Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <!-- Bahrain Flag -->
+              <svg width="28" height="18" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+                <rect width="6" height="16" fill="#FFFFFF"/>
+                <rect x="6" width="18" height="16" fill="#DA291C"/>
+                <path d="M6 0L8.5 2L6 4L8.5 6L6 8L8.5 10L6 12L8.5 14L6 16V0Z" fill="#FFFFFF"/>
+              </svg>
+              <span class="brand-badge">SIO Accrual</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              Bahrain EOSI & VAT Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              Article 116 indemnity sliding scale (15d first 3 yrs, 30d year 4+) combined with an exact 10% Bahrain standard VAT utility.
+            </p>
+          </div>
+          <a href="tools/bahrain-eosi-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Bahrain Engine &rarr;
+          </a>
+        </div>
+
+        <!-- UAE Corporate Tax Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span class="brand-badge">FTA Law 47/2022</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              UAE Corporate Tax Calculator
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              9% tax on net profits exceeding AED 375k, with automated Small Business Relief (SBR) election for revenue &le; AED 3M.
+            </p>
+          </div>
+          <a href="tools/uae-corporate-tax-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Tax Calculator &rarr;
+          </a>
+        </div>
+
+        <!-- GCC Remittance Fee Card -->
+        <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+              <span class="brand-badge">All 6 GCC Nations</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+              GCC Remittance True Cost Engine
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              Exposes hidden exchange house markups by comparing live provider spreads against transparent mid-market interbank rates.
+            </p>
+          </div>
+          <a href="tools/gcc-remittance-fee-calculator.html" class="btn btn-secondary" style="width: 100%;">
+            Launch Remittance Engine &rarr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GCC Comparative Gratuity Matrix -->
+  <section id="comparison" style="padding: 4.5rem 0; background-color: var(--slate-50); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 750px; margin: 0 auto 3rem auto;">
+        <h2 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--slate-900); margin-bottom: 0.75rem;">
+          GCC Statutory Gratuity Comparative Matrix
+        </h2>
+        <p style="font-size: 0.9375rem; color: var(--slate-600);">
+          Side-by-side legal comparison across the six member nations of the Gulf Cooperation Council.
+        </p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Governing Statute</th>
+              <th>Daily Wage Divisor</th>
+              <th>Years 1–5 Accrual</th>
+              <th>Year 6+ Accrual</th>
+              <th>Resignation Penalty</th>
+              <th>Statutory Cap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Kuwait</strong></td>
+              <td>Law No. 6/2010 Art. 55</td>
+              <td><strong>26 Working Days</strong></td>
+              <td>15 Days / Year</td>
+              <td>30 Days / Year</td>
+              <td>0% (&lt;3y), 50% (3-5y), 66% (5-10y), 100% (10y+)</td>
+              <td>1.5 Years' Salary</td>
+            </tr>
+            <tr>
+              <td><strong>Saudi Arabia</strong></td>
+              <td>Labour Law Art. 84/85</td>
+              <td>30 Days (Actual Wage)</td>
+              <td>15 Days / Year</td>
+              <td>30 Days / Year</td>
+              <td>0% (&lt;2y), 33% (2-5y), 66% (5-10y), 100% (10y+)</td>
+              <td>No statutory cap</td>
+            </tr>
+            <tr>
+              <td><strong>UAE</strong></td>
+              <td>Federal Decree-Law 33/2021</td>
+              <td>30 Days (Basic Salary)</td>
+              <td>21 Days / Year</td>
+              <td>30 Days / Year</td>
+              <td><strong>None (100% identical)</strong></td>
+              <td>2 Years' Salary</td>
+            </tr>
+            <tr>
+              <td><strong>Qatar</strong></td>
+              <td>Labour Law No. 14/2004</td>
+              <td>30 Days (Basic Salary)</td>
+              <td>21 Days / Year (Min)</td>
+              <td>21 Days / Year (Min)</td>
+              <td><strong>None (100% entitlement)</strong></td>
+              <td>No statutory cap</td>
+            </tr>
+            <tr>
+              <td><strong>Oman</strong></td>
+              <td>Royal Decree 53/2023</td>
+              <td>30 Days (Basic Salary)</td>
+              <td><strong>30 Days / Year</strong></td>
+              <td>30 Days / Year</td>
+              <td><strong>None (100% entitlement)</strong></td>
+              <td>No statutory cap</td>
+            </tr>
+            <tr>
+              <td><strong>Bahrain</strong></td>
+              <td>Law No. 36/2012 Art. 116</td>
+              <td>30 Days (Monthly Wage)</td>
+              <td>15 Days / Year (Y1-3)</td>
+              <td>30 Days / Year (Y4+)</td>
+              <td>SIO Fund Protected</td>
+              <td>No statutory cap</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span>Gulf<span style="color:#059669;">Calc</span></span>
+          </div>
+          <p style="font-size:0.8125rem; line-height:1.6; color:var(--slate-500);">
+            Institutional-grade financial, tax, and labor law calculation utility for expatriates and corporations operating across the Gulf Cooperation Council (GCC).
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">GCC Calculators</div>
+          <ul class="footer-list">
+            <li><a href="tools/kuwait-indemnity-calculator.html" class="footer-link">Kuwait Indemnity (26d)</a></li>
+            <li><a href="tools/saudi-end-of-service-calculator.html" class="footer-link">Saudi End of Service</a></li>
+            <li><a href="tools/uae-gratuity-calculator.html" class="footer-link">UAE Gratuity (Unified)</a></li>
+            <li><a href="tools/qatar-gratuity-calculator.html" class="footer-link">Qatar Gratuity</a></li>
+            <li><a href="tools/oman-gratuity-calculator.html" class="footer-link">Oman Gratuity (RD 53/2023)</a></li>
+            <li><a href="tools/bahrain-eosi-calculator.html" class="footer-link">Bahrain EOSI & VAT</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Financial & Tax</div>
+          <ul class="footer-list">
+            <li><a href="tools/uae-corporate-tax-calculator.html" class="footer-link">UAE Corporate Tax (9%)</a></li>
+            <li><a href="tools/gcc-remittance-fee-calculator.html" class="footer-link">GCC Remittance Fee Engine</a></li>
+            <li><a href="llms.txt" class="footer-link">LLM Manifest (/llms.txt)</a></li>
+            <li><a href="sitemap.xml" class="footer-link">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Institutional Legal</div>
+          <ul class="footer-list">
+            <li><a href="about-us.html" class="footer-link">About Accuracy & Mission</a></li>
+            <li><a href="contact-us.html" class="footer-link">Contact Corporate Team</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy (GDPR/GCC)</a></li>
+            <li><a href="terms-of-service.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="disclaimer.html" class="footer-link">Legal & Tax Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). All rights reserved. Zero external tracking.</div>
+        <div>Statutory data verified against official GCC Ministries of Human Resources.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/navigation.js"></script>
+</body>
+</html>

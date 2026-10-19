@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qatar Gratuity Calculator: Official Labour Law No. 14/2004 Article 54 | GulfCalc</title>
+  <meta name="description" content="Calculate Qatar End of Service Gratuity using the official statutory formula under Qatar Labour Law No. 14/2004 Article 54 (minimum 21 basic days per year).">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/qatar-gratuity-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#app",
+        "name": "Qatar Gratuity Calculator (Labour Law No. 14/2004)",
+        "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "QAR"
+        },
+        "description": "Statutory client-side Qatar End of Service Gratuity calculator pursuant to Article 54 of Law No. 14/2004."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Qatar Gratuity Calculator",
+            "item": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the minimum statutory gratuity rate in Qatar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Article 54 of Qatar Labour Law No. 14 of 2004 mandates a minimum of three weeks (21 days) of basic wage for each completed year of service, provided the worker has completed at least one year of continuous service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does resignation reduce gratuity entitlement in Qatar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike some GCC jurisdictions with sliding scales, in Qatar, once an employee completes one full year of continuous service, they are entitled to full statutory gratuity regardless of whether separation occurs via employer termination or employee resignation."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">Qatar Law 14/2004</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link">UAE</a>
+        <a href="../tools/qatar-gratuity-calculator.html" class="nav-link active">Qatar</a>
+        <a href="../tools/oman-gratuity-calculator.html" class="nav-link">Oman</a>
+        <a href="../tools/bahrain-eosi-calculator.html" class="nav-link">Bahrain</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Qatar Gratuity</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Qatar Gratuity Calculator: Official Labour Law No. 14/2004 Article 54</h1>
+
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under Qatar Labour Law No. 14 of 2004 (Article 54), employees with at least one continuous year of service are entitled to a minimum of <strong>21 calendar days of basic wage</strong> for each completed year, plus exact pro-rata accrual for partial months.
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <div class="calc-card">
+        <div class="card-heading">
+          <!-- Qatar Flag SVG -->
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+            <rect width="7.5" height="16" fill="#FFFFFF"/>
+            <rect x="7.5" width="16.5" height="16" fill="#8A1538"/>
+            <path d="M7.5 0L10.5 0.88L7.5 1.77L10.5 2.66L7.5 3.55L10.5 4.44L7.5 5.33L10.5 6.22L7.5 7.11L10.5 8L7.5 8.88L10.5 9.77L7.5 10.66L10.5 11.55L7.5 12.44L10.5 13.33L7.5 14.22L10.5 15.11L7.5 16V0Z" fill="#FFFFFF"/>
+          </svg>
+          <span>Qatar Gratuity Parameters</span>
+        </div>
+        <p class="card-subtext">Statutory calculation under Qatar Labour Law No. 14/2004.</p>
+
+        <!-- Monthly Basic Wage -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="basicSalary" class="form-label">Monthly Basic Salary</label>
+            <span class="form-help">Excludes housing & transport</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">QAR</span>
+            <input type="number" id="basicSalary" class="form-input" value="12000" min="500" max="150000" step="100">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="basicSalarySlider" class="range-slider" min="1000" max="35000" step="500" value="12000">
+            <div class="slider-scale-labels">
+              <span>1,000 QAR</span>
+              <span>18,000 QAR</span>
+              <span>35,000+ QAR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Tenure -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceYears" class="form-label">Completed Years of Service</label>
+            <span class="form-help">Minimum 1 year for eligibility</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceYears" class="form-input no-prefix" value="4" min="0" max="40" step="1">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceMonths" class="form-label">Additional Months</label>
+            <span class="form-help">0 to 11 months</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceMonths" class="form-input no-prefix" value="6" min="0" max="11" step="1">
+          </div>
+        </div>
+
+        <!-- Contract Agreed Days Per Year -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="agreedDays" class="form-label">Contractual Accrual Days Per Year</label>
+            <span class="form-help">Statutory minimum is 21 days</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="agreedDays" class="form-input no-prefix" value="21" min="21" max="45" step="1">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Result Card -->
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge">Statutory Entitlement</span>
+          <div class="result-amount-display">
+            <span class="result-currency">QAR</span>
+            <span id="finalGratuity">0.00</span>
+          </div>
+          <p class="result-caption">Article 54 Minimum Compliant Accrual</p>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Daily Basic Wage (Salary / 30):</span>
+            <span class="breakdown-value" id="dailyWageDisplay">0.00 QAR</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Total Tenure Duration:</span>
+            <span class="breakdown-value" id="totalTenureDisplay">4.50 Years</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Annual Accrual Rate:</span>
+            <span class="breakdown-value" id="annualRateDisplay">21 Days / Year</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Total Accrued Payable Days:</span>
+            <span class="breakdown-value" id="totalDaysDisplay">94.5 Days</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="content-section">
+    <div class="container content-article">
+      <h2 class="article-h2">Qatar Labour Law No. 14 of 2004: Article 54 Explained</h2>
+      <p class="article-p">
+        In the State of Qatar, end-of-service gratuity is a statutory right protected under <strong>Law No. 14 of 2004 (Article 54)</strong> and monitored rigorously by the Ministry of Labour. Unlike discretionary retirement bonuses, this benefit is mandatory for all non-Qatari employees in the private sector upon concluding their employment contract.
+      </p>
+
+      <h3 class="article-h3">Core Statutory Rules</h3>
+      <ul style="margin-left:1.5rem; margin-bottom:1.25rem; font-size:0.9375rem; color:var(--slate-700); line-height:1.7;">
+        <li><strong>Eligibility:</strong> The worker must complete at least <strong>one continuous year</strong> of employment with the company.</li>
+        <li><strong>Minimum Accrual Rate:</strong> Not less than <strong>three weeks (21 days) of basic wage</strong> for each completed year of service.</li>
+        <li><strong>Pro-Rata Fractions:</strong> The employee is entitled to gratuity for fractions of the year in proportion to the exact duration served.</li>
+        <li><strong>Wage Definition:</strong> The calculation is based on the <strong>last drawn basic wage</strong>. Discretionary allowances or overtime do not inflate the gratuity baseline unless contractually specified.</li>
+      </ul>
+
+      <div class="formula-box">
+        <div class="formula-title">Qatar Gratuity Statutory Formula (Article 54)</div>
+        Daily Wage = Monthly Basic Salary / 30<br>
+        Gratuity = Daily Wage × Accrual Days (Min 21) × (Years + [Months / 12])
+      </div>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Service Tenure</th>
+              <th>Statutory Days Accrued (21 d/yr)</th>
+              <th>Example on 10,000 QAR Basic</th>
+              <th>Payment Protection</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Year</td>
+              <td>21 Days</td>
+              <td>7,000 QAR</td>
+              <td>Protected by Law</td>
+            </tr>
+            <tr>
+              <td>3 Years</td>
+              <td>63 Days</td>
+              <td>21,000 QAR</td>
+              <td>Protected by Law</td>
+            </tr>
+            <tr>
+              <td>5 Years</td>
+              <td>105 Days</td>
+              <td>35,000 QAR</td>
+              <td>Protected by Law</td>
+            </tr>
+            <tr>
+              <td>10 Years</td>
+              <td>210 Days</td>
+              <td>70,000 QAR</td>
+              <td>Protected by Law</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Practical Case Studies</h3>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Case Study 1: Standard Resignation</span>
+          <div class="scenario-title">Financial Analyst Resigning After 3.5 Years</div>
+          <div class="scenario-body">
+            <strong>Basic Salary:</strong> 15,000 QAR<br>
+            <strong>Daily Rate:</strong> 15,000 / 30 = 500 QAR<br>
+            <strong>Tenure:</strong> 3.5 Years × 21 days = 73.5 days<br>
+            <strong>Total Gratuity:</strong> <strong>36,750.00 QAR</strong>. In Qatar, voluntary resignation does not reduce the 21-day entitlement once 1 year is served.
+          </div>
+        </div>
+        <div class="scenario-card">
+          <span class="scenario-badge">Case Study 2: Enhanced Contract</span>
+          <div class="scenario-title">Executive with Contractual 30 Days/Year</div>
+          <div class="scenario-body">
+            <strong>Basic Salary:</strong> 25,000 QAR<br>
+            <strong>Agreed Accrual:</strong> 30 days per year<br>
+            <strong>Tenure:</strong> 6.0 Years<br>
+            <strong>Total Gratuity:</strong> 6 × 25,000 QAR = <strong>150,000.00 QAR</strong>.
+          </div>
+        </div>
+      </div>
+
+      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>When must Qatar end-of-service gratuity be disbursed?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Qatar Ministry of Labour regulations, all terminal dues including gratuity and untaken leave balance must be cleared by the employer immediately upon contract termination or at latest on the next regular pay cycle.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). Qatar Labour Law Article 54 Compliant Engine.</div>
+        <div>Zero tracking. Pure client-side mathematical evaluation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const basicInput = document.getElementById('basicSalary');
+      const basicSlider = document.getElementById('basicSalarySlider');
+      const yearsInput = document.getElementById('serviceYears');
+      const yearsSlider = document.getElementById('serviceYearsSlider');
+      const monthsInput = document.getElementById('serviceMonths');
+      const agreedDaysInput = document.getElementById('agreedDays');
+
+      const finalGratuityEl = document.getElementById('finalGratuity');
+      const dailyWageDisplayEl = document.getElementById('dailyWageDisplay');
+      const totalTenureDisplayEl = document.getElementById('totalTenureDisplay');
+      const annualRateDisplayEl = document.getElementById('annualRateDisplay');
+      const totalDaysDisplayEl = document.getElementById('totalDaysDisplay');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateQatarGratuity() {
+        const basic = parseFloat(basicInput.value) || 0;
+        const years = parseFloat(yearsInput.value) || 0;
+        const months = parseFloat(monthsInput.value) || 0;
+        const agreedDays = Math.max(21, parseFloat(agreedDaysInput.value) || 21);
+        const totalTenure = years + (months / 12);
+
+        // Eligibility threshold: 1 continuous year
+        if (totalTenure < 1.0) {
+          finalGratuityEl.textContent = "0.00";
+          dailyWageDisplayEl.textContent = formatCurrency(basic / 30, 'QAR') + ' QAR';
+          totalTenureDisplayEl.textContent = totalTenure.toFixed(2) + ' Years (Under 1 Yr Threshold)';
+          annualRateDisplayEl.textContent = agreedDays + ' Days / Year';
+          totalDaysDisplayEl.textContent = '0 Days (Eligible at 1+ yr)';
+          return;
+        }
+
+        const dailyWage = basic / 30;
+        const totalDays = totalTenure * agreedDays;
+        const finalAmount = totalDays * dailyWage;
+
+        finalGratuityEl.textContent = formatCurrency(finalAmount, 'QAR');
+        dailyWageDisplayEl.textContent = formatCurrency(dailyWage, 'QAR') + ' QAR';
+        totalTenureDisplayEl.textContent = totalTenure.toFixed(2) + ' Years';
+        annualRateDisplayEl.textContent = agreedDays + ' Days / Year';
+        totalDaysDisplayEl.textContent = totalDays.toFixed(1) + ' Days';
+      }
+
+      bindDualInput('basicSalarySlider', 'basicSalary', calculateQatarGratuity);
+      bindDualInput('serviceYearsSlider', 'serviceYears', calculateQatarGratuity);
+      monthsInput.addEventListener('input', calculateQatarGratuity);
+      agreedDaysInput.addEventListener('input', calculateQatarGratuity);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `Qatar End of Service Gratuity Record (GulfCalc.tech)
+--------------------------------------------------
+Monthly Basic Wage: ${basicInput.value} QAR
+Length of Service: ${yearsInput.value} Years, ${monthsInput.value} Months
+Agreed Annual Accrual Rate: ${agreedDaysInput.value} Days/Year
+Total Accrued Payable Days: ${totalDaysDisplayEl.textContent}
+Net Statutory Gratuity: ${finalGratuityEl.textContent} QAR
+Statutory Reference: Qatar Labour Law No. 14/2004 Article 54`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateQatarGratuity();
+    });
+  </script>
+</body>
+</html>

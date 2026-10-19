@@ -1,0 +1,6 @@
+# GulfCalc (gulfcalc.tech) Robots Policy
+User-agent: *
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://gulfcalc.tech/sitemap.xml

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Corporate Team: Inquiries & Mathematical Audits | GulfCalc</title>
+  <meta name="description" content="Contact the GulfCalc engineering and legal compliance team for inquiries, statutory formula corrections, API integration partnerships, or institutional feedback.">
+  <link rel="canonical" href="https://gulfcalc.tech/contact-us.html">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">Contact</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Portal Home</a>
+        <a href="index.html#calculators" class="nav-link">Calculators</a>
+        <a href="about-us.html" class="nav-link">About Us</a>
+        <a href="contact-us.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+      <h1 class="page-title">Contact Institutional Engineering & Legal Support</h1>
+    </div>
+  </section>
+
+  <main class="container" style="padding: 3.5rem 0 4.5rem 0;">
+    <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; max-width: 960px; margin: 0 auto;">
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        
+        <!-- Contact Information Block -->
+        <div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--slate-900); margin-bottom: 1rem;">
+            Direct Channels
+          </h2>
+          <p style="font-size: 0.9375rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.75rem;">
+            For statutory formula verifications, corporate HR feedback, or technical inquiries regarding GulfCalc algorithms, reach our engineering and legal compliance team:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-lg);">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--slate-400); text-transform: uppercase; margin-bottom: 0.25rem;">General Inquiries</div>
+              <div style="font-size: 1rem; font-weight: 600; color: var(--slate-900); font-family: var(--font-mono);">contact@gulfcalc.tech</div>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-lg);">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--slate-400); text-transform: uppercase; margin-bottom: 0.25rem;">Statutory Auditing & Legal Feedback</div>
+              <div style="font-size: 1rem; font-weight: 600; color: var(--slate-900); font-family: var(--font-mono);">legal@gulfcalc.tech</div>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-lg);">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--slate-400); text-transform: uppercase; margin-bottom: 0.25rem;">Engineering Repository</div>
+              <div style="font-size: 0.9375rem; font-weight: 600; color: var(--indigo-600);">
+                <a href="https://github.com/Sheharyar-ans/gulfcalc" target="_blank" rel="noopener">github.com/Sheharyar-ans/gulfcalc</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="calc-card">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--slate-900); margin-bottom: 0.5rem;">
+            Transmit an Inquiry
+          </h3>
+          <p style="font-size: 0.8125rem; color: var(--slate-500); margin-bottom: 1.5rem;">
+            Fill out the inquiry form below. Our response time is typically within 1 business day.
+          </p>
+
+          <form id="contactForm" onsubmit="event.preventDefault(); document.getElementById('contactSuccess').style.display='block'; this.reset();">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Full Name</label>
+              <input type="text" id="contactName" class="form-input no-prefix" required placeholder="e.g. Tariq Al-Hashimi">
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Corporate or Personal Email</label>
+              <input type="email" id="contactEmail" class="form-input no-prefix" required placeholder="name@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryType" class="form-label">Jurisdiction / Inquiry Topic</label>
+              <select id="inquiryType" class="form-input no-prefix" style="height:48px;">
+                <option value="kuwait">Kuwait Labour Law (Article 55)</option>
+                <option value="saudi">Saudi Arabia EOSA (Articles 84/85)</option>
+                <option value="uae">UAE Labour Law (Decree-Law 33/2021)</option>
+                <option value="qatar">Qatar Labour Law (Law 14/2004)</option>
+                <option value="oman">Oman Labour Law (RD 53/2023)</option>
+                <option value="bahrain">Bahrain EOSI & VAT</option>
+                <option value="tax">UAE Corporate Tax (9%)</option>
+                <option value="remittance">GCC Cross-Border Remittances</option>
+                <option value="general">General Feedback / Bug Report</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message / Citation Details</label>
+              <textarea id="contactMessage" class="form-input no-prefix" rows="4" style="height:auto; padding:0.75rem;" required placeholder="Describe your question or feedback..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Submit Inquiry
+            </button>
+          </form>
+
+          <div id="contactSuccess" style="display:none; margin-top:1.25rem; padding:1rem; background:var(--emerald-50); border:1px solid var(--emerald-100); border-radius:var(--radius-md); font-size:0.875rem; color:var(--emerald-700);">
+            <strong>Thank you!</strong> Your message has been received. Our compliance team will review your inquiry shortly.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). Contact & Corporate Relations.</div>
+        <div>All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/navigation.js"></script>
+</body>
+</html>

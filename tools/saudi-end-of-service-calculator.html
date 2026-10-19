@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudi End of Service Calculator: Official Labour Law Articles 84 & 85 | GulfCalc</title>
+  <meta name="description" content="Calculate your Saudi End of Service Award (EOSA) accurately using the Actual Wage formula (Basic + Housing + Transport) under Saudi Labour Law Articles 84, 85 & 87.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html#app",
+        "name": "Saudi End of Service Award Calculator (Labour Law Art. 84 & 85)",
+        "url": "https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "SAR"
+        },
+        "description": "Statutory client-side Saudi End of Service Award calculator based on Actual Wage under Saudi Labour Law Articles 84, 85, and 87."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "GulfCalc",
+            "item": "https://gulfcalc.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://gulfcalc.tech/#calculators"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Saudi End of Service Calculator",
+            "item": "https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the wage basis for Saudi End of Service Award under Article 84?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Saudi Labour Law, calculation must be based on the Actual Wage (Al-Ajr Al-Fi'li), which encompasses the Basic Salary plus fixed recurring allowances such as Housing and Transportation, not basic salary alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does resignation reduce Saudi End of Service Award under Article 85?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Article 85, if an employee resigns with an indefinite contract, they receive: 0% if tenure is under 2 years; one-third (33.33%) for 2 to under 5 years; two-thirds (66.67%) for 5 to under 10 years; and 100% full award for 10 or more completed years."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">Saudi MHRSD</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../tools/kuwait-indemnity-calculator.html" class="nav-link">Kuwait</a>
+        <a href="../tools/saudi-end-of-service-calculator.html" class="nav-link active">Saudi Arabia</a>
+        <a href="../tools/uae-gratuity-calculator.html" class="nav-link">UAE</a>
+        <a href="../tools/qatar-gratuity-calculator.html" class="nav-link">Qatar</a>
+        <a href="../tools/oman-gratuity-calculator.html" class="nav-link">Oman</a>
+        <a href="../tools/bahrain-eosi-calculator.html" class="nav-link">Bahrain</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../tools/kuwait-indemnity-calculator.html">Kuwait Indemnity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/saudi-end-of-service-calculator.html">Saudi End of Service</a></li>
+      <li class="mobile-nav-item"><a href="../tools/uae-gratuity-calculator.html">UAE Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/qatar-gratuity-calculator.html">Qatar Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/oman-gratuity-calculator.html">Oman Gratuity</a></li>
+      <li class="mobile-nav-item"><a href="../tools/bahrain-eosi-calculator.html">Bahrain EOSI</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Saudi End of Service</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Saudi End of Service Calculator: Official Labour Law Articles 84 & 85</h1>
+
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under Saudi Labour Law (Royal Decree M/51), End of Service Award is calculated on <strong>Actual Wage (Basic + Housing + Transport)</strong>. It accrues at <strong>half-month salary per year for the first 5 years</strong>, and <strong>one full month per year thereafter</strong>, with Article 85 resignation tiers applied.
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <div class="calc-card">
+        <div class="card-heading">
+          <!-- Saudi Flag SVG -->
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="border-radius:2px; box-shadow:0 0 1px rgba(0,0,0,0.3);">
+            <rect width="24" height="16" fill="#006C35"/>
+            <path d="M5 8H19M7 9.5L17 9.5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span>Saudi Wage & Contract Parameters</span>
+        </div>
+        <p class="card-subtext">Compliant with Saudi Ministry of Human Resources and Social Development (MHRSD).</p>
+
+        <!-- Basic Salary -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="basicSalary" class="form-label">Monthly Basic Salary</label>
+            <span class="form-help">Base pay</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">SAR</span>
+            <input type="number" id="basicSalary" class="form-input" value="10000" min="1000" max="250000" step="500">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="basicSalarySlider" class="range-slider" min="2000" max="40000" step="500" value="10000">
+            <div class="slider-scale-labels">
+              <span>2,000 SAR</span>
+              <span>20,000 SAR</span>
+              <span>40,000+ SAR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Housing Allowance -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="housingAllowance" class="form-label">Monthly Housing Allowance (Fixed)</label>
+            <span class="form-help">Usually 25% of basic</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">SAR</span>
+            <input type="number" id="housingAllowance" class="form-input" value="2500" min="0" max="50000" step="100">
+          </div>
+        </div>
+
+        <!-- Transport Allowance -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="transportAllowance" class="form-label">Monthly Transport Allowance (Fixed)</label>
+            <span class="form-help">Cash allowance</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">SAR</span>
+            <input type="number" id="transportAllowance" class="form-input" value="1000" min="0" max="15000" step="100">
+          </div>
+        </div>
+
+        <!-- Tenure Years & Months -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceYears" class="form-label">Completed Years of Service</label>
+            <span class="form-help">Years</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceYears" class="form-input no-prefix" value="6" min="0" max="45" step="1">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="6">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="serviceMonths" class="form-label">Additional Months</label>
+            <span class="form-help">0 to 11 months</span>
+          </div>
+          <div class="input-container">
+            <input type="number" id="serviceMonths" class="form-input no-prefix" value="0" min="0" max="11" step="1">
+          </div>
+        </div>
+
+        <!-- Separation Reason -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label class="form-label">Reason for Separation</label>
+            <span class="form-help">Determines Article 85 reduction</span>
+          </div>
+          <div class="segmented-control">
+            <div class="segmented-option">
+              <input type="radio" id="sepTermination" name="sepReason" value="termination" checked>
+              <label for="sepTermination">Employer Termination / Contract Expiry (Art. 84)</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="sepResignation" name="sepReason" value="resignation">
+              <label for="sepResignation">Employee Resignation (Art. 85)</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="sepExempt" name="sepReason" value="exempt">
+              <label for="sepExempt">Statutory Exemption (Art. 87)</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Result Card -->
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge">Net Payable Award</span>
+          <div class="result-amount-display">
+            <span class="result-currency">SAR</span>
+            <span id="finalAward">0.00</span>
+          </div>
+          <p class="result-caption" id="lawNote">Calculated via Saudi Labour Law Art. 84/85</p>
+        </div>
+
+        <div class="breakdown-list">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Total Actual Wage (Basis):</span>
+            <span class="breakdown-value" id="actualWageDisplay">0.00 SAR</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">First 5 Years Accrual (0.5 mo/yr):</span>
+            <span class="breakdown-value" id="tier1Display">0.00 SAR</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Subsequent Service (1.0 mo/yr):</span>
+            <span class="breakdown-value" id="tier2Display">0.00 SAR</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Gross Uncut Benefit:</span>
+            <span class="breakdown-value" id="grossDisplay">0.00 SAR</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Resignation Entitlement Ratio:</span>
+            <span class="breakdown-value" id="ratioDisplay">100%</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" id="copyBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Results</span>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="triggerPrint()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="content-section">
+    <div class="container content-article">
+      <h2 class="article-h2">Saudi Labour Law Articles 84, 85, and 87: The Definitive Guide</h2>
+      <p class="article-p">
+        In the Kingdom of Saudi Arabia, terminal severance pay is codified under the <strong>Saudi Labour Law (Royal Decree No. M/51)</strong> as the <em>End of Service Award (Mukafoat Nihayat Al-Khidma)</em>. Governed by the Ministry of Human Resources and Social Development (MHRSD), the award represents a statutory obligation upon the employer at the conclusion of the contractual relationship.
+      </p>
+
+      <h3 class="article-h3">The Mandatory 'Actual Wage' Calculation Basis</h3>
+      <p class="article-p">
+        A widespread compliance error among private companies is computing the award exclusively on basic salary. <strong>Article 2 of the Saudi Labour Law</strong> defines the wage for terminal benefits as the <strong>Actual Wage (Al-Ajr Al-Fi'li)</strong>, which includes:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.25rem; font-size:0.9375rem; color:var(--slate-700); line-height:1.7;">
+        <li>Monthly Basic Salary;</li>
+        <li>Fixed Housing Allowance (or fair cash value of company-provided housing);</li>
+        <li>Fixed Transportation Allowance;</li>
+        <li>Any recurring, fixed allowances contractually paid without condition.</li>
+      </ul>
+
+      <div class="formula-box">
+        <div class="formula-title">Saudi End of Service Accrual Formula (Article 84)</div>
+        Actual Wage = Basic Salary + Housing Allowance + Transport Allowance<br>
+        Years 1 to 5: Accrual = (Actual Wage / 2) × Years<br>
+        Year 6 Onwards: Accrual = Actual Wage × (Years - 5)<br>
+        Gross Award = Accrual (1-5 yrs) + Accrual (6+ yrs)
+      </div>
+
+      <h3 class="article-h3">Statutory Resignation Deduction Scale (Article 85)</h3>
+      <p class="article-p">
+        When an employee resigns under an indefinite term employment contract, Article 85 imposes a structured deduction scale based on completed service:
+      </p>
+
+      <div class="table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Continuous Service Period</th>
+              <th>Entitlement Percentage</th>
+              <th>Statutory Reduction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Less than 2 Completed Years</td>
+              <td><strong>0%</strong></td>
+              <td>100% Forfeited</td>
+            </tr>
+            <tr>
+              <td>2 Years to less than 5 Years</td>
+              <td><strong>33.33% (One-Third)</strong></td>
+              <td>66.67% Deducted</td>
+            </tr>
+            <tr>
+              <td>5 Years to less than 10 Years</td>
+              <td><strong>66.67% (Two-Thirds)</strong></td>
+              <td>33.33% Deducted</td>
+            </tr>
+            <tr>
+              <td>10 or more Completed Years</td>
+              <td><strong>100% (Full Award)</strong></td>
+              <td>Zero Deduction</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="article-h3">Article 87 Full Award Exceptions</h3>
+      <p class="article-p">
+        Notwithstanding Article 85, <strong>Article 87</strong> dictates that an employee is entitled to 100% full award upon resignation if:
+      </p>
+      <ul style="margin-left:1.5rem; margin-bottom:1.25rem; font-size:0.9375rem; color:var(--slate-700); line-height:1.7;">
+        <li>The female employee leaves work within six (6) months of marriage;</li>
+        <li>The female employee leaves work within three (3) months of giving birth;</li>
+        <li>Separation is due to force majeure beyond the worker's control;</li>
+        <li>The worker terminates the contract under Article 81 due to employer breach of contractual obligations or assault.</li>
+      </ul>
+
+      <h3 class="article-h3">Two Practical Scenarios</h3>
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario 1: Resignation at 4 Years</span>
+          <div class="scenario-title">Sales Lead Resigning After 4 Years</div>
+          <div class="scenario-body">
+            <strong>Basic:</strong> 8,000 SAR | <strong>Housing:</strong> 2,000 SAR | <strong>Transport:</strong> 1,000 SAR<br>
+            <strong>Actual Wage:</strong> 11,000 SAR<br>
+            <strong>Gross Accrual:</strong> 4 yrs × (11,000 / 2) = 22,000 SAR<br>
+            <strong>Article 85 Ratio:</strong> 1/3 (33.33%) for 2–5 yrs tenure<br>
+            <strong>Net Payable:</strong> <strong>7,333.33 SAR</strong>.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario 2: Termination at 7 Years</span>
+          <div class="scenario-title">Plant Engineer Terminated After 7 Years</div>
+          <div class="scenario-body">
+            <strong>Actual Wage:</strong> 16,000 SAR<br>
+            <strong>Tier 1 (5 yrs):</strong> 5 × (16,000 / 2) = 40,000 SAR<br>
+            <strong>Tier 2 (2 yrs):</strong> 2 × 16,000 = 32,000 SAR<br>
+            <strong>Gross Award:</strong> 72,000 SAR<br>
+            <strong>Separation:</strong> Termination triggers 100% full entitlement.<br>
+            <strong>Net Payable:</strong> <strong>72,000.00 SAR</strong>.
+          </div>
+        </div>
+      </div>
+
+      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can an employment contract waive or reduce Article 84 award?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            No. Article 8 of the Saudi Labour Law explicitly nullifies any condition or contractual agreement that derogates from or waives the statutory rights granted to workers under the law, unless it provides terms that are more beneficial to the worker.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). Saudi Labour Law MHRSD Compliant Engine.</div>
+        <div>Calculated completely client-side. Zero server queries.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/core-calculator.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const basicInput = document.getElementById('basicSalary');
+      const basicSlider = document.getElementById('basicSalarySlider');
+      const housingInput = document.getElementById('housingAllowance');
+      const transportInput = document.getElementById('transportAllowance');
+      const yearsInput = document.getElementById('serviceYears');
+      const yearsSlider = document.getElementById('serviceYearsSlider');
+      const monthsInput = document.getElementById('serviceMonths');
+      const sepTermination = document.getElementById('sepTermination');
+      const sepResignation = document.getElementById('sepResignation');
+      const sepExempt = document.getElementById('sepExempt');
+
+      const finalAwardEl = document.getElementById('finalAward');
+      const actualWageDisplayEl = document.getElementById('actualWageDisplay');
+      const tier1DisplayEl = document.getElementById('tier1Display');
+      const tier2DisplayEl = document.getElementById('tier2Display');
+      const grossDisplayEl = document.getElementById('grossDisplay');
+      const ratioDisplayEl = document.getElementById('ratioDisplay');
+      const copyBtn = document.getElementById('copyBtn');
+
+      function calculateSaudiAward() {
+        const basic = parseFloat(basicInput.value) || 0;
+        const housing = parseFloat(housingInput.value) || 0;
+        const transport = parseFloat(transportInput.value) || 0;
+        const actualWage = basic + housing + transport;
+
+        const years = parseFloat(yearsInput.value) || 0;
+        const months = parseFloat(monthsInput.value) || 0;
+        const totalTenure = years + (months / 12);
+
+        let tier1 = 0;
+        let tier2 = 0;
+
+        if (totalTenure <= 5) {
+          tier1 = totalTenure * (actualWage / 2);
+        } else {
+          tier1 = 5 * (actualWage / 2);
+          tier2 = (totalTenure - 5) * actualWage;
+        }
+
+        const grossAward = tier1 + tier2;
+
+        let ratio = 1.0;
+        let ratioLabel = "100% (Full Entitlement)";
+
+        if (sepResignation.checked) {
+          if (totalTenure < 2) {
+            ratio = 0.0;
+            ratioLabel = "0% (< 2 years service)";
+          } else if (totalTenure >= 2 && totalTenure < 5) {
+            ratio = 1 / 3;
+            ratioLabel = "33.33% (1/3 for 2-5 yrs)";
+          } else if (totalTenure >= 5 && totalTenure < 10) {
+            ratio = 2 / 3;
+            ratioLabel = "66.67% (2/3 for 5-10 yrs)";
+          } else {
+            ratio = 1.0;
+            ratioLabel = "100% (10+ yrs service)";
+          }
+        } else if (sepExempt.checked) {
+          ratio = 1.0;
+          ratioLabel = "100% (Article 87 Exemption)";
+        }
+
+        const netPayable = grossAward * ratio;
+
+        finalAwardEl.textContent = formatCurrency(netPayable, 'SAR');
+        actualWageDisplayEl.textContent = formatCurrency(actualWage, 'SAR') + ' SAR';
+        tier1DisplayEl.textContent = formatCurrency(tier1, 'SAR') + ' SAR';
+        tier2DisplayEl.textContent = formatCurrency(tier2, 'SAR') + ' SAR';
+        grossDisplayEl.textContent = formatCurrency(grossAward, 'SAR') + ' SAR';
+        ratioDisplayEl.textContent = ratioLabel;
+      }
+
+      bindDualInput('basicSalarySlider', 'basicSalary', calculateSaudiAward);
+      bindDualInput('serviceYearsSlider', 'serviceYears', calculateSaudiAward);
+      housingInput.addEventListener('input', calculateSaudiAward);
+      transportInput.addEventListener('input', calculateSaudiAward);
+      monthsInput.addEventListener('input', calculateSaudiAward);
+      sepTermination.addEventListener('change', calculateSaudiAward);
+      sepResignation.addEventListener('change', calculateSaudiAward);
+      sepExempt.addEventListener('change', calculateSaudiAward);
+
+      copyBtn.addEventListener('click', () => {
+        const text = `Saudi End of Service Award Record (GulfCalc.tech)
+--------------------------------------------------
+Monthly Basic Salary: ${basicInput.value} SAR
+Housing Allowance: ${housingInput.value} SAR
+Transport Allowance: ${transportInput.value} SAR
+Actual Wage Baseline: ${actualWageDisplayEl.textContent}
+Length of Service: ${yearsInput.value} Years, ${monthsInput.value} Months
+Gross Accrued Award: ${grossDisplayEl.textContent}
+Entitlement Ratio: ${ratioDisplayEl.textContent}
+Net Statutory Payable Award: ${finalAwardEl.textContent} SAR
+Statutory Authority: Saudi Labour Law Articles 84, 85 & 87`;
+        copyBreakdownText(text, copyBtn);
+      });
+
+      calculateSaudiAward();
+    });
+  </script>
+</body>
+</html>
