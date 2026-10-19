@@ -11,7 +11,7 @@ TABLE OF CONTENTS
 ================================================================================
 1. Platform Architectural Overview & Zero-PII Guarantee
 2. Central Gateways (Homepage, Labour Laws Directory, Blog Hub)
-3. 12 Dedicated GCC Financial & Statutory Calculators (Formulas & Edge Cases)
+3. 19 Dedicated GCC Financial & Statutory Calculators & AI Utilities (Formulas & Edge Cases)
 4. 10 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
 5. Institutional Governance & Legal Policies
 6. JSON-LD Schemas & Machine Extraction Standards

@@ -3,77 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="alternate icon" href="../favicon.ico">
-  <title>GCC Remittance Fee & Hidden FX Spread Calculator | GulfCalc</title>
-  <meta name="description" content="Calculate the true hidden cost of sending money from the GCC (UAE, Saudi, Kuwait, Qatar, Oman, Bahrain) to India, Pakistan, Philippines, Bangladesh & Egypt.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+
+  <title>GCC Remittance Fee Calculator: True Transfer Cost | GulfCalc</title>
+  <meta name="description" content="Calculate hidden currency markup spreads and upfront wire transfer fees across GCC banks and exchange houses. Compare true remittance costs in real time.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html">
   <link rel="stylesheet" href="../assets/css/main.css">
   
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "@id": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html#app",
-        "name": "GCC Expatriate Remittance Fee & Hidden FX Cost Engine",
-        "url": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html",
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "All",
-        "offers": {
-          "@type": "Offer",
-          "price": "0.00",
-          "priceCurrency": "USD"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html#app",
+      "name": "GCC Expatriate Remittance Fee & Hidden FX Cost Engine",
+      "url": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "description": "True cost remittance calculator exposing hidden FX exchange rate markups and transfer fees across GCC corridors."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GulfCalc",
+          "item": "https://gulfcalc.tech/"
         },
-        "description": "True cost remittance calculator exposing hidden FX exchange rate markups and transfer fees across GCC corridors."
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "GulfCalc",
-            "item": "https://gulfcalc.tech/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Tools",
-            "item": "https://gulfcalc.tech/#calculators"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "GCC Remittance Calculator",
-            "item": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html"
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://gulfcalc.tech/#calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GCC Remittance Calculator",
+          "item": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between upfront remittance fees and hidden FX spreads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Upfront fees are stated transfer charges (typically 10 to 25 AED/SAR), whereas hidden FX spreads represent the unfavorable difference between the wholesale interbank exchange rate and the retail exchange rate provided to the consumer."
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the hidden FX spread in GCC remittances?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The hidden FX spread is the percentage difference between the interbank mid-market exchange rate and the lower retail rate provided by exchange houses or banks. Even if an exchange house advertises 'Zero Transfer Fee', they typically embed a 1.2% to 3.5% hidden margin in the exchange rate."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How is Total Remittance Drag calculated?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Total Remittance Drag equals the upfront flat wire fee plus the hidden currency conversion loss, expressed as a total monetary sum and as an effective percentage of the sent principal."
-            }
+        },
+        {
+          "@type": "Question",
+          "name": "How do GCC exchange houses calculate their currency markup margins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exchange houses apply a percentage deduction (typically 0.75% to 2.50%) below the live interbank midpoint rate, capturing profit on the currency conversion volume in addition to upfront dispatch fees."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Which transfer method offers the lowest overall cost for expatriate remittances?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digital fintech remittance apps generally offer narrower FX spreads (0.4% to 0.8%) compared to commercial banks (1.5% to 3.0%), resulting in higher recipient currency yields on mid-to-large consumer transfers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are cross-border remittance fees subject to Value Added Tax in GCC countries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under national VAT regulations in the UAE and Saudi Arabia, upfront remittance service administrative fees attract standard 5% or 15% VAT, whereas underlying currency exchange margin spreads are exempt financial supplies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What regulatory frameworks oversee exchange houses across GCC member states?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exchange houses are licensed and strictly monitored by central banks, such as the Central Bank of the UAE (CBUAE) and Saudi Central Bank (SAMA), enforcing anti-money laundering compliance and fair consumer disclosures."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -346,21 +372,64 @@
         </table>
       </div>
 
-      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <h2 class="article-h2">Frequently Asked Questions</h2>
       <div class="faq-accordion">
         <details class="faq-item">
           <summary class="faq-trigger">
-            <span>What is the mid-market exchange rate?</span>
+            <span>What is the difference between upfront remittance fees and hidden FX spreads?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </summary>
           <div class="faq-content">
-            The mid-market rate (also called the interbank rate) is the midpoint between global buy and sell rates in international currency markets. It is the real, uninflated exchange rate visible on Google, Bloomberg, and Reuters without commercial retail markups.
+            Upfront fees are stated transfer charges (typically 10 to 25 AED/SAR), whereas hidden FX spreads represent the unfavorable difference between the wholesale interbank exchange rate and the retail exchange rate provided to the consumer.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>How do GCC exchange houses calculate their currency markup margins?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Exchange houses apply a percentage deduction (typically 0.75% to 2.50%) below the live interbank midpoint rate, capturing profit on the currency conversion volume in addition to upfront dispatch fees.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Which transfer method offers the lowest overall cost for expatriate remittances?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Digital fintech remittance apps generally offer narrower FX spreads (0.4% to 0.8%) compared to commercial banks (1.5% to 3.0%), resulting in higher recipient currency yields on mid-to-large consumer transfers.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are cross-border remittance fees subject to Value Added Tax in GCC countries?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under national VAT regulations in the UAE and Saudi Arabia, upfront remittance service administrative fees attract standard 5% or 15% VAT, whereas underlying currency exchange margin spreads are exempt financial supplies.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What regulatory frameworks oversee exchange houses across GCC member states?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Exchange houses are licensed and strictly monitored by central banks, such as the Central Bank of the UAE (CBUAE) and Saudi Central Bank (SAMA), enforcing anti-money laundering compliance and fair consumer disclosures.
           </div>
         </details>
       </div>
-
     </div>
   </section>
 

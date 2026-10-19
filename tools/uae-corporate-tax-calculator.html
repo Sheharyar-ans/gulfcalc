@@ -3,77 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="alternate icon" href="../favicon.ico">
-  <title>UAE Corporate Tax Calculator: 9% Tax & Small Business Relief | GulfCalc</title>
-  <meta name="description" content="Calculate your UAE Corporate Tax liability under Federal Decree-Law No. 47/2022. Features 0% threshold up to AED 375k, 9% statutory rate, and Small Business Relief (SBR).">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+
+  <title>UAE Corporate Tax Calculator: Decree-Law No. 47/2022 | GulfCalc</title>
+  <meta name="description" content="Calculate UAE corporate tax liability under Federal Decree-Law No. 47/2022. Compute 9% taxable profit, Small Business Relief threshold, and net tax dues.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html">
   <link rel="stylesheet" href="../assets/css/main.css">
   
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "@id": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html#app",
-        "name": "UAE Corporate Tax Calculator (9% & SBR)",
-        "url": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html",
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "All",
-        "offers": {
-          "@type": "Offer",
-          "price": "0.00",
-          "priceCurrency": "AED"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html#app",
+      "name": "UAE Corporate Tax Calculator (9% & SBR)",
+      "url": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "AED"
+      },
+      "description": "Statutory client-side UAE Corporate Tax calculation utility based on Federal Decree-Law No. 47/2022."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GulfCalc",
+          "item": "https://gulfcalc.tech/"
         },
-        "description": "Statutory client-side UAE Corporate Tax calculation utility based on Federal Decree-Law No. 47/2022."
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "GulfCalc",
-            "item": "https://gulfcalc.tech/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Tools",
-            "item": "https://gulfcalc.tech/#calculators"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "UAE Corporate Tax Calculator",
-            "item": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html"
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://gulfcalc.tech/#calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "UAE Corporate Tax Calculator",
+          "item": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the standard UAE Corporate Tax rate and statutory exemption threshold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under UAE Federal Decree-Law No. 47/2022 Article 3, taxable income up to AED 375,000 is taxed at zero percent (0%), while all net taxable profit exceeding AED 375,000 is subject to a statutory rate of 9%."
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the corporate tax threshold in the UAE under Decree-Law No. 47/2022?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Under UAE Federal Decree-Law No. 47 of 2022, taxable net profits up to AED 375,000 are subject to a 0% tax rate. Only the portion of taxable profit exceeding AED 375,000 is taxed at the standard 9% rate."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Small Business Relief (SBR) in the UAE?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Under Ministerial Decision No. 73 of 2023, resident taxable persons whose gross revenue in the relevant tax period does not exceed AED 3,000,000 can elect for Small Business Relief, treating their taxable income as zero for that period."
-            }
+        },
+        {
+          "@type": "Question",
+          "name": "Who qualifies for UAE Corporate Tax Small Business Relief up to 3 million AED revenue?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Ministerial Decision No. 73/2023, resident taxable persons with gross revenue under AED 3,000,000 in current and prior tax periods can elect for Small Business Relief, treating their taxable profit as zero."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Free Zone companies in the UAE benefit from a zero percent corporate tax rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Cabinet Decision No. 55/2023, a Qualifying Free Zone Person (QFZP) that maintains adequate economic substance and derives Qualifying Income from designated commercial activities is entitled to a 0% corporate tax rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the statutory filing deadline for the UAE Corporate Tax return?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 53 of Federal Decree-Law No. 47/2022, corporate tax returns and associated tax liabilities must be electronically submitted to the Federal Tax Authority within nine (9) months from the end of the tax period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are salaries paid to business owners tax deductible under UAE Corporate Tax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 28 and Ministerial Decision No. 115/2023, salary and bonuses paid to connected persons (such as shareholders or directors) are deductible only if they reflect arm length market value for services rendered."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -344,7 +370,7 @@
         </table>
       </div>
 
-      <h3 class="article-h3">Practical Business Case Studies</h3>
+      <h2 class="article-h2">Real-World Scenario Walkthroughs</h2>
       <div class="scenarios-grid">
         <div class="scenario-card">
           <span class="scenario-badge">Case 1: SBR Election (Turnover &le; 3M)</span>
@@ -371,21 +397,64 @@
         </div>
       </div>
 
-      <h3 class="article-h3">Frequently Asked Questions</h3>
+      <h2 class="article-h2">Frequently Asked Questions</h2>
       <div class="faq-accordion">
         <details class="faq-item">
           <summary class="faq-trigger">
-            <span>Are Free Zone companies exempt from UAE Corporate Tax?</span>
+            <span>What is the standard UAE Corporate Tax rate and statutory exemption threshold?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </summary>
           <div class="faq-content">
-            Free Zone companies can benefit from a 0% corporate tax rate on "Qualifying Income" provided they qualify as a Qualifying Free Zone Person (QFZP), meet adequate substance requirements, and do not elect to be subject to regular corporate tax.
+            Under UAE Federal Decree-Law No. 47/2022 Article 3, taxable income up to AED 375,000 is taxed at zero percent (0%), while all net taxable profit exceeding AED 375,000 is subject to a statutory rate of 9%.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Who qualifies for UAE Corporate Tax Small Business Relief up to 3 million AED revenue?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Ministerial Decision No. 73/2023, resident taxable persons with gross revenue under AED 3,000,000 in current and prior tax periods can elect for Small Business Relief, treating their taxable profit as zero.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Can Free Zone companies in the UAE benefit from a zero percent corporate tax rate?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Cabinet Decision No. 55/2023, a Qualifying Free Zone Person (QFZP) that maintains adequate economic substance and derives Qualifying Income from designated commercial activities is entitled to a 0% corporate tax rate.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>What is the statutory filing deadline for the UAE Corporate Tax return?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 53 of Federal Decree-Law No. 47/2022, corporate tax returns and associated tax liabilities must be electronically submitted to the Federal Tax Authority within nine (9) months from the end of the tax period.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are salaries paid to business owners tax deductible under UAE Corporate Tax?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 28 and Ministerial Decision No. 115/2023, salary and bonuses paid to connected persons (such as shareholders or directors) are deductible only if they reflect arm length market value for services rendered.
           </div>
         </details>
       </div>
-
     </div>
   </section>
 

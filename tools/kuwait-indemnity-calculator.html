@@ -3,87 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="alternate icon" href="../favicon.ico">
-  <title>Kuwait Indemnity Calculator: Official Labour Law Article 55 Formula | GulfCalc</title>
-  <meta name="description" content="Calculate your Kuwait end-of-service indemnity accurately using the statutory 26-working-day formula under Kuwait Private Sector Labour Law No. 6/2010 Article 55.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+
+  <title>Kuwait Indemnity Calculator: Labour Law Article 55 | GulfCalc</title>
+  <meta name="description" content="Calculate Kuwait end-of-service indemnity using the statutory 26 working days divisor under Law No. 6/2010. Compute exact resignation and termination dues.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html">
   <link rel="stylesheet" href="../assets/css/main.css">
   
   <!-- JSON-LD Structured Data Schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "@id": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html#app",
-        "name": "Kuwait Indemnity Calculator (Labour Law Article 55)",
-        "url": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html",
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "All",
-        "browserRequirements": "Requires JavaScript. Requires HTML5.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0.00",
-          "priceCurrency": "KWD"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html#app",
+      "name": "Kuwait Indemnity Calculator (Labour Law Article 55)",
+      "url": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "KWD"
+      },
+      "description": "Statutory client-side Kuwait end-of-service benefits calculator using the 26 working days divisor pursuant to Article 55 of Law No. 6/2010."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GulfCalc",
+          "item": "https://gulfcalc.tech/"
         },
-        "description": "Statutory client-side Kuwait end-of-service benefits calculator using the 26 working days divisor pursuant to Article 55 of Law No. 6/2010."
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "GulfCalc",
-            "item": "https://gulfcalc.tech/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Tools",
-            "item": "https://gulfcalc.tech/#calculators"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Kuwait Indemnity Calculator",
-            "item": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html"
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://gulfcalc.tech/#calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kuwait Indemnity Calculator",
+          "item": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Kuwait indemnity calculated using 26 working days instead of 30?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 55 of Kuwait Labour Law No. 6/2010, the daily wage for monthly paid workers is determined by dividing monthly remuneration by 26 working days. Using a 30-day divisor is illegal and unlawfully reduces worker terminal entitlements."
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why does Kuwait use 26 days instead of 30 days to calculate daily wage?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Under Article 55 of Kuwait Labour Law No. 6 of 2010, the daily wage for monthly paid workers is calculated by dividing monthly remuneration by 26 working days, accounting for statutory weekly rest days. Dividing by 30 days is legally non-compliant and unlawfully reduces worker entitlements."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the maximum legal cap for Kuwait end of service indemnity?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Article 51 specifies that the total end-of-service indemnity for private-sector employees shall not exceed one and a half years' remuneration (18 months of total monthly remuneration)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does resignation reduce Kuwait indemnity benefits?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For indefinite contracts, resignation yields 0% benefit for service under 3 years; 50% for 3 to under 5 years; 66.67% (two-thirds) for 5 to under 10 years; and 100% full entitlement for 10 or more completed years."
-            }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum statutory cap for Kuwait private sector indemnity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 51 of Kuwait Labour Law No. 6/2010, total terminal indemnity for private sector employees shall not exceed one and a half years remuneration, representing eighteen (18) months of total gross contractual compensation."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "How does voluntary resignation reduce Kuwait indemnity benefits under Article 53?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 53 of Law No. 6/2010, resignation on indefinite contracts yields 0% for service under 3 years, 50% for 3 to 5 years, 66.67% for 5 to 10 years, and 100% full entitlement for 10 or more completed years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are housing and transport allowances included in Kuwait indemnity calculations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 55 of Law No. 6/2010, indemnity calculation must be based upon total remuneration, which includes basic salary plus all regular, guaranteed contractual allowances such as housing, cost of living, and transportation subsidies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does an employee forfeit indemnity if terminated during probation in Kuwait?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 24 of Kuwait Labour Law No. 6/2010, an employee terminated during the statutory probationary period of up to 100 working days has no legal claim to end-of-service indemnity benefits."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -447,45 +465,64 @@
         </div>
       </div>
 
-      <h3 class="article-h3">Frequently Asked Questions (FAQ)</h3>
+      <h2 class="article-h2">Frequently Asked Questions</h2>
       <div class="faq-accordion">
         <details class="faq-item">
           <summary class="faq-trigger">
-            <span>What components of compensation are included in the indemnity calculation?</span>
+            <span>Why is Kuwait indemnity calculated using 26 working days instead of 30?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </summary>
           <div class="faq-content">
-            Under Article 55, calculation is based on the worker's latest drawn remuneration, which encompasses basic salary plus all regular, guaranteed contractual allowances (such as fixed housing, transportation, and cost-of-living allowances). Discretionary bonuses and unquantified commissions are typically excluded.
+            Under Article 55 of Kuwait Labour Law No. 6/2010, the daily wage for monthly paid workers is determined by dividing monthly remuneration by 26 working days. Using a 30-day divisor is illegal and unlawfully reduces worker terminal entitlements.
           </div>
         </details>
-
         <details class="faq-item">
           <summary class="faq-trigger">
-            <span>Does an employee forfeit indemnity if dismissed?</span>
+            <span>What is the maximum statutory cap for Kuwait private sector indemnity?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </summary>
           <div class="faq-content">
-            Indemnity is only forfeited in rare situations of summary dismissal under Article 41 for gross misconduct (e.g., criminal conviction, severe financial damage to the employer, or physical assault). Standard dismissal or redundancy entitles the worker to 100% full indemnity.
+            Under Article 51 of Kuwait Labour Law No. 6/2010, total terminal indemnity for private sector employees shall not exceed one and a half years remuneration, representing eighteen (18) months of total gross contractual compensation.
           </div>
         </details>
-
         <details class="faq-item">
           <summary class="faq-trigger">
-            <span>Are partial years calculated pro-rata?</span>
+            <span>How does voluntary resignation reduce Kuwait indemnity benefits under Article 53?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </summary>
           <div class="faq-content">
-            Yes. Article 51 stipulates that workers are entitled to a proportionate fraction for fractions of the year served, calculated accurately down to completed months and days.
+            Under Article 53 of Law No. 6/2010, resignation on indefinite contracts yields 0% for service under 3 years, 50% for 3 to 5 years, 66.67% for 5 to 10 years, and 100% full entitlement for 10 or more completed years.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Are housing and transport allowances included in Kuwait indemnity calculations?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 55 of Law No. 6/2010, indemnity calculation must be based upon total remuneration, which includes basic salary plus all regular, guaranteed contractual allowances such as housing, cost of living, and transportation subsidies.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-trigger">
+            <span>Does an employee forfeit indemnity if terminated during probation in Kuwait?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Under Article 24 of Kuwait Labour Law No. 6/2010, an employee terminated during the statutory probationary period of up to 100 working days has no legal claim to end-of-service indemnity benefits.
           </div>
         </details>
       </div>
-
     </div>
   </section>
 
