@@ -10,7 +10,7 @@
   <meta name="description" content="Analyze GCC employment contract clauses client-side against UAE Federal Decree-Law No. 33/2021, Saudi Labor Law M/51, and Kuwait Law No. 6/2010.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/ai-contract-clause-checker.html">
 
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v3">
 
   <script type="application/ld+json">
   {
@@ -100,6 +100,14 @@
     ]
   }
   </script>
+  <style>
+    ol.breadcrumbs, ol.breadcrumb-list { display: flex !important; flex-wrap: wrap !important; align-items: center !important; list-style: none !important; list-style-type: none !important; padding: 0 !important; margin: 0 !important; gap: 0.5rem !important; }
+    ol.breadcrumbs li, ol.breadcrumb-list li { display: inline-flex !important; align-items: center !important; list-style: none !important; list-style-type: none !important; margin: 0 !important; padding: 0 !important; }
+    .workspace-grid, .calc-grid { display: grid !important; gap: 2rem !important; align-items: start !important; }
+    @media (min-width: 1024px) { .workspace-grid, .calc-grid { grid-template-columns: 7fr 5fr !important; } }
+    .calc-card, .result-card { background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: clamp(1.25rem, 2.5vw, 2rem) !important; box-shadow: var(--shadow-card); }
+    @media (min-width: 1024px) { .result-card { position: sticky; top: 84px; } }
+  </style>
 </head>
 <body>
 
@@ -153,29 +161,32 @@
     </ul>
   </div>
 
-  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <!-- Page Header -->
+  <section class="page-header">
     <div class="container">
-      <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item active" aria-current="page">AI Contract Clause Checker</li>
-      </ol>
-    </div>
-  </nav>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">AI Contract Clause Checker</li>
+        </ol>
+      </nav>
 
-  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
-    <div class="tool-header">
-      <span class="badge badge-emerald">Pan-GCC Legal Tech</span>
-      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">AI GCC Employment Contract Clause Checker</h1>
-      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
-        Under statutory GCC labor doctrines, contract terms that diminish statutory worker entitlements below ministerial minimums are null and void. Paste any employment clause below to evaluate its enforceability, identify governing legal decrees, and generate protective counter-proposals.
-      </p>
-    </div>
+      <span class="badge badge-emerald" style="margin-bottom:0.5rem; display:inline-flex;">Pan-GCC Legal Tech</span>
+      <h1 class="page-title">AI GCC Employment Contract Clause Checker: Statutory Non-Derogation Engine</h1>
 
-    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
-      <div class="card" style="padding:2rem;">
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under statutory GCC labor doctrines, contract terms that diminish statutory worker entitlements below ministerial minimums are null and void. Paste any employment clause below to evaluate its enforceability, identify governing legal decrees, and generate protective counter-proposals.
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Workspace -->
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      <div class="calc-card">
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           Clause Input & Statutory Jurisdiction
@@ -216,7 +227,7 @@
         </button>
       </div>
 
-      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+      <div class="result-card">
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
           Legal Compliance Determination
         </h2>
@@ -254,10 +265,12 @@
             </p>
           </div>
         </div>
-      </div>
-    </div>
+          </div>
+  </main>
 
-    <article class="article-content" style="margin-top:3.5rem;">
+  <section class="content-section">
+    <div class="container content-article">
+      <article class="article-content" style="margin-top:3.5rem;">
       <h2 class="article-h2">1. The Non-Derogation Principle in GCC Employment Legislation</h2>
       <p class="article-p">
         Across the modern legal systems of the Gulf Cooperation Council, private sector employment relations are governed by an overarching legal doctrine: the <strong>Non-Derogation Principle</strong> (known in civil jurisprudence as rules of public order or <em>Qawaid Al-Nitham Al-Aam</em>). Expressed explicitly in Article 65 of UAE Federal Decree-Law No. 33 of 2021, Article 8 of Saudi Royal Decree No. M/51, and Article 7 of Kuwait Labour Law No. 6 of 2010, this doctrine dictates that any condition or contractual stipulation in an individual employment agreement that diminishes or waives worker rights below the statutory minimums established by law is <strong>ipso jure null and void</strong>.
@@ -369,7 +382,8 @@
         </div>
       </section>
     </article>
-  </main>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container footer-inner">

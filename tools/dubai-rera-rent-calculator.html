@@ -10,7 +10,7 @@
   <meta name="description" content="Calculate statutory Dubai rent increase caps under Decree No. 43 of 2013 based on RERA Rental Index benchmarks and mandatory 90-day notice rules.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html">
 
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v3">
 
   <script type="application/ld+json">
   {
@@ -100,6 +100,14 @@
     ]
   }
   </script>
+  <style>
+    ol.breadcrumbs, ol.breadcrumb-list { display: flex !important; flex-wrap: wrap !important; align-items: center !important; list-style: none !important; list-style-type: none !important; padding: 0 !important; margin: 0 !important; gap: 0.5rem !important; }
+    ol.breadcrumbs li, ol.breadcrumb-list li { display: inline-flex !important; align-items: center !important; list-style: none !important; list-style-type: none !important; margin: 0 !important; padding: 0 !important; }
+    .workspace-grid, .calc-grid { display: grid !important; gap: 2rem !important; align-items: start !important; }
+    @media (min-width: 1024px) { .workspace-grid, .calc-grid { grid-template-columns: 7fr 5fr !important; } }
+    .calc-card, .result-card { background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: clamp(1.25rem, 2.5vw, 2rem) !important; box-shadow: var(--shadow-card); }
+    @media (min-width: 1024px) { .result-card { position: sticky; top: 84px; } }
+  </style>
 </head>
 <body>
 
@@ -153,29 +161,32 @@
     </ul>
   </div>
 
-  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <!-- Page Header -->
+  <section class="page-header">
     <div class="container">
-      <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item active" aria-current="page">Dubai RERA Rent Calculator</li>
-      </ol>
-    </div>
-  </nav>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Dubai RERA Rent Calculator</li>
+        </ol>
+      </nav>
 
-  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
-    <div class="tool-header">
-      <span class="badge badge-emerald">Emirate of Dubai</span>
-      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">Dubai RERA Rent Increase & Decree 43/2013 Calculator</h1>
-      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
-        Under Dubai Decree No. 43 of 2013, residential and commercial rent increases are strictly capped between 0% and 20% based on the gap between current contract rent and official RERA area benchmarks. This tool evaluates legal hike ceilings and mandatory 90-day notice compliance.
-      </p>
-    </div>
+      <span class="badge badge-emerald" style="margin-bottom:0.5rem; display:inline-flex;">Emirate of Dubai</span>
+      <h1 class="page-title">Dubai RERA Rent Increase & Decree 43/2013 Calculator: Official Rent Cap Engine</h1>
 
-    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
-      <div class="card" style="padding:2rem;">
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under Dubai Decree No. 43 of 2013, residential and commercial rent increases are strictly capped between 0% and 20% based on the gap between current contract rent and official RERA area benchmarks. This tool evaluates legal hike ceilings and mandatory 90-day notice compliance.
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Workspace -->
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      <div class="calc-card">
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           Tenancy Contract & Market Benchmarks
@@ -212,7 +223,7 @@
         </div>
       </div>
 
-      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+      <div class="result-card">
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
           Statutory RERA Permissible Rent Determination
         </h2>
@@ -265,10 +276,12 @@
         <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:var(--radius-md); padding:1rem; font-size:0.875rem; color:#1e40af;">
           <strong>Legal Dispute Resolution:</strong> If your landlord demands an increase exceeding the calculated RERA percentage or failed to serve written notice at least 90 days before lease expiration, you are entitled to renew at your existing rental rate. You may file an 'Offer and Deposit' with the Rental Dispute Settlement Centre (RDSC) to deposit your rent cheques legally.
         </div>
-      </div>
-    </div>
+          </div>
+  </main>
 
-    <article class="article-content" style="margin-top:3.5rem;">
+  <section class="content-section">
+    <div class="container content-article">
+      <article class="article-content" style="margin-top:3.5rem;">
       <h2 class="article-h2">1. Statutory Framework of Dubai Decree No. 43 of 2013</h2>
       <p class="article-p">
         In December 2013, His Highness Sheikh Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai, issued Decree No. 43 of 2013 Determining the Increase in Real Property Rent in the Emirate of Dubai. Designed to safeguard market equilibrium and curb unchecked inflationary spikes across the emirate's tenancy market, the decree established a rigid, mathematical tier system governing rental increases upon lease renewal.
@@ -392,7 +405,8 @@
         </div>
       </section>
     </article>
-  </main>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container footer-inner">

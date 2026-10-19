@@ -10,7 +10,7 @@
   <meta name="description" content="Check Kuwait dependent visa eligibility under Ministerial Decision No. 56/2024 (800 KWD salary rule), university degree criteria, and Dhaman health fees.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html">
 
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v3">
 
   <script type="application/ld+json">
   {
@@ -100,6 +100,14 @@
     ]
   }
   </script>
+  <style>
+    ol.breadcrumbs, ol.breadcrumb-list { display: flex !important; flex-wrap: wrap !important; align-items: center !important; list-style: none !important; list-style-type: none !important; padding: 0 !important; margin: 0 !important; gap: 0.5rem !important; }
+    ol.breadcrumbs li, ol.breadcrumb-list li { display: inline-flex !important; align-items: center !important; list-style: none !important; list-style-type: none !important; margin: 0 !important; padding: 0 !important; }
+    .workspace-grid, .calc-grid { display: grid !important; gap: 2rem !important; align-items: start !important; }
+    @media (min-width: 1024px) { .workspace-grid, .calc-grid { grid-template-columns: 7fr 5fr !important; } }
+    .calc-card, .result-card { background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: clamp(1.25rem, 2.5vw, 2rem) !important; box-shadow: var(--shadow-card); }
+    @media (min-width: 1024px) { .result-card { position: sticky; top: 84px; } }
+  </style>
 </head>
 <body>
 
@@ -153,29 +161,32 @@
     </ul>
   </div>
 
-  <nav class="breadcrumb-container" aria-label="Breadcrumb">
+    <!-- Page Header -->
+  <section class="page-header">
     <div class="container">
-      <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="../index.html">GulfCalc</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item active" aria-current="page">Kuwait Family Visa Calculator</li>
-      </ol>
-    </div>
-  </nav>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Kuwait Family Visa Calculator</li>
+        </ol>
+      </nav>
 
-  <main class="container" style="padding-top:2rem; padding-bottom:4rem;">
-    <div class="tool-header">
-      <span class="badge badge-emerald">State of Kuwait</span>
-      <h1 class="tool-title" style="margin-top:0.5rem; margin-bottom:0.75rem;">Kuwait Family Visa Eligibility & Dhaman Cost Calculator</h1>
-      <p class="tool-desc" style="max-width:760px; margin-left:auto; margin-right:auto; font-weight:600; color:var(--text-main);">
-        Under Ministry of Interior Ministerial Decision No. 56 of 2024, sponsoring family dependents in Kuwait requires a mandatory minimum salary of 800 KWD and an accredited university degree. This engine evaluates statutory eligibility and models annual Dhaman health insurance and Civil ID fees.
-      </p>
-    </div>
+      <span class="badge badge-emerald" style="margin-bottom:0.5rem; display:inline-flex;">State of Kuwait</span>
+      <h1 class="page-title">Kuwait Family Visa Eligibility & Dhaman Cost Calculator: Decision 56/2024 Engine</h1>
 
-    <div class="calc-grid" style="display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem;">
-      <div class="card" style="padding:2rem;">
+      <div class="direct-answer-callout">
+        <strong>Direct Legal Rule:</strong> Under Ministry of Interior Ministerial Decision No. 56 of 2024, sponsoring family dependents in Kuwait requires a mandatory minimum salary of 800 KWD and an accredited university degree. This engine evaluates statutory eligibility and models annual Dhaman health insurance and Civil ID fees.
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Workspace -->
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      <div class="calc-card">
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main); display:flex; align-items:center; gap:0.5rem;">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           Sponsor Remuneration & Dependent Profile
@@ -210,7 +221,7 @@
         </div>
       </div>
 
-      <div class="card" style="padding:2rem; background:linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);">
+      <div class="result-card">
         <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:1.5rem; color:var(--text-main);">
           Statutory Decision 56/2024 Assessment
         </h2>
@@ -263,10 +274,12 @@
         <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:var(--radius-md); padding:1rem; font-size:0.875rem; color:#1e40af;">
           <strong>Article 22 Processing Steps:</strong> After receiving approval from the General Department of Residency, an Entry Visa is issued. Upon family arrival, the sponsor has sixty days to complete medical screening (Wafid / Ministry of Health), bind Dhaman insurance, and capture biometrics at PACI South Surra for Civil ID issuance.
         </div>
-      </div>
-    </div>
+          </div>
+  </main>
 
-    <article class="article-content" style="margin-top:3.5rem;">
+  <section class="content-section">
+    <div class="container content-article">
+      <article class="article-content" style="margin-top:3.5rem;">
       <h2 class="article-h2">1. The Reinstatement of Kuwait Family Visas under Decision No. 56/2024</h2>
       <p class="article-p">
         In late January 2024, the Ministry of Interior promulgated Ministerial Decision No. 56 of 2024, ending a protracted multi-year moratorium on the issuance of family visit and dependent residency visas (Article 22 of the Aliens Residence Law). Promulgated under the directives of the Council of Ministers, the modern regulatory framework re-established expatriate family sponsorship under significantly tightened socio-economic thresholds designed to ensure demographic sustainability.
@@ -396,7 +409,8 @@
         </div>
       </section>
     </article>
-  </main>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container footer-inner">
