@@ -40,47 +40,200 @@
 
   <!-- JSON-LD Structured Data Schema -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://gulfcalc.tech/#website",
-        "url": "https://gulfcalc.tech/",
-        "name": "GulfCalc",
-        "description": "Precision statutory, tax, and labor law calculation platform for the Gulf Cooperation Council.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "GulfCalc",
-          "url": "https://gulfcalc.tech/"
-        }
-      },
-      {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://gulfcalc.tech/#website",
+      "url": "https://gulfcalc.tech/",
+      "name": "GulfCalc",
+      "description": "Precision statutory, tax, and labor law calculation platform for the Gulf Cooperation Council (UAE, Saudi Arabia, Kuwait, Qatar, Oman, Bahrain).",
+      "inLanguage": "en",
+      "publisher": {
         "@type": "Organization",
-        "@id": "https://gulfcalc.tech/#organization",
-        "name": "GulfCalc",
-        "url": "https://gulfcalc.tech/",
-        "logo": "https://gulfcalc.tech/favicon.svg"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": [
-          "Calculators",
-          "GCC Labour Laws Directory",
-          "Insights & Blog",
-          "About Us",
-          "Contact"
-        ],
-        "url": [
-          "https://gulfcalc.tech/#calculators",
-          "https://gulfcalc.tech/labour-laws/index.html",
-          "https://gulfcalc.tech/blog/index.html",
-          "https://gulfcalc.tech/about-us.html",
-          "https://gulfcalc.tech/contact-us.html"
-        ]
+        "@id": "https://gulfcalc.tech/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://gulfcalc.tech/#organization",
+      "name": "GulfCalc",
+      "url": "https://gulfcalc.tech/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gulfcalc.tech/favicon.svg"
+      },
+      "sameAs": [
+        "https://sheharyarsiraj.com/"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://gulfcalc.tech/#portal",
+      "url": "https://gulfcalc.tech/",
+      "name": "GulfCalc: GCC Statutory & Financial Calculation Suite",
+      "description": "19 client-side financial, tax, and labor law calculation engines covering the 6 GCC member states.",
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Labour law",
+          "sameAs": "https://www.wikidata.org/wiki/Q36201"
+        },
+        {
+          "@type": "Thing",
+          "name": "Severance pay",
+          "sameAs": "https://www.wikidata.org/wiki/Q1147481"
+        },
+        {
+          "@type": "Organization",
+          "name": "Gulf Cooperation Council",
+          "sameAs": "https://www.wikidata.org/wiki/Q85497"
+        }
+      ],
+      "hasPart": [
+        {
+          "@type": "WebApplication",
+          "name": "UAE Gratuity Calculator",
+          "url": "https://gulfcalc.tech/tools/uae-gratuity-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Saudi End of Service Calculator",
+          "url": "https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Kuwait Indemnity Calculator",
+          "url": "https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Qatar Gratuity Calculator",
+          "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Oman Gratuity Calculator",
+          "url": "https://gulfcalc.tech/tools/oman-gratuity-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Bahrain EOSI & VAT Calculator",
+          "url": "https://gulfcalc.tech/tools/bahrain-eosi-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "UAE Corporate Tax Calculator",
+          "url": "https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Saudi Dependent Fee Calculator",
+          "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Saudi GOSI Calculator",
+          "url": "https://gulfcalc.tech/tools/saudi-gosi-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "UAE Overstay Fine Calculator",
+          "url": "https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Dubai RERA Rent Calculator",
+          "url": "https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "UAE Emiratisation Penalty Calculator",
+          "url": "https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Kuwait Family Visa Calculator",
+          "url": "https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Kuwait PIFSS Net Salary Calculator",
+          "url": "https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "UAE Golden Visa Property Calculator",
+          "url": "https://gulfcalc.tech/tools/uae-golden-visa-property-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "GCC Cost of Living Comparator",
+          "url": "https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "GCC Remittance Fee Calculator",
+          "url": "https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "AI Contract Clause Checker",
+          "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "AI Resignation Letter Generator",
+          "url": "https://gulfcalc.tech/tools/ai-resignation-letter-generator.html"
+        }
+      ]
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "@id": "https://gulfcalc.tech/#navigation",
+      "name": [
+        "Calculators",
+        "GCC Labour Laws Directory",
+        "Insights & Blog",
+        "About Us",
+        "Contact"
+      ],
+      "url": [
+        "https://gulfcalc.tech/#calculators",
+        "https://gulfcalc.tech/labour-laws/index.html",
+        "https://gulfcalc.tech/blog/index.html",
+        "https://gulfcalc.tech/about-us.html",
+        "https://gulfcalc.tech/contact-us.html"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://gulfcalc.tech/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is end-of-service gratuity calculated across GCC nations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gratuity formulas differ by national statute: the UAE awards 21 days basic pay/year (years 1-5) and 30 days thereafter capped at 2 years; Saudi Arabia calculates 15 days actual wage/year (years 1-5) and 30 days thereafter with resignation deduction scales; Kuwait calculates 15 days remuneration/year (years 1-5) and 30 days thereafter using a mandatory 26 working days divisor; Qatar awards minimum 21 days/year; and Oman provides a flat 30 days/year under Royal Decree 53/2023."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are calculations performed on GulfCalc private and compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, GulfCalc operates on a pure client-side architecture where salary, contract data, and compensation figures are computed entirely in the browser with zero remote database logging, zero tracking of PII, and full GDPR/GCC privacy compliance."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
@@ -359,7 +512,7 @@
                 <td>30 Days</td>
                 <td id="uae1YrVal" style="font-weight:700; color:var(--emerald-800); font-family:var(--font-mono);">10,500.00 AED</td>
                 <td id="uae5YrVal" style="font-weight:700; color:var(--slate-900); font-family:var(--font-mono);">52,500.00 AED</td>
-                <td><a href="tools/uae-gratuity-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Launch &rarr;</a></td>
+                <td><a href="tools/uae-gratuity-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Calculate UAE Gratuity &rarr;</a></td>
               </tr>
               <tr>
                 <td style="font-weight:700; color:var(--slate-900);">
@@ -372,7 +525,7 @@
                 <td>Actual Wage / 2</td>
                 <td id="ksa1YrVal" style="font-weight:700; color:var(--emerald-800); font-family:var(--font-mono);">7,500.00 SAR</td>
                 <td id="ksa5YrVal" style="font-weight:700; color:var(--slate-900); font-family:var(--font-mono);">37,500.00 SAR</td>
-                <td><a href="tools/saudi-end-of-service-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Launch &rarr;</a></td>
+                <td><a href="tools/saudi-end-of-service-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Calculate Saudi Award &rarr;</a></td>
               </tr>
               <tr>
                 <td style="font-weight:700; color:var(--slate-900);">
@@ -385,7 +538,7 @@
                 <td style="font-weight:700; color:var(--amber-700);">26 Working Days</td>
                 <td id="kwt1YrVal" style="font-weight:700; color:var(--emerald-800); font-family:var(--font-mono);">8,653.85 KWD</td>
                 <td id="kwt5YrVal" style="font-weight:700; color:var(--slate-900); font-family:var(--font-mono);">43,269.23 KWD</td>
-                <td><a href="tools/kuwait-indemnity-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Launch &rarr;</a></td>
+                <td><a href="tools/kuwait-indemnity-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Calculate Kuwait Indemnity &rarr;</a></td>
               </tr>
               <tr>
                 <td style="font-weight:700; color:var(--slate-900);">
@@ -398,7 +551,7 @@
                 <td>30 Days (21d min)</td>
                 <td id="qat1YrVal" style="font-weight:700; color:var(--emerald-800); font-family:var(--font-mono);">10,500.00 QAR</td>
                 <td id="qat5YrVal" style="font-weight:700; color:var(--slate-900); font-family:var(--font-mono);">52,500.00 QAR</td>
-                <td><a href="tools/qatar-gratuity-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Launch &rarr;</a></td>
+                <td><a href="tools/qatar-gratuity-calculator.html" style="font-size:0.75rem; font-weight:600; color:var(--indigo-700);">Calculate Qatar Gratuity &rarr;</a></td>
               </tr>
             </tbody>
           </table>
@@ -485,9 +638,7 @@
               Enforces the statutory 26 working days divisor mandated by Article 55 of Law No. 6/2010. Calculates severance up to the 18-month ceiling.
             </p>
           </div>
-          <a href="tools/kuwait-indemnity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/kuwait-indemnity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Kuwait Indemnity (26 Days) &rarr;</a>
         </article>
 
         <!-- Tool 2: Kuwait PIFSS (New) -->
@@ -509,9 +660,7 @@
               Computes 10.5% citizen social security deductions capped at 3,000 KWD and verifies 0% deductions for non-Kuwaiti expatriates.
             </p>
           </div>
-          <a href="tools/kuwait-pifss-net-salary-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/kuwait-pifss-net-salary-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Kuwait PIFSS Net Salary &rarr;</a>
         </article>
 
         <!-- Tool 3: Saudi End of Service -->
@@ -531,9 +680,7 @@
               Computes severance under Articles 84, 85, and 87 of Royal Decree No. M/51, incorporating actual wage benchmarks and resignation deduction tiers.
             </p>
           </div>
-          <a href="tools/saudi-end-of-service-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/saudi-end-of-service-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Saudi End of Service &rarr;</a>
         </article>
 
         <!-- Tool 4: Saudi GOSI (New) -->
@@ -553,9 +700,7 @@
               Calculates 10.5% pension and SANED deductions for Saudi citizens and 2% employer occupational hazard assessments for expatriates.
             </p>
           </div>
-          <a href="tools/saudi-gosi-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/saudi-gosi-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Saudi GOSI Deductions &rarr;</a>
         </article>
 
         <!-- Tool 5: UAE Gratuity -->
@@ -577,9 +722,7 @@
               Unified calculations under Federal Decree-Law No. 33/2021. Eliminates contract distinctions and enforces the 2-year statutory salary cap.
             </p>
           </div>
-          <a href="tools/uae-gratuity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/uae-gratuity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate UAE Gratuity (Decree 33/2021) &rarr;</a>
         </article>
 
         <!-- Tool 6: UAE Corporate Tax -->
@@ -601,9 +744,7 @@
               Simulates taxable profits under Federal Decree-Law No. 47/2022, verifying the 0% bracket up to AED 375k and Small Business Relief (AED 3M threshold).
             </p>
           </div>
-          <a href="tools/uae-corporate-tax-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/uae-corporate-tax-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate UAE Corporate Tax (9%) &rarr;</a>
         </article>
 
         <!-- Tool 7: UAE Golden Visa Property (New) -->
@@ -625,9 +766,7 @@
               Evaluates the AED 2,000,000 property investment threshold, DLD 4% transfer fees, mortgage equity rules, and projected net rental yields.
             </p>
           </div>
-          <a href="tools/uae-golden-visa-property-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/uae-golden-visa-property-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Golden Visa Property (AED 2M) &rarr;</a>
         </article>
 
         <!-- Tool 8: Qatar Gratuity -->
@@ -647,9 +786,7 @@
               Computes statutory 21-day annual basic wage benefits and exact day-by-day pro-rata fractions under Qatar Labour Law No. 14/2004.
             </p>
           </div>
-          <a href="tools/qatar-gratuity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/qatar-gratuity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Qatar Gratuity (Law 14/2004) &rarr;</a>
         </article>
 
         <!-- Tool 9: Oman Gratuity -->
@@ -671,9 +808,7 @@
               Implements the flat 30 days per completed year standard enacted under Royal Decree No. 53/2023, with legacy transition options for pre-2023 tenures.
             </p>
           </div>
-          <a href="tools/oman-gratuity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/oman-gratuity-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Oman Gratuity (RD 53/2023) &rarr;</a>
         </article>
 
         <!-- Tool 10: Bahrain EOSI & VAT -->
@@ -693,9 +828,7 @@
               Calculates indemnity under Law No. 36/2012 Article 116, incorporating the 2024 SIO direct deposit framework (4.2% and 8.4%) and 10% VAT extraction.
             </p>
           </div>
-          <a href="tools/bahrain-eosi-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/bahrain-eosi-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Bahrain EOSI & 10% VAT &rarr;</a>
         </article>
 
         <!-- Tool 11: GCC Remittance Fee Engine -->
@@ -711,9 +844,7 @@
               Unmasks hidden foreign exchange rate markups and upfront transfer fees charged by regional banks and money exchanges across major Asian corridors.
             </p>
           </div>
-          <a href="tools/gcc-remittance-fee-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/gcc-remittance-fee-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate GCC Remittance True Cost &rarr;</a>
         </article>
 
         <!-- Tool 12: GCC Cost of Living Comparator (New) -->
@@ -729,9 +860,7 @@
               Evaluates expat compensation parity between Dubai, Riyadh, Doha, Kuwait City, Muscat, and Manama based on housing, education, and VAT differentials.
             </p>
           </div>
-          <a href="tools/gcc-cost-of-living-comparator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/gcc-cost-of-living-comparator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Compare GCC Living Costs Across 8 Cities &rarr;</a>
         </article>
 
         <!-- Tool 13: Saudi Dependent Fee & Iqama Levy (New) -->
@@ -751,9 +880,7 @@
               Computes statutory SAR 400/month dependent levies, Jawazat card fees, and Maktab Amal work permit charges across 3, 6, 9, or 12-month cycles.
             </p>
           </div>
-          <a href="tools/saudi-dependent-fee-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/saudi-dependent-fee-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Saudi Dependent & Iqama Fees &rarr;</a>
         </article>
 
         <!-- Tool 14: UAE Visa Overstay Fine (New) -->
@@ -775,9 +902,7 @@
               Calculates daily penalties at the unified 50 AED daily tariff, factoring in visit grace periods, residency grace periods, and airport out-pass fees.
             </p>
           </div>
-          <a href="tools/uae-overstay-fine-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/uae-overstay-fine-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate UAE Visa Overstay Fines &rarr;</a>
         </article>
 
         <!-- Tool 15: UAE Emiratisation Penalty (New) -->
@@ -799,9 +924,7 @@
               Determines MoHRE financial contributions (AED 8,000 to AED 9,000/month) for private companies with 20-49 and 50+ staff under Cabinet Resolution 19/M.
             </p>
           </div>
-          <a href="tools/uae-emiratisation-penalty-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/uae-emiratisation-penalty-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate UAE Emiratisation Fines &rarr;</a>
         </article>
 
         <!-- Tool 16: Dubai RERA Rent Increase (New) -->
@@ -823,9 +946,7 @@
               Implements Decree No. 43/2013 rent hike caps (0% to 20%) based on the official RERA Rental Index gap and mandatory 90-day written notice rules.
             </p>
           </div>
-          <a href="tools/dubai-rera-rent-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/dubai-rera-rent-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Dubai RERA Permissible Rent Hike &rarr;</a>
         </article>
 
         <!-- Tool 17: Kuwait Family Visa Eligibility (New) -->
@@ -847,9 +968,7 @@
               Verifies the 800 KWD salary threshold under Ministerial Decision No. 56/2024, university degree rules, and annual Dhaman insurance costs.
             </p>
           </div>
-          <a href="tools/kuwait-family-visa-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch Calculator &rarr;
-          </a>
+          <a href="tools/kuwait-family-visa-calculator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Calculate Kuwait Family Visa & Dhaman Fees &rarr;</a>
         </article>
 
         <!-- Tool 18: AI Contract Clause Checker (New AI) -->
@@ -865,9 +984,7 @@
               Instantly analyzes pasted employment clauses client-side against GCC labor decrees, detecting void terms, statutory conflicts, and counter-proposals.
             </p>
           </div>
-          <a href="tools/ai-contract-clause-checker.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Launch AI Review &rarr;
-          </a>
+          <a href="tools/ai-contract-clause-checker.html" class="btn btn-primary" style="width:100%; justify-content:center;">Audit Employment Contract Clauses with AI &rarr;</a>
         </article>
 
         <!-- Tool 19: AI Resignation Letter Generator (New AI) -->
@@ -883,9 +1000,7 @@
               Drafts structured formal resignation letters referencing applicable GCC labor decree provisions to assist with notice compliance and end-of-service documentation.
             </p>
           </div>
-          <a href="tools/ai-resignation-letter-generator.html" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Generate Letter &rarr;
-          </a>
+          <a href="tools/ai-resignation-letter-generator.html" class="btn btn-primary" style="width:100%; justify-content:center;">Draft Legal Resignation Letter with AI &rarr;</a>
         </article>
 
       </div>

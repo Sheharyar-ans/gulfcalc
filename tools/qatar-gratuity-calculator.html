@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -32,12 +32,105 @@
       "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "2026.1",
       "offers": {
         "@type": "Offer",
         "price": "0.00",
         "priceCurrency": "QAR"
       },
-      "description": "Statutory client-side Qatar End of Service Gratuity calculator pursuant to Article 54 of Law No. 14/2004."
+      "description": "Statutory client-side Qatar End of Service Gratuity calculator pursuant to Article 54 of Law No. 14/2004.",
+      "featureList": [
+        "Official Labour Law No. 14/2004 Article 54 accrual formula",
+        "Minimum 3 weeks (21 calendar days) basic wage per completed year",
+        "Exact pro-rata calculation for fractional months and days of service",
+        "Statutory 1-year threshold compliance check",
+        "Zero deduction guarantee for standard resignations completing contract notice"
+      ],
+      "provider": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#article",
+      "headline": "Qatar End of Service Gratuity Rules: Labour Law No. 14 of 2004 Article 54",
+      "description": "Statutory client-side Qatar End of Service Gratuity calculator pursuant to Article 54 of Law No. 14/2004.",
+      "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
+      },
+      "author": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "publisher": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Severance pay",
+          "sameAs": "https://www.wikidata.org/wiki/Q1147481"
+        },
+        {
+          "@type": "Country",
+          "name": "Qatar",
+          "sameAs": "https://www.wikidata.org/wiki/Q846"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Legislation",
+          "name": "Qatar Labour Law No. 14 of 2004"
+        },
+        {
+          "@type": "GovernmentOrganization",
+          "name": "Ministry of Labour",
+          "sameAs": "https://www.wikidata.org/wiki/Q115799763"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#howto",
+      "name": "How to Calculate Qatar End of Service Gratuity Under Law No. 14/2004",
+      "description": "Step-by-step statutory calculation guide for Qatar Gratuity Calculator (Labour Law No. 14/2004).",
+      "totalTime": "PT2M",
+      "inLanguage": "en",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter Monthly Basic Wage",
+          "text": "Input your monthly basic salary in QAR, excluding accommodation, transport, and other allowances.",
+          "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Input Completed Service Tenure",
+          "text": "Enter your completed continuous years and months of employment in Qatar (minimum 1 year required).",
+          "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Set Annual Entitlement Days",
+          "text": "Use the statutory minimum of 21 days (3 weeks) or enter a higher contractually stipulated rate.",
+          "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#step-3"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Compute Final Payout",
+          "text": "The calculator multiplies the daily wage by annual statutory days and exact fractional tenure to compute your severance.",
+          "url": "https://gulfcalc.tech/tools/qatar-gratuity-calculator.html#step-4"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -192,7 +285,7 @@
 
       <h1 class="page-title">Qatar Gratuity Calculator: Official Labour Law No. 14/2004 Article 54</h1>
 
-      <div class="direct-answer-callout">
+      <div class="direct-answer-callout" role="region" aria-label="Direct Statutory Answer">
         <strong>Direct Legal Rule:</strong> Under Qatar Labour Law No. 14 of 2004 (Article 54), employees with at least one continuous year of service are entitled to a minimum of <strong>21 calendar days of basic wage</strong> for each completed year, plus exact pro-rata accrual for partial months.
       </div>
     </div>
@@ -323,7 +416,7 @@
   </main>
 
   <section class="content-section">
-    <div class="container content-article">
+    <article class="container content-article" itemscope itemtype="https://schema.org/TechArticle">
       <h2 class="article-h2">Qatar Labour Law No. 14 of 2004: Article 54 Explained</h2>
       <p class="article-p">
         In the State of Qatar, end-of-service gratuity is a statutory right protected under <strong>Law No. 14 of 2004 (Article 54)</strong> and monitored rigorously by the Ministry of Labour. Unlike discretionary retirement bonuses, this benefit is mandatory for all non-Qatari employees in the private sector upon concluding their employment contract.
@@ -464,13 +557,12 @@
           </div>
         </details>
       </div>
-    </div>
+    </article>
   </section>
 
     <!-- Site Footer -->
     <!-- Related Utilities Component -->
-  <section class="container" style="padding-bottom: 4rem;">
-    <h3 style="font-size:1.25rem; font-weight:700; color:var(--slate-900); margin-bottom:1.5rem;">
+  <aside class="container related-tools-aside" style="padding-bottom: 4rem;" aria-label="Related Statutory Calculators"><h3 style="font-size:1.25rem; font-weight:700; color:var(--slate-900); margin-bottom:1.5rem;">
       Related GCC Financial Utilities
     </h3>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
@@ -482,7 +574,7 @@
             Calculate flat 30 days per year terminal benefits under Royal Decree No. 53/2023.
           </p>
         </div>
-        <a href="oman-gratuity-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+        <a href="oman-gratuity-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Calculate Oman Gratuity Under RD 53/2023 &rarr;</a>
       </div>
 
       <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
@@ -493,7 +585,7 @@
             Evaluate UAE statutory basic salary end-of-service entitlements under Federal Decree-Law No. 33/2021.
           </p>
         </div>
-        <a href="uae-gratuity-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Open Calculator &rarr;</a>
+        <a href="uae-gratuity-calculator.html" class="btn btn-secondary" style="font-size:0.8125rem;">Calculate UAE Gratuity Under Decree 33/2021 &rarr;</a>
       </div>
 
       <div class="calc-card" style="display:flex; flex-direction:column; justify-content:space-between;">
@@ -504,10 +596,10 @@
             Detailed statutory analysis of 21-day annual accrual, pro-rata service fractions, and overtime rules.
           </p>
         </div>
-        <a href="../blog/qatar-end-of-service-benefits-overtime-wages.html" class="btn btn-secondary" style="font-size:0.8125rem;">Read Guide &rarr;</a>
+        <a href="../blog/qatar-end-of-service-benefits-overtime-wages.html" class="btn btn-secondary" style="font-size:0.8125rem;">Read Qatar End of Service Benefits Legal Analysis &rarr;</a>
       </div>
     </div>
-  </section>
+  </aside>
 
   <footer class="site-footer">
     <div class="container">

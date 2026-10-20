@@ -22,92 +22,185 @@
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "@id": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#app",
-        "name": "AI GCC Employment Contract Clause Checker",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "All modern browsers",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "description": "Evaluates employment contract clauses for statutory compliance against UAE, Saudi, Kuwaiti, and GCC labor decrees without server-side data transmission."
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#app",
+      "name": "AI GCC Contract Clause Checker (Employment Legality Analyzer)",
+      "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "2026.1",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "GulfCalc",
-            "item": "https://gulfcalc.tech/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Tools",
-            "item": "https://gulfcalc.tech/#calculators"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "AI Contract Clause Checker",
-            "item": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html"
-          }
-        ]
+      "description": "Evaluates employment contract clauses for statutory compliance against UAE, Saudi, Kuwaiti, and GCC labor decrees without server-side data transmission.",
+      "featureList": [
+        "Client-side statutory legality audit against UAE Decree-Law 33/2021 and Saudi RD M/51",
+        "Identifies unlawful non-compete clauses, extended probation, and illegal gratuity waivers",
+        "Enforces non-derogation doctrines protecting statutory minimum rights for expatriates",
+        "Generates legally compliant alternative clause drafting in real time",
+        "Complete client-side confidentiality with zero remote server text logging"
+      ],
+      "provider": {
+        "@id": "https://gulfcalc.tech/#organization"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Can an employer in the UAE deduct visa and recruitment costs from salary?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No, deducting visa processing, recruitment, or work permit fees from an employee is strictly illegal. Under Article 6(4) of UAE Federal Decree-Law No. 33/2021, the employer bears all recruitment expenses. Any contract clause transferring these costs to the worker is null and void."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is a contract clause forfeiting gratuity upon resignation legally binding in Saudi Arabia?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No, private contract terms that diminish statutory severance rights are void. Under Saudi Royal Decree No. M/51 Article 85, end-of-service awards are determined strictly by statutory tenure formulas. Employers cannot contractually eliminate a worker's legal gratuity entitlement."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can a GCC employer legally hold an employee's passport?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No, retaining an employee's passport is unlawful across all GCC member states. In the UAE, Ministry of Interior directives and Supreme Court precedents prohibit passport withholding. In Saudi Arabia, MHRSD regulations impose automated fines of 2,000 SAR per confiscated passport."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long can a non-compete clause legally last in the UAE?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Under Article 10 of UAE Federal Decree-Law No. 33/2021, a restrictive non-compete covenant cannot exceed two years from the contract termination date. In addition, it must be precisely defined in geographic scope, duration, and client type, or it is unenforceable."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does this contract checker transmit my employment contract to a remote server?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No, GulfCalc executes all legal heuristic parsing and statutory comparisons entirely in your local browser runtime. Zero text, names, compensation numbers, or sensitive employment clauses are ever transmitted across a network or stored on remote servers."
-            }
-          }
-        ]
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
       }
-    ]
-  }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#article",
+      "headline": "AI GCC Employment Contract Clause Checker: Statutory Non-Derogation Analysis",
+      "description": "Evaluates employment contract clauses for statutory compliance against UAE, Saudi, Kuwaiti, and GCC labor decrees without server-side data transmission.",
+      "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
+      },
+      "author": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "publisher": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Employment contract",
+          "sameAs": "https://www.wikidata.org/wiki/Q99800"
+        },
+        {
+          "@type": "Thing",
+          "name": "Contractual term",
+          "sameAs": "https://www.wikidata.org/wiki/Q48282"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Legislation",
+          "name": "UAE Federal Decree-Law No. 33 of 2021"
+        },
+        {
+          "@type": "Legislation",
+          "name": "Saudi Labour Law Royal Decree No. M/51"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#howto",
+      "name": "How to Audit Employment Contract Clauses Against GCC Labour Laws",
+      "description": "Step-by-step statutory calculation guide for AI GCC Contract Clause Checker (Employment Legality Analyzer).",
+      "totalTime": "PT2M",
+      "inLanguage": "en",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Select Applicable Jurisdiction",
+          "text": "Choose your GCC country of employment (UAE, Saudi Arabia, Kuwait, Qatar, Oman, or Bahrain).",
+          "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Paste Contract Clause Text",
+          "text": "Insert the specific contractual clause regarding probation, notice, non-compete, or terminal dues.",
+          "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Run Statutory Compliance Evaluation",
+          "text": "The engine scans the clause against official labour code non-derogation articles.",
+          "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#step-3"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Review Legal Assessment & Counter-Proposal",
+          "text": "Examine statutory compliance status and generate legally sound counter-language.",
+          "url": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html#step-4"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GulfCalc",
+          "item": "https://gulfcalc.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://gulfcalc.tech/#calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI Contract Clause Checker",
+          "item": "https://gulfcalc.tech/tools/ai-contract-clause-checker.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can an employer in the UAE deduct visa and recruitment costs from salary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, deducting visa processing, recruitment, or work permit fees from an employee is strictly illegal. Under Article 6(4) of UAE Federal Decree-Law No. 33/2021, the employer bears all recruitment expenses. Any contract clause transferring these costs to the worker is null and void."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a contract clause forfeiting gratuity upon resignation legally binding in Saudi Arabia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, private contract terms that diminish statutory severance rights are void. Under Saudi Royal Decree No. M/51 Article 85, end-of-service awards are determined strictly by statutory tenure formulas. Employers cannot contractually eliminate a worker's legal gratuity entitlement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a GCC employer legally hold an employee's passport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, retaining an employee's passport is unlawful across all GCC member states. In the UAE, Ministry of Interior directives and Supreme Court precedents prohibit passport withholding. In Saudi Arabia, MHRSD regulations impose automated fines of 2,000 SAR per confiscated passport."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long can a non-compete clause legally last in the UAE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Article 10 of UAE Federal Decree-Law No. 33/2021, a restrictive non-compete covenant cannot exceed two years from the contract termination date. In addition, it must be precisely defined in geographic scope, duration, and client type, or it is unenforceable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this contract checker transmit my employment contract to a remote server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, GulfCalc executes all legal heuristic parsing and statutory comparisons entirely in your local browser runtime. Zero text, names, compensation numbers, or sensitive employment clauses are ever transmitted across a network or stored on remote servers."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
   <style>
     ol.breadcrumbs, ol.breadcrumb-list { display: flex !important; flex-wrap: wrap !important; align-items: center !important; list-style: none !important; list-style-type: none !important; padding: 0 !important; margin: 0 !important; gap: 0.5rem !important; }
@@ -201,7 +294,7 @@
       <span class="badge badge-emerald" style="margin-bottom:0.5rem; display:inline-flex;">Pan-GCC Legal Tech</span>
       <h1 class="page-title">AI GCC Employment Contract Clause Checker: Statutory Non-Derogation Engine</h1>
 
-      <div class="direct-answer-callout">
+      <div class="direct-answer-callout" role="region" aria-label="Direct Statutory Answer">
         <strong>Direct Legal Rule:</strong> Under statutory GCC labor doctrines, contract terms that diminish statutory worker entitlements below ministerial minimums are null and void. Paste any employment clause below to evaluate its enforceability, identify governing legal decrees, and generate protective counter-proposals. This tool provides automated informational analysis and does not constitute formal legal counsel.
       </div>
     </div>
@@ -293,7 +386,7 @@
   </main>
 
   <section class="content-section">
-    <div class="container content-article">
+    <article class="container content-article" itemscope itemtype="https://schema.org/TechArticle">
       <article class="article-content" style="margin-top:3.5rem;">
       <h2 class="article-h2">1. The Non-Derogation Principle in GCC Employment Legislation</h2>
       <p class="article-p">

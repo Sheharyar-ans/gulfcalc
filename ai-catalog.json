@@ -187,6 +187,42 @@
         "Draft legal resignation letter UAE labor law",
         "Saudi labor law article 75 resignation notice letter"
       ]
+    },
+    {
+      "identifier": "kuwait-pifss-net-salary-calculator",
+      "displayName": "Kuwait PIFSS Net Salary Calculator",
+      "type": "tool",
+      "description": "Calculates 10.5% citizen PIFSS social security pension deductions up to 3,000 KWD ceiling and models 0% expat net salary take-home pay.",
+      "url": "https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html",
+      "representativeQueries": [
+        "Calculate Kuwait PIFSS deduction rate",
+        "Kuwait social security salary calculation",
+        "Expat net salary calculator Kuwait"
+      ]
+    },
+    {
+      "identifier": "uae-golden-visa-property-calculator",
+      "displayName": "UAE Golden Visa Property Calculator",
+      "type": "tool",
+      "description": "Evaluates AED 2,000,000 real estate investment thresholds, 4% DLD transfer charges, and net rental yields under Cabinet Resolution No. 65/2022.",
+      "url": "https://gulfcalc.tech/tools/uae-golden-visa-property-calculator.html",
+      "representativeQueries": [
+        "Calculate UAE golden visa 2 million property cost",
+        "Dubai golden visa property investment calculator",
+        "DLD 4 percent transfer fee calculation Dubai"
+      ]
+    },
+    {
+      "identifier": "gcc-cost-of-living-comparator",
+      "displayName": "GCC Cost of Living Comparator",
+      "type": "tool",
+      "description": "Compares expatriate salary parity, purchasing power, housing rents, schooling, and VAT differentials across 8 major GCC metropolitan centers.",
+      "url": "https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html",
+      "representativeQueries": [
+        "Compare cost of living Dubai vs Riyadh",
+        "GCC expat salary parity calculator",
+        "Doha vs Abu Dhabi cost of living comparison"
+      ]
     }
   ]
 }

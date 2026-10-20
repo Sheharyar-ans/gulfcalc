@@ -22,92 +22,182 @@
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        "@id": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#app",
-        "name": "Saudi Dependent Fee & Iqama Levy Calculator",
-        "applicationCategory": "FinanceApplication",
-        "operatingSystem": "All modern browsers",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "SAR"
-        },
-        "description": "Computes mandatory Saudi expatriate dependent fees (SAR 400 per month), Jawazat passport renewal fees, and Maktab Amal financial levies."
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#app",
+      "name": "Saudi Dependent Fee Calculator (Mukaabil Maali & Iqama Renewal)",
+      "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "2026.1",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "SAR"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "GulfCalc",
-            "item": "https://gulfcalc.tech/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Tools",
-            "item": "https://gulfcalc.tech/#calculators"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Saudi Dependent Fee Calculator",
-            "item": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html"
-          }
-        ]
+      "description": "Computes mandatory Saudi expatriate dependent fees (SAR 400 per month), Jawazat passport renewal fees, and Maktab Amal financial levies.",
+      "featureList": [
+        "Statutory SAR 400 per month dependent fee computation",
+        "Official Jawazat residency renewal fee integration (SAR 650/year)",
+        "Maktab Amal work permit fee inclusion across tiered employer ratios",
+        "Flexible renewal validity modeling across 3, 6, 9, and 12-month cycles",
+        "Direct calculation of total SADAD bill required for residency processing"
+      ],
+      "provider": {
+        "@id": "https://gulfcalc.tech/#organization"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much is the Saudi dependent fee per month in 2026?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Saudi dependent fee is fixed at 400 SAR per month per sponsored dependent, equating to 4,800 SAR annually per dependent. As mandated by Council of Ministers resolutions under the Fiscal Balance Program, this statutory levy must be paid in full prior to Iqama renewal or exit-reentry visa issuance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can Saudi dependent fees be paid in quarterly installments?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, under the Ministry of Human Resources and Jawazat flexible renewal framework, employers and expatriates can renew Iqamas and pay dependent fees in 3-month, 6-month, 9-month, or 12-month increments. This flexibility eliminates the requirement to disburse the entire annual sum upfront."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who is legally exempt from the Saudi dependent fee?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Exempt categories include foreign wives of Saudi citizens, foreign mothers of Saudi citizens, children of Saudi mothers married to non-Saudis, domestic workers (up to four workers), and citizens of GCC member nations residing in Saudi Arabia."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Are Saudi dependent fees refundable if a family exits on a final exit visa?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No, Saudi dependent fees (Mukaabil Maali) paid through the government Sadad billing system are strictly non-refundable once processed. The General Directorate of Passports (Jawazat) does not issue refunds for unspent months if dependents leave on Khurooj Nihai."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Maktab Amal levy and dependent fees?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Maktab Amal levy (SAR 800 to 9,600 annually) is a commercial work permit charge levied on the employer for employing expatriate personnel. Dependent fees are individual residency charges (SAR 400 monthly) paid by the expatriate sponsor for family members living in the kingdom."
-            }
-          }
-        ]
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
       }
-    ]
-  }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#article",
+      "headline": "Saudi Dependent Fee & Residency Renewal Calculator: Official Jawazat & MHRSD Rates",
+      "description": "Computes mandatory Saudi expatriate dependent fees (SAR 400 per month), Jawazat passport renewal fees, and Maktab Amal financial levies.",
+      "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
+      },
+      "author": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "publisher": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Tax",
+          "sameAs": "https://www.wikidata.org/wiki/Q8161"
+        },
+        {
+          "@type": "Country",
+          "name": "Saudi Arabia",
+          "sameAs": "https://www.wikidata.org/wiki/Q851"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "GovernmentOrganization",
+          "name": "General Directorate of Passports",
+          "sameAs": "https://www.wikidata.org/wiki/Q12248540"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#howto",
+      "name": "How to Calculate Saudi Dependent Fees and Iqama Renewal Levies",
+      "description": "Step-by-step statutory calculation guide for Saudi Dependent Fee Calculator (Mukaabil Maali & Iqama Renewal).",
+      "totalTime": "PT2M",
+      "inLanguage": "en",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter Number of Dependents",
+          "text": "Input the total number of family members registered under your Iqama sponsorship.",
+          "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Select Renewal Duration",
+          "text": "Choose your intended residency extension period: 3, 6, 9, or 12 months.",
+          "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Include Government Fees",
+          "text": "Optionally toggle Jawazat residency card renewal and Maktab Amal labor levies.",
+          "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#step-3"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "View Total SADAD Settlement",
+          "text": "Obtain the exact government payment figure required before visiting the Absher portal.",
+          "url": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html#step-4"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GulfCalc",
+          "item": "https://gulfcalc.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://gulfcalc.tech/#calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Saudi Dependent Fee Calculator",
+          "item": "https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much is the Saudi dependent fee per month in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Saudi dependent fee is fixed at 400 SAR per month per sponsored dependent, equating to 4,800 SAR annually per dependent. As mandated by Council of Ministers resolutions under the Fiscal Balance Program, this statutory levy must be paid in full prior to Iqama renewal or exit-reentry visa issuance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Saudi dependent fees be paid in quarterly installments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, under the Ministry of Human Resources and Jawazat flexible renewal framework, employers and expatriates can renew Iqamas and pay dependent fees in 3-month, 6-month, 9-month, or 12-month increments. This flexibility eliminates the requirement to disburse the entire annual sum upfront."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is legally exempt from the Saudi dependent fee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Exempt categories include foreign wives of Saudi citizens, foreign mothers of Saudi citizens, children of Saudi mothers married to non-Saudis, domestic workers (up to four workers), and citizens of GCC member nations residing in Saudi Arabia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Saudi dependent fees refundable if a family exits on a final exit visa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, Saudi dependent fees (Mukaabil Maali) paid through the government Sadad billing system are strictly non-refundable once processed. The General Directorate of Passports (Jawazat) does not issue refunds for unspent months if dependents leave on Khurooj Nihai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Maktab Amal levy and dependent fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Maktab Amal levy (SAR 800 to 9,600 annually) is a commercial work permit charge levied on the employer for employing expatriate personnel. Dependent fees are individual residency charges (SAR 400 monthly) paid by the expatriate sponsor for family members living in the kingdom."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
   <style>
     ol.breadcrumbs, ol.breadcrumb-list { display: flex !important; flex-wrap: wrap !important; align-items: center !important; list-style: none !important; list-style-type: none !important; padding: 0 !important; margin: 0 !important; gap: 0.5rem !important; }
@@ -201,7 +291,7 @@
       <span class="badge badge-emerald" style="margin-bottom:0.5rem; display:inline-flex;">Kingdom of Saudi Arabia</span>
       <h1 class="page-title">Saudi Dependent Fee & Iqama Renewal Calculator: Official Jawazat Rates</h1>
 
-      <div class="direct-answer-callout">
+      <div class="direct-answer-callout" role="region" aria-label="Direct Statutory Answer">
         <strong>Direct Legal Rule:</strong> Saudi dependent fees are legally fixed at 400 SAR per month per sponsored family member under Council of Ministers resolutions. This calculation engine models total Mukaabil Maali dues, Jawazat issuance charges, and commercial Maktab Amal levies across 3, 6, 9, and 12-month residency cycles.
       </div>
     </div>
@@ -314,7 +404,7 @@
   </main>
 
   <section class="content-section">
-    <div class="container content-article">
+    <article class="container content-article" itemscope itemtype="https://schema.org/TechArticle">
       <article class="article-content" style="margin-top:3.5rem;">
       <h2 class="article-h2">1. Statutory Framework of the Saudi Expatriate Dependent Levy</h2>
       <p class="article-p">
