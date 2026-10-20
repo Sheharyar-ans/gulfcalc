@@ -10,7 +10,7 @@
   <meta name="description" content="Calculate MoHRE Emiratisation non-compliance financial penalties for private companies with 20-49 and 50+ staff under Cabinet Resolution No. 19/M.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html">
 
-  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v4">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
   {
@@ -108,6 +108,21 @@
     .calc-card, .result-card { background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: clamp(1.25rem, 2.5vw, 2rem) !important; box-shadow: var(--shadow-card); }
     @media (min-width: 1024px) { .result-card { position: sticky; top: 84px; } }
   </style>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html">
+  <meta property="og:title" content="UAE Emiratisation Penalty Calculator: MoHRE NAFIS Compliance | GulfCalc">
+  <meta property="og:description" content="Calculate MoHRE Emiratisation non-compliance financial penalties for private companies with 20-49 and 50+ staff under Cabinet Resolution No. 19/M.">
+  <meta property="og:image" content="https://gulfcalc.tech/favicon.svg">
+  <meta property="og:site_name" content="GulfCalc">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html">
+  <meta name="twitter:title" content="UAE Emiratisation Penalty Calculator: MoHRE NAFIS Compliance | GulfCalc">
+  <meta name="twitter:description" content="Calculate MoHRE Emiratisation non-compliance financial penalties for private companies with 20-49 and 50+ staff under Cabinet Resolution No. 19/M.">
+  <meta name="twitter:image" content="https://gulfcalc.tech/favicon.svg">
 </head>
 <body>
 
@@ -214,7 +229,7 @@
             <label for="totalSkilledStaff" class="form-label" style="font-weight:600;">Total Skilled Workforce (MoHRE Skill Levels 1 to 5)</label>
             <span id="skilledStaffDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--emerald-600);">75 Employees</span>
           </div>
-          <input type="range" id="skilledStaffSlider" min="20" max="500" step="5" value="75" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="range" id="skilledStaffSlider" min="20" max="500" step="5" value="75" class="form-range" style="width:100%; margin-bottom:0.5rem;" aria-label="Adjust total skilled staff count slider">
           <input type="number" id="totalSkilledStaff" value="75" min="20" max="10000" class="form-control" style="font-family:var(--font-mono);">
         </div>
 
@@ -223,7 +238,7 @@
             <label for="emiratiStaff" class="form-label" style="font-weight:600;">Current Active Emirati Employees (Registered on NAFIS / GPSSA)</label>
             <span id="emiratiDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--indigo-600);">1 Emirati</span>
           </div>
-          <input type="range" id="emiratiSlider" min="0" max="50" step="1" value="1" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="range" id="emiratiSlider" min="0" max="50" step="1" value="1" class="form-range" style="width:100%; margin-bottom:0.5rem;" aria-label="Adjust current Emirati staff count slider">
           <input type="number" id="emiratiStaff" value="1" min="0" max="1000" class="form-control" style="font-family:var(--font-mono);">
         </div>
       </div>
@@ -528,7 +543,7 @@
         const tier = companySizeTier.value;
         const year = parseInt(targetYear.value) || 2026;
         const skilledCount = parseInt(totalSkilledStaff.value) || 50;
-        const currentEmiratis = parseInt(emiratiStaff.value) || 0;
+        const currentEmiratis = Math.max(0, parseInt(emiratiStaff.value) || 0);
 
         let monthlyRatePerDeficit = 9000;
         if (year === 2024) monthlyRatePerDeficit = 7000;
@@ -632,5 +647,28 @@
     })();
   </script>
   <script src="../assets/js/navigation.js"></script>
+  <!-- Mobile App-Like Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="../index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+    <a href="../index.html#calculators" class="bottom-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+      <span>Calculators</span>
+    </a>
+    <a href="../labour-laws/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span>Labour Laws</span>
+    </a>
+    <a href="../blog/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Insights</span>
+    </a>
+    <a href="../contact-us.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
 </body>
 </html>

@@ -10,7 +10,7 @@
   <title>Kuwait Indemnity Calculator: Labour Law Article 55 | GulfCalc</title>
   <meta name="description" content="Calculate Kuwait end-of-service indemnity using the statutory 26 working days divisor under Law No. 6/2010. Compute exact resignation and termination dues.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html">
-  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v4">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <!-- JSON-LD Structured Data Schema -->
   <script type="application/ld+json">
@@ -103,6 +103,21 @@
   ]
 }
   </script>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html">
+  <meta property="og:title" content="Kuwait Indemnity Calculator: Labour Law Article 55 | GulfCalc">
+  <meta property="og:description" content="Calculate Kuwait end-of-service indemnity using the statutory 26 working days divisor under Law No. 6/2010. Compute exact resignation and termination dues.">
+  <meta property="og:image" content="https://gulfcalc.tech/favicon.svg">
+  <meta property="og:site_name" content="GulfCalc">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html">
+  <meta name="twitter:title" content="Kuwait Indemnity Calculator: Labour Law Article 55 | GulfCalc">
+  <meta name="twitter:description" content="Calculate Kuwait end-of-service indemnity using the statutory 26 working days divisor under Law No. 6/2010. Compute exact resignation and termination dues.">
+  <meta name="twitter:image" content="https://gulfcalc.tech/favicon.svg">
 </head>
 <body>
 
@@ -209,7 +224,7 @@
             <input type="number" id="monthlySalary" class="form-input" value="1200" min="50" max="25000" step="10">
           </div>
           <div class="slider-container">
-            <input type="range" id="monthlySalarySlider" class="range-slider" min="100" max="5000" step="50" value="1200">
+            <input type="range" id="monthlySalarySlider" class="range-slider" min="100" max="5000" step="50" value="1200" aria-label="Adjust monthly salary slider">
             <div class="slider-scale-labels">
               <span>100 KWD</span>
               <span>2,500 KWD</span>
@@ -228,7 +243,7 @@
             <input type="number" id="serviceYears" class="form-input no-prefix" value="6" min="0" max="45" step="1">
           </div>
           <div class="slider-container">
-            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="6">
+            <input type="range" id="serviceYearsSlider" class="range-slider" min="0" max="30" step="1" value="6" aria-label="Adjust service years slider">
             <div class="slider-scale-labels">
               <span>0 Yrs</span>
               <span>15 Yrs</span>
@@ -651,9 +666,9 @@
       const copyBtn = document.getElementById('copyBtn');
 
       function calculateKuwaitIndemnity() {
-        const monthly = parseFloat(salaryInput.value) || 0;
-        const years = parseFloat(yearsInput.value) || 0;
-        const months = parseFloat(monthsInput.value) || 0;
+        const monthly = Math.max(0, parseFloat(salaryInput.value) || 0);
+        const years = Math.max(0, parseFloat(yearsInput.value) || 0);
+        const months = Math.max(0, parseFloat(monthsInput.value) || 0);
         const isResignation = sepResignation.checked;
 
         // Article 55: Daily Wage MUST be divided by 26 working days
@@ -742,5 +757,28 @@ Statutory Authority: Kuwait Labour Law No. 6/2010 Article 55`;
       calculateKuwaitIndemnity();
     });
   </script>
+  <!-- Mobile App-Like Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="../index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+    <a href="../index.html#calculators" class="bottom-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+      <span>Calculators</span>
+    </a>
+    <a href="../labour-laws/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span>Labour Laws</span>
+    </a>
+    <a href="../blog/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Insights</span>
+    </a>
+    <a href="../contact-us.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
 </body>
 </html>

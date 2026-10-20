@@ -47,7 +47,7 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 ## Institutional Governance & Legal Policies
 
 - [About Us & Verification Standards](https://gulfcalc.tech/about-us.html): Institutional methodology, zero-PII commitment, and mathematical accuracy assurance.
-- [Contact Corporate Team](https://gulfcalc.tech/contact-us.html): Direct corporate feedback and institutional inquiries channel.
+- [Contact & Feedback](https://gulfcalc.tech/contact-us.html): Direct feedback, public issue tracking, and statutory inquiry channel.
 - [Privacy Policy](https://gulfcalc.tech/privacy-policy.html): GDPR, CCPA, and GCC regional privacy compliance documentation.
 - [Terms of Service](https://gulfcalc.tech/terms-of-service.html): Platform usage covenants, intellectual property protections, and non-reliance standards.
 - [Legal & Tax Disclaimer](https://gulfcalc.tech/disclaimer.html): Statutory informational disclaimer affirming non-attorney, non-accounting advisory status.

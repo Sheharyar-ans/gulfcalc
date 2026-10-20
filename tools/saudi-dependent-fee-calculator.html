@@ -10,7 +10,7 @@
   <meta name="description" content="Calculate Saudi expat dependent fees (SAR 400/month), Jawazat Iqama renewal charges, and Maktab Amal work permit levies across 3, 6, 9, or 12-month cycles.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html">
 
-  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v4">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
   {
@@ -108,6 +108,21 @@
     .calc-card, .result-card { background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: clamp(1.25rem, 2.5vw, 2rem) !important; box-shadow: var(--shadow-card); }
     @media (min-width: 1024px) { .result-card { position: sticky; top: 84px; } }
   </style>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html">
+  <meta property="og:title" content="Saudi Dependent Fee Calculator: Mukaabil Maali & Iqama Renewal | GulfCalc">
+  <meta property="og:description" content="Calculate Saudi expat dependent fees (SAR 400/month), Jawazat Iqama renewal charges, and Maktab Amal work permit levies across 3, 6, 9, or 12-month cycles.">
+  <meta property="og:image" content="https://gulfcalc.tech/favicon.svg">
+  <meta property="og:site_name" content="GulfCalc">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html">
+  <meta name="twitter:title" content="Saudi Dependent Fee Calculator: Mukaabil Maali & Iqama Renewal | GulfCalc">
+  <meta name="twitter:description" content="Calculate Saudi expat dependent fees (SAR 400/month), Jawazat Iqama renewal charges, and Maktab Amal work permit levies across 3, 6, 9, or 12-month cycles.">
+  <meta name="twitter:image" content="https://gulfcalc.tech/favicon.svg">
 </head>
 <body>
 
@@ -197,7 +212,7 @@
             <label for="numDependents" class="form-label" style="font-weight:600;">Number of Sponsored Dependents</label>
             <span id="dependentsVal" style="font-family:var(--font-mono); font-weight:700; color:var(--emerald-600);">2 Dependents</span>
           </div>
-          <input type="range" id="numDependentsSlider" min="0" max="10" step="1" value="2" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="range" id="numDependentsSlider" min="0" max="10" step="1" value="2" class="form-range" style="width:100%; margin-bottom:0.5rem;" aria-label="Adjust number of dependents slider">
           <input type="number" id="numDependents" value="2" min="0" max="20" class="form-control" style="font-family:var(--font-mono);">
           <small class="form-text" style="color:var(--text-muted); font-size:0.825rem;">Includes spouse, children, and dependent parents under personal sponsorship.</small>
         </div>
@@ -214,7 +229,7 @@
 
         <div class="form-group" style="margin-bottom:1.5rem;">
           <label class="form-label" style="font-weight:600; margin-bottom:0.5rem; display:block;">Include Maktab Amal (Work Permit) Levy?</label>
-          <select id="includeMaktabAmal" class="form-control">
+          <select id="includeMaktabAmal" class="form-control" aria-label="Maktab Amal expatriate levy option">
             <option value="none">No: Calculate Family Dependents & Jawazat Only</option>
             <option value="excess" selected>Yes: Expat Ratio Greater Than Saudis (SAR 800/month)</option>
             <option value="equal">Yes: Expat Ratio Equal/Less Than Saudis (SAR 700/month)</option>
@@ -518,7 +533,7 @@
       const copyBreakdownBtn = document.getElementById('copyBreakdownBtn');
 
       function calculate() {
-        const deps = parseInt(numDependents.value) || 0;
+        const deps = Math.max(0, parseInt(numDependents.value) || 0);
         const months = parseInt(renewalDuration.value) || 12;
         const maktabMode = includeMaktabAmal.value;
         const hasWorkerIqama = includeWorkerIqama.checked;
@@ -592,5 +607,28 @@
     })();
   </script>
   <script src="../assets/js/navigation.js"></script>
+  <!-- Mobile App-Like Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="../index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+    <a href="../index.html#calculators" class="bottom-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+      <span>Calculators</span>
+    </a>
+    <a href="../labour-laws/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span>Labour Laws</span>
+    </a>
+    <a href="../blog/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Insights</span>
+    </a>
+    <a href="../contact-us.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
 </body>
 </html>

@@ -6,11 +6,11 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.svg">
   <meta name="theme-color" content="#0f172a">
-  <title>Kuwait Family Visa Calculator: 800 KWD Salary Threshold & Dhaman Fees | GulfCalc</title>
+  <title>Kuwait Family Visa Calculator: 800 KWD Salary Rule | GulfCalc</title>
   <meta name="description" content="Check Kuwait dependent visa eligibility under Ministerial Decision No. 56/2024 (800 KWD salary rule), university degree criteria, and Dhaman health fees.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html">
 
-  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v4">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
   {
@@ -108,6 +108,21 @@
     .calc-card, .result-card { background-color: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: clamp(1.25rem, 2.5vw, 2rem) !important; box-shadow: var(--shadow-card); }
     @media (min-width: 1024px) { .result-card { position: sticky; top: 84px; } }
   </style>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html">
+  <meta property="og:title" content="Kuwait Family Visa Calculator: 800 KWD Salary Threshold & Dhaman Fees | GulfCalc">
+  <meta property="og:description" content="Check Kuwait dependent visa eligibility under Ministerial Decision No. 56/2024 (800 KWD salary rule), university degree criteria, and Dhaman health fees.">
+  <meta property="og:image" content="https://gulfcalc.tech/favicon.svg">
+  <meta property="og:site_name" content="GulfCalc">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html">
+  <meta name="twitter:title" content="Kuwait Family Visa Calculator: 800 KWD Salary Threshold & Dhaman Fees | GulfCalc">
+  <meta name="twitter:description" content="Check Kuwait dependent visa eligibility under Ministerial Decision No. 56/2024 (800 KWD salary rule), university degree criteria, and Dhaman health fees.">
+  <meta name="twitter:image" content="https://gulfcalc.tech/favicon.svg">
 </head>
 <body>
 
@@ -197,7 +212,7 @@
             <label for="monthlySalary" class="form-label" style="font-weight:600;">Monthly Work Permit Salary (KWD on Izn Amal)</label>
             <span id="salaryDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--emerald-600);">850 KWD</span>
           </div>
-          <input type="range" id="salarySlider" min="400" max="2500" step="25" value="850" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="range" id="salarySlider" min="400" max="2500" step="25" value="850" class="form-range" style="width:100%; margin-bottom:0.5rem;" aria-label="Adjust monthly salary slider">
           <input type="number" id="monthlySalary" value="850" min="200" max="10000" class="form-control" style="font-family:var(--font-mono);">
           <small class="form-text" style="color:var(--text-muted); font-size:0.825rem;">Must match the official salary registered with the Public Authority for Manpower (PAM).</small>
         </div>
@@ -216,7 +231,7 @@
             <label for="numDependents" class="form-label" style="font-weight:600;">Number of Family Dependents (Spouse & Children)</label>
             <span id="depsDisplay" style="font-family:var(--font-mono); font-weight:700; color:var(--indigo-600);">2 Dependents</span>
           </div>
-          <input type="range" id="depsSlider" min="1" max="8" step="1" value="2" class="form-range" style="width:100%; margin-bottom:0.5rem;">
+          <input type="range" id="depsSlider" min="1" max="8" step="1" value="2" class="form-range" style="width:100%; margin-bottom:0.5rem;" aria-label="Adjust number of dependents slider">
           <input type="number" id="numDependents" value="2" min="1" max="15" class="form-control" style="font-family:var(--font-mono);">
         </div>
       </div>
@@ -494,7 +509,7 @@
       const copyBreakdownBtn = document.getElementById('copyBreakdownBtn');
 
       function calculate() {
-        const sal = parseFloat(monthlySalary.value) || 0;
+        const sal = Math.max(0, parseFloat(monthlySalary.value) || 0);
         const deg = degreeStatus.value;
         const deps = parseInt(numDependents.value) || 1;
 
@@ -599,5 +614,28 @@
     })();
   </script>
   <script src="../assets/js/navigation.js"></script>
+  <!-- Mobile App-Like Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="../index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+    <a href="../index.html#calculators" class="bottom-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+      <span>Calculators</span>
+    </a>
+    <a href="../labour-laws/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span>Labour Laws</span>
+    </a>
+    <a href="../blog/index.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+      <span>Insights</span>
+    </a>
+    <a href="../contact-us.html" class="bottom-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
 </body>
 </html>
