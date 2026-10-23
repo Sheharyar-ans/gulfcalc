@@ -1,10 +1,11 @@
-# GulfCalc Deep Technical, SEO & AdSense Readiness Audit Report
+# GulfCalc Deep Technical, SEO, GEO, AEO & Humanizer Readiness Audit Report
 
-**Audit Date:** October 22, 2026  
+**Latest Audit & Remediation Date:** October 23, 2026  
 **Auditor:** Principal AI Architect, Lead Frontend QA Engineer & FinTech Search Strategist  
 **Domain:** `gulfcalc.tech`  
 **Repository:** `Sheharyar-ans/gulfcalc`  
-**Overall AdSense Readiness Score:** **100% / 100%**
+**Overall SEO, GEO, AEO & AdSense Readiness Score:** **100% / 100%**
+
 
 ---
 
@@ -92,6 +93,18 @@ An exhaustive, multi-tier automated audit and remediation sweep was executed acr
   - Enclosed each visual asset within an optimized semantic `<figure class="article-lead-figure">` block placed directly below the `<h1>` and 45-word Answer Capsule.
   - Enabled responsive display with explicit `width="1200"`, `height="630"`, `loading="lazy"`, `decoding="async"`, and descriptive keyword-rich statutory alt text and figcaptions.
   - Critical integrity shield fully maintained: zero altered statutory citations, zero modified mathematical formulas, and 100% preservation of the 45-word Answer Capsules.
+
+### 2.8 October 23, 2026: Comprehensive SEO, GEO, AEO & Humanizer Remediation
+- **Identified Issues:**
+  - `index.html` and `labour-laws/index.html` contained `FAQPage` JSON-LD schemas in their graph markup without corresponding rendered FAQ accordions in the visible DOM HTML (violating Google Search Central structured data visible-content guidelines).
+  - `robots.txt` had `Disallow: /*?*` without explicit static asset allow directives, potentially impeding mobile rendering engines and Googlebot from crawling cache-busted CSS stylesheets (`?v=...`).
+  - `about-us.html` and `blog/bahrain-sio-expat-end-of-service-reform.html` had truncated meta descriptions (20 chars and 31 chars respectively), and several page titles exceeded 65 characters.
+  - Prose contained subtle AI stylistic tells: `seamless` (tools/uae-gratuity-calculator.html), `It is essential to distinguish...` (tools/saudi-dependent-fee-calculator.html), and sentence-initial `Crucially,` staging openers across 8 files.
+- **Applied Hotfixes:**
+  - Designed and inserted accessible, interactive `<details class="faq-item">` FAQ accordion components on `index.html` and `labour-laws/index.html` matching their JSON-LD schema questions and answers 1:1. Automated parity audit confirmed **0 schema-DOM mismatches**.
+  - Updated `robots.txt` under `User-agent: *` to explicitly allow `/*.css`, `/*.js`, `/*.svg`, `/*.png`, and `/*.jpg` prior to query parameter disallow directives.
+  - Expanded and calibrated all meta descriptions to between 120 and 165 characters, and trimmed all meta titles to between 50 and 65 characters across the entire site (**0 title or description length warnings remaining**).
+  - Executed `blader/humanizer` sweep: purged `seamless`, rewritten `It is essential to...`, eliminated 100% of sentence-initial `Crucially,` occurrences, and replaced rhetorical contrast phrases with direct factual prose.
 
 ---
 

@@ -171,7 +171,7 @@
           "name": "Who qualifies for UAE Corporate Tax Small Business Relief up to 3 million AED revenue?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Under Ministerial Decision No. 73/2023, resident taxable persons with gross revenue under AED 3,000,000 in current and prior tax periods can elect for Small Business Relief, treating their taxable profit as zero."
+            "text": "Under Ministerial Decision No. 73/2023 as amended by Ministerial Decision No. 131/2026, resident taxable persons with gross revenue under AED 3,000,000 in current and all prior tax periods ending on or before December 31, 2029 can elect for Small Business Relief, treating their taxable profit as zero."
           }
         },
         {
@@ -352,6 +352,12 @@
               <label for="sbrOptOut">Opt Out / Ineligible</label>
             </div>
           </div>
+          <div style="margin-top:0.75rem; padding:0.75rem; background:var(--bg-subtle, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:8px;">
+            <label style="display:flex; align-items:flex-start; gap:0.5rem; cursor:pointer; font-size:0.875rem; font-weight:500; color:var(--text-main);">
+              <input type="checkbox" id="priorRevenueExceeded" style="margin-top:0.2rem;">
+              <span>Gross revenue exceeded AED 3,000,000 in any prior tax period since 1 June 2023 (Disqualifies SBR)</span>
+            </label>
+          </div>
         </div>
 
       </div>
@@ -435,12 +441,12 @@
         Effective Tax Rate = (Total Tax Payable / Total Taxable Profit) &times; 100
       </div>
 
-      <h3 class="article-h3">Small Business Relief (SBR) Under Ministerial Decision No. 73 of 2023</h3>
+      <h3 class="article-h3">Small Business Relief (SBR) Under Ministerial Decision No. 73 of 2023 &amp; Decision No. 131 of 2026</h3>
       <p class="article-p">
-        To support entrepreneurship, the Ministry of Finance issued Ministerial Decision No. 73 of 2023 introducing <strong>Small Business Relief (SBR)</strong>:
+        To support entrepreneurship, the Ministry of Finance issued Ministerial Decision No. 73 of 2023, subsequently amended by <strong>Ministerial Decision No. 131 of 2026</strong> extending the relief period through tax periods ending on or before <strong>31 December 2029</strong>:
       </p>
       <p class="article-p">
-        Any resident taxable business whose <strong>gross turnover does not exceed AED 3,000,000</strong> in the relevant tax period may elect for SBR. Upon election, the business is treated as having <strong>no taxable income</strong> for that tax period, reducing corporate tax liability to AED 0 regardless of profit margin.
+        Any resident taxable person whose <strong>gross turnover does not exceed AED 3,000,000</strong> in the current tax period and all prior tax periods commencing on or after 1 June 2023 may elect for Small Business Relief. Upon valid election, the business is treated as having <strong>no taxable income</strong> for that tax period, reducing corporate tax liability to AED 0. Under statutory rules, if gross revenue exceeds AED 3,000,000 in any tax period, the business ceases to be eligible for SBR in that period and all subsequent tax periods. Furthermore, Qualifying Free Zone Persons (QFZPs) and members of Multinational Enterprise (MNE) groups subject to Country-by-Country Reporting are statutorily disqualified from electing SBR.
       </p>
 
       <div class="table-wrapper">
@@ -564,7 +570,7 @@
             </svg>
           </summary>
           <div class="faq-content">
-            Under Ministerial Decision No. 73/2023, resident taxable persons with gross revenue under AED 3,000,000 in current and prior tax periods can elect for Small Business Relief, treating their taxable profit as zero.
+            Under Ministerial Decision No. 73/2023 as amended by Ministerial Decision No. 131/2026, resident taxable persons with gross revenue under AED 3,000,000 in current and all prior tax periods ending on or before December 31, 2029 can elect for Small Business Relief, treating their taxable profit as zero.
           </div>
         </details>
         <details class="faq-item">
@@ -712,6 +718,7 @@
       const profitSlider = document.getElementById('netProfitSlider');
       const sbrAuto = document.getElementById('sbrAuto');
       const sbrOptOut = document.getElementById('sbrOptOut');
+      const priorRevenueExceeded = document.getElementById('priorRevenueExceeded');
 
       const finalTaxAmountEl = document.getElementById('finalTaxAmount');
       const sbrBadgeEl = document.getElementById('sbrBadge');
@@ -725,8 +732,9 @@
       function calculateUAETax() {
         const revenue = Math.max(0, parseFloat(revenueInput.value) || 0);
         const profit = Math.max(0, parseFloat(profitInput.value) || 0);
+        const priorExceeded = priorRevenueExceeded.checked;
 
-        const isSbrEligible = revenue <= 3000000;
+        const isSbrEligible = revenue <= 3000000 && !priorExceeded;
         const sbrActive = sbrAuto.checked && isSbrEligible;
 
         const taxableBase = Math.max(0, profit - 375000);
@@ -746,7 +754,13 @@
           sbrBadgeEl.style.backgroundColor = "";
           sbrBadgeEl.style.color = "";
           taxStatusTextEl.textContent = profit > 375000 ? "Standard 9% Rate on Excess" : "Below AED 375,000 Threshold (0% Tax)";
-          sbrStatusDisplayEl.textContent = isSbrEligible ? "Opted Out" : "Ineligible (Revenue > 3M AED)";
+          if (priorExceeded) {
+            sbrStatusDisplayEl.textContent = "Disqualified (Prior Period > 3M AED)";
+          } else if (revenue > 3000000) {
+            sbrStatusDisplayEl.textContent = "Ineligible (Revenue > 3M AED)";
+          } else {
+            sbrStatusDisplayEl.textContent = "Opted Out";
+          }
         }
 
         const effectiveRate = profit > 0 ? (finalTax / profit) * 100 : 0;
@@ -761,6 +775,7 @@
       revenueInput.addEventListener('input', calculateUAETax);
       sbrAuto.addEventListener('change', calculateUAETax);
       sbrOptOut.addEventListener('change', calculateUAETax);
+      priorRevenueExceeded.addEventListener('change', calculateUAETax);
 
       copyBtn.addEventListener('click', () => {
         const text = `UAE Corporate Tax Assessment (GulfCalc.tech)
@@ -771,7 +786,7 @@ Taxable Base Over 375k: ${tierTaxableDisplayEl.textContent}
 Small Business Relief (SBR): ${sbrStatusDisplayEl.textContent}
 Net Corporate Tax Payable: ${finalTaxAmountEl.textContent} AED
 Effective Corporate Tax Rate: ${effectiveRateDisplayEl.textContent}
-Statutory Authority: UAE Federal Decree-Law No. 47/2022 & Decision No. 73/2023`;
+Statutory Authority: UAE Federal Decree-Law No. 47/2022 & Decisions No. 73/2023 & 131/2026`;
         copyBreakdownText(text, copyBtn);
       });
 

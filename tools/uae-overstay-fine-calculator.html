@@ -15,7 +15,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.svg">
   <meta name="theme-color" content="#0f172a">
-  <title>UAE Visa Overstay Fine Calculator: ICP & GDRFA 50 AED Standard | GulfCalc</title>
+  <title>UAE Visa Overstay Fine Calculator: 50 AED Tariff | GulfCalc</title>
   <meta name="description" content="Calculate UAE visit and residence visa overstay fines under the unified ICP/GDRFA 50 AED daily tariff, grace periods, and out-pass exit permit costs.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html">
 
@@ -175,7 +175,7 @@
           "name": "What is the grace period for a cancelled UAE residency visa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Under updated ICP executive regulations, cancelled residency visa holders receive between 30 and 180 days of grace period depending on skill category: 30 days for general employment, 60 to 90 days for skilled professionals, and 180 days for Green and Golden Visa holders."
+            "text": "Under updated ICP executive regulations, cancelled residency visa holders receive between 30 and 180 days of grace period depending on skill category: 30 days for general employment, 60 days for medium skills, 90 days for skilled professionals (MoHRE Levels 1-3) and property owners, and 180 days for Green and Golden Visa holders."
           }
         },
         {
@@ -311,8 +311,9 @@
           <select id="visaCategory" class="form-control" style="font-weight:600;">
             <option value="tourist" selected>Tourist / Visit Visa (0 Days Grace Period)</option>
             <option value="residence_std">Standard Residency Visa (30 Days Grace Period)</option>
-            <option value="residence_skilled">Skilled Professional Residency (60 Days Grace Period)</option>
-            <option value="residence_golden">Green / Golden Visa Holder (180 Days Grace Period)</option>
+            <option value="residence_mid">Skilled Levels 4-5 &amp; Students (60 Days Grace Period)</option>
+            <option value="residence_skilled">Skilled Professionals - MoHRE Levels 1-3 &amp; Property Owners (90 Days Grace Period)</option>
+            <option value="residence_golden">Green / Golden Visa Holder &amp; Widows/Divorcees (180 Days Grace Period)</option>
           </select>
           <small class="form-text" style="color:var(--text-muted); font-size:0.825rem;">Grace periods commence the calendar day following formal visa expiry or cancellation.</small>
         </div>
@@ -389,7 +390,7 @@
         </div>
 
         <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:var(--radius-md); padding:1rem; font-size:0.875rem; color:#1e40af;">
-          <strong>Legal Status Regularization:</strong> Rather than exiting, individuals may change their visa status in-country without departing by paying a status modification fee (approx 550 to 650 AED) in addition to cleared overstay penalties, provided a new sponsor has issued an entry permit.
+          <strong>Legal Status Regularization:</strong> Individuals may change their residency status within the country without leaving by paying in-country without departing by paying a status modification fee (approx 550 to 650 AED) in addition to cleared overstay penalties, provided a new sponsor has issued an entry permit.
         </div>
           </div>
   </main>
@@ -412,8 +413,9 @@
       <ul style="margin-left:1.5rem; margin-bottom:1.5rem; line-height:1.75;">
         <li><strong>Tourist and Visit Visas (Zero Grace Period):</strong> Following regulatory updates, the historical 10-day discretionary grace period for tourist visas was eliminated. Fines begin accumulating at 50 AED per day on the immediate calendar day after the visa validity date expires.</li>
         <li><strong>Standard Employment Residency Visas (30-Day Grace Period):</strong> Expatriates whose employment contracts terminate or whose residency permits are formally cancelled receive a statutory thirty-day grace period to either secure alternative employment sponsorship or depart the state.</li>
-        <li><strong>Skilled Professionals and Specialized Workers (60 to 90 Days):</strong> MoHRE occupational skill levels 1 through 3 frequently receive extended grace periods of sixty to ninety days under expanded executive residency regulations.</li>
-        <li><strong>Green Visa and Golden Visa Holders (180-Day Grace Period):</strong> Self-sponsored Green Visa freelancers and 10-Year Golden Visa real estate investors and executives receive an extensive six-month (180 days) statutory grace period post-cancellation before overstay fines commence.</li>
+        <li><strong>Medium Skilled Occupations &amp; Students (60-Day Grace Period):</strong> MoHRE occupational skill levels 4 and 5 alongside educational students receive a sixty-day statutory departure window.</li>
+        <li><strong>Skilled Professionals and Property Owners (90-Day Grace Period):</strong> MoHRE occupational skill levels 1 through 3 and UAE property owners receive a ninety-day grace period under ICP executive residency regulations.</li>
+        <li><strong>Green Visa and Golden Visa Holders (180-Day Grace Period):</strong> Self-sponsored Green Visa freelancers, 10-Year Golden Visa investors, and humanitarian categories (widows and divorcees) receive an extensive six-month (180 days) statutory grace period post-cancellation before overstay fines commence.</li>
       </ul>
 
       <h2 class="article-h2">3. Out-Pass (Exit Permit) Requirements at Immigration Borders</h2>
@@ -492,7 +494,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </summary>
           <div class="faq-content">
-            Under updated ICP executive regulations, cancelled residency visa holders receive between 30 and 180 days of grace period depending on skill category: 30 days for general employment, 60 to 90 days for skilled professionals, and 180 days for Green and Golden Visa holders.
+            Under updated ICP executive regulations, cancelled residency visa holders receive between 30 and 180 days of grace period depending on skill category: 30 days for general employment, 60 days for medium skills, 90 days for skilled professionals (MoHRE Levels 1-3) and property owners, and 180 days for Green and Golden Visa holders.
           </div>
         </details>
 
@@ -628,8 +630,10 @@
         let graceDays = 0;
         if (cat === 'residence_std') {
           graceDays = 30;
-        } else if (cat === 'residence_skilled') {
+        } else if (cat === 'residence_mid') {
           graceDays = 60;
+        } else if (cat === 'residence_skilled') {
+          graceDays = 90;
         } else if (cat === 'residence_golden') {
           graceDays = 180;
         } else {

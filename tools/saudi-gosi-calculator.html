@@ -163,7 +163,7 @@
           "name": "What are the mandatory GOSI contribution rates for Saudi national employees?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Under the Saudi Social Insurance Law, Saudi nationals contribute 9.75% for Annuity pensions (matched by 9.75% from the employer) plus 0.75% for SANED unemployment insurance (matched by 0.75% from the employer)."
+            "text": "Under Royal Decree M/33, legacy Saudi nationals contribute 9.75% (9.0% Annuity plus 0.75% SANED) with employers paying 11.75% (including 2% hazards). Under Royal Decree M/273, new entrants face a progressive escalator reaching 10.75% employee deduction in 2026."
           }
         },
         {
@@ -288,7 +288,7 @@
 
       <!-- AEO Direct Extraction Block -->
       <div class="direct-answer-callout" role="region" aria-label="Direct Statutory Answer">
-        <strong>Under Saudi Social Insurance Law Royal Decree No. M/22 and SANED decrees, Saudi private sector nationals incur a mandatory 10.5% monthly salary deduction for pension annuity and unemployment insurance, whereas non-Saudi expatriate workers incur zero direct deduction while employers pay 2% mandatory occupational hazard coverage.</strong>
+        <strong>Under Saudi Social Insurance Law Royal Decree M/33 and Royal Decree M/273, legacy Saudi nationals incur a 9.75% monthly salary deduction (9.0% Annuity plus 0.75% SANED), whereas new entrants undergo a progressive escalator reaching 10.75% in 2026, with employers contributing matching annuity and 2% hazards.</strong>
       </div>
     </div>
   </section>
@@ -316,6 +316,33 @@
               <span>Non-Saudi Expatriate</span>
             </label>
           </div>
+        </div>
+
+        <!-- Regime Classification Selector (Saudi Nationals) -->
+        <div class="form-group" id="regimeGroup">
+          <label class="form-label">Statutory Enrollment Regime (Saudi Citizens)</label>
+          <div class="radio-group" style="display:grid; grid-template-columns:1fr; gap:0.5rem;">
+            <label class="radio-label" style="padding:0.625rem 0.75rem; font-size:0.875rem;">
+              <input type="radio" name="gosiRegime" id="regimeLegacy" value="legacy" checked>
+              <span>Legacy Contributor (Enrolled before 3 July 2024 - RD M/33)</span>
+            </label>
+            <label class="radio-label" style="padding:0.625rem 0.75rem; font-size:0.875rem;">
+              <input type="radio" name="gosiRegime" id="regimeNew" value="new">
+              <span>New Entrant (Enrolled on or after 3 July 2024 - Royal Decree M/273)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Progressive Assessment Cycle (New Entrant) -->
+        <div class="form-group" id="cycleGroup" style="display:none;">
+          <label for="assessmentCycle" class="form-label">New Entrant Escalator Cycle (RD M/273)</label>
+          <select id="assessmentCycle" class="form-control" style="font-weight:600; font-size:0.875rem;">
+            <option value="2024">July 2024 – June 2025 (9.0% Annuity | 9.75% Emp / 11.75% Empr)</option>
+            <option value="2025">July 2025 – June 2026 (9.5% Annuity | 10.25% Emp / 12.25% Empr)</option>
+            <option value="2026" selected>July 2026 – June 2027 (Active Period - 10.0% Annuity | 10.75% Emp / 12.75% Empr)</option>
+            <option value="2027">July 2027 – June 2028 (10.5% Annuity | 11.25% Emp / 13.25% Empr)</option>
+            <option value="2028">July 2028 Onward (11.0% Annuity | 11.75% Emp / 13.75% Empr)</option>
+          </select>
         </div>
 
         <!-- Contributory Wage Input -->
@@ -411,19 +438,14 @@
         Every enterprise registered with the Ministry of Commerce must enroll eligible employees within statutory registration deadlines. A critical legal distinction exists between Saudi citizens and foreign expatriate workers: citizens participate in retirement annuity and unemployment pools, whereas expatriates participate solely in occupational hazards insurance.
       </p>
 
-      <h2 class="article-h2">2. Contribution Rates for Saudi National Employees</h2>
+      <h2 class="article-h2">2. Contribution Rates for Saudi National Employees: Two-Tier Statutory Framework</h2>
       <p class="article-p">
-        For Saudi citizens employed in the private sector, social insurance coverage comprises two distinct legal schemes:
+        Following the enactment of <strong>Royal Decree No. M/273</strong>, the Kingdom of Saudi Arabia operates a two-tier social insurance contribution framework for national personnel, distinguishing between legacy contributors and new entrants:
       </p>
       <ul class="article-ul">
-        <li><strong>Annuity Branch (Pensions):</strong> Governed by the Social Insurance Law. The combined contribution is 19.5% of the contributory wage, divided equally between the employee (9.75%) and the employing establishment (9.75%).</li>
-        <li><strong>Unemployment Insurance (SANED):</strong> Promulgated under Royal Decree No. M/18 of 1435H. The aggregate assessment is 1.5% of the contributory wage, funded equally by the employee (0.75%) and the employer (0.75%).</li>
-        <li><strong>Occupational Hazards Branch:</strong> Borne entirely by the employer at a rate of 2.0%. The employee pays zero toward occupational hazards.</li>
+        <li><strong>Legacy Contributor Scheme (Royal Decree No. M/33):</strong> Applicable to Saudi citizens enrolled in GOSI prior to 3 July 2024. The Annuity branch requires 18.0% total (9.0% employee deduction and 9.0% employer liability). Adding 0.75% SANED unemployment insurance brings total employee payroll withholding to <strong>9.75%</strong>. Employers remit <strong>11.75%</strong> (9.0% Annuity + 0.75% SANED + 2.0% Occupational Hazards), representing a cumulative monthly contribution of <strong>21.5%</strong>.</li>
+        <li><strong>New Entrant Progressive Escalator (Royal Decree No. M/273):</strong> Applicable to workers entering the labour market on or after 3 July 2024. The Annuity rate increases incrementally by 0.5% each Gregorian year: 9.0% in 2024, 9.5% in 2025, reaching <strong>10.0%</strong> during the active 2026/2027 cycle (resulting in <strong>10.75%</strong> employee withholding and <strong>12.75%</strong> employer liability, total 23.5%), rising to 10.5% in 2027, and capping at 11.0% (total 25.5%) from July 2028 onward.</li>
       </ul>
-
-      <p class="article-p">
-        Consequently, a Saudi employee experiences a total monthly deduction of exactly 10.5% (9.75% + 0.75%) from their registered contributory salary. The employer incurs a cumulative monthly payroll liability of 12.5% (9.75% Annuity + 0.75% SANED + 2.0% Occupational Hazards).
-      </p>
 
       <h2 class="article-h2">3. Expatriate Worker Status: Zero Pension Withholding</h2>
       <p class="article-p">
@@ -448,24 +470,35 @@
       <h2 class="article-h2">5. Step-by-Step Calculation Scenarios</h2>
       <div class="scenarios-grid">
         <div class="scenario-card">
-          <span class="scenario-badge">Scenario A: Saudi Operations Specialist</span>
-          <div class="scenario-title">Monthly Basic 10,000 SAR + Housing 2,500 SAR</div>
+          <span class="scenario-badge">Scenario A: Saudi Operations Specialist (Legacy Contributor)</span>
+          <div class="scenario-title">Monthly Basic 10,000 SAR + Housing 2,500 SAR (Enrolled before July 2024)</div>
           <div class="scenario-body">
             <strong>Contributory Wage:</strong> 12,500.00 SAR<br>
-            <strong>Employee Deduction (10.5%):</strong> 12,500 &times; 0.105 = <strong>1,312.50 SAR</strong><br>
-            <strong>Employer Liability (12.5%):</strong> 12,500 &times; 0.125 = <strong>1,562.50 SAR</strong><br>
-            <strong>Total Monthly GOSI Receipt:</strong> 2,875.00 SAR.
+            <strong>Employee Deduction (9.75%):</strong> 12,500 &times; 0.0975 = <strong>1,218.75 SAR</strong> (9.0% Annuity + 0.75% SANED)<br>
+            <strong>Employer Liability (11.75%):</strong> 12,500 &times; 0.1175 = <strong>1,468.75 SAR</strong> (9.0% Annuity + 0.75% SANED + 2% Hazards)<br>
+            <strong>Total Monthly GOSI Remittance:</strong> 2,687.50 SAR (21.5%).
           </div>
         </div>
 
         <div class="scenario-card">
-          <span class="scenario-badge">Scenario B: Expatriate Civil Engineer</span>
+          <span class="scenario-badge">Scenario B: Saudi New Entrant (2026 Assessment Cycle)</span>
+          <div class="scenario-title">Monthly Basic 10,000 SAR + Housing 2,500 SAR (Enrolled under RD M/273)</div>
+          <div class="scenario-body">
+            <strong>Contributory Wage:</strong> 12,500.00 SAR<br>
+            <strong>Employee Deduction (10.75%):</strong> 12,500 &times; 0.1075 = <strong>1,343.75 SAR</strong> (10.0% Annuity + 0.75% SANED)<br>
+            <strong>Employer Liability (12.75%):</strong> 12,500 &times; 0.1275 = <strong>1,593.75 SAR</strong> (10.0% Annuity + 0.75% SANED + 2% Hazards)<br>
+            <strong>Total Monthly GOSI Remittance:</strong> 2,937.50 SAR (23.5%).
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <span class="scenario-badge">Scenario C: Expatriate Civil Engineer</span>
           <div class="scenario-title">Monthly Basic 16,000 SAR + Housing 4,000 SAR</div>
           <div class="scenario-body">
             <strong>Contributory Wage:</strong> 20,000.00 SAR<br>
             <strong>Employee Deduction (0.0%):</strong> <strong>0.00 SAR</strong> (Takes home full salary)<br>
             <strong>Employer Hazard Share (2.0%):</strong> 20,000 &times; 0.02 = <strong>400.00 SAR</strong><br>
-            <strong>Total Monthly GOSI Receipt:</strong> 400.00 SAR.
+            <strong>Total Monthly GOSI Remittance:</strong> 400.00 SAR.
           </div>
         </div>
       </div>
@@ -474,10 +507,10 @@
 
       <h3 class="article-h3">General Organization for Social Insurance (GOSI) Compliance & Wage Inspection</h3>
       <p class="article-p">
-        In the Kingdom of Saudi Arabia, the Social Insurance Law promulgated by Royal Decree No. M/22 governs compulsory pension, occupational hazard, and unemployment (SANED) protection. Under GOSI regulations, every commercial enterprise operating in the Kingdom must enroll all national and expatriate employees in the GOSI electronic portal within fifteen days of hiring.
+        In the Kingdom of Saudi Arabia, the Social Insurance Law promulgated by Royal Decree No. M/22 and amended by Royal Decrees M/33 and M/273 governs compulsory pension, occupational hazard, and unemployment (SANED) protection. Under GOSI regulations, every commercial enterprise operating in the Kingdom must enroll all national and expatriate employees in the GOSI electronic portal within fifteen days of hiring.
       </p>
       <p class="article-p">
-        Contributory wages are audited annually during the month of January. For Saudi citizens, monthly contributions total 21.5% of the contributory wage (comprising basic salary and actual housing allowance), split into 9% annuity from the employee, 9% annuity from the employer, 1% SANED unemployment from the employer, 0.75% SANED from the employee, and 2% occupational hazards insurance paid exclusively by the employer.
+        Contributory wages are audited annually during the month of January. For legacy Saudi citizens, monthly contributions total 21.5% of the contributory wage (comprising basic salary and actual housing allowance), split into 9% annuity from the employee, 9% annuity from the employer, 0.75% SANED from the employer, 0.75% SANED from the employee, and 2% occupational hazards insurance paid exclusively by the employer.
       </p>
       <p class="article-p">
         For expatriate workers, the employer pays a mandatory 2% occupational hazard contribution to cover medical treatment, permanent disability stipends, and work injury compensation. Employers who deliberately misreport contributory wages or fail to remit monthly contributions face statutory fines of up to 10,000 SAR per unrecorded worker under Article 62 of the Social Insurance Law.
@@ -500,7 +533,7 @@
             </svg>
           </summary>
           <div class="faq-content">
-            Under the Saudi Social Insurance Law, Saudi nationals contribute 9.75% for Annuity pensions (matched by 9.75% from the employer) plus 0.75% for SANED unemployment insurance (matched by 0.75% from the employer).
+            Under Royal Decree M/33, legacy Saudi nationals contribute 9.75% (9.0% Annuity plus 0.75% SANED) with employers paying 11.75% (including 2% hazards). Under Royal Decree M/273, new entrants face a progressive escalator reaching 10.75% employee deduction in 2026.
           </div>
         </details>
         <details class="faq-item">
@@ -656,6 +689,11 @@
       const wageSlider = document.getElementById('monthlyWageSlider');
       const natSaudi = document.getElementById('natSaudi');
       const natExpat = document.getElementById('natExpat');
+      const regimeGroup = document.getElementById('regimeGroup');
+      const regimeLegacy = document.getElementById('regimeLegacy');
+      const regimeNew = document.getElementById('regimeNew');
+      const cycleGroup = document.getElementById('cycleGroup');
+      const assessmentCycle = document.getElementById('assessmentCycle');
       const employeeTotalDisplay = document.getElementById('employeeTotalDisplay');
       const deductionSubtitle = document.getElementById('deductionSubtitle');
       const cappedWageDisplay = document.getElementById('cappedWageDisplay');
@@ -670,6 +708,14 @@
         const isSaudi = natSaudi.checked;
         const cappedWage = Math.min(Math.max(rawWage, 0), 45000);
 
+        if (isSaudi) {
+          regimeGroup.style.display = 'block';
+          cycleGroup.style.display = regimeNew.checked ? 'block' : 'none';
+        } else {
+          regimeGroup.style.display = 'none';
+          cycleGroup.style.display = 'none';
+        }
+
         let empAnnuity = 0;
         let empSaned = 0;
         let empTotal = 0;
@@ -679,16 +725,42 @@
         let employerTotal = 0;
 
         if (isSaudi) {
-          empAnnuity = cappedWage * 0.0975;
-          empSaned = cappedWage * 0.0075;
-          empTotal = empAnnuity + empSaned;
+          const isLegacy = regimeLegacy.checked;
+          if (isLegacy) {
+            // Legacy Scheme (Royal Decree No. M/33): 9.0% Annuity + 0.75% SANED
+            empAnnuity = cappedWage * 0.09;
+            empSaned = cappedWage * 0.0075;
+            empTotal = empAnnuity + empSaned; // exactly 9.75%
 
-          employerAnnuity = cappedWage * 0.0975;
-          employerSaned = cappedWage * 0.0075;
-          employerHazards = cappedWage * 0.02;
-          employerTotal = employerAnnuity + employerSaned + employerHazards;
+            employerAnnuity = cappedWage * 0.09;
+            employerSaned = cappedWage * 0.0075;
+            employerHazards = cappedWage * 0.02;
+            employerTotal = employerAnnuity + employerSaned + employerHazards; // exactly 11.75%
 
-          deductionSubtitle.textContent = "10.50% Total Payroll Withholding (9.75% Annuity + 0.75% SANED)";
+            deductionSubtitle.textContent = "9.75% Total Payroll Withholding (9.00% Annuity + 0.75% SANED | RD M/33)";
+          } else {
+            // New Entrant Progressive Escalator (Royal Decree No. M/273)
+            let annuityRate = 0.10; // Default active 2026/2027 cycle
+            const cycleVal = assessmentCycle.value;
+            if (cycleVal === '2024') annuityRate = 0.090;
+            else if (cycleVal === '2025') annuityRate = 0.095;
+            else if (cycleVal === '2026') annuityRate = 0.100;
+            else if (cycleVal === '2027') annuityRate = 0.105;
+            else if (cycleVal === '2028') annuityRate = 0.110;
+
+            empAnnuity = cappedWage * annuityRate;
+            empSaned = cappedWage * 0.0075;
+            empTotal = empAnnuity + empSaned;
+
+            employerAnnuity = cappedWage * annuityRate;
+            employerSaned = cappedWage * 0.0075;
+            employerHazards = cappedWage * 0.02;
+            employerTotal = employerAnnuity + employerSaned + employerHazards;
+
+            const totalEmpPercent = ((annuityRate + 0.0075) * 100).toFixed(2);
+            const totalEmprPercent = ((annuityRate + 0.0075 + 0.02) * 100).toFixed(2);
+            deductionSubtitle.textContent = `${totalEmpPercent}% Employee Withholding (${(annuityRate * 100).toFixed(1)}% Annuity + 0.75% SANED | RD M/273)`;
+          }
         } else {
           empAnnuity = 0;
           empSaned = 0;
@@ -715,16 +787,24 @@
       bindDualInput('monthlyWageSlider', 'monthlyWage', calculateGOSI);
       natSaudi.addEventListener('change', calculateGOSI);
       natExpat.addEventListener('change', calculateGOSI);
+      regimeLegacy.addEventListener('change', calculateGOSI);
+      regimeNew.addEventListener('change', calculateGOSI);
+      assessmentCycle.addEventListener('change', calculateGOSI);
 
       copyBtn.addEventListener('click', () => {
+        let regimeText = 'Expatriate (Occupational Hazard Only)';
+        if (natSaudi.checked) {
+          regimeText = regimeLegacy.checked ? 'Saudi National - Legacy (RD M/33)' : `Saudi National - New Entrant (${assessmentCycle.value} Cycle, RD M/273)`;
+        }
         const text = `Saudi GOSI Contribution Record (GulfCalc.tech)
 --------------------------------------------------
 Worker Classification: ${natSaudi.checked ? 'Saudi National' : 'Non-Saudi Expatriate'}
+Enrollment Regime: ${regimeText}
 Contributory Wage: ${wageInput.value} SAR (Capped: ${cappedWageDisplay.textContent})
 Employee Monthly Deduction: ${employeeTotalDisplay.textContent}
 Employer Contribution: ${employerTotalDisplay.textContent}
 Total Monthly Remittance to GOSI: ${grandTotalDisplay.textContent}
-Statutory Reference: Royal Decree No. M/33 (GOSI) & Royal Decree No. M/18 (SANED)`;
+Statutory Reference: Royal Decree No. M/33, Royal Decree No. M/273 & Royal Decree No. M/18 (SANED)`;
         copyBreakdownText(text, copyBtn);
       });
 
