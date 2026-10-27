@@ -19,7 +19,7 @@
   <!-- Insights & Blog Hub -->
   <url>
     <loc>https://gulfcalc.tech/blog/index.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
@@ -144,6 +144,12 @@
   <url>
     <loc>https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026.html</loc>
     <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity.html</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

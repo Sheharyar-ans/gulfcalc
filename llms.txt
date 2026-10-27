@@ -34,6 +34,7 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 ## Analytical Guides & Legal Intelligence
 
 - [UAE Gratuity Calculation on Limited Contract 2026](https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026.html): Complete legal review of Federal Decree-Law No. 33/2021 Article 51 and the abolition of resignation penalty tiers.
+- [Saudi Labor Law Amendments: Notice Period, Gratuity & Probation](https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity.html): Authoritative guide on Royal Decree No. M/51 amendments establishing 30-day employee resignation notice, 60-day employer termination notice, 180-day probation terms, and actual wage end-of-service awards.
 - [Saudi Labor Law Articles 84 and 85 Resignation Rules](https://gulfcalc.tech/blog/saudi-labor-law-article-84-85-resignation-rules.html): Statutory analysis of actual wage definitions, tiered resignation scales, and Article 87 exceptions under Royal Decree M/51.
 - [Kuwait Labour Law Article 55 and the 26 Working Days Rule](https://gulfcalc.tech/blog/kuwait-labor-law-article-55-26-days-calculation.html): Judicial and statutory examination of why dividing monthly compensation by 30 days violates Kuwaiti labor standards.
 - [Oman New Labour Law Royal Decree 53/2023 Gratuity](https://gulfcalc.tech/blog/oman-new-labor-law-royal-decree-53-2023-gratuity.html): In-depth review of the shift to 30 days flat per year and transition mechanics from legacy Royal Decree 35/2003.

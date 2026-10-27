@@ -178,7 +178,7 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Mechanics: Generates formal letters with statutory gratuity protection, proof of service delivery acknowledgment, and one-click copy and print capabilities.
 
 ================================================================================
-4. 10 PEER-REVIEWED GCC LEGAL & TAX ANALYTICAL ARTICLES
+4. 11 PEER-REVIEWED GCC LEGAL & TAX ANALYTICAL ARTICLES
 ================================================================================
 
 4.1 UAE Gratuity Calculation Under Limited Contracts in 2026
@@ -186,47 +186,52 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Legal Statute: UAE Federal Decree-Law No. 33 of 2021
 - Summary: Analysis of the legal unification of fixed-term employment contracts across the UAE private sector, detailing the absolute abolition of historical resignation penalties and unexpired contract penalties.
 
-4.2 Saudi Labour Law Articles 84 & 85: Resignation Rules & Actual Wage
+4.2 Saudi Labor Law Amendments: Notice Period, Gratuity & Probation Rules
+- Route: https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity.html
+- Legal Statute: Saudi Labor Law (Royal Decree No. M/51 Amendments)
+- Summary: In-depth statutory examination of amended Article 75 notice rules (30 days for employee resignation vs. 60 days for employer termination), Article 53 probation cap up to 180 days, Article 107 compensatory time-off in lieu of overtime, and mandatory actual wage baselines for Article 84 and 85 end-of-service award determinations.
+
+4.4 Saudi Labour Law Articles 84 & 85: Resignation Rules & Actual Wage
 - Route: https://gulfcalc.tech/blog/saudi-labor-law-article-84-85-resignation-rules.html
 - Legal Statute: Saudi Labour Law (Royal Decree No. M/51)
 - Summary: Detailed statutory examination of the Ministry of Human Resources and Social Development (MHRSD) definition of 'actual wage' (basic plus fixed housing and transport allowances), tiered resignation penalties, and Article 87 statutory exceptions.
 
-4.3 Kuwait Labour Law Article 55: The 26 Working Days Rule
+4.4 Kuwait Labour Law Article 55: The 26 Working Days Rule
 - Route: https://gulfcalc.tech/blog/kuwait-labor-law-article-55-26-days-calculation.html
 - Legal Statute: Kuwait Private Sector Labour Law No. 6 of 2010
 - Summary: Mathematical analysis and legal justification for using the mandatory 26-day divisor instead of 30 days when calculating daily wages for terminal indemnity in Kuwait, backed by Public Authority for Manpower (PAM) enforcement rulings.
 
-4.4 Oman Labour Law Royal Decree 53/2023: The 30-Day Gratuity Standard
+4.5 Oman Labour Law Royal Decree 53/2023: The 30-Day Gratuity Standard
 - Route: https://gulfcalc.tech/blog/oman-new-labor-law-royal-decree-53-2023-gratuity.html
 - Legal Statute: Oman Royal Decree No. 53/2023
 - Summary: Deconstruction of Oman's major labor reform under His Majesty Sultan Haitham bin Tarik, highlighting the shift from the old two-tiered severance formula to a uniform 30-day salary per year of service starting from year one.
 
-4.5 UAE Corporate Tax: Small Business Relief (SBR) Compliance Guide
+4.6 UAE Corporate Tax: Small Business Relief (SBR) Compliance Guide
 - Route: https://gulfcalc.tech/blog/uae-corporate-tax-small-business-relief-guide.html
 - Legal Statute: UAE Federal Decree-Law No. 47 of 2022 & Ministerial Decision No. 73 of 2023
 - Summary: Practical compliance roadmap for UAE resident enterprises with gross annual revenue under AED 3,000,000 electing Small Business Relief, covering registration, record-keeping, and transfer pricing obligations.
 
-4.6 Qatar End of Service Benefits & Statutory Overtime Under Law No. 14/2004
+4.7 Qatar End of Service Benefits & Statutory Overtime Under Law No. 14/2004
 - Route: https://gulfcalc.tech/blog/qatar-end-of-service-benefits-overtime-wages.html
 - Legal Statute: Qatar Labour Law No. 14 of 2004
 - Summary: Deconstruction of Qatar's 21-day annual severance accrual, fractional tenure mathematics, and statutory overtime compensation rates (125% regular overtime, 150% night/weekend overtime).
 
-4.7 Bahrain SIO Expatriate End of Service Reform: Direct Deposit Framework
+4.8 Bahrain SIO Expatriate End of Service Reform: Direct Deposit Framework
 - Route: https://gulfcalc.tech/blog/bahrain-sio-expat-end-of-service-reform.html
 - Legal Statute: Bahrain Labour Law No. 36 of 2012 & Ministerial Decision No. 109 of 2023
 - Summary: Comprehensive operational analysis of Bahrain's transition from company balance-sheet reserves to mandatory monthly employer deposits into the Social Insurance Organisation (SIO) fund for non-Bahraini personnel.
 
-4.8 GCC VAT Reverse Charge Mechanism: Cross-Border SaaS & Services
+4.9 GCC VAT Reverse Charge Mechanism: Cross-Border SaaS & Services
 - Route: https://gulfcalc.tech/blog/gcc-vat-reverse-charge-mechanism-cross-border-services.html
 - Legal Statute: GCC Unified VAT Agreement & National Implementing Regulations
 - Summary: Technical accounting walkthrough for GCC companies purchasing foreign cloud hosting, SaaS subscriptions, and digital marketing services, detailing self-assessment entries on VAT return boxes.
 
-4.9 Dubai Golden Visa 2026: Real Estate & Salary Thresholds Compared
+4.10 Dubai Golden Visa 2026: Real Estate & Salary Thresholds Compared
 - Route: https://gulfcalc.tech/blog/dubai-golden-visa-real-estate-salary-thresholds.html
 - Legal Statute: UAE Cabinet Resolution No. 65 of 2022
 - Summary: Cost-benefit and regulatory comparison between the AED 2,000,000 property investment track and the AED 30,000 monthly executive employment track for obtaining the UAE 10-Year Golden Residence Visa.
 
-4.10 DEWS vs Traditional Gratuity: Mathematical Comparison for Expatriates
+4.11 DEWS vs Traditional Gratuity: Mathematical Comparison for Expatriates
 - Route: https://gulfcalc.tech/blog/dews-vs-traditional-cash-gratuity-uae-workplace-savings.html
 - Legal Statute: DIFC Employment Law No. 2 of 2019 & UAE Cabinet Decision No. 96 of 2023
 - Summary: Financial comparison between monthly defined contribution investment schemes (such as the DIFC Employee Workplace Savings scheme) and traditional final-salary statutory cash lump-sum gratuities.
