@@ -15,6 +15,8 @@ TABLE OF CONTENTS
 4. 10 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
 5. Institutional Governance & Legal Policies
 6. JSON-LD Schemas & Machine Extraction Standards
+7. Arabic Localization Layer & Bilingual RTL Suite (Phase 1)
+
 
 ================================================================================
 1. PLATFORM ARCHITECTURAL OVERVIEW & ZERO-PII GUARANTEE
@@ -255,3 +257,44 @@ Every page on GulfCalc embeds valid, verified JSON-LD metadata for immediate mac
 - Blog Pages: BlogPosting schema with headline, datePublished, dateModified, author, and publisher entities.
 - Accordion Sections: FAQPage schema containing precise, factual questions and answers corresponding with visible DOM text.
 - Breadcrumbs: BreadcrumbList schema establishing precise parent-child site hierarchy.
+
+================================================================================
+7. ARABIC LOCALIZATION LAYER & BILINGUAL RTL SUITE (PHASE 1)
+================================================================================
+
+GulfCalc operates an enterprise bilingual localization architecture under the /ar/ subdirectory featuring full Right-to-Left (RTL) typography powered by Google Fonts Tajawal, strict LTR mathematical and numerical isolation, and bidirectional hreflang search indexing.
+
+7.1 Central Arabic Portal Hub
+- Route: https://gulfcalc.tech/ar/index.html
+- Purpose: Fully localized Arabic gateway featuring real-time client-side search filtering across GCC labor calculators, interactive showcased cards, institutional trust architecture, and a comprehensive GCC statutory end-of-service basic salary comparison matrix.
+- Metadata: Meta title under 60 chars ("حاسبة نهاية الخدمة والضرائب في الخليج | GulfCalc"), meta description 140-155 chars, and hardcoded Organization, WebSite, CollectionPage, and FAQPage schemas.
+
+7.2 UAE End of Service Gratuity Calculator (Arabic)
+- Route: https://gulfcalc.tech/ar/tools/uae-gratuity.html
+- Primary Statute: UAE Federal Decree-Law No. (33) of 2021 on the Regulation of Labour Relations (Article 51) and its Executive Regulations.
+- Canonical Arabic Terminology: مكافأة نهاية الخدمة (Gratuity), الراتب الأساسي (Basic Salary), عقد عمل محدد المدة (Limited Contract), إنهاء الخدمة (Termination), استقالة (Resignation).
+- Statutory Mathematical Formula:
+  * Daily Wage Basis: Last drawn Monthly Basic Salary / 30.
+  * Years 1 to 5: 21 calendar days per completed year of service.
+  * Year 6 onwards: 30 calendar days per completed year of service.
+  * Maximum Statutory Cap: Capped at exactly 2 years basic wage (Monthly Basic Salary * 24).
+  * Separation Parity: Unified 100% entitlement after completing 1 continuous year, whether leaving by employee resignation or employer termination.
+  * Employer Payment Deadline: Mandatory 14 calendar days from contract termination under Article 53.
+  * Alternative Savings Scheme: Optional workplace savings scheme under Cabinet Resolution No. 96/2023 (5.83% monthly for first 5 years, 8.33% thereafter).
+
+7.3 Saudi End of Service Award Calculator (Arabic)
+- Route: https://gulfcalc.tech/ar/tools/saudi-eos.html
+- Primary Statute: Saudi Labour Law (Royal Decree No. M/51), Articles 84, 85, and 87.
+- Canonical Arabic Terminology: مكافأة نهاية الخدمة (End of Service Award), الأجر الفعلي (Actual Wage including basic salary, fixed housing allowance, and fixed transportation allowance), الراتب الأساسي (Basic Salary), فسخ العقد (Contract Termination), استقالة العامل (Employee Resignation).
+- Statutory Mathematical Formula:
+  * Wage Basis: Actual Wage = Basic Salary + Fixed Housing Allowance + Fixed Transport Allowance.
+  * Years 1 to 5: 15 days (half month actual wage) per year.
+  * Year 6 onwards: 30 days (full month actual wage) per year.
+  * Overall Cap: None (unlimited statutory tenure accrual).
+  * Voluntary Resignation Deduction Tiers (Article 85):
+    - Less than 2 years: 0% entitlement.
+    - 2 to less than 5 years: 1/3 (33.33%) entitlement.
+    - 5 to less than 10 years: 2/3 (66.67%) entitlement.
+    - 10+ years: Full 100% entitlement.
+  * Article 87 Exemption: 100% entitlement regardless of service tenure if termination is due to force majeure, or female employee resigning within 6 months of marriage or 3 months of childbirth.
+  * Settlement Deadline: 1 week if employer terminates; 2 weeks if employee resigns (Article 88).

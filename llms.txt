@@ -26,6 +26,12 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 - [AI GCC Contract Clause Compliance Checker](https://gulfcalc.tech/tools/ai-contract-clause-checker.html): Interactive client-side legal evaluator checking employment contract clauses against UAE Decree-Law 33/2021 and Saudi Royal Decree M/51 to identify void terms and draft counter-proposals.
 - [AI GCC Statutory Resignation Letter Generator](https://gulfcalc.tech/tools/ai-resignation-letter-generator.html): Form-driven legal resignation drafter citing statutory labor notice articles to preserve end-of-service gratuity and terminal benefit rights.
 
+## Arabic Localization & RTL Bilingual Suite (النسخة العربية)
+
+- [بوابة الحسابات المالية وقوانين العمل لدول الخليج](https://gulfcalc.tech/ar/index.html): البوابة المركزية باللغة العربية لحاسبات مكافأة نهاية الخدمة، الضرائب، ومستحقات العمالة في دول مجلس التعاون الخليجي مع مصفوفة مقارنة عمالية شاملة.
+- [حاسبة مكافأة نهاية الخدمة في الإمارات](https://gulfcalc.tech/ar/tools/uae-gratuity.html): احتساب مكافأة نهاية الخدمة وفق المادة 51 من المرسوم بقانون اتحادي رقم 33 لسنة 2021 (21 يوماً أساسياً عن السنوات الخمس الأولى، و30 يوماً عما زاد، بحد أقصى أجر سنتين، مع توحيد حقوق الاستقالة والإنهاء بنسبة 100%).
+- [حاسبة مكافأة نهاية الخدمة في السعودية](https://gulfcalc.tech/ar/tools/saudi-eos.html): احتساب مكافأة نهاية الخدمة وفق نظام العمل السعودي الصادر بالمرسوم الملكي م/51 (المادتين 84 و85) على أساس الأجر الفعلي الكامل (الأساسي + بدلات السكن والنقل الثابتة) بواقع نصف شهر عن أول 5 سنوات وشهر كامل تالياً، وتطبيق جدول استقطاعات الاستقالة الطوعية.
+
 ## Central Gateways & Directories
 
 - [Central GCC Labour Laws Directory](https://gulfcalc.tech/labour-laws/index.html): Comprehensive statutory comparative analysis and employment legislation across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain.

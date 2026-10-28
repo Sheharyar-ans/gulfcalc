@@ -19,6 +19,9 @@
   <title>Precision Statutory & Financial Calculators for GCC | GulfCalc</title>
   <meta name="description" content="Free client-side statutory, tax, and labor law calculation tools for expatriates and corporations across UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain.">
   <link rel="canonical" href="https://gulfcalc.tech/">
+  <link rel="alternate" hreflang="en" href="https://gulfcalc.tech/" />
+  <link rel="alternate" hreflang="ar" href="https://gulfcalc.tech/ar/" />
+  <link rel="alternate" hreflang="x-default" href="https://gulfcalc.tech/" />
   <meta name="google-site-verification" content="acK6lRhvmEMzIziS_1Uo_BjSBgOgjSltxElDnEPsZ-w">
   <link rel="preload" href="assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="assets/css/main.css?v=20261020_v5">
@@ -420,19 +423,30 @@
         <a href="contact-us.html" class="nav-link">Contact</a>
       </nav>
 
-      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="ar/index.html" class="lang-switcher-pill" aria-label="التحويل إلى اللغة العربية">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span>العربية</span>
+        </a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
+      </div>
     </div>
   </header>
 
   <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
     <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="ar/index.html" style="color:var(--emerald-600); font-weight:700;">🌐 النسخة العربية (Arabic Portal)</a></li>
       <li class="mobile-nav-item"><a href="index.html">Portal Home</a></li>
       <li class="mobile-nav-item"><a href="#calculators">All Calculators</a></li>
       <li class="mobile-nav-item"><a href="labour-laws/index.html">Labour Laws Directory</a></li>
