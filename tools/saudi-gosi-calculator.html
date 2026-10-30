@@ -308,12 +308,12 @@
         <div class="form-group">
           <label class="form-label">Employee Nationality Classification</label>
           <div class="radio-group" style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
-            <label class="radio-label">
-              <input type="radio" name="workerNation" id="natSaudi" value="saudi" checked>
+            <label class="radio-label" for="natSaudi">
+              <input type="radio" name="workerNation" id="natSaudi" value="saudi" aria-label="Saudi National" checked>
               <span>Saudi National</span>
             </label>
-            <label class="radio-label">
-              <input type="radio" name="workerNation" id="natExpat" value="expat">
+            <label class="radio-label" for="natExpat">
+              <input type="radio" name="workerNation" id="natExpat" value="expat" aria-label="Non-Saudi Expatriate">
               <span>Non-Saudi Expatriate</span>
             </label>
           </div>
@@ -323,12 +323,12 @@
         <div class="form-group" id="regimeGroup">
           <label class="form-label">Statutory Enrollment Regime (Saudi Citizens)</label>
           <div class="radio-group" style="display:grid; grid-template-columns:1fr; gap:0.5rem;">
-            <label class="radio-label" style="padding:0.625rem 0.75rem; font-size:0.875rem;">
-              <input type="radio" name="gosiRegime" id="regimeLegacy" value="legacy" checked>
+            <label class="radio-label" for="regimeLegacy" style="padding:0.625rem 0.75rem; font-size:0.875rem;">
+              <input type="radio" name="gosiRegime" id="regimeLegacy" value="legacy" aria-label="Legacy Contributor" checked>
               <span>Legacy Contributor (Enrolled before 3 July 2024 - RD M/33)</span>
             </label>
-            <label class="radio-label" style="padding:0.625rem 0.75rem; font-size:0.875rem;">
-              <input type="radio" name="gosiRegime" id="regimeNew" value="new">
+            <label class="radio-label" for="regimeNew" style="padding:0.625rem 0.75rem; font-size:0.875rem;">
+              <input type="radio" name="gosiRegime" id="regimeNew" value="new" aria-label="New Entrant">
               <span>New Entrant (Enrolled on or after 3 July 2024 - Royal Decree M/273)</span>
             </label>
           </div>

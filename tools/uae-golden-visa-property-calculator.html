@@ -326,12 +326,12 @@
         <div class="form-group">
           <label class="form-label">Financing & Acquisition Structure</label>
           <div class="radio-group" style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
-            <label class="radio-label">
-              <input type="radio" name="financeType" id="finCash" value="cash" checked>
+            <label class="radio-label" for="finCash">
+              <input type="radio" name="financeType" id="finCash" value="cash" aria-label="100% Cash Purchase" checked>
               <span>100% Cash Purchase</span>
             </label>
-            <label class="radio-label">
-              <input type="radio" name="financeType" id="finMortgage" value="mortgage">
+            <label class="radio-label" for="finMortgage">
+              <input type="radio" name="financeType" id="finMortgage" value="mortgage" aria-label="Mortgaged Asset (Bank NOC)">
               <span>Mortgaged Asset (Bank NOC)</span>
             </label>
           </div>
