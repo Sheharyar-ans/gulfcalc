@@ -258,4 +258,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- New Analytical Statutory Guides (English & Arabic) -->
+  <url>
+    <loc>https://gulfcalc.tech/blog/how-to-calculate-indemnity-in-bahrain.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/ar/blog/index.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://gulfcalc.tech/ar/blog/how-to-calculate-indemnity-in-bahrain.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

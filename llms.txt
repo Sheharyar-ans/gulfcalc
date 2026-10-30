@@ -28,6 +28,8 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 
 ## Arabic Localization & RTL Bilingual Suite (النسخة العربية)
 
+- [مركز الأبحاث والتحليلات القانونية والمالية (النسخة العربية)](https://gulfcalc.tech/ar/blog/index.html): البوابة المركزية باللغة العربية للأدلة القانونية والتحليلات التشريعية المعتمدة لقوانين العمل والضرائب الخليجية.
+- [دليل حساب مكافأة نهاية الخدمة في البحرين وقواعد التأمينات للوافدين](https://gulfcalc.tech/ar/blog/how-to-calculate-indemnity-in-bahrain.html): دليل شامل باللغة العربية لاحتساب مكافأة نهاية الخدمة وفق المادة 116 من قانون العمل البحريني رقم 36 لسنة 2012، وضوابط سداد اشتراكات التأمينات الاجتماعية (SIO) للوافدين.
 - [بوابة الحسابات المالية وقوانين العمل لدول الخليج](https://gulfcalc.tech/ar/index.html): البوابة المركزية باللغة العربية لحاسبات مكافأة نهاية الخدمة، الضرائب، ومستحقات العمالة في دول مجلس التعاون الخليجي مع مصفوفة مقارنة عمالية شاملة.
 - [حاسبة مكافأة نهاية الخدمة في الإمارات](https://gulfcalc.tech/ar/tools/uae-gratuity.html): احتساب مكافأة نهاية الخدمة وفق المادة 51 من المرسوم بقانون اتحادي رقم 33 لسنة 2021 (21 يوماً أساسياً عن السنوات الخمس الأولى، و30 يوماً عما زاد، بحد أقصى أجر سنتين، مع توحيد حقوق الاستقالة والإنهاء بنسبة 100%).
 - [حاسبة مكافأة نهاية الخدمة في السعودية](https://gulfcalc.tech/ar/tools/saudi-eos.html): احتساب مكافأة نهاية الخدمة وفق نظام العمل السعودي الصادر بالمرسوم الملكي م/51 (المادتين 84 و85) على أساس الأجر الفعلي الكامل (الأساسي + بدلات السكن والنقل الثابتة) بواقع نصف شهر عن أول 5 سنوات وشهر كامل تالياً، وتطبيق جدول استقطاعات الاستقالة الطوعية.
@@ -39,6 +41,7 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 
 ## Analytical Guides & Legal Intelligence
 
+- [How to Calculate Indemnity in Bahrain: SIO Expat Rules, Article 116 Formula, and Resignation Guidelines](https://gulfcalc.tech/blog/how-to-calculate-indemnity-in-bahrain.html): Comprehensive statutory guide to Bahrain Labour Law No. 36/2012 Article 116, the 15-day and 30-day salary tiers, and the recent SIO expatriate end-of-service accrual reforms.
 - [UAE Gratuity Calculation on Limited Contract 2026](https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026.html): Complete legal review of Federal Decree-Law No. 33/2021 Article 51 and the abolition of resignation penalty tiers.
 - [Saudi Labor Law Amendments: Notice Period, Gratuity & Probation](https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity.html): Authoritative guide on Royal Decree No. M/51 amendments establishing 30-day employee resignation notice, 60-day employer termination notice, 180-day probation terms, and actual wage end-of-service awards.
 - [Saudi Labor Law Articles 84 and 85 Resignation Rules](https://gulfcalc.tech/blog/saudi-labor-law-article-84-85-resignation-rules.html): Statutory analysis of actual wage definitions, tiered resignation scales, and Article 87 exceptions under Royal Decree M/51.

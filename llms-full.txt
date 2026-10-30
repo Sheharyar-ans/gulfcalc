@@ -12,7 +12,7 @@ TABLE OF CONTENTS
 1. Platform Architectural Overview & Zero-PII Guarantee
 2. Central Gateways (Homepage, Labour Laws Directory, Blog Hub)
 3. 19 Dedicated GCC Financial & Statutory Calculators & AI Utilities (Formulas & Edge Cases)
-4. 10 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
+4. 11 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
 5. Institutional Governance & Legal Policies
 6. JSON-LD Schemas & Machine Extraction Standards
 7. Arabic Localization Layer & Bilingual RTL Suite (Phase 1)
@@ -238,6 +238,11 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Legal Statute: DIFC Employment Law No. 2 of 2019 & UAE Cabinet Decision No. 96 of 2023
 - Summary: Financial comparison between monthly defined contribution investment schemes (such as the DIFC Employee Workplace Savings scheme) and traditional final-salary statutory cash lump-sum gratuities.
 
+4.12 How to Calculate Indemnity in Bahrain: SIO Expat Rules, Article 116 Formula, and Resignation Guidelines
+- Route: https://gulfcalc.tech/blog/how-to-calculate-indemnity-in-bahrain.html
+- Legal Statute: Bahrain Labour Law No. 36 of 2012 (Article 116) & SIO Ministerial Decision No. 109 of 2023
+- Summary: Complete analysis of Article 116 basic wage formula (half month wage per year for the first 3 years, 1 full month wage per year thereafter), voluntary resignation parity without penalty tiers, unused leave encashment under Article 59, and mandatory monthly SIO direct deposit compliance for non-Bahraini personnel.
+
 ================================================================================
 5. INSTITUTIONAL GOVERNANCE & LEGAL POLICIES
 ================================================================================
@@ -298,3 +303,13 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
     - 10+ years: Full 100% entitlement.
   * Article 87 Exemption: 100% entitlement regardless of service tenure if termination is due to force majeure, or female employee resigning within 6 months of marriage or 3 months of childbirth.
   * Settlement Deadline: 1 week if employer terminates; 2 weeks if employee resigns (Article 88).
+
+
+7.4 Arabic FinTech & Legal Intelligence Hub
+- Route: https://gulfcalc.tech/ar/blog/index.html
+- Purpose: Searchable Arabic knowledge base of peer-reviewed statutory employment, tax, and residency guides with filter categories and bidirectional English/Arabic hreflang indexing.
+
+7.5 Bahrain Indemnity & SIO Calculation Guide (Arabic)
+- Route: https://gulfcalc.tech/ar/blog/how-to-calculate-indemnity-in-bahrain.html
+- Primary Statute: Bahrain Labour Law No. 36 of 2012 Article 116 and Social Insurance Organisation (SIO) Decision No. 109 of 2023.
+- Canonical Arabic Terminology: مكافأة نهاية الخدمة (Indemnity), الأجر الأساسي (Basic Salary), الهيئة العامة للتأمين الاجتماعي (SIO), استقالة العامل (Resignation), تصفية الإجازات السنوية (Leave Encashment).
