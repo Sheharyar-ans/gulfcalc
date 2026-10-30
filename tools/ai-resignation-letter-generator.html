@@ -19,6 +19,7 @@
   <meta name="description" content="Generate legally sound resignation letters for UAE, Saudi Arabia, Kuwait, Qatar, Oman, and Bahrain citing labor decrees to protect end-of-service gratuity.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/ai-resignation-letter-generator.html">
 
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
@@ -700,7 +701,7 @@ Date Received: _______________________________`;
       }
 
       [empName, jobTitle, compName, managerName, nationSelect, noticeDays, lastDayDate, resignationType].forEach(el => {
-        el.addEventListener('input', updateLetter);
+        el.addEventListener('input', updateLetter, { passive: true });
         el.addEventListener('change', updateLetter);
       });
 

@@ -21,6 +21,7 @@
   <link rel="canonical" href="https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html">
   <link rel="alternate" hreflang="en" href="https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html" />
   <link rel="alternate" hreflang="ar" href="https://gulfcalc.tech/ar/tools/saudi-eos.html" />
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <script type="application/ld+json">
@@ -843,9 +844,9 @@
 
       bindDualInput('basicSalarySlider', 'basicSalary', calculateSaudiAward);
       bindDualInput('serviceYearsSlider', 'serviceYears', calculateSaudiAward);
-      housingInput.addEventListener('input', calculateSaudiAward);
-      transportInput.addEventListener('input', calculateSaudiAward);
-      monthsInput.addEventListener('input', calculateSaudiAward);
+      housingInput.addEventListener('input', calculateSaudiAward, { passive: true });
+      transportInput.addEventListener('input', calculateSaudiAward, { passive: true });
+      monthsInput.addEventListener('input', calculateSaudiAward, { passive: true });
       sepTermination.addEventListener('change', calculateSaudiAward);
       sepResignation.addEventListener('change', calculateSaudiAward);
       sepExempt.addEventListener('change', calculateSaudiAward);

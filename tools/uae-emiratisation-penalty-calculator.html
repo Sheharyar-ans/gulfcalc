@@ -19,6 +19,7 @@
   <meta name="description" content="Calculate MoHRE Emiratisation non-compliance financial penalties for private companies with 20-49 and 50+ staff under Cabinet Resolution No. 19/M.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html">
 
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
@@ -745,7 +746,7 @@
         totalSkilledStaff.value = this.value;
         skilledStaffDisplay.textContent = this.value + ' Employees';
         calculate();
-      });
+      }, { passive: true });
 
       totalSkilledStaff.addEventListener('input', function() {
         let val = parseInt(this.value) || 20;
@@ -753,13 +754,13 @@
         skilledStaffSlider.value = Math.min(val, 500);
         skilledStaffDisplay.textContent = val + ' Employees';
         calculate();
-      });
+      }, { passive: true });
 
       emiratiSlider.addEventListener('input', function() {
         emiratiStaff.value = this.value;
         emiratiDisplay.textContent = this.value + (this.value == 1 ? ' Emirati' : ' Emiratis');
         calculate();
-      });
+      }, { passive: true });
 
       emiratiStaff.addEventListener('input', function() {
         let val = parseInt(this.value) || 0;
@@ -767,7 +768,7 @@
         emiratiSlider.value = Math.min(val, 50);
         emiratiDisplay.textContent = val + (val == 1 ? ' Emirati' : ' Emiratis');
         calculate();
-      });
+      }, { passive: true });
 
       companySizeTier.addEventListener('change', calculate);
       targetYear.addEventListener('change', calculate);

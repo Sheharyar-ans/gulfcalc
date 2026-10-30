@@ -19,6 +19,7 @@
   <meta name="description" content="Calculate Saudi expat dependent fees (SAR 400/month), Jawazat Iqama renewal charges, and Maktab Amal work permit levies across 3, 6, 9, or 12-month cycles.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html">
 
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
@@ -670,7 +671,7 @@
         numDependents.value = this.value;
         dependentsVal.textContent = this.value + (this.value == 1 ? ' Dependent' : ' Dependents');
         calculate();
-      });
+      }, { passive: true });
 
       numDependents.addEventListener('input', function() {
         let val = parseInt(this.value) || 0;
@@ -679,7 +680,7 @@
         numDependentsSlider.value = Math.min(val, 10);
         dependentsVal.textContent = val + (val == 1 ? ' Dependent' : ' Dependents');
         calculate();
-      });
+      }, { passive: true });
 
       renewalDuration.addEventListener('change', calculate);
       includeMaktabAmal.addEventListener('change', calculate);

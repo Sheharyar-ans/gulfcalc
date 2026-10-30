@@ -19,6 +19,7 @@
   <title>Bahrain EOSI & 10% VAT Calculator: Law 36/2012 & SIO | GulfCalc</title>
   <meta name="description" content="Calculate Bahrain End of Service Indemnity under Law 36/2012 and SIO expat accrual rules, featuring an integrated 10% standard Bahrain VAT calculation engine.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/bahrain-eosi-calculator.html">
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <script type="application/ld+json">
@@ -825,8 +826,8 @@
 
       bindDualInput('monthlyWageSlider', 'monthlyWage', calculateBahrain);
       bindDualInput('serviceYearsSlider', 'serviceYears', calculateBahrain);
-      serviceMonthsInput.addEventListener('input', calculateBahrain);
-      vatAmountInput.addEventListener('input', calculateBahrain);
+      serviceMonthsInput.addEventListener('input', calculateBahrain, { passive: true });
+      vatAmountInput.addEventListener('input', calculateBahrain, { passive: true });
       vatAdd.addEventListener('change', calculateBahrain);
       vatExtract.addEventListener('change', calculateBahrain);
       toolEOSI.addEventListener('change', calculateBahrain);

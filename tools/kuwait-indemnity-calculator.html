@@ -19,6 +19,7 @@
   <title>Kuwait Indemnity Calculator: Labour Law Article 55 | GulfCalc</title>
   <meta name="description" content="Calculate Kuwait end-of-service indemnity using the statutory 26 working days divisor under Law No. 6/2010. Compute exact resignation and termination dues.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html">
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <!-- JSON-LD Structured Data Schema -->
@@ -854,7 +855,7 @@
       // Bind dual inputs
       bindDualInput('monthlySalarySlider', 'monthlySalary', calculateKuwaitIndemnity);
       bindDualInput('serviceYearsSlider', 'serviceYears', calculateKuwaitIndemnity);
-      monthsInput.addEventListener('input', calculateKuwaitIndemnity);
+      monthsInput.addEventListener('input', calculateKuwaitIndemnity, { passive: true });
       sepTermination.addEventListener('change', calculateKuwaitIndemnity);
       sepResignation.addEventListener('change', calculateKuwaitIndemnity);
 

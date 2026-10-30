@@ -2,9 +2,11 @@
 *.md
 !README.md
 !AUDIT_REPORT.md
+!PERFORMANCE_AUDIT.md
 
 # System files
 .DS_Store
 Thumbs.db
 scratch/
+.kilo/
 

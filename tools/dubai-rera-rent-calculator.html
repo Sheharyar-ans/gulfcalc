@@ -19,6 +19,7 @@
   <meta name="description" content="Calculate statutory Dubai rent increase caps under Decree No. 43 of 2013 based on RERA Rental Index benchmarks and mandatory 90-day notice rules.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html">
 
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
@@ -697,27 +698,27 @@
         currentRent.value = this.value;
         currentRentDisplay.textContent = parseInt(this.value).toLocaleString('en-US') + ' AED';
         calculate();
-      });
+      }, { passive: true });
 
       currentRent.addEventListener('input', function() {
         let val = parseFloat(this.value) || 0;
         currentRentSlider.value = Math.min(val, 400000);
         currentRentDisplay.textContent = Math.round(val).toLocaleString('en-US') + ' AED';
         calculate();
-      });
+      }, { passive: true });
 
       benchmarkRentSlider.addEventListener('input', function() {
         benchmarkRent.value = this.value;
         benchmarkRentDisplay.textContent = parseInt(this.value).toLocaleString('en-US') + ' AED';
         calculate();
-      });
+      }, { passive: true });
 
       benchmarkRent.addEventListener('input', function() {
         let val = parseFloat(this.value) || 0;
         benchmarkRentSlider.value = Math.min(val, 400000);
         benchmarkRentDisplay.textContent = Math.round(val).toLocaleString('en-US') + ' AED';
         calculate();
-      });
+      }, { passive: true });
 
       noticeCompliant.addEventListener('change', calculate);
 

@@ -19,6 +19,7 @@
   <meta name="description" content="Calculate UAE visit and residence visa overstay fines under the unified ICP/GDRFA 50 AED daily tariff, grace periods, and out-pass exit permit costs.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html">
 
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
 
   <script type="application/ld+json">
@@ -660,7 +661,7 @@
         daysInput.value = this.value;
         daysDisplay.textContent = this.value + ' Days';
         calculate();
-      });
+      }, { passive: true });
 
       daysInput.addEventListener('input', function() {
         let val = parseInt(this.value) || 0;
@@ -669,7 +670,7 @@
         daysSlider.value = Math.min(val, 180);
         daysDisplay.textContent = val + ' Days';
         calculate();
-      });
+      }, { passive: true });
 
       visaCategory.addEventListener('change', calculate);
       includeOutPass.addEventListener('change', calculate);

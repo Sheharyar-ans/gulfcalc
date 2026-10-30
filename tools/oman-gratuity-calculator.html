@@ -19,6 +19,7 @@
   <title>Oman Gratuity Calculator: Royal Decree No. 53/2023 | GulfCalc</title>
   <meta name="description" content="Calculate Oman end-of-service gratuity under new Labour Law Royal Decree No. 53/2023 Article 61. Fast client-side statutory formula for all service tenures.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/oman-gratuity-calculator.html">
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <script type="application/ld+json">
@@ -757,7 +758,7 @@
 
       bindDualInput('basicSalarySlider', 'basicSalary', calculateOmanGratuity);
       bindDualInput('serviceYearsSlider', 'serviceYears', calculateOmanGratuity);
-      monthsInput.addEventListener('input', calculateOmanGratuity);
+      monthsInput.addEventListener('input', calculateOmanGratuity, { passive: true });
       modeNew.addEventListener('change', calculateOmanGratuity);
       modeLegacy.addEventListener('change', calculateOmanGratuity);
 

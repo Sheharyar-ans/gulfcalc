@@ -39,7 +39,7 @@ function bindDualInput(sliderId, inputId, onUpdateCallback) {
   slider.addEventListener('input', (e) => {
     input.value = e.target.value;
     if (typeof onUpdateCallback === 'function') onUpdateCallback();
-  });
+  }, { passive: true });
 
   // Input -> Slider
   input.addEventListener('input', (e) => {
@@ -48,7 +48,7 @@ function bindDualInput(sliderId, inputId, onUpdateCallback) {
       slider.value = val;
     }
     if (typeof onUpdateCallback === 'function') onUpdateCallback();
-  });
+  }, { passive: true });
 }
 
 /**

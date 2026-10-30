@@ -19,6 +19,7 @@
   <title>Qatar Gratuity Calculator: Labour Law No. 14/2004 | GulfCalc</title>
   <meta name="description" content="Calculate Qatar end-of-service benefits under Labour Law No. 14/2004 Article 54. Accurate statutory computation based on basic wage and service duration.">
   <link rel="canonical" href="https://gulfcalc.tech/tools/qatar-gratuity-calculator.html">
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
   <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
   
   <script type="application/ld+json">
@@ -742,8 +743,8 @@
 
       bindDualInput('basicSalarySlider', 'basicSalary', calculateQatarGratuity);
       bindDualInput('serviceYearsSlider', 'serviceYears', calculateQatarGratuity);
-      monthsInput.addEventListener('input', calculateQatarGratuity);
-      agreedDaysInput.addEventListener('input', calculateQatarGratuity);
+      monthsInput.addEventListener('input', calculateQatarGratuity, { passive: true });
+      agreedDaysInput.addEventListener('input', calculateQatarGratuity, { passive: true });
 
       copyBtn.addEventListener('click', () => {
         const text = `Qatar End of Service Gratuity Record (GulfCalc.tech)
