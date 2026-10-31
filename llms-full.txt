@@ -323,3 +323,48 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
 - Route: https://gulfcalc.tech/ar/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html
 - Primary Statute: Federal Decree-Law No. 29 of 2021 & ICP Grace Directives.
 - Canonical Arabic Terminology: مهلة تصحيح الأوضاع (Amnesty / Grace Period), تصريح المغادرة (Exit Permit), بلاغ الانقطاع عن العمل (Absconding Report), إسقاط الغرامات (Fine Waiver), تعديل الوضع (Status Regularization).
+
+3.20 Qatar Residence Permit (QID) & Visa Fee Calculator
+- Route: https://gulfcalc.tech/tools/qatar-visa-fee-calculator.html
+- Governing Authority: Qatar Ministry of Interior (MOI) & Ministry of Public Health (MOPH)
+- Statutory Legislation: Law No. 21 of 2015 (Expatriate Entry & Residence) & Law No. 22 of 2021 (Healthcare Regulation)
+- Computational Formula:
+  * Company Employee Permit: 1,000 QAR / year (20% discount on 3-year term via Metrash2 = 2,400 QAR).
+  * Family Dependent Permit: 500 QAR / year per dependent.
+  * Domestic Worker Permit: 300 QAR / year.
+  * Mandatory Health Insurance: 50 QAR / month (600 QAR / year) basic scheme per individual.
+  * Medical Commission: 100 QAR one-time fee per new resident.
+  * Overstay Fines: 10 QAR / day following the expiration of the 90-day statutory grace period.
+
+3.21 Kuwait Work Permit & Residency Fee Calculator
+- Route: https://gulfcalc.tech/tools/kuwait-visa-fee-calculator.html
+- Governing Authority: Public Authority for Manpower (PAM) & Ministry of Interior (MOI)
+- Statutory Legislation: Private Sector Labour Law No. 6 of 2010 & PAM Administrative Decision No. 27 of 2021
+- Computational Formula:
+  * Article 18 Standard Work Permit: 10 KWD / year (Under 60 or degree holder).
+  * Article 18 Over-60 Non-Graduate: 250 KWD / year PAM fee + ~500 KWD comprehensive private health insurance.
+  * MOI Residency Visa: 10 KWD / year per employee / spouse / first two children (100 KWD / year for 3rd child onwards).
+  * Dhaman Health Insurance: 50 KWD / year per adult; 30 KWD / year per child under 16.
+  * PACI Civil ID Card: 5 KWD per card renewal.
+  * Overstay Penalty: 2 KWD / calendar day (statutory cap at 600 KWD).
+
+3.22 Oman Social Protection Fund (SPF) Calculator
+- Route: https://gulfcalc.tech/tools/oman-spf-calculator.html
+- Governing Authority: Social Protection Fund (SPF) Oman
+- Statutory Legislation: Social Protection Law (Royal Decree No. 52 of 2023)
+- Computational Formula:
+  * Omani National Employee Deduction: 8.0% of contributory wage (7.5% Old Age/Disability/Death + 0.5% Job Security).
+  * Employer Monthly Contribution: 13.5% of contributory wage (11.0% Old Age + 1.0% Work Injury + 0.5% Job Security + 1.0% Maternity/Sick Leave).
+  * Expatriate Employee Contribution: 0.0% employee deduction; 1.0% employer Work Injury insurance contribution.
+  * Contributory Wage Ceiling: Capped at exactly 3,000 OMR per month; statutory wage floor at 325 OMR.
+
+3.23 Bahrain LMRA Fee Calculator
+- Route: https://gulfcalc.tech/tools/bahrain-lmra-fee-calculator.html
+- Governing Authority: Labour Market Regulatory Authority (LMRA) Bahrain
+- Statutory Legislation: Law No. 19 of 2006 (Labour Market Regulation)
+- Computational Formula:
+  * Commercial Work Permit Initial (2 Years): 172 BHD (100 BHD permit + 10 BHD NPRA + 50 BHD MOH Healthcare + 12 BHD admin).
+  * Commercial Work Permit Initial (1 Year): 86 BHD.
+  * Tiered Monthly LMRA Levy: 5 BHD / month per foreign worker for the first 5 workers on CR; 10 BHD / month for the 6th worker onwards.
+  * Registered Worker (Flexi-Permit): 15 BHD / month levy.
+  * Domestic Expatriate Workers: Exempt from monthly commercial levy; 100 BHD initial fee.

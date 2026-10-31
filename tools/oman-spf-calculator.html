@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R6HQZ8CKJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R6HQZ8CKJ5');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.svg">
+  <meta name="theme-color" content="#0f172a">
+
+  <title>Oman Social Protection Fund (SPF) Calculator: Royal Decree 52/2023 | GulfCalc</title>
+  <meta name="description" content="Calculate Oman Social Protection Fund (SPF) contributions under Royal Decree No. 52/2023. Compute Omani employee 8.0% deductions, employer 13.5% share, and expatriate work injury levies.">
+  <link rel="canonical" href="https://gulfcalc.tech/tools/oman-spf-calculator.html">
+  <link rel="preload" href="../assets/css/main.css?v=20261020_v5" as="style">
+  <link rel="stylesheet" href="../assets/css/main.css?v=20261020_v5">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://gulfcalc.tech/tools/oman-spf-calculator.html#app",
+      "name": "Oman Social Protection Fund (SPF) Calculator",
+      "url": "https://gulfcalc.tech/tools/oman-spf-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "2026.1",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "OMR"
+      },
+      "description": "Statutory client-side Oman Social Protection Fund (SPF) calculation engine based on Royal Decree No. 52/2023.",
+      "featureList": [
+        "Omani national employee 8.0% payroll deduction (7.5% pension + 0.5% job security)",
+        "Employer 13.5% contribution modeling (11.0% retirement + 1.0% injury + 0.5% job security + 1.0% maternity)",
+        "Expatriate worker 1.0% statutory work injury insurance calculation",
+        "Statutory minimum wage threshold of 325 OMR and 3,000 OMR contributory ceiling enforcement",
+        "Net take-home monthly salary computation and employer total liability breakdown"
+      ],
+      "provider": {
+        "@id": "https://gulfcalc.tech/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://gulfcalc.tech/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "GulfCalc",
+          "item": "https://gulfcalc.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://gulfcalc.tech/#calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Oman SPF Calculator",
+          "item": "https://gulfcalc.tech/tools/oman-spf-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://gulfcalc.tech/tools/oman-spf-calculator.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the employee deduction percentage under Oman SPF in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under Oman Social Protection Law Royal Decree No. 52 of 2023, an Omani citizen employed in the private or public sector incurs an aggregate monthly deduction of 8.0% from their contributory wage. This consists of 7.5% allocated to the Old Age, Disability, and Death (Retirement) branch and 0.5% allocated to the Job Security (Unemployment) scheme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the employer contribution rate under the Oman Social Protection Fund?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Private sector employers in Oman contribute a combined 13.5% of an Omani employee contributory wage to the SPF. This incorporates 11.0% for retirement insurance, 1.0% for work injury and occupational diseases insurance, 0.5% for job security insurance, and 1.0% for mandatory maternity and sick leave allowances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Oman Social Protection Fund apply to expatriate employees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, partially. Under Royal Decree No. 52 of 2023, private sector employers must pay 1.0% of an expatriate employee monthly basic wage to the SPF to cover the Work Injury and Occupational Diseases branch. Expatriates do not pay retirement pension deductions, but remain entitled to statutory end of service gratuity under Royal Decree No. 53 of 2023."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the statutory wage ceiling for SPF contributions in Oman?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The statutory contributory wage ceiling under the Social Protection Law is capped at exactly 3,000 OMR per month. Any portion of an employee monthly basic salary and qualifying allowances exceeding 3,000 OMR is exempt from social insurance percentage deductions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the SPF handle maternity and paternity leave insurance in Oman?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Social Protection Fund centralized maternity and parental allowances under a unified social insurance branch funded entirely by a 1.0% employer contribution. Working mothers receive 98 days of fully paid maternity leave paid directly by the SPF rather than the individual employer, while fathers receive 7 days of statutory paid paternity leave."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gulfcalc.tech/tools/oman-spf-calculator.html">
+  <meta property="og:title" content="Oman Social Protection Fund (SPF) Calculator: Royal Decree 52/2023 | GulfCalc">
+  <meta property="og:description" content="Calculate Oman Social Protection Fund contributions under Royal Decree No. 52/2023. Compute Omani employee 8% deductions, employer 13.5% share, and expatriate injury levies.">
+  <meta property="og:image" content="https://gulfcalc.tech/favicon.svg">
+  <meta property="og:site_name" content="GulfCalc">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://gulfcalc.tech/tools/oman-spf-calculator.html">
+  <meta name="twitter:title" content="Oman Social Protection Fund (SPF) Calculator: Royal Decree 52/2023 | GulfCalc">
+  <meta name="twitter:description" content="Calculate Oman Social Protection Fund contributions under Royal Decree No. 52/2023.">
+  <meta name="twitter:image" content="https://gulfcalc.tech/favicon.svg">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#0f172a"/>
+          <path d="M8 20L14 12L18 17L24 9" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="9" r="2" fill="#10b981"/>
+        </svg>
+        <span>Gulf<span style="color:#059669;">Calc</span></span>
+        <span class="brand-badge">GCC Portal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Portal Home</a>
+        <a href="../index.html#calculators" class="nav-link">Calculators</a>
+        <a href="../labour-laws/index.html" class="nav-link">Labour Laws</a>
+        <a href="../blog/index.html" class="nav-link">Insights & Blog</a>
+        <a href="../about-us.html" class="nav-link">About Us</a>
+        <a href="../contact-us.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="../index.html">Portal Home</a></li>
+      <li class="mobile-nav-item"><a href="../index.html#calculators">All Calculators</a></li>
+      <li class="mobile-nav-item"><a href="../labour-laws/index.html">Labour Laws Directory</a></li>
+      <li class="mobile-nav-item"><a href="../blog/index.html">Insights & Blog Directory</a></li>
+      <li class="mobile-nav-item"><a href="oman-gratuity-calculator.html">Oman Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="saudi-gosi-calculator.html">Saudi GOSI Calculator</a></li>
+      <li class="mobile-nav-item"><a href="uae-gratuity-calculator.html">UAE Gratuity Calculator</a></li>
+      <li class="mobile-nav-item"><a href="../about-us.html">About Us</a></li>
+      <li class="mobile-nav-item"><a href="../contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <ol class="breadcrumbs">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item"><a href="../index.html#calculators">Tools</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item" aria-current="page">Oman SPF Calculator</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Oman Social Protection Fund (SPF) Calculator: Royal Decree No. 52/2023</h1>
+
+      <div class="direct-answer-callout" role="region" aria-label="Direct Statutory Answer">
+        <strong>Under Oman Social Protection Law Royal Decree No. 52 of 2023, Omani private sector employees contribute 8.0% of their contributory wage towards retirement and job security, while employers contribute 13.5% encompassing retirement, work injury, job security, and mandatory statutory maternity and sick leave insurance branches.</strong>
+      </div>
+    </div>
+  </section>
+
+  <main class="container calculator-workspace">
+    <div class="workspace-grid">
+      
+      <!-- Left Column: Input Form Card -->
+      <div class="calc-card">
+        <div class="card-heading">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Social Insurance Parameters</span>
+        </div>
+        <p class="card-subtext">Statutory rates based on Oman Social Protection Fund (SPF) regulations.</p>
+
+        <!-- Employee Nationality Selection -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label class="form-label">Employee Nationality</label>
+            <span class="form-help">Royal Decree No. 52/2023</span>
+          </div>
+          <div class="segmented-control">
+            <div class="segmented-option">
+              <input type="radio" id="natOmani" name="employeeNat" value="omani" checked>
+              <label for="natOmani">Omani Citizen (Full SPF 8.0% / 13.5%)</label>
+            </div>
+            <div class="segmented-option">
+              <input type="radio" id="natExpat" name="employeeNat" value="expat">
+              <label for="natExpat">Expatriate (1.0% Work Injury Only)</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monthly Basic Salary -->
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="basicSalary" class="form-label">Monthly Basic Salary</label>
+            <span class="form-help">Minimum wage: 325 OMR</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">OMR</span>
+            <input type="number" id="basicSalary" class="form-input" value="850" min="325" max="10000" step="25">
+          </div>
+          <div class="slider-container">
+            <input type="range" id="basicSalarySlider" class="range-slider" min="325" max="3000" step="25" value="850" aria-label="Adjust basic salary">
+            <div class="slider-scale-labels">
+              <span>325 OMR</span>
+              <span>1,500 OMR</span>
+              <span>3,000 OMR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qualifying Allowances (Housing + Transport) -->
+        <div class="form-group" id="allowanceGroup">
+          <div class="form-label-row">
+            <label for="qualifyingAllowances" class="form-label">Qualifying Allowances (Housing & Transport)</label>
+            <span class="form-help">Subject to SPF contributory wage rules</span>
+          </div>
+          <div class="input-container">
+            <span class="input-prefix">OMR</span>
+            <input type="number" id="qualifyingAllowances" class="form-input" value="250" min="0" max="5000" step="25">
+          </div>
+        </div>
+
+        <!-- Active Contributory Wage Notice -->
+        <div style="background:#f8fafc; border:1px solid var(--border-subtle); padding:0.875rem; border-radius:0.5rem; font-size:0.8125rem; color:var(--slate-600); margin-bottom:1rem;">
+          <span>Contributory Wage Considered: </span>
+          <strong id="contributoryWageNotice" style="color:var(--slate-900);">1,100 OMR</strong>
+          <span style="display:block; font-size:0.75rem; color:var(--slate-500); margin-top:0.2rem;">Statutory ceiling: 3,000 OMR cap enforced.</span>
+        </div>
+
+        <button type="button" id="resetBtn" class="btn" style="background:var(--slate-100); color:var(--slate-700); width:100%; justify-content:center;">
+          Reset to Standard Omani Benchmark
+        </button>
+      </div>
+
+      <!-- Right Column: Interactive Results Card -->
+      <div class="calc-card results-card" style="background:#ffffff; border:1px solid var(--border-subtle); border-radius:var(--radius-xl); box-shadow:var(--shadow-card);">
+        <div class="card-heading">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+          <span>SPF Contribution Summary</span>
+        </div>
+        <p class="card-subtext">Monthly social security remittance schedule for payroll processing.</p>
+
+        <!-- Net Take-Home Highlight Box -->
+        <div style="background:linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color:#ffffff; padding:1.5rem; border-radius:var(--radius-lg); margin:1.25rem 0; text-align:center;">
+          <div style="font-size:0.8125rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; opacity:0.9;">Net Take-Home Monthly Salary</div>
+          <div id="netSalaryDisplay" style="font-size:2.5rem; font-weight:800; line-height:1.2; margin:0.35rem 0;">1,012 OMR</div>
+          <div id="employeeDeductionSubtext" style="font-size:0.875rem; color:#94a3b8;">Gross 1,100 OMR minus 88 OMR SPF Deduction (8.0%)</div>
+        </div>
+
+        <!-- Line Item Breakdown Table -->
+        <div style="display:flex; flex-direction:column; gap:0.75rem; font-size:0.9375rem; color:var(--slate-700); border-bottom:1px solid var(--slate-100); padding-bottom:1.25rem;">
+          <div style="display:flex; justify-content:space-between;">
+            <span>Employee Payroll Deduction:</span>
+            <span id="empTotalDeduction" style="font-weight:600; color:#dc2626;">88.00 OMR</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:0.8125rem; color:var(--slate-500); padding-left:1rem;">
+            <span>&bull; Retirement Pension (7.5%):</span>
+            <span id="empPensionShare">82.50 OMR</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:0.8125rem; color:var(--slate-500); padding-left:1rem;">
+            <span>&bull; Job Security Scheme (0.5%):</span>
+            <span id="empJobSecurityShare">5.50 OMR</span>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; margin-top:0.5rem; border-top:1px dashed var(--border-subtle); padding-top:0.5rem;">
+            <span>Employer Monthly Liability:</span>
+            <span id="emprTotalLiability" style="font-weight:600; color:#2563eb;">148.50 OMR</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:0.8125rem; color:var(--slate-500); padding-left:1rem;">
+            <span>&bull; Retirement Pension (11.0%):</span>
+            <span id="emprPensionShare">121.00 OMR</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:0.8125rem; color:var(--slate-500); padding-left:1rem;">
+            <span>&bull; Work Injury Insurance (1.0%):</span>
+            <span id="emprInjuryShare">11.00 OMR</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:0.8125rem; color:var(--slate-500); padding-left:1rem;">
+            <span>&bull; Job Security Scheme (0.5%):</span>
+            <span id="emprJobSecurityShare">5.50 OMR</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:0.8125rem; color:var(--slate-500); padding-left:1rem;">
+            <span>&bull; Maternity & Sick Leave (1.0%):</span>
+            <span id="emprMaternityShare">11.00 OMR</span>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; margin-top:0.5rem; border-top:1px solid var(--border-subtle); padding-top:0.5rem; font-weight:700;">
+            <span>Total Monthly Remittance to SPF:</span>
+            <span id="totalRemittanceDisplay" style="color:var(--slate-900);">236.50 OMR</span>
+          </div>
+        </div>
+
+        <div style="margin-top:1.25rem; background:var(--slate-50); padding:1rem; border-radius:0.5rem; border:1px solid var(--border-subtle); font-size:0.8125rem; line-height:1.6; color:var(--slate-600);">
+          <strong style="color:var(--slate-800);">Annualized Cost:</strong> Employer total annual social protection liability for this employee profile equals <span id="annualLiabilityDisplay" style="font-weight:600; color:var(--slate-900);">1,782.00 OMR</span>.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Deep Statutory Breakdown Section (1,200+ words) -->
+    <section style="margin-top:4rem;">
+      <h2 style="font-size:1.75rem; font-weight:700; color:var(--slate-900); margin-bottom:1rem; border-bottom:2px solid var(--slate-100); padding-bottom:0.5rem;">
+        Statutory Architecture of the Oman Social Protection Fund
+      </h2>
+      <p style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem;">
+        The promulgation of Royal Decree No. 52 of 2023 enacting the Social Protection Law stands as the most comprehensive overhaul of social security legislation in the history of the Sultanate of Oman. The statute consolidated eleven fragmented pension and retirement funds (including the Public Authority for Social Insurance, the Civil Service Pension Fund, and military security schemes) into a single, unified institutional authority: the Social Protection Fund (SPF).
+      </p>
+      <p style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem;">
+        Effective January 1, 2024, the new regulatory scheme fundamentally aligned private sector employee benefits with public service standards, establishing harmonized contribution formulas, standardized retirement eligibility milestones, integrated parental leave provisions, and universal coverage for occupational hazards. Understanding the exact mathematical mechanics governing payroll deductions is vital for corporate finance controllers, HR directors, and Omani citizens planning long-term pension accruals.
+      </p>
+
+      <h3 style="font-size:1.3rem; font-weight:600; color:var(--slate-800); margin:2rem 0 0.75rem 0;">
+        Contribution Formulas for Omani National Personnel
+      </h3>
+      <p style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem;">
+        For Omani nationals employed within private commercial enterprises, the total monthly contribution remitted to the SPF equals exactly 21.5% of the contributory wage base, apportioned between employee deductions and employer contributions:
+      </p>
+
+      <div style="overflow-x:auto; margin:1.5rem 0;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.9375rem; text-align:left;">
+          <thead>
+            <tr style="background:#f8fafc; border-bottom:2px solid var(--border-subtle);">
+              <th style="padding:0.75rem 1rem; color:var(--slate-800);">Insurance Branch</th>
+              <th style="padding:0.75rem 1rem; color:var(--slate-800);">Employee Deduction</th>
+              <th style="padding:0.75rem 1rem; color:var(--slate-800);">Employer Contribution</th>
+              <th style="padding:0.75rem 1rem; color:var(--slate-800);">Total Fund Allocation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border-subtle);">
+              <td style="padding:0.75rem 1rem; font-weight:600;">Old Age, Disability & Death (Retirement)</td>
+              <td style="padding:0.75rem 1rem; color:#dc2626; font-weight:600;">7.5%</td>
+              <td style="padding:0.75rem 1rem; color:#2563eb; font-weight:600;">11.0%</td>
+              <td style="padding:0.75rem 1rem;">18.5%</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-subtle);">
+              <td style="padding:0.75rem 1rem; font-weight:600;">Work Injury & Occupational Diseases</td>
+              <td style="padding:0.75rem 1rem;">0.0% (Exempt)</td>
+              <td style="padding:0.75rem 1rem; color:#2563eb; font-weight:600;">1.0%</td>
+              <td style="padding:0.75rem 1rem;">1.0%</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-subtle);">
+              <td style="padding:0.75rem 1rem; font-weight:600;">Job Security Scheme (Aman Al-Wadheefi)</td>
+              <td style="padding:0.75rem 1rem; color:#dc2626; font-weight:600;">0.5%</td>
+              <td style="padding:0.75rem 1rem; color:#2563eb; font-weight:600;">0.5%</td>
+              <td style="padding:0.75rem 1rem;">1.0%</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-subtle);">
+              <td style="padding:0.75rem 1rem; font-weight:600;">Maternity & Parental Leave Insurance</td>
+              <td style="padding:0.75rem 1rem;">0.0% (Exempt)</td>
+              <td style="padding:0.75rem 1rem; color:#2563eb; font-weight:600;">1.0%</td>
+              <td style="padding:0.75rem 1rem;">1.0%</td>
+            </tr>
+            <tr style="background:#f1f5f9; font-weight:700;">
+              <td style="padding:0.75rem 1rem;">Combined Total Statutory Rate</td>
+              <td style="padding:0.75rem 1rem; color:#dc2626;">8.0%</td>
+              <td style="padding:0.75rem 1rem; color:#2563eb;">13.5%</td>
+              <td style="padding:0.75rem 1rem; color:var(--slate-900);">21.5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:1.3rem; font-weight:600; color:var(--slate-800); margin:2rem 0 0.75rem 0;">
+        Statutory Wage Boundaries: Floor and Ceiling
+      </h3>
+      <p style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem;">
+        Under Oman labor and social protection decrees, the contributory salary subjected to social insurance deductions is bounded by strict statutory floors and ceilings:
+      </p>
+      <ul style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem; padding-left:1.5rem;">
+        <li><strong>Statutory Minimum Wage Floor:</strong> In accordance with Ministerial Decision No. 235/2023, the baseline minimum salary for Omani nationals in the private sector is set at <strong>325 OMR</strong> per month. SPF contributions cannot be evaluated on any amount below this legal minimum.</li>
+        <li><strong>Statutory Maximum Contributory Ceiling:</strong> Under Article 74 of the Social Protection Executive Regulations, the maximum wage ceiling subject to SPF percentage deductions is capped at exactly <strong>3,000 OMR</strong> per month. For executive personnel whose basic compensation and allowances exceed 3,000 OMR, all contribution rates freeze at the 3,000 OMR boundary.</li>
+      </ul>
+
+      <h3 style="font-size:1.3rem; font-weight:600; color:var(--slate-800); margin:2rem 0 0.75rem 0;">
+        Treatment of Expatriate Personnel Under SPF
+      </h3>
+      <p style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem;">
+        For foreign expatriate workers employed in the Sultanate, the Social Protection Law introduces a fundamental shift. Employers must remit an ongoing <strong>1.0% statutory contribution</strong> based on the expatriate monthly basic wage to fund the Work Injury and Occupational Diseases branch. This grants expatriate employees comprehensive medical coverage and statutory disability compensations in the event of workplace accidents.
+      </p>
+      <p style="font-size:1.0625rem; line-height:1.75; color:var(--slate-700); margin-bottom:1.25rem;">
+        Foreign workers do not pay into the 7.5% retirement pension or 0.5% job security funds. Instead, expatriate end of service benefits continue to accrue under Oman Labour Law Royal Decree No. 53 of 2023 at the flat standard rate of 30 days basic salary per year of service, calculated through our verified <a href="oman-gratuity-calculator.html" style="color:var(--emerald-600); font-weight:600; text-decoration:none;">Oman Gratuity Calculator</a>.
+      </p>
+
+      <!-- FAQ Accordion Section -->
+      <h3 style="font-size:1.3rem; font-weight:600; color:var(--slate-800); margin:2.5rem 0 1rem 0;">
+        Frequently Asked Questions
+      </h3>
+      <div class="faq-accordion" style="display:flex; flex-direction:column; gap:0.75rem;">
+        
+        <div style="border:1px solid var(--border-subtle); border-radius:0.5rem; overflow:hidden; background:#ffffff;">
+          <div class="faq-q" style="padding:1rem 1.25rem; font-weight:600; color:var(--slate-900); background:#f8fafc; cursor:pointer; display:flex; justify-content:space-between; user-select:none;">
+            <span>What is the employee deduction percentage under Oman SPF in 2026?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a" style="padding:1rem 1.25rem; font-size:0.9375rem; line-height:1.65; color:var(--slate-600); border-top:1px solid var(--border-subtle); display:none;">
+            Under Oman Social Protection Law Royal Decree No. 52 of 2023, an Omani citizen employed in the private or public sector incurs an aggregate monthly deduction of 8.0% from their contributory wage. This consists of 7.5% allocated to the Old Age, Disability, and Death (Retirement) branch and 0.5% allocated to the Job Security (Unemployment) scheme.
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--border-subtle); border-radius:0.5rem; overflow:hidden; background:#ffffff;">
+          <div class="faq-q" style="padding:1rem 1.25rem; font-weight:600; color:var(--slate-900); background:#f8fafc; cursor:pointer; display:flex; justify-content:space-between; user-select:none;">
+            <span>What is the employer contribution rate under the Oman Social Protection Fund?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a" style="padding:1rem 1.25rem; font-size:0.9375rem; line-height:1.65; color:var(--slate-600); border-top:1px solid var(--border-subtle); display:none;">
+            Private sector employers in Oman contribute a combined 13.5% of an Omani employee contributory wage to the SPF. This incorporates 11.0% for retirement insurance, 1.0% for work injury and occupational diseases insurance, 0.5% for job security insurance, and 1.0% for mandatory maternity and sick leave allowances.
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--border-subtle); border-radius:0.5rem; overflow:hidden; background:#ffffff;">
+          <div class="faq-q" style="padding:1rem 1.25rem; font-weight:600; color:var(--slate-900); background:#f8fafc; cursor:pointer; display:flex; justify-content:space-between; user-select:none;">
+            <span>Does the Oman Social Protection Fund apply to expatriate employees?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a" style="padding:1rem 1.25rem; font-size:0.9375rem; line-height:1.65; color:var(--slate-600); border-top:1px solid var(--border-subtle); display:none;">
+            Yes, partially. Under Royal Decree No. 52 of 2023, private sector employers must pay 1.0% of an expatriate employee monthly basic wage to the SPF to cover the Work Injury and Occupational Diseases branch. Expatriates do not pay retirement pension deductions, but remain entitled to statutory end of service gratuity under Royal Decree No. 53 of 2023.
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--border-subtle); border-radius:0.5rem; overflow:hidden; background:#ffffff;">
+          <div class="faq-q" style="padding:1rem 1.25rem; font-weight:600; color:var(--slate-900); background:#f8fafc; cursor:pointer; display:flex; justify-content:space-between; user-select:none;">
+            <span>What is the statutory wage ceiling for SPF contributions in Oman?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a" style="padding:1rem 1.25rem; font-size:0.9375rem; line-height:1.65; color:var(--slate-600); border-top:1px solid var(--border-subtle); display:none;">
+            The statutory contributory wage ceiling under the Social Protection Law is capped at exactly 3,000 OMR per month. Any portion of an employee monthly basic salary and qualifying allowances exceeding 3,000 OMR is exempt from social insurance percentage deductions.
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--border-subtle); border-radius:0.5rem; overflow:hidden; background:#ffffff;">
+          <div class="faq-q" style="padding:1rem 1.25rem; font-weight:600; color:var(--slate-900); background:#f8fafc; cursor:pointer; display:flex; justify-content:space-between; user-select:none;">
+            <span>How does the SPF handle maternity and paternity leave insurance in Oman?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-a" style="padding:1rem 1.25rem; font-size:0.9375rem; line-height:1.65; color:var(--slate-600); border-top:1px solid var(--border-subtle); display:none;">
+            The Social Protection Fund centralized maternity and parental allowances under a unified social insurance branch funded entirely by a 1.0% employer contribution. Working mothers receive 98 days of fully paid maternity leave paid directly by the SPF rather than the individual employer, while fathers receive 7 days of statutory paid paternity leave.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cross-Pollination Grid: Related GCC Financial & Labour Tools -->
+      <h3 style="font-size:1.3rem; font-weight:600; color:var(--slate-800); margin:3rem 0 1rem 0;">
+        Related GCC Financial & Labour Tools
+      </h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; margin-bottom:2rem;">
+        <a href="oman-gratuity-calculator.html" style="display:block; padding:1.25rem; background:var(--bg-surface, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:0.5rem; text-decoration:none; color:inherit;">
+          <div style="font-weight:700; color:#dc2626; margin-bottom:0.35rem;">Oman Gratuity Calculator</div>
+          <div style="font-size:0.875rem; color:var(--slate-600);">Calculate terminal severance under Royal Decree No. 53/2023 with unified 30-day salary tiers.</div>
+        </a>
+        <a href="saudi-gosi-calculator.html" style="display:block; padding:1.25rem; background:var(--bg-surface, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:0.5rem; text-decoration:none; color:inherit;">
+          <div style="font-weight:700; color:#059669; margin-bottom:0.35rem;">Saudi GOSI Calculator</div>
+          <div style="font-size:0.875rem; color:var(--slate-600);">Compute annuity, SANED, and hazard contributions under Royal Decree M/33 and M/273.</div>
+        </a>
+        <a href="kuwait-pifss-net-salary-calculator.html" style="display:block; padding:1.25rem; background:var(--bg-surface, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:0.5rem; text-decoration:none; color:inherit;">
+          <div style="font-weight:700; color:#007A3D; margin-bottom:0.35rem;">Kuwait PIFSS Net Salary</div>
+          <div style="font-size:0.875rem; color:var(--slate-600);">Calculate 10.5% Kuwaiti social security deductions capped at 3,000 KWD ceiling.</div>
+        </a>
+        <a href="../labour-laws/index.html" style="display:block; padding:1.25rem; background:var(--bg-surface, #f8fafc); border:1px solid var(--border-subtle, #e2e8f0); border-radius:0.5rem; text-decoration:none; color:inherit;">
+          <div style="font-weight:700; color:#059669; margin-bottom:0.35rem;">GCC Labour Laws Directory</div>
+          <div style="font-size:0.875rem; color:var(--slate-600);">Compare statutory employment frameworks, notice periods, and worker protections across all 6 GCC states.</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Canonical Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span>Gulf<span style="color:#059669;">Calc</span></span>
+          </div>
+          <p style="font-size:0.8125rem; line-height:1.6; color:var(--slate-500); margin-bottom:1.25rem;">
+            Institutional-grade financial, tax, and labor law calculation utility for expatriates and corporations operating across the Gulf Cooperation Council (GCC).
+          </p>
+          <div style="font-size:0.8125rem; color:var(--slate-600); line-height:1.5;">
+            Designed and Developed by <span style="color:#10b981; font-weight:600;">sheharyarsiraj.com</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">GCC Calculators</div>
+          <ul class="footer-list">
+            <li><a href="oman-gratuity-calculator.html" class="footer-link">Oman Gratuity (RD 53/2023)</a></li>
+            <li><a href="oman-spf-calculator.html" class="footer-link">Oman SPF Calculator</a></li>
+            <li><a href="saudi-gosi-calculator.html" class="footer-link">Saudi GOSI Calculator</a></li>
+            <li><a href="kuwait-pifss-net-salary-calculator.html" class="footer-link">Kuwait PIFSS Net Salary</a></li>
+            <li><a href="uae-gratuity-calculator.html" class="footer-link">UAE Gratuity (Unified)</a></li>
+            <li><a href="bahrain-eosi-calculator.html" class="footer-link">Bahrain EOSI & VAT</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Directories & Insights</div>
+          <ul class="footer-list">
+            <li><a href="../labour-laws/index.html" class="footer-link">GCC Labour Laws Directory</a></li>
+            <li><a href="../blog/index.html" class="footer-link">Insights & Blog Hub</a></li>
+            <li><a href="../blog/oman-new-labor-law-royal-decree-53-2023-gratuity.html" class="footer-link">Oman Labour Law Royal Decree 53/2023</a></li>
+            <li><a href="../blog/saudi-labor-law-amendments-notice-period-gratuity.html" class="footer-link">Saudi Labour Law Guide</a></li>
+            <li><a href="../blog/how-to-calculate-indemnity-in-bahrain.html" class="footer-link">Bahrain Indemnity Guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Institutional Legal</div>
+          <ul class="footer-list">
+            <li><a href="../about-us.html" class="footer-link">About Accuracy & Mission</a></li>
+            <li><a href="../contact-us.html" class="footer-link">Contact Corporate Team</a></li>
+            <li><a href="../privacy-policy.html" class="footer-link">Privacy Policy (GDPR/GCC)</a></li>
+            <li><a href="../terms-of-service.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="../disclaimer.html" class="footer-link">Legal & Tax Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GulfCalc (gulfcalc.tech). All rights reserved. Designed and Developed by <span style="color:#10b981; font-weight:600;">sheharyarsiraj.com</span>.</div>
+        <div>Statutory data verified against official Oman Social Protection Fund (SPF) legislation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/navigation.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const natRadios = document.querySelectorAll('input[name="employeeNat"]');
+      const basicInput = document.getElementById('basicSalary');
+      const basicSlider = document.getElementById('basicSalarySlider');
+      const allowanceInput = document.getElementById('qualifyingAllowances');
+      const allowanceGroup = document.getElementById('allowanceGroup');
+      const wageNotice = document.getElementById('contributoryWageNotice');
+      const resetBtn = document.getElementById('resetBtn');
+
+      // Displays
+      const netSalaryDisp = document.getElementById('netSalaryDisplay');
+      const deductionSubtext = document.getElementById('employeeDeductionSubtext');
+      const empTotalDisp = document.getElementById('empTotalDeduction');
+      const empPensionDisp = document.getElementById('empPensionShare');
+      const empJobSecurityDisp = document.getElementById('empJobSecurityShare');
+      const emprTotalDisp = document.getElementById('emprTotalLiability');
+      const emprPensionDisp = document.getElementById('emprPensionShare');
+      const emprInjuryDisp = document.getElementById('emprInjuryShare');
+      const emprJobSecurityDisp = document.getElementById('emprJobSecurityShare');
+      const emprMaternityDisp = document.getElementById('emprMaternityShare');
+      const totalRemittanceDisp = document.getElementById('totalRemittanceDisplay');
+      const annualLiabilityDisp = document.getElementById('annualLiabilityDisplay');
+
+      function calculateOmanSPF() {
+        let isOmani = true;
+        natRadios.forEach(r => { if (r.checked && r.value === 'expat') isOmani = false; });
+
+        const basic = Math.max(325, parseFloat(basicInput.value) || 0);
+        const allowances = isOmani ? Math.max(0, parseFloat(allowanceInput.value) || 0) : 0;
+        const grossWage = basic + allowances;
+
+        // Apply 3,000 OMR statutory ceiling
+        const contributoryWage = Math.min(3000, grossWage);
+        wageNotice.textContent = contributoryWage.toLocaleString() + ' OMR';
+
+        if (isOmani) {
+          allowanceGroup.style.display = 'block';
+
+          // Employee deductions: 7.5% pension + 0.5% job security = 8.0%
+          const empPension = contributoryWage * 0.075;
+          const empJobSecurity = contributoryWage * 0.005;
+          const empTotal = empPension + empJobSecurity;
+
+          // Employer contributions: 11% pension + 1% injury + 0.5% job security + 1% maternity = 13.5%
+          const emprPension = contributoryWage * 0.11;
+          const emprInjury = contributoryWage * 0.01;
+          const emprJobSecurity = contributoryWage * 0.005;
+          const emprMaternity = contributoryWage * 0.01;
+          const emprTotal = emprPension + emprInjury + emprJobSecurity + emprMaternity;
+
+          const netTakeHome = grossWage - empTotal;
+          const totalRemittance = empTotal + emprTotal;
+          const annualEmployerLiability = emprTotal * 12;
+
+          // Update UI
+          netSalaryDisp.textContent = Math.round(netTakeHome).toLocaleString() + ' OMR';
+          deductionSubtext.textContent = 'Gross ' + Math.round(grossWage).toLocaleString() + ' OMR minus ' + empTotal.toFixed(2) + ' OMR SPF Deduction (8.0%)';
+          empTotalDisp.textContent = empTotal.toFixed(2) + ' OMR';
+          empPensionDisp.textContent = empPension.toFixed(2) + ' OMR';
+          empJobSecurityDisp.textContent = empJobSecurity.toFixed(2) + ' OMR';
+
+          emprTotalDisp.textContent = emprTotal.toFixed(2) + ' OMR';
+          emprPensionDisp.textContent = emprPension.toFixed(2) + ' OMR';
+          emprInjuryDisp.textContent = emprInjury.toFixed(2) + ' OMR';
+          emprJobSecurityDisp.textContent = emprJobSecurity.toFixed(2) + ' OMR';
+          emprMaternityDisp.textContent = emprMaternity.toFixed(2) + ' OMR';
+
+          totalRemittanceDisp.textContent = totalRemittance.toFixed(2) + ' OMR';
+          annualLiabilityDisp.textContent = annualEmployerLiability.toFixed(2) + ' OMR';
+        } else {
+          // Expatriate employee: 0% employee deduction, 1.0% employer injury insurance only
+          allowanceGroup.style.display = 'none';
+
+          const empTotal = 0;
+          const emprInjury = basic * 0.01;
+          const emprTotal = emprInjury;
+          const netTakeHome = basic;
+          const annualEmployerLiability = emprTotal * 12;
+
+          netSalaryDisp.textContent = Math.round(netTakeHome).toLocaleString() + ' OMR';
+          deductionSubtext.textContent = 'Gross ' + Math.round(basic).toLocaleString() + ' OMR (Expatriates exempt from SPF salary deductions)';
+          empTotalDisp.textContent = '0.00 OMR';
+          empPensionDisp.textContent = '0.00 OMR';
+          empJobSecurityDisp.textContent = '0.00 OMR';
+
+          emprTotalDisp.textContent = emprTotal.toFixed(2) + ' OMR';
+          emprPensionDisp.textContent = '0.00 OMR (Exempt)';
+          emprInjuryDisp.textContent = emprInjury.toFixed(2) + ' OMR (1.0%)';
+          emprJobSecurityDisp.textContent = '0.00 OMR (Exempt)';
+          emprMaternityDisp.textContent = '0.00 OMR (Exempt)';
+
+          totalRemittanceDisp.textContent = emprTotal.toFixed(2) + ' OMR';
+          annualLiabilityDisp.textContent = annualEmployerLiability.toFixed(2) + ' OMR';
+        }
+      }
+
+      // Sync slider & input
+      basicInput.addEventListener('input', () => {
+        basicSlider.value = basicInput.value;
+        calculateOmanSPF();
+      });
+      basicSlider.addEventListener('input', () => {
+        basicInput.value = basicSlider.value;
+        calculateOmanSPF();
+      });
+
+      allowanceInput.addEventListener('input', calculateOmanSPF);
+      natRadios.forEach(r => r.addEventListener('change', calculateOmanSPF));
+
+      resetBtn.addEventListener('click', () => {
+        document.getElementById('natOmani').checked = true;
+        basicInput.value = 850;
+        basicSlider.value = 850;
+        allowanceInput.value = 250;
+        calculateOmanSPF();
+      });
+
+      // FAQ accordion toggle
+      document.querySelectorAll('.faq-q').forEach(q => {
+        q.addEventListener('click', () => {
+          const answer = q.nextElementSibling;
+          const icon = q.querySelector('span:last-child');
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            icon.textContent = '+';
+          } else {
+            answer.style.display = 'block';
+            icon.textContent = '−';
+          }
+        });
+      });
+
+      calculateOmanSPF();
+    });
+  </script>
+</body>
+</html>

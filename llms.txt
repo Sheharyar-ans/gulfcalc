@@ -6,6 +6,10 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 
 ## Statutory & Financial Calculators
 
+- [Qatar Residence Permit (QID) & Visa Fee Calculator](https://gulfcalc.tech/tools/qatar-visa-fee-calculator.html): Evaluates Ministry of Interior Law No. 21/2015 residency schedules (1,000 QAR company, 500 QAR family, 300 QAR domestic), medical commission, and Law No. 22/2021 mandatory basic health insurance (50 QAR/mo).
+- [Kuwait Work Permit & Residency Fee Calculator](https://gulfcalc.tech/tools/kuwait-visa-fee-calculator.html): Computes PAM Article 18 standard 10 KWD renewals, Decision 27/2021 over-60 non-graduate 250 KWD permits, Ministry of Health Dhaman insurance (50 KWD/yr), and PACI Civil ID levies.
+- [Oman Social Protection Fund (SPF) Calculator](https://gulfcalc.tech/tools/oman-spf-calculator.html): Models Royal Decree No. 52/2023 social protection contributions (Omani national 8.0% payroll deduction, employer 13.5% liability, expatriate 1.0% work injury insurance) up to 3,000 OMR statutory ceiling.
+- [Bahrain LMRA Fee Calculator](https://gulfcalc.tech/tools/bahrain-lmra-fee-calculator.html): Computes Labour Market Regulatory Authority Law No. 19/2006 commercial work permit initial fees (172 BHD for 2 years) and tiered monthly levies (5 BHD for first 5 workers, 10 BHD thereafter).
 - [Kuwait Indemnity Calculator](https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html): Private sector end-of-service indemnity computed using the mandatory 26 working days divisor and 18-month maximum cap under Kuwait Labour Law No. 6/2010 Article 55.
 - [Saudi End of Service Award Calculator](https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html): Actual wage basis (basic salary plus housing and transport) severance and tiered resignation deductions under Saudi Labour Law Royal Decree No. M/51 Articles 84, 85, and 87.
 - [UAE End of Service Gratuity Calculator](https://gulfcalc.tech/tools/uae-gratuity-calculator.html): Basic wage gratuity accrual (21 days for years 1-5, 30 days thereafter, capped at 2 years) with unified limited contract parity under UAE Federal Decree-Law No. 33/2021 Article 51.
