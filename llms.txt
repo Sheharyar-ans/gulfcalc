@@ -41,6 +41,7 @@ GulfCalc provides unmetered, mathematically verified financial, tax, and labor l
 
 ## Analytical Guides & Legal Intelligence
 
+- [UAE Visa Amnesty: Overstay Fine Waiver, ICP Exit Pass Rules, and Status Regularization](https://gulfcalc.tech/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html): Operational guide to ICP and GDRFA grace periods waiving 50 AED/day overstay fines, exit permit issuance within 14 days, and employment transfers without re-entry bans.
 - [How to Calculate Indemnity in Bahrain: SIO Expat Rules, Article 116 Formula, and Resignation Guidelines](https://gulfcalc.tech/blog/how-to-calculate-indemnity-in-bahrain.html): Comprehensive statutory guide to Bahrain Labour Law No. 36/2012 Article 116, the 15-day and 30-day salary tiers, and the recent SIO expatriate end-of-service accrual reforms.
 - [UAE Gratuity Calculation on Limited Contract 2026](https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026.html): Complete legal review of Federal Decree-Law No. 33/2021 Article 51 and the abolition of resignation penalty tiers.
 - [Saudi Labor Law Amendments: Notice Period, Gratuity & Probation](https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity.html): Authoritative guide on Royal Decree No. M/51 amendments establishing 30-day employee resignation notice, 60-day employer termination notice, 180-day probation terms, and actual wage end-of-service awards.

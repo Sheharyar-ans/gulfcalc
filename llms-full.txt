@@ -12,7 +12,7 @@ TABLE OF CONTENTS
 1. Platform Architectural Overview & Zero-PII Guarantee
 2. Central Gateways (Homepage, Labour Laws Directory, Blog Hub)
 3. 19 Dedicated GCC Financial & Statutory Calculators & AI Utilities (Formulas & Edge Cases)
-4. 11 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
+4. 12 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
 5. Institutional Governance & Legal Policies
 6. JSON-LD Schemas & Machine Extraction Standards
 7. Arabic Localization Layer & Bilingual RTL Suite (Phase 1)
@@ -243,6 +243,11 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Legal Statute: Bahrain Labour Law No. 36 of 2012 (Article 116) & SIO Ministerial Decision No. 109 of 2023
 - Summary: Complete analysis of Article 116 basic wage formula (half month wage per year for the first 3 years, 1 full month wage per year thereafter), voluntary resignation parity without penalty tiers, unused leave encashment under Article 59, and mandatory monthly SIO direct deposit compliance for non-Bahraini personnel.
 
+4.13 UAE Visa Amnesty: Overstay Fine Waiver, ICP Exit Pass Rules, and Status Regularization
+- Route: https://gulfcalc.tech/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html
+- Legal Statute: Federal Decree-Law No. 29 of 2021 (Entry & Residence of Foreigners) & Cabinet Resolution No. 65 of 2022
+- Summary: Comprehensive operational analysis of federal visa grace periods. Covers 100% waivers of statutory 50 AED daily overstay fines, cancellation of commercial absconding reports (ta'ameem) without fees, 14-day exit permit (tasreeh al-moghaddara) validity, zero entry ban guarantees, and internal status regularization through MoHRE electronic work permits.
+
 ================================================================================
 5. INSTITUTIONAL GOVERNANCE & LEGAL POLICIES
 ================================================================================
@@ -313,3 +318,8 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
 - Route: https://gulfcalc.tech/ar/blog/how-to-calculate-indemnity-in-bahrain.html
 - Primary Statute: Bahrain Labour Law No. 36 of 2012 Article 116 and Social Insurance Organisation (SIO) Decision No. 109 of 2023.
 - Canonical Arabic Terminology: مكافأة نهاية الخدمة (Indemnity), الأجر الأساسي (Basic Salary), الهيئة العامة للتأمين الاجتماعي (SIO), استقالة العامل (Resignation), تصفية الإجازات السنوية (Leave Encashment).
+
+7.6 UAE Visa Amnesty & Status Regularization Guide (Arabic)
+- Route: https://gulfcalc.tech/ar/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html
+- Primary Statute: Federal Decree-Law No. 29 of 2021 & ICP Grace Directives.
+- Canonical Arabic Terminology: مهلة تصحيح الأوضاع (Amnesty / Grace Period), تصريح المغادرة (Exit Permit), بلاغ الانقطاع عن العمل (Absconding Report), إسقاط الغرامات (Fine Waiver), تعديل الوضع (Status Regularization).
