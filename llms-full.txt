@@ -12,7 +12,7 @@ TABLE OF CONTENTS
 1. Platform Architectural Overview & Zero-PII Guarantee
 2. Central Gateways (Homepage, Labour Laws Directory, Blog Hub)
 3. 19 Dedicated GCC Financial & Statutory Calculators & AI Utilities (Formulas & Edge Cases)
-4. 12 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
+4. 14 Peer-Reviewed GCC Legal & Tax Analytical Intelligence Articles
 5. Institutional Governance & Legal Policies
 6. JSON-LD Schemas & Machine Extraction Standards
 7. Arabic Localization Layer & Bilingual RTL Suite (Phase 1)
@@ -247,6 +247,11 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Route: https://gulfcalc.tech/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html
 - Legal Statute: Federal Decree-Law No. 29 of 2021 (Entry & Residence of Foreigners) & Cabinet Resolution No. 65 of 2022
 - Summary: Comprehensive operational analysis of federal visa grace periods. Covers 100% waivers of statutory 50 AED daily overstay fines, cancellation of commercial absconding reports (ta'ameem) without fees, 14-day exit permit (tasreeh al-moghaddara) validity, zero entry ban guarantees, and internal status regularization through MoHRE electronic work permits.
+
+4.14 How to Calculate GOSI Contributions in Saudi Arabia: Expat Rules, Annuity Branch Rates, and Wage Caps
+- Route: https://gulfcalc.tech/blog/how-to-calculate-gosi-contributions-saudi-arabia.html
+- Legal Statute: Saudi Social Insurance Law (Royal Decree No. M/33) & Social Insurance Law Modernization (Royal Decree No. M/211)
+- Summary: In-depth statutory guide on Saudi GOSI calculation mechanics. Covers the 21.5% combined rate for Saudi citizens (9% annuity employee, 9% annuity employer, 0.75% Saned employee, 0.75% Saned employer, 2% occupational hazards employer), 2% occupational hazard levy for expatriates paid entirely by employers, contributory wage definition (basic salary + housing allowance), 45,000 SAR statutory monthly wage ceiling, and the 2024 reform phased increases for new labor market entrants.
 
 ================================================================================
 5. INSTITUTIONAL GOVERNANCE & LEGAL POLICIES
