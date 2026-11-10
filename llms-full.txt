@@ -34,15 +34,15 @@ Unlike conventional financial calculators that transmit salary and compensation 
 ================================================================================
 
 2.1 Homepage Portal
-- Route: https://gulfcalc.tech/index.html
+- Route: https://gulfcalc.tech/
 - Purpose: Unified access point featuring real-time client-side search filtering across 12 statutory utilities, reactive side-by-side accrual comparison between UAE, Saudi Arabia, Kuwait, and Qatar, dynamic country filter tabs with SVG flag iconography, and GCC regulatory comparison matrices.
 
 2.2 Central GCC Labour Laws Directory
-- Route: https://gulfcalc.tech/labour-laws/index.html
+- Route: https://gulfcalc.tech/labour-laws/
 - Purpose: Comprehensive comparative directory of private sector employment codes across all 6 GCC member states. Includes detailed side-by-side matrices comparing statutory daily wage divisors, resignation penalties, probationary ceilings, minimum wage mandates, and direct calculation gateways.
 
 2.3 GCC Legal & Financial Intelligence Blog Hub
-- Route: https://gulfcalc.tech/blog/index.html
+- Route: https://gulfcalc.tech/blog/
 - Purpose: Searchable repository of 10 in-depth legal, tax, and employment intelligence articles addressing high-intent regulatory topics, statutory revisions, and corporate tax compliance across the Arabian Gulf.
 
 ================================================================================
@@ -50,7 +50,7 @@ Unlike conventional financial calculators that transmit salary and compensation 
 ================================================================================
 
 3.1 Kuwait Indemnity Calculator
-- Route: https://gulfcalc.tech/tools/kuwait-indemnity-calculator.html
+- Route: https://gulfcalc.tech/tools/kuwait-indemnity-calculator
 - Primary Statute: Kuwait Private Sector Labour Law No. 6 of 2010 (Articles 51, 53 & 55).
 - Statutory Daily Wage Divisor: Exactly 26 working days (Daily Wage = Monthly Remuneration / 26).
 - Accrual Scale: 15 working days per year for years 1 through 5; 30 working days per year for year 6 onwards.
@@ -62,7 +62,7 @@ Unlike conventional financial calculators that transmit salary and compensation 
   * 10+ years: 100% entitlement
 
 3.2 Saudi End of Service Award (EOSA) Calculator
-- Route: https://gulfcalc.tech/tools/saudi-end-of-service-calculator.html
+- Route: https://gulfcalc.tech/tools/saudi-end-of-service-calculator
 - Primary Statute: Saudi Labour Law (Royal Decree No. M/51), Articles 84, 85, 86, and 87.
 - Wage Calculation Basis: Actual Wage (Basic Salary + Fixed Housing Allowance + Fixed Transportation Allowance).
 - Accrual Scale: 15 days (half month) per year for first 5 years; 30 days (full month) per year thereafter.
@@ -77,7 +77,7 @@ Unlike conventional financial calculators that transmit salary and compensation 
   * Termination resulting from employer breach under Article 81
 
 3.3 UAE End of Service Gratuity Calculator
-- Route: https://gulfcalc.tech/tools/uae-gratuity-calculator.html
+- Route: https://gulfcalc.tech/tools/uae-gratuity-calculator
 - Primary Statute: UAE Federal Decree-Law No. 33 of 2021 (Article 51).
 - Wage Calculation Basis: Last drawn Monthly Basic Wage (excludes allowances and commissions).
 - Accrual Scale: 21 calendar days per year for years 1 through 5; 30 calendar days per year for year 6 onwards.
@@ -85,7 +85,7 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Resignation Parity: Post-2021 labor law harmonized resignation and employer termination into identical entitlements once 1 continuous year is reached.
 
 3.4 Qatar End of Service Gratuity Calculator
-- Route: https://gulfcalc.tech/tools/qatar-gratuity-calculator.html
+- Route: https://gulfcalc.tech/tools/qatar-gratuity-calculator
 - Primary Statute: Qatar Labour Law No. 14 of 2004 (Article 54) & Ministry of Labour Guidelines.
 - Wage Calculation Basis: Last drawn Monthly Basic Wage.
 - Accrual Scale: Minimum 21 calendar days (3 weeks) per completed year of continuous service.
@@ -93,89 +93,89 @@ Unlike conventional financial calculators that transmit salary and compensation 
 - Resignation: Fully payable upon completion of 1 continuous year of service.
 
 3.5 Oman End of Service Gratuity Calculator
-- Route: https://gulfcalc.tech/tools/oman-gratuity-calculator.html
+- Route: https://gulfcalc.tech/tools/oman-gratuity-calculator
 - Primary Statute: Oman Labour Law under Royal Decree No. 53/2023 (Article 61).
 - Accrual Standard: Flat 30 days (1 full month basic wage) for every completed year of service starting from year one.
 - Legacy Scale Engine: Seamlessly calculates pre-July 2023 service under RD 35/2003 (15 days for first 3 years, 30 days thereafter) and post-July 2023 service under RD 53/2023.
 
 3.6 Bahrain End of Service Indemnity (EOSI) & VAT Calculator
-- Route: https://gulfcalc.tech/tools/bahrain-eosi-calculator.html
+- Route: https://gulfcalc.tech/tools/bahrain-eosi-calculator
 - Primary Statute: Bahrain Labour Law for Private Sector (Law No. 36 of 2012, Article 116).
 - Accrual Scale: 15 days wage per year for years 1 through 3; 30 days (one month) per year for year 4 onwards.
 - SIO Expat Reform: Reflects 2024 Social Insurance Organisation deposit framework under Decision No. 109/2023.
 - Integrated VAT Module: 10% standard Bahrain VAT calculation and reverse extraction engine.
 
 3.7 UAE Corporate Tax Calculator
-- Route: https://gulfcalc.tech/tools/uae-corporate-tax-calculator.html
+- Route: https://gulfcalc.tech/tools/uae-corporate-tax-calculator
 - Primary Statute: UAE Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses.
 - Statutory Rates: 0% on net taxable profits up to AED 375,000; 9% on net taxable profits exceeding AED 375,000.
 - Small Business Relief (SBR): Ministerial Decision No. 73 of 2023 relief election for resident taxable businesses with gross annual turnover up to AED 3,000,000.
 
 3.8 GCC Remittance True Cost Engine
-- Route: https://gulfcalc.tech/tools/gcc-remittance-fee-calculator.html
+- Route: https://gulfcalc.tech/tools/gcc-remittance-fee-calculator
 - Core Mechanics: Identifies hidden exchange rate spreads charged by commercial banks and money transfer operators.
 - Corridors: Origin currencies (AED, SAR, QAR, KWD, OMR, BHD) to recipient currencies (INR, PKR, PHP, BDT, EGP).
 - Mathematical Formula: Total Financial Friction = Upfront Fee + (Transfer Amount * Exchange Rate Spread %).
 
 3.9 Saudi Social Insurance (GOSI) & SANED Calculator
-- Route: https://gulfcalc.tech/tools/saudi-gosi-calculator.html
+- Route: https://gulfcalc.tech/tools/saudi-gosi-calculator
 - Primary Statute: Saudi Social Insurance Law (Royal Decree No. M/22) and SANED Unemployment Insurance (Royal Decree No. M/18).
 - Citizen Contributions: 9.75% Annuity Branch + 0.75% SANED (Employee: 10.5%; Employer: 10.5% total 21.0%).
 - Expatriate Non-Saudi Contributions: Flat 2.0% Occupational Hazards branch paid 100% by employer (0% deduction from expat salary).
 - Statutory Contributory Ceiling: 45,000 SAR monthly wage cap.
 
 3.10 GCC Inter-City Cost of Living & Expat Parity Comparator
-- Route: https://gulfcalc.tech/tools/gcc-cost-of-living-comparator.html
+- Route: https://gulfcalc.tech/tools/gcc-cost-of-living-comparator
 - Purpose: Mathematical purchasing power, compensation parity, rent, schooling, and consumption tax comparator between GCC commercial capitals.
 - Metropolises Indexed: Dubai, Abu Dhabi, Riyadh, Jeddah, Doha, Kuwait City, Muscat, Manama.
 - Key Indexes: Composite living cost index, weighted residential rent, international British/IB curriculum tuition, utility tariffs, and local VAT rates.
 
 3.11 Kuwait PIFSS Social Security & Net Salary Calculator
-- Route: https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator.html
+- Route: https://gulfcalc.tech/tools/kuwait-pifss-net-salary-calculator
 - Primary Statute: Kuwait Social Security Law (Amiri Decree No. 61 of 1976) administered by PIFSS.
 - Citizen Employee Deduction: 10.5% monthly basic salary (7.5% Basic System + 2.5% Supplementary System + 0.5% Unemployment).
 - Expatriate Deduction: 0.0% (Expatriates are not covered by PIFSS; 100% of agreed contractual remuneration is received net).
 - Statutory Ceiling: 3,000 KWD monthly maximum contributory wage for Kuwaiti nationals.
 
 3.12 UAE Real Estate Investor 10-Year Golden Visa Calculator
-- Route: https://gulfcalc.tech/tools/uae-golden-visa-property-calculator.html
+- Route: https://gulfcalc.tech/tools/uae-golden-visa-property-calculator
 - Primary Statute: UAE Cabinet Resolution No. 65 of 2022 regarding Golden Visa Executive Regulations.
 - Minimum Investment Threshold: AED 2,000,000 property value (single asset or consolidated portfolio).
 - Transaction Cost Engine: Mandatory 4% Dubai Land Department (DLD) transfer fee, AED 4,200 trustee registration fees, and agency commissions.
 - Financing & Equity: Evaluates 20% down payment mortgage rules, debt service coverage, and projected net rental yields after service charges.
 
 3.13 Saudi Dependent Fee & Iqama Renewal Calculator
-- Route: https://gulfcalc.tech/tools/saudi-dependent-fee-calculator.html
+- Route: https://gulfcalc.tech/tools/saudi-dependent-fee-calculator
 - Primary Statute: Saudi Council of Ministers Decision No. 518/1438H & Fiscal Balance Program.
 - Mechanics: Models statutory SAR 400/month dependent levy per family member across flexible 3, 6, 9, or 12-month renewal cycles, Jawazat residency fees (SAR 650/year), and Maktab Amal work permit commercial charges (SAR 800 or 700/month).
 
 3.14 UAE Visa Overstay Fine Calculator
-- Route: https://gulfcalc.tech/tools/uae-overstay-fine-calculator.html
+- Route: https://gulfcalc.tech/tools/uae-overstay-fine-calculator
 - Primary Statute: Federal Authority for Identity, Citizenship, Customs and Port Security (ICP) & GDRFA Unified Regulations.
 - Mechanics: Implements the unified flat 50 AED per calendar day overstay tariff across tourist, visit, and cancelled residency visas, factoring in 30 to 180-day grace periods and mandatory airport Out-Pass exit permits.
 
 3.15 UAE Emiratisation Penalty & MoHRE NAFIS Calculator
-- Route: https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator.html
+- Route: https://gulfcalc.tech/tools/uae-emiratisation-penalty-calculator
 - Primary Statute: UAE Cabinet Resolution No. (19/M) of 2022 & Ministerial Decision No. 459/2023.
 - Mechanics: Calculates mandatory monthly and annual financial contributions (AED 8,000 in 2025, AED 9,000 in 2026 per unhired Emirati) across establishments with 20-49 and 50+ skilled staff evaluated semi-annually.
 
 3.16 Dubai RERA Rent Increase Calculator
-- Route: https://gulfcalc.tech/tools/dubai-rera-rent-calculator.html
+- Route: https://gulfcalc.tech/tools/dubai-rera-rent-calculator
 - Primary Statute: Dubai Decree No. 43 of 2013 & Law No. 33 of 2008.
 - Mechanics: Evaluates statutory rent increase caps (0%, 5%, 10%, 15%, 20%) based on the gap between current rent and the official RERA Rental Index benchmark, plus mandatory 90-day written notice compliance.
 
 3.17 Kuwait Family Visa Eligibility & Dhaman Cost Calculator
-- Route: https://gulfcalc.tech/tools/kuwait-family-visa-calculator.html
+- Route: https://gulfcalc.tech/tools/kuwait-family-visa-calculator
 - Primary Statute: Kuwait Ministry of Interior Ministerial Decision No. 56 of 2024.
 - Mechanics: Verifies Article 22 family dependent visa eligibility under the mandatory 800 KWD salary threshold and university degree rules, plus 50 KWD/year Dhaman health insurance and PACI Civil ID fees.
 
 3.18 AI GCC Employment Contract Clause Checker
-- Route: https://gulfcalc.tech/tools/ai-contract-clause-checker.html
+- Route: https://gulfcalc.tech/tools/ai-contract-clause-checker
 - Purpose: Interactive client-side contract review engine comparing pasted clauses against UAE Decree-Law 33/2021, Saudi Royal Decree M/51, and Kuwait Law 6/2010.
 - Mechanics: Identifies void clauses (visa clawbacks, passport retention, non-compete overreach, gratuity waivers) and generates legally protective counter-proposals with zero server-side data transmission.
 
 3.19 AI GCC Legal Resignation Letter Generator
-- Route: https://gulfcalc.tech/tools/ai-resignation-letter-generator.html
+- Route: https://gulfcalc.tech/tools/ai-resignation-letter-generator
 - Purpose: Form-driven legal resignation drafter citing statutory labor law notice articles (UAE Art. 43, KSA Art. 75, Kuwait Art. 44, Qatar Art. 39, Oman Art. 43, Bahrain Art. 99).
 - Mechanics: Generates formal letters with statutory gratuity protection, proof of service delivery acknowledgment, and one-click copy and print capabilities.
 
@@ -184,83 +184,83 @@ Unlike conventional financial calculators that transmit salary and compensation 
 ================================================================================
 
 4.1 UAE Gratuity Calculation Under Limited Contracts in 2026
-- Route: https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026.html
+- Route: https://gulfcalc.tech/blog/uae-gratuity-calculation-limited-contract-2026
 - Legal Statute: UAE Federal Decree-Law No. 33 of 2021
 - Summary: Analysis of the legal unification of fixed-term employment contracts across the UAE private sector, detailing the absolute abolition of historical resignation penalties and unexpired contract penalties.
 
 4.2 Saudi Labor Law Amendments: Notice Period, Gratuity & Probation Rules
-- Route: https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity.html
+- Route: https://gulfcalc.tech/blog/saudi-labor-law-amendments-notice-period-gratuity
 - Legal Statute: Saudi Labor Law (Royal Decree No. M/51 Amendments)
 - Summary: In-depth statutory examination of amended Article 75 notice rules (30 days for employee resignation vs. 60 days for employer termination), Article 53 probation cap up to 180 days, Article 107 compensatory time-off in lieu of overtime, and mandatory actual wage baselines for Article 84 and 85 end-of-service award determinations.
 
 4.4 Saudi Labour Law Articles 84 & 85: Resignation Rules & Actual Wage
-- Route: https://gulfcalc.tech/blog/saudi-labor-law-article-84-85-resignation-rules.html
+- Route: https://gulfcalc.tech/blog/saudi-labor-law-article-84-85-resignation-rules
 - Legal Statute: Saudi Labour Law (Royal Decree No. M/51)
 - Summary: Detailed statutory examination of the Ministry of Human Resources and Social Development (MHRSD) definition of 'actual wage' (basic plus fixed housing and transport allowances), tiered resignation penalties, and Article 87 statutory exceptions.
 
 4.4 Kuwait Labour Law Article 55: The 26 Working Days Rule
-- Route: https://gulfcalc.tech/blog/kuwait-labor-law-article-55-26-days-calculation.html
+- Route: https://gulfcalc.tech/blog/kuwait-labor-law-article-55-26-days-calculation
 - Legal Statute: Kuwait Private Sector Labour Law No. 6 of 2010
 - Summary: Mathematical analysis and legal justification for using the mandatory 26-day divisor instead of 30 days when calculating daily wages for terminal indemnity in Kuwait, backed by Public Authority for Manpower (PAM) enforcement rulings.
 
 4.5 Oman Labour Law Royal Decree 53/2023: The 30-Day Gratuity Standard
-- Route: https://gulfcalc.tech/blog/oman-new-labor-law-royal-decree-53-2023-gratuity.html
+- Route: https://gulfcalc.tech/blog/oman-new-labor-law-royal-decree-53-2023-gratuity
 - Legal Statute: Oman Royal Decree No. 53/2023
 - Summary: Deconstruction of Oman's major labor reform under His Majesty Sultan Haitham bin Tarik, highlighting the shift from the old two-tiered severance formula to a uniform 30-day salary per year of service starting from year one.
 
 4.6 UAE Corporate Tax: Small Business Relief (SBR) Compliance Guide
-- Route: https://gulfcalc.tech/blog/uae-corporate-tax-small-business-relief-guide.html
+- Route: https://gulfcalc.tech/blog/uae-corporate-tax-small-business-relief-guide
 - Legal Statute: UAE Federal Decree-Law No. 47 of 2022 & Ministerial Decision No. 73 of 2023
 - Summary: Practical compliance roadmap for UAE resident enterprises with gross annual revenue under AED 3,000,000 electing Small Business Relief, covering registration, record-keeping, and transfer pricing obligations.
 
 4.7 Qatar End of Service Benefits & Statutory Overtime Under Law No. 14/2004
-- Route: https://gulfcalc.tech/blog/qatar-end-of-service-benefits-overtime-wages.html
+- Route: https://gulfcalc.tech/blog/qatar-end-of-service-benefits-overtime-wages
 - Legal Statute: Qatar Labour Law No. 14 of 2004
 - Summary: Deconstruction of Qatar's 21-day annual severance accrual, fractional tenure mathematics, and statutory overtime compensation rates (125% regular overtime, 150% night/weekend overtime).
 
 4.8 Bahrain SIO Expatriate End of Service Reform: Direct Deposit Framework
-- Route: https://gulfcalc.tech/blog/bahrain-sio-expat-end-of-service-reform.html
+- Route: https://gulfcalc.tech/blog/bahrain-sio-expat-end-of-service-reform
 - Legal Statute: Bahrain Labour Law No. 36 of 2012 & Ministerial Decision No. 109 of 2023
 - Summary: Comprehensive operational analysis of Bahrain's transition from company balance-sheet reserves to mandatory monthly employer deposits into the Social Insurance Organisation (SIO) fund for non-Bahraini personnel.
 
 4.9 GCC VAT Reverse Charge Mechanism: Cross-Border SaaS & Services
-- Route: https://gulfcalc.tech/blog/gcc-vat-reverse-charge-mechanism-cross-border-services.html
+- Route: https://gulfcalc.tech/blog/gcc-vat-reverse-charge-mechanism-cross-border-services
 - Legal Statute: GCC Unified VAT Agreement & National Implementing Regulations
 - Summary: Technical accounting walkthrough for GCC companies purchasing foreign cloud hosting, SaaS subscriptions, and digital marketing services, detailing self-assessment entries on VAT return boxes.
 
 4.10 Dubai Golden Visa 2026: Real Estate & Salary Thresholds Compared
-- Route: https://gulfcalc.tech/blog/dubai-golden-visa-real-estate-salary-thresholds.html
+- Route: https://gulfcalc.tech/blog/dubai-golden-visa-real-estate-salary-thresholds
 - Legal Statute: UAE Cabinet Resolution No. 65 of 2022
 - Summary: Cost-benefit and regulatory comparison between the AED 2,000,000 property investment track and the AED 30,000 monthly executive employment track for obtaining the UAE 10-Year Golden Residence Visa.
 
 4.11 DEWS vs Traditional Gratuity: Mathematical Comparison for Expatriates
-- Route: https://gulfcalc.tech/blog/dews-vs-traditional-cash-gratuity-uae-workplace-savings.html
+- Route: https://gulfcalc.tech/blog/dews-vs-traditional-cash-gratuity-uae-workplace-savings
 - Legal Statute: DIFC Employment Law No. 2 of 2019 & UAE Cabinet Decision No. 96 of 2023
 - Summary: Financial comparison between monthly defined contribution investment schemes (such as the DIFC Employee Workplace Savings scheme) and traditional final-salary statutory cash lump-sum gratuities.
 
 4.12 How to Calculate Indemnity in Bahrain: SIO Expat Rules, Article 116 Formula, and Resignation Guidelines
-- Route: https://gulfcalc.tech/blog/how-to-calculate-indemnity-in-bahrain.html
+- Route: https://gulfcalc.tech/blog/how-to-calculate-indemnity-in-bahrain
 - Legal Statute: Bahrain Labour Law No. 36 of 2012 (Article 116) & SIO Ministerial Decision No. 109 of 2023
 - Summary: Complete analysis of Article 116 basic wage formula (half month wage per year for the first 3 years, 1 full month wage per year thereafter), voluntary resignation parity without penalty tiers, unused leave encashment under Article 59, and mandatory monthly SIO direct deposit compliance for non-Bahraini personnel.
 
 4.13 UAE Visa Amnesty: Overstay Fine Waiver, ICP Exit Pass Rules, and Status Regularization
-- Route: https://gulfcalc.tech/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html
+- Route: https://gulfcalc.tech/blog/uae-visa-amnesty-overstay-fine-waiver-rules
 - Legal Statute: Federal Decree-Law No. 29 of 2021 (Entry & Residence of Foreigners) & Cabinet Resolution No. 65 of 2022
 - Summary: Comprehensive operational analysis of federal visa grace periods. Covers 100% waivers of statutory 50 AED daily overstay fines, cancellation of commercial absconding reports (ta'ameem) without fees, 14-day exit permit (tasreeh al-moghaddara) validity, zero entry ban guarantees, and internal status regularization through MoHRE electronic work permits.
 
 4.14 How to Calculate GOSI Contributions in Saudi Arabia: Expat Rules, Annuity Branch Rates, and Wage Caps
-- Route: https://gulfcalc.tech/blog/how-to-calculate-gosi-contributions-saudi-arabia.html
+- Route: https://gulfcalc.tech/blog/how-to-calculate-gosi-contributions-saudi-arabia
 - Legal Statute: Saudi Social Insurance Law (Royal Decree No. M/33) & Social Insurance Law Modernization (Royal Decree No. M/211)
 - Summary: In-depth statutory guide on Saudi GOSI calculation mechanics. Covers the 21.5% combined rate for Saudi citizens (9% annuity employee, 9% annuity employer, 0.75% Saned employee, 0.75% Saned employer, 2% occupational hazards employer), 2% occupational hazard levy for expatriates paid entirely by employers, contributory wage definition (basic salary + housing allowance), 45,000 SAR statutory monthly wage ceiling, and the 2024 reform phased increases for new labor market entrants.
 
 ================================================================================
 5. INSTITUTIONAL GOVERNANCE & LEGAL POLICIES
 ================================================================================
-- About Us: https://gulfcalc.tech/about-us.html
-- Contact Form: https://gulfcalc.tech/contact-us.html
-- Privacy Policy: https://gulfcalc.tech/privacy-policy.html
-- Terms of Service: https://gulfcalc.tech/terms-of-service.html
-- Legal Disclaimer: https://gulfcalc.tech/disclaimer.html
+- About Us: https://gulfcalc.tech/about-us
+- Contact Form: https://gulfcalc.tech/contact-us
+- Privacy Policy: https://gulfcalc.tech/privacy-policy
+- Terms of Service: https://gulfcalc.tech/terms-of-service
+- Legal Disclaimer: https://gulfcalc.tech/disclaimer
 - XML Sitemap: https://gulfcalc.tech/sitemap.xml
 - Robots Directive: https://gulfcalc.tech/robots.txt
 
@@ -280,12 +280,12 @@ Every page on GulfCalc embeds valid, verified JSON-LD metadata for immediate mac
 GulfCalc operates an enterprise bilingual localization architecture under the /ar/ subdirectory featuring full Right-to-Left (RTL) typography powered by Google Fonts Tajawal, strict LTR mathematical and numerical isolation, and bidirectional hreflang search indexing.
 
 7.1 Central Arabic Portal Hub
-- Route: https://gulfcalc.tech/ar/index.html
+- Route: https://gulfcalc.tech/ar/
 - Purpose: Fully localized Arabic gateway featuring real-time client-side search filtering across GCC labor calculators, interactive showcased cards, institutional trust architecture, and a comprehensive GCC statutory end-of-service basic salary comparison matrix.
 - Metadata: Meta title under 60 chars ("حاسبة نهاية الخدمة والضرائب في الخليج | GulfCalc"), meta description 140-155 chars, and hardcoded Organization, WebSite, CollectionPage, and FAQPage schemas.
 
 7.2 UAE End of Service Gratuity Calculator (Arabic)
-- Route: https://gulfcalc.tech/ar/tools/uae-gratuity.html
+- Route: https://gulfcalc.tech/ar/tools/uae-gratuity
 - Primary Statute: UAE Federal Decree-Law No. (33) of 2021 on the Regulation of Labour Relations (Article 51) and its Executive Regulations.
 - Canonical Arabic Terminology: مكافأة نهاية الخدمة (Gratuity), الراتب الأساسي (Basic Salary), عقد عمل محدد المدة (Limited Contract), إنهاء الخدمة (Termination), استقالة (Resignation).
 - Statutory Mathematical Formula:
@@ -298,7 +298,7 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
   * Alternative Savings Scheme: Optional workplace savings scheme under Cabinet Resolution No. 96/2023 (5.83% monthly for first 5 years, 8.33% thereafter).
 
 7.3 Saudi End of Service Award Calculator (Arabic)
-- Route: https://gulfcalc.tech/ar/tools/saudi-eos.html
+- Route: https://gulfcalc.tech/ar/tools/saudi-eos
 - Primary Statute: Saudi Labour Law (Royal Decree No. M/51), Articles 84, 85, and 87.
 - Canonical Arabic Terminology: مكافأة نهاية الخدمة (End of Service Award), الأجر الفعلي (Actual Wage including basic salary, fixed housing allowance, and fixed transportation allowance), الراتب الأساسي (Basic Salary), فسخ العقد (Contract Termination), استقالة العامل (Employee Resignation).
 - Statutory Mathematical Formula:
@@ -316,21 +316,21 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
 
 
 7.4 Arabic FinTech & Legal Intelligence Hub
-- Route: https://gulfcalc.tech/ar/blog/index.html
+- Route: https://gulfcalc.tech/ar/blog/
 - Purpose: Searchable Arabic knowledge base of peer-reviewed statutory employment, tax, and residency guides with filter categories and bidirectional English/Arabic hreflang indexing.
 
 7.5 Bahrain Indemnity & SIO Calculation Guide (Arabic)
-- Route: https://gulfcalc.tech/ar/blog/how-to-calculate-indemnity-in-bahrain.html
+- Route: https://gulfcalc.tech/ar/blog/how-to-calculate-indemnity-in-bahrain
 - Primary Statute: Bahrain Labour Law No. 36 of 2012 Article 116 and Social Insurance Organisation (SIO) Decision No. 109 of 2023.
 - Canonical Arabic Terminology: مكافأة نهاية الخدمة (Indemnity), الأجر الأساسي (Basic Salary), الهيئة العامة للتأمين الاجتماعي (SIO), استقالة العامل (Resignation), تصفية الإجازات السنوية (Leave Encashment).
 
 7.6 UAE Visa Amnesty & Status Regularization Guide (Arabic)
-- Route: https://gulfcalc.tech/ar/blog/uae-visa-amnesty-overstay-fine-waiver-rules.html
+- Route: https://gulfcalc.tech/ar/blog/uae-visa-amnesty-overstay-fine-waiver-rules
 - Primary Statute: Federal Decree-Law No. 29 of 2021 & ICP Grace Directives.
 - Canonical Arabic Terminology: مهلة تصحيح الأوضاع (Amnesty / Grace Period), تصريح المغادرة (Exit Permit), بلاغ الانقطاع عن العمل (Absconding Report), إسقاط الغرامات (Fine Waiver), تعديل الوضع (Status Regularization).
 
 3.20 Qatar Residence Permit (QID) & Visa Fee Calculator
-- Route: https://gulfcalc.tech/tools/qatar-visa-fee-calculator.html
+- Route: https://gulfcalc.tech/tools/qatar-visa-fee-calculator
 - Governing Authority: Qatar Ministry of Interior (MOI) & Ministry of Public Health (MOPH)
 - Statutory Legislation: Law No. 21 of 2015 (Expatriate Entry & Residence) & Law No. 22 of 2021 (Healthcare Regulation)
 - Computational Formula:
@@ -342,7 +342,7 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
   * Overstay Fines: 10 QAR / day following the expiration of the 90-day statutory grace period.
 
 3.21 Kuwait Work Permit & Residency Fee Calculator
-- Route: https://gulfcalc.tech/tools/kuwait-visa-fee-calculator.html
+- Route: https://gulfcalc.tech/tools/kuwait-visa-fee-calculator
 - Governing Authority: Public Authority for Manpower (PAM) & Ministry of Interior (MOI)
 - Statutory Legislation: Private Sector Labour Law No. 6 of 2010 & PAM Administrative Decision No. 27 of 2021
 - Computational Formula:
@@ -354,7 +354,7 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
   * Overstay Penalty: 2 KWD / calendar day (statutory cap at 600 KWD).
 
 3.22 Oman Social Protection Fund (SPF) Calculator
-- Route: https://gulfcalc.tech/tools/oman-spf-calculator.html
+- Route: https://gulfcalc.tech/tools/oman-spf-calculator
 - Governing Authority: Social Protection Fund (SPF) Oman
 - Statutory Legislation: Social Protection Law (Royal Decree No. 52 of 2023)
 - Computational Formula:
@@ -364,7 +364,7 @@ GulfCalc operates an enterprise bilingual localization architecture under the /a
   * Contributory Wage Ceiling: Capped at exactly 3,000 OMR per month; statutory wage floor at 325 OMR.
 
 3.23 Bahrain LMRA Fee Calculator
-- Route: https://gulfcalc.tech/tools/bahrain-lmra-fee-calculator.html
+- Route: https://gulfcalc.tech/tools/bahrain-lmra-fee-calculator
 - Governing Authority: Labour Market Regulatory Authority (LMRA) Bahrain
 - Statutory Legislation: Law No. 19 of 2006 (Labour Market Regulation)
 - Computational Formula:
